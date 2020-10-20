@@ -1,0 +1,179 @@
+.landing-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .landing-slide__block {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .landing-slide__block_1 {
+      background-image: url("../media/bg-ls-1.png"); }
+    .landing-slide__block_2 {
+      background: #249D6A; }
+
+.advantages__overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.advantages__block {
+  padding: 20px;
+  height: 18.75vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .advantages__block span {
+    position: relative;
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  .advantages__block_1 {
+    background-image: url("../media/advantages-1.png"); }
+  .advantages__block_2 {
+    background-image: url("../media/advantages-2.png"); }
+  .advantages__block_3 {
+    background-image: url("../media/advantages-3.png"); }
+  .advantages__block_4 {
+    background-image: url("../media/advantages-4.png"); }
+
+.reviews__title {
+  width: 100%;
+  padding: 1.5625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .reviews__title a {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    font-family: TT Interfaces;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: rgba(255, 255, 255, 0.4); }
+
+.reviews_green {
+  background: #249D6A; }
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews__item:nth-child(odd) {
+  border-right: 2px solid rgba(255, 255, 255, 0.1); }
+
+.reviews__item {
+  width: 50%;
+  padding: 0 1.5625vw;
+  margin: 1.5625vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .reviews__item a {
+    font-family: TT Interfaces;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: rgba(255, 255, 255, 0.4); }
+  .reviews__item-img {
+    min-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 1.5625vw; }
+    .reviews__item-img span {
+      font-family: Akrobat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-transform: uppercase;
+      color: #249D6A; }
+  .reviews__item-name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  .reviews__item-text {
+    font-family: TT Interfaces;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.7); }

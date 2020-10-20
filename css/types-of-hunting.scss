@@ -1,0 +1,235 @@
+.first-slide {
+    display: flex;
+    height: 600px;
+
+    &__img {
+        background-image: url('../media/bg-th.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+    }
+
+    &__lead {
+        width: 50%;
+        background: #249D6A;
+        position: relative;
+        padding: 1.5625vw;
+        padding-top: 100px;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-family: Akrobat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 90%;
+
+
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: TT Interfaces;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+
+
+        color: #FFFFFF;
+    }
+}
+
+.hunt {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 100%;
+        height: 240px;
+        padding: 1.5625vw;
+        transition: .3s;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        &-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/hunt-list/image 1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: .3s;
+            z-index: -1;
+
+        }
+
+        &:hover {
+            .hunt__item-bg {
+                transform: scale(1.03);
+            }
+        }
+
+        &_active {
+            height: 480px;
+
+            .hunt__item-bg {
+                transform: scale(1.03);
+            }
+        }
+
+
+        h2 {
+            font-family: Akrobat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 100%;
+            /* identical to box height, or 32px */
+
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        b {
+            margin-top: 20px;
+            display: inline-block;
+            font-family: TT Interfaces;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 140%;
+            /* or 20px */
+
+
+            color: #FFFFFF;
+        }
+
+        p,
+        span {
+            font-family: TT Interfaces;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140%;
+            /* or 20px */
+
+
+            color: #FFFFFF;
+        }
+    }
+}
+
+.calc {
+    width: 100%;
+    background: #249D6A;
+    padding: 1.5625vw;
+
+    &__button {
+        border: none;
+        height: 15px;
+        width: 30px;
+        border: none;
+        cursor: pointer;
+
+        &_left {
+            background: url('../media/arrow-l.svg') no-repeat center;
+        }
+
+        &_right {
+            background: url('../media/arrow-r.svg') no-repeat center;
+        }
+    }
+
+    &__lead {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-bottom: 20px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            height: 40px;
+            font-family: Akrobat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 100%;
+            /* identical to box height, or 16px */
+
+            text-transform: uppercase;
+
+            color: rgba(255, 255, 255, 1);
+
+            &:last-of-type {
+                margin-bottom: 40px;
+            }
+
+            &:first-of-type {
+                margin-top: -10px;
+            }
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.4);
+            }
+        }
+    }
+
+    &__inner {
+        display: flex;
+
+    }
+
+    &__main {
+        padding-right: 1.5625vw;
+    }
+
+    &__list-item {
+        margin-bottom: 1.5625vw;
+        font-family: Akrobat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 100%;
+        /* identical to box height, or 16px */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+
+        &_accommodation {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__des {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        width: 50%;
+
+        span {
+            font-family: TT Interfaces;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            /* or 20px */
+
+
+            color: #FFFFFF;
+        }
+    }
+}
