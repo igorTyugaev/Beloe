@@ -2,7 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 600px; }
+  height: 46.875vw; }
   .first-slide__img {
     background-image: url("../media/bg-th.png");
     background-repeat: no-repeat;
@@ -14,20 +14,20 @@
     background: #249D6A;
     position: relative;
     padding: 1.5625vw;
-    padding-top: 100px; }
+    padding-top: 7.8125vw; }
   .first-slide h1 {
     margin-top: 0;
     font-family: Akrobat;
     font-style: normal;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 4.6875vw;
     line-height: 90%;
     color: #FFFFFF; }
   .first-slide p {
     font-family: TT Interfaces;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.09375vw;
     line-height: 140%;
     color: #FFFFFF; }
 
@@ -40,7 +40,7 @@
 
 .hunt__item {
   width: 100%;
-  height: 240px;
+  height: 18.75vw;
   padding: 1.5625vw;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -70,7 +70,7 @@
     -ms-transform: scale(1.03);
     transform: scale(1.03); }
   .hunt__item_active {
-    height: 480px; }
+    height: 37.5vw; }
     .hunt__item_active .hunt__item-bg {
       -webkit-transform: scale(1.03);
       -ms-transform: scale(1.03);
@@ -79,30 +79,30 @@
     font-family: Akrobat;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2.5vw;
     line-height: 100%;
-    /* identical to box height, or 32px */
+    /* identical to box height, or 2.5vw */
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0; }
   .hunt__item b {
-    margin-top: 20px;
+    margin-top: 1.5625vw;
     display: inline-block;
     font-family: TT Interfaces;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.09375vw;
     line-height: 140%;
-    /* or 20px */
+    /* or 1.5625vw */
     color: #FFFFFF; }
   .hunt__item p,
   .hunt__item span {
     font-family: TT Interfaces;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1.09375vw;
     line-height: 140%;
-    /* or 20px */
+    /* or 1.5625vw */
     color: #FFFFFF; }
 
 .calc {
@@ -111,8 +111,8 @@
   padding: 1.5625vw; }
   .calc__button {
     border: none;
-    height: 15px;
-    width: 30px;
+    height: 1.171875vw;
+    width: 2.34375vw;
     border: none;
     cursor: pointer; }
     .calc__button_left {
@@ -128,23 +128,23 @@
     -ms-flex-direction: column;
     flex-direction: column; }
     .calc__lead input {
-      margin-bottom: 20px;
+      margin-bottom: 1.5625vw;
       background-color: transparent;
       border: none;
-      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-      height: 40px;
+      border-bottom: 0.15625vw solid rgba(255, 255, 255, 0.1);
+      height: 3.125vw;
       font-family: Akrobat;
       font-style: normal;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 1.25vw;
       line-height: 100%;
-      /* identical to box height, or 16px */
+      /* identical to box height, or 1.25vw */
       text-transform: uppercase;
       color: white; }
       .calc__lead input:last-of-type {
-        margin-bottom: 40px; }
+        margin-bottom: 3.125vw; }
       .calc__lead input:first-of-type {
-        margin-top: -10px; }
+        margin-top: -0.78125vw; }
       .calc__lead input::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.4); }
       .calc__lead input:-ms-input-placeholder {
@@ -164,9 +164,9 @@
     font-family: Akrobat;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.25vw;
     line-height: 100%;
-    /* identical to box height, or 16px */
+    /* identical to box height, or 1.25vw */
     text-transform: uppercase;
     color: #FFFFFF; }
     .calc__list-item_accommodation {
@@ -177,14 +177,14 @@
       -ms-flex-pack: justify;
       justify-content: space-between; }
   .calc__des {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 1.5625vw;
+    padding-bottom: 3.125vw;
     width: 50%; }
     .calc__des span {
       font-family: TT Interfaces;
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 1.09375vw;
       line-height: 140%;
-      /* or 20px */
+      /* or 1.5625vw */
       color: #FFFFFF; }

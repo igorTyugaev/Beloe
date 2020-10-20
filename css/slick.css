@@ -27,7 +27,7 @@
   /* Стрелка вправо */ }
   .slider_main .slick-dots {
     position: absolute;
-    bottom: 156px;
+    bottom: 11.953125vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -38,37 +38,41 @@
     font-family: Akrobat;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.25vw;
     line-height: 100%;
-    margin-left: 65px;
+    margin-left: 4.578125vw;
     /* identical to box height, or 16px */
     text-transform: uppercase;
     color: #FFFFFF; }
   .slider_main .slick-arrow {
     position: absolute;
     z-index: 9;
-    bottom: 153px;
+    bottom: 11.65vw;
     font-size: 0;
-    height: 20px;
-    width: 30px;
+    height: 1.5625vw;
+    width: 2.34375vw;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent; }
   .slider_main .slick-arrow.slick-prev {
-    left: 20px;
-    background: url("../media/arrow-l.svg") no-repeat center; }
+    left: 1.2vw;
+    background-image: url("../media/arrow-l.svg"); }
   .slider_main .slick-arrow.slick-next {
-    left: 120px;
-    background: url("../media/arrow-r.svg") no-repeat center; }
+    left: 9.075vw;
+    background-image: url("../media/arrow-r.svg"); }
   .slider_main .slider__item {
     padding: 1.5625vw;
-    padding-top: 100px;
-    height: 600px;
+    padding-top: 7.8125vw;
+    height: 46.875vw;
     position: relative; }
     .slider_main .slider__item h2 {
       font-family: Akrobat;
       font-style: normal;
       font-weight: 800;
-      font-size: 60px;
+      font-size: 4.6875vw;
       line-height: 90%;
       margin: 0;
       /* or 54px */
@@ -82,13 +86,13 @@
       color: #FFFFFF; }
     .slider_main .slider__item .slider__text {
       position: absolute;
-      bottom: 100px; }
+      bottom: 7.8125vw; }
     .slider_main .slider__item .slider__item-start {
       display: inline-block;
       font-family: TT Interfaces;
       font-style: normal;
       font-weight: 500;
-      font-size: 12px;
+      font-size: 0.9375vw;
       line-height: 140%;
       /* or 17px */
       display: -webkit-box;
@@ -102,7 +106,113 @@
       font-family: TT Interfaces;
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 1.09375vw;
+      line-height: 140%;
+      /* or 17px */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: white; }
+
+.slider_about {
+  position: relative;
+  /* Слайд активный (показывается) */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */ }
+  .slider_about .slick-dots {
+    position: absolute;
+    bottom: 3.125vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .slider_about .slick-dots li {
+    display: none; }
+  .slider_about .slick-dots li.slick-active {
+    display: block;
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25vw;
+    line-height: 100%;
+    margin-left: 4.578125vw;
+    /* identical to box height, or 16px */
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  .slider_about .slick-arrow {
+    position: absolute;
+    z-index: 9;
+    bottom: 21.8745vw;
+    font-size: 0;
+    height: 3.125vw;
+    width: 3.125vw;
+    border: none;
+    cursor: pointer;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #249D6A;
+    border-radius: 50%; }
+  .slider_about .slick-arrow.slick-prev {
+    left: 1.2vw;
+    background-image: url("../media/arrow-l.svg"); }
+  .slider_about .slick-arrow.slick-next {
+    right: 1.2vw;
+    background-image: url("../media/arrow-r.svg"); }
+  .slider_about .slider__item {
+    height: 46.875vw;
+    position: relative; }
+    .slider_about .slider__item-img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+    .slider_about .slider__item h2 {
+      font-family: Akrobat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 4.6875vw;
+      line-height: 90%;
+      margin: 0;
+      /* or 54px */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+    .slider_about .slider__item .slider__text {
+      position: absolute;
+      bottom: 7.8125vw; }
+    .slider_about .slider__item .slider__item-start {
+      display: inline-block;
+      font-family: TT Interfaces;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.9375vw;
+      line-height: 140%;
+      /* or 17px */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.6); }
+    .slider_about .slider__item .slider__item-date {
+      font-family: TT Interfaces;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.09375vw;
       line-height: 140%;
       /* or 17px */
       display: -webkit-box;

@@ -26,7 +26,7 @@ ul {
   margin-bottom: 0; }
 
 .menu {
-  padding: 20px;
+  padding: 1.5625vw;
   background: #F4F4F4;
   width: 25vw;
   height: 100vh;
@@ -43,9 +43,9 @@ ul {
     font-family: Akrobat;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.25vw;
     line-height: 100%;
-    margin: 12px 0;
+    margin: 0.9375vw 0;
     -webkit-transition: .15s color;
     -o-transition: .15s color;
     transition: .15s color;
@@ -61,56 +61,58 @@ ul {
     color: #249D6A; }
   .menu__line {
     background-color: rgba(19, 18, 18, 0.1);
-    height: 2px;
+    height: 0.15625vw;
     border: none;
-    margin: 20px 0; }
+    margin: 1.5625vw 0; }
   .menu__line:first-of-type {
-    margin-bottom: 8px; }
+    margin-bottom: 0.625vw; }
   .menu__logo {
     position: relative;
+    width: 9.453125vw;
     left: 50%;
-    margin-left: -60px; }
+    margin-left: -4.6875vw; }
   .menu__adress {
     font-family: TT Interfaces;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.9375vw;
     line-height: 140%;
-    margin: 30px 0;
+    margin: 2.34375vw 0;
     color: rgba(19, 18, 18, 0.4); }
   .menu__drive {
     font-family: TT Interfaces;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.9375vw;
     line-height: 140%;
     text-decoration: underline;
-    margin-bottom: 40px;
+    margin-bottom: 3.125vw;
     color: #249D6A; }
   .menu__drive:hover {
     text-decoration: none; }
 
 .lang {
   cursor: pointer;
-  border: 2px solid rgba(19, 18, 18, 0.1);
+  border: 0.15625vw solid rgba(19, 18, 18, 0.1);
   border-radius: 50%;
-  padding: 2px;
+  padding: 0.12vw;
   -webkit-transition: .15s border;
   -o-transition: .15s border;
   transition: .15s border;
-  margin-right: 5px; }
+  margin-right: 0.390625vw;
+  width: 1.875vw; }
 
 .lang:hover {
-  border: 2px solid #249D6A; }
+  border: 0.15625vw solid #249D6A; }
 
 .button {
   cursor: pointer;
   border: none;
-  height: 60px;
+  height: 4.6875vw;
   font-family: Akrobat;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.25vw;
   line-height: 100%;
   -webkit-transition: .1s;
   -o-transition: .1s;
@@ -126,10 +128,10 @@ ul {
     background: #fff;
     color: #249D6A; }
   .button_main-slider {
-    width: calc(100% - 1.5625*2vw);
+    width: 34.284375vw;
     position: absolute;
-    bottom: 20px;
-    left: 1.5625vw; }
+    bottom: 1.5625vw;
+    right: 1.5625vw; }
 
 main {
   margin-left: 25%;
@@ -143,8 +145,9 @@ main {
   width: 25%; }
 
 .numbers {
+  width: 34.284375vw;
   position: fixed;
-  right: 1.25vw;
+  right: 1.5625vw;
   top: 1.5625vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,15 +163,15 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 17.1875vw;
-    height: 60px;
+    width: 50%;
+    height: 4.6875vw;
     font-family: Akrobat;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.25vw;
     line-height: 100%;
     color: #FFFFFF;
-    border: 2px solid #FFFFFF; }
+    border: 0.15625vw solid #FFFFFF; }
   .numbers__block:last-of-type {
     border-left: none; }
 
@@ -178,7 +181,7 @@ main {
   font-family: Akrobat;
   font-style: normal;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 4.6875vw;
   line-height: 90%;
   text-transform: uppercase;
   color: #249D6A; }
@@ -198,7 +201,7 @@ main {
     .location__text a {
       font-family: TT Interfaces;
       font-style: normal;
-      font-size: 16px;
+      font-size: 1.25vw;
       line-height: 140%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -208,13 +211,13 @@ main {
       align-items: center; }
   .location span,
   .location a {
-    font-size: 14px;
+    font-size: 1.09375vw;
     color: rgba(0, 0, 0, 0.7); }
   .location a {
     color: #249D6A;
     text-decoration: underline; }
   .location__text-main {
-    margin: 40px 0; }
+    margin: 3.125vw 0; }
 
 #map {
   width: 50%;
