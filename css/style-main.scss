@@ -3,7 +3,8 @@
     flex-wrap: wrap;
 
     &__block {
-        height: 46.875vw;
+        min-height: 46.875vw;
+        height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

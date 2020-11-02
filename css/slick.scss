@@ -104,7 +104,8 @@
     .slider__item {
         padding: 1.5625vw;
         padding-top: 7.8125vw;
-        height: 46.875vw;
+        min-height: 46.875vw;
+        height: 100vh;
         position: relative;
 
         h2 {
