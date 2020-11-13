@@ -1,5 +1,6 @@
 @import "../fonts/TTInterfaces/stylesheet.css"all;
 @import "../fonts/Akrobat/stylesheet.css"all;
+@import "helper";
 
 *,
 *:before,
@@ -30,82 +31,6 @@ ul {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.menu {
-    padding: 1.5625vw;
-    background: #F4F4F4;
-    width: 25vw;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    z-index: 10;
-    flex-direction: column;
-
-    &__link {
-        font-family: Akrobat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 1.25vw;
-        line-height: 100%;
-        margin: 0.9375vw 0;
-        transition: .15s color;
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-
-        color: #131212;
-    }
-
-    &__link:hover {
-        color: #249D6A;
-    }
-
-    &__line {
-        background-color: rgba(19, 18, 18, 0.1);
-        height: 0.15625vw;
-        border: none;
-        margin: 1.5625vw 0;
-    }
-
-    &__line:first-of-type {
-        margin-bottom: 0.625vw;
-    }
-
-    &__logo {
-        position: relative;
-        width: 9.453125vw;
-        left: 50%;
-        margin-left: -4.6875vw;
-    }
-
-    &__adress {
-        font-family: TT Interfaces;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 0.9375vw;
-        line-height: 140%;
-        margin: 2.34375vw 0;
-
-
-        color: rgba(19, 18, 18, 0.4);
-    }
-
-    &__drive {
-        font-family: TT Interfaces;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 0.9375vw;
-        line-height: 140%;
-        text-decoration: underline;
-        margin-bottom: 3.125vw;
-
-        color: #249D6A;
-    }
-
-    &__drive:hover {
-        text-decoration: none;
-    }
 }
 
 .lang {
