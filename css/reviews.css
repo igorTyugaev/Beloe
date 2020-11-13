@@ -1,0 +1,118 @@
+.mark-star_green svg {
+  width: 20px;
+  height: 20px;
+}
+.mark-star_green #star {
+  fill: #FFFFFF;
+  stroke: #249D6A;
+}
+
+.mark-star_green_active #star {
+  fill: #249D6A;
+  stroke: #249D6A;
+}
+
+.reviews__title {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.6875vw;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: #249D6A;
+  margin: 0;
+  padding: 100px 0 40px 20px;
+}
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews_white {
+  background: #FFFFFF;
+}
+
+.reviews__item {
+  display: flex;
+  width: 50%;
+  padding: 0 20px;
+  margin: 40px 0 0 0;
+}
+.reviews__item_white {
+  background: #FFFFFF;
+}
+.reviews__item:nth-child(odd) {
+  border-right: 2px solid rgba(19, 18, 18, 0.1);
+}
+
+.reviews__item-avatar {
+  min-width: 6.25vw;
+  height: 6.25vw;
+  width: 6.25vw;
+  border-radius: 50%;
+  background: #249D6A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5625vw;
+}
+.reviews__item-avatar span {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.125vw;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.reviews__item-avatar_white {
+  background: #249D6A;
+}
+.reviews__item-avatar_white span {
+  color: #FFFFFF;
+}
+
+.reviews__item-inner {
+  padding-right: 20px;
+}
+.reviews__item-inner__name {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5625vw;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #249D6A;
+  padding: 0;
+  margin: 0;
+}
+.reviews__item-inner__mark {
+  padding: 0;
+  margin-top: 10px;
+}
+.reviews__item-inner__massage {
+  font-family: TT Interfaces;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.09375vw;
+  line-height: 140%;
+  color: rgba(19, 18, 18, 0.7);
+  padding: 0;
+  margin-top: 20px;
+  max-height: 80px;
+  overflow: hidden;
+}
+.reviews__item-inner__more {
+  font-family: TT Interfaces;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9375vw;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: rgba(19, 18, 18, 0.4);
+  bottom: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=reviews.css.map */

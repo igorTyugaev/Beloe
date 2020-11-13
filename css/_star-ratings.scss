@@ -1,0 +1,18 @@
+.mark-star_green {
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #star {
+    fill: #FFFFFF;
+    stroke: #249D6A;
+  }
+}
+
+.mark-star_green_active {
+  #star {
+    fill: #249D6A;
+    stroke: #249D6A;
+  }
+}
