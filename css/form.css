@@ -1,0 +1,83 @@
+.consultation {
+  width: 100%;
+  background: #249D6A;
+  padding: 1.5625vw;
+}
+.consultation__button {
+  border: none;
+  height: 1.171875vw;
+  width: 2.34375vw;
+  border: none;
+  cursor: pointer;
+}
+.consultation__button_left {
+  background: url("../media/arrow-l.svg") no-repeat center;
+}
+.consultation__button_right {
+  background: url("../media/arrow-r.svg") no-repeat center;
+}
+.consultation__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 40px;
+}
+.consultation__inner input {
+  margin-bottom: 1.5625vw;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.15625vw solid rgba(255, 255, 255, 0.1);
+  height: 3.125vw;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25vw;
+  line-height: 100%;
+  /* identical to box height, or 1.25vw */
+  text-transform: uppercase;
+  color: white;
+}
+.consultation__inner input:last-of-type {
+  margin-bottom: 3.125vw;
+}
+.consultation__inner input:first-of-type {
+  margin-top: -0.78125vw;
+}
+.consultation__inner input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.consultation__main {
+  padding-right: 1.5625vw;
+}
+.consultation__list-item {
+  margin-bottom: 1.5625vw;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25vw;
+  line-height: 100%;
+  /* identical to box height, or 1.25vw */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.consultation__list-item_accommodation {
+  display: flex;
+  justify-content: space-between;
+}
+.consultation__des {
+  padding-top: 1.5625vw;
+  padding-bottom: 3.125vw;
+  width: 50%;
+}
+.consultation__des span {
+  font-family: TT Interfaces;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.09375vw;
+  line-height: 140%;
+  /* or 1.5625vw */
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=form.css.map */

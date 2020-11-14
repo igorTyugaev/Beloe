@@ -31,7 +31,7 @@
                 Каминская Дача
             </span>
     <a class="menu__drive" href="">Как проехать?</a>
-    <button class="button button_menu button_green">
+    <button class="button button_menu button_green" href="form.php">
         Записаться на охоту
     </button>
 </header>
