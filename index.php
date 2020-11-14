@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/basic.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="./css/slick.css"/>
-    <title>База Белое</title>
+    <title>База "Белое"</title>
 </head>
 
 <body>

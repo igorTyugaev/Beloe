@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/contacts.css">
-    <title>Document</title>
+    <title>Контакты</title>
 </head>
 
 <body>

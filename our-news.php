@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/our-news.css">
-    <title>Document</title>
+    <title>Новости</title>
 </head>
 <body>
 

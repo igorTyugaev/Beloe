@@ -16,7 +16,7 @@
             <li><a class="menu__link" href="about.php">О нас</a></li>
             <li><a class="menu__link" href="our-news.php">Новости</a></li>
             <li><a class="menu__link" href="reviews.php">Отзывы</a></li>
-            <li><a class="menu__link" href="">Галерея</a></li>
+            <li><a class="menu__link" href="gallery.php">Галерея</a></li>
             <hr class="menu__line" />
             <li><a class="menu__link" href="contacts.php">Контакты</a></li>
             <li class="menu__lang">
