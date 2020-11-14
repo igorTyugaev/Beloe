@@ -18,7 +18,7 @@
             <li><a class="menu__link" href="reviews.php">Отзывы</a></li>
             <li><a class="menu__link" href="">Галерея</a></li>
             <hr class="menu__line" />
-            <li><a class="menu__link" href="">Контакты</a></li>
+            <li><a class="menu__link" href="contacts.php">Контакты</a></li>
             <li class="menu__lang">
                 <img src="./media/RUS.svg" alt="RU" class="lang" />
                 <img src="./media/DEU.svg" alt="DEU" class="lang" />

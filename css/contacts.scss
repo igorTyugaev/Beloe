@@ -1,0 +1,51 @@
+@import "helper";
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+
+  &__inner {
+    width: 37.5vw;
+
+    &-title {
+      font-family: Akrobat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: get-vw(60px, 1280px);
+      line-height: 90%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 100px 0 20px 20px;
+    }
+
+    &-text {
+      font-family: TT Interfaces;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 140%;
+
+      padding: 0 20px;
+      color: #FFFFFF;
+
+      a {
+        color: #FFFFFF;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_green {
+    background: #249D6A;
+  }
+
+  &__map {
+    background: #FFFFFF;
+    width: 37.5vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}

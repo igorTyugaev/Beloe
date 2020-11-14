@@ -1,0 +1,44 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.contacts__inner {
+  width: 37.5vw;
+}
+.contacts__inner-title {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.6875vw;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 100px 0 20px 20px;
+}
+.contacts__inner-text {
+  font-family: TT Interfaces;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 140%;
+  padding: 0 20px;
+  color: #FFFFFF;
+}
+.contacts__inner-text a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.contacts_green {
+  background: #249D6A;
+}
+.contacts__map {
+  background: #FFFFFF;
+  width: 37.5vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/*# sourceMappingURL=contacts.css.map */
