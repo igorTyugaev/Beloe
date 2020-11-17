@@ -78,6 +78,28 @@ ul {
     color: #249D6A;
   }
 
+  &_green-border {
+    background: transparent;
+    border-color: #249D6A;
+    color: #249D6A;
+  }
+
+  &_green-border:hover {
+    background: #249D6A;
+    color: #FFFFFF;
+  }
+
+  &_white-border {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+  }
+
+  &_white-border:hover {
+    background: #FFFFFF;
+    color: #131212;
+  }
+
   &_main-slider {
     width: 34.284375vw;
     position: absolute;

@@ -133,6 +133,24 @@ ul {
   background: #fff;
   color: #249D6A;
 }
+.button_green-border {
+  background: transparent;
+  border-color: #249D6A;
+  color: #249D6A;
+}
+.button_green-border:hover {
+  background: #249D6A;
+  color: #FFFFFF;
+}
+.button_white-border {
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.button_white-border:hover {
+  background: #FFFFFF;
+  color: #131212;
+}
 .button_main-slider {
   width: 34.284375vw;
   position: absolute;

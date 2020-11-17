@@ -18,13 +18,18 @@
 include('header.php');
 ?>
 
+
 <div class="numbers numbers_green">
     <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
     <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
 </div>
 
 <main>
+
     <section class="contacts contacts_green">
+        <button class="button button_white-border">
+            Меню
+        </button>
         <div class="contacts__inner">
             <h2 class="contacts__inner-title">Как до нас <br> доехать?</h2>
             <div class="contacts__inner-text">
@@ -32,7 +37,7 @@ include('header.php');
                     <b>Из г. Челябинск:</b>
                     <p>
                         трасса на Курган до г. Юргамыш далее г. Куртамыш
-                        далее на с. Каминское до поворота с указателем
+                        далее <br> на с. Каминское до поворота с указателем
                         «Охотничья база Белое».
                     </p>
                 </div>
@@ -40,16 +45,17 @@ include('header.php');
                 <div class="place">
                     <b>Из г. Курган:</b>
                     <p>
-                        трасса на г. Куртамыш далее на с. Каминское до
+                        трасса на г. Куртамыш далее на с. <br> Каминское до
                         поворота с указателем «Охотничья база Белое».
                     </p>
                 </div>
 
-                <div class="other">
+                <div class="place">
                      <span>
-                            Также, мы присутствуем на Яндекс.Картах. Если у вас
+                            Также, мы присутствуем на Яндекс.Картах. <br> Если у вас
                             есть навигатор, просто напишите в нем:
                         </span>
+                    <br>
                     <a
                             target="_blank"
                             href="https://yandex.ru/maps/?ll=64.950954%2C54.722367&mode=search&oid=45798440183&ol=biz&z=14.61"

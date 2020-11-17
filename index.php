@@ -19,7 +19,9 @@ include('header.php');
     <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
     <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
 </div>
+
 <main class="main">
+
     <section class="landing-slide">
         <div
                 class="landing-slide__block landing-slide__block_1 half-screen"
@@ -109,6 +111,7 @@ include('header.php');
             <span>Частное лестничество</span>
         </div>
     </section>
+
     <section class="reviews reviews_green">
         <div class="reviews__title">
             <h2 class="title title_green">Отзывы наших клиентов</h2>
@@ -277,6 +280,7 @@ include('header.php');
             </div>
         </div>
     </section>
+
     <section class="location">
         <div class="location__text">
             <h2 class="title">Как до нас доехать?</h2>
@@ -306,7 +310,9 @@ include('header.php');
         </div>
         <div id="map" class="map"></div>
     </section>
+
 </main>
+
 <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
         type="text/javascript"

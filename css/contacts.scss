@@ -1,5 +1,9 @@
 @import "helper";
 
+.button {
+  display: none;
+}
+
 .contacts {
   display: flex;
   flex-direction: row;
@@ -7,6 +11,7 @@
 
   &__inner {
     width: 37.5vw;
+    flex-grow: 1;
 
     &-title {
       font-family: Akrobat;
@@ -17,17 +22,34 @@
       text-transform: uppercase;
       color: #FFFFFF;
       margin: 0;
-      padding: 100px 0 20px 20px;
+      padding: get-vh(100px, 1280px) 0 40px 20px;
     }
 
     &-text {
       font-family: TT Interfaces;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 140%;
+      font-weight: 500;
+      font-size: get-vw(12px, 1280px);
+      line-height: 120%;
 
       padding: 0 20px;
       color: #FFFFFF;
+
+      .place {
+        padding-bottom: 20px;
+      }
+
+      b {
+        font-weight: 700;
+        font-size: get-vw(14px, 1280px);
+        line-height: 140%;
+      }
+
+      p, span, a {
+        font-size: get-vw(12px, 1280px);
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+      }
 
       a {
         color: #FFFFFF;
@@ -44,8 +66,8 @@
     background: #FFFFFF;
     width: 37.5vw;
     height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
   }
 }
+
+@import "contacts_media";
+
