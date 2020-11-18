@@ -22,12 +22,21 @@
     &-text {
       font-family: TT Interfaces, serif;
       font-style: normal;
-      font-weight: 500;
+      font-weight: normal;
       font-size: get-vw(14px, 1280px);
       line-height: 140%;
 
       padding: 0 20px;
       color: rgba(19, 18, 18, 0.7);
+
+      b {
+        font-weight: bold;
+        font-size: get-vw(14px, 1280px);
+      }
+
+      p, span, a {
+        font-size: get-vw(14px, 1280px);
+      }
     }
   }
 
@@ -44,6 +53,12 @@
       object-fit: cover;
     }
   }
+
+  .button {
+    display: none;
+  }
 }
+
+@import "news-card_media";
 
 

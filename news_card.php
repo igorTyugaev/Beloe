@@ -7,7 +7,7 @@
           maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/news_card.css">
+    <link rel="stylesheet" href="css/news-card.css">
     <title>Карточка новости</title>
 </head>
 <body>
@@ -23,6 +23,12 @@ include('header.php');
 
 <main>
     <article class="article-news">
+        <button class="button button_white-border">
+            Меню
+        </button>
+        <div class="article-news__img">
+            <img src="media/news_card.png" alt="news_card">
+        </div>
         <div class="article-news__inner">
             <h1 class="article-news__inner-title">Грибной сезон<br>
                 в Зауралье</h1>
@@ -92,12 +98,6 @@ include('header.php');
                     corporis est magni molestiae nesciunt, perferendis placeat quis quo
                     saepe
                     unde. Ab accusantium, cum dolorum harum perferendis unde voluptatum.</p>
-                unde. Ab accusantium, cum dolorum harum perferendis unde voluptatum.</p>
-                unde. Ab accusantium, cum dolorum harum perferendis unde voluptatum.</p>
-                unde. Ab accusantium, cum dolorum harum perferendis unde voluptatum.</p>
-                unde. Ab accusantium, cum dolorum harum perferendis unde voluptatum.</p>
-                unde. Ab accusantium, cum dolorum harum perferendis unde voluptatum.</p>
-                unde. Ab accusantium, cum dolorum harum perferendis unde voluptatum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores
                     autem
                     corporis est magni molestiae nesciunt, perferendis placeat quis quo
@@ -115,9 +115,7 @@ include('header.php');
                     unde. Ab accusantium, cum dolorum harum perferendis unde voluptatum.</p>
             </div>
         </div>
-        <div class="article-news__img">
-            <img src="media/news_card.png" alt="news_card">
-        </div>
+
     </article>
 </main>
 
