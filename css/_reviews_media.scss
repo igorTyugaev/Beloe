@@ -1,0 +1,135 @@
+@import "helper";
+
+@media (max-width: 620px) {
+
+  .reviews {
+    &__title {
+      font-size: get-vw(40px, 620px);
+      padding: get-vw(80px, 620px) 0 0 20px;
+    }
+  }
+
+  .reviews__item-inner {
+    padding-right: 20px;
+
+    &__name {
+      font-size: get-vw(20px, 620px);
+    }
+
+    &__mark {
+      margin-top: get-vw(4px, 620px);
+    }
+
+    &__massage {
+      font-size: get-vw(14px, 620px);
+      margin-top: get-vw(10px, 620px);
+      margin-bottom: get-vw(20px, 620px);
+    }
+
+    &__more {
+      font-size: get-vw(12px, 620px);
+    }
+  }
+
+  .reviews__item {
+    width: 100%;
+    margin: get-vw(40px, 620px) 0 0 0;
+
+    &-avatar {
+      display: none;
+    }
+  }
+
+  .mark-star_green {
+    svg {
+      width: 3%;
+      height: 3%;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  main {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .numbers {
+    display: none;
+
+    width: 0;
+    height: 0;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .reviews {
+
+    &__title {
+      font-size: get-vw(40px, 320px);
+      padding: get-vw(120px, 320px) 0 0 20px;
+    }
+
+    .button {
+      display: block;
+      font-size: get-vw(16px, 320px);
+      height: 10vh;
+      width: calc(100vw - 40px);
+      padding: 21px 0;
+      margin: 20px 0;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .reviews__item-inner {
+    padding-right: 20px;
+
+    &__name {
+      font-size: get-vw(20px, 320px);
+    }
+
+    &__mark {
+      margin-top: get-vw(8px, 320px);
+    }
+
+    &__massage {
+      font-size: get-vw(14px, 320px);
+      margin-top: get-vw(15px, 320px);
+      margin-bottom: get-vw(20px, 320px);
+    }
+
+    &__more {
+      font-size: get-vw(12px, 320px);
+    }
+  }
+
+  .reviews__item {
+    width: 100%;
+    margin: get-vw(20px, 320px) 0 get-vw(20px, 320px) 0;
+
+    &-avatar {
+      display: none;
+    }
+  }
+
+  .mark-star_green {
+    svg {
+      width: 6%;
+      height: 6%;
+    }
+  }
+}

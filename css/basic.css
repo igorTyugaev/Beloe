@@ -135,7 +135,7 @@ ul {
 }
 .button_green-border {
   background: transparent;
-  border-color: #249D6A;
+  border: 2px solid #249D6A;
   color: #249D6A;
 }
 .button_green-border:hover {

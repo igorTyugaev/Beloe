@@ -23,6 +23,9 @@ include('header.php');
 
 <main>
     <section class="reviews reviews_white">
+        <button class="button button_green-border">
+            Меню
+        </button>
         <h1 class="reviews__title">Отзывы<br>
             наших клиентов</h1>
         <div class="reviews__list">

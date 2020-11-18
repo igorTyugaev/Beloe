@@ -2,6 +2,11 @@
 @import "star-ratings";
 
 .reviews {
+
+  .button {
+    display: none;
+  }
+
   &__title {
     font-family: Akrobat;
     font-style: normal;
@@ -11,12 +16,13 @@
     text-transform: uppercase;
     color: #249D6A;
     margin: 0;
-    padding: 100px 0 40px 20px;
+    padding: get-vw(100px, 1280px) 0 get-vw(30px, 1280px) get-vw(20px, 1280px);
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 20px;
   }
 
   &_white {
@@ -28,7 +34,7 @@
   display: flex;
   width: 50%;
   padding: 0 20px;
-  margin: 40px 0 0 0;
+  margin: get-vw(40px, 1280px) 0 0 0;
 
   &_white {
     background: #FFFFFF;
@@ -92,7 +98,7 @@
 
   &__mark {
     padding: 0;
-    margin-top: 10px;
+    margin-top: get-vw(10px, 1280px);
   }
 
   &__massage {
@@ -105,10 +111,12 @@
     color: rgba(19, 18, 18, 0.7);
 
     padding: 0;
-    margin-top: 20px;
+    margin-top: get-vw(20px, 1280px);
+    margin-bottom: get-vw(20px, 1280px);
 
     max-height: 80px;
     overflow: hidden;
+
   }
 
   &__more {
@@ -121,9 +129,10 @@
     text-decoration-line: underline;
     color: rgba(19, 18, 18, 0.4);
 
-    //position: absolute;
     bottom: 0;
     margin: 0;
   }
 }
+
+@import "reviews_media";
 
