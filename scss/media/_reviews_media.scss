@@ -1,4 +1,4 @@
-@import "helper";
+@import "../helper";
 
 @media (max-width: 620px) {
 
@@ -94,6 +94,7 @@
       transform: translateX(-50%);
     }
   }
+
 
   .reviews__item-inner {
     padding-right: 20px;

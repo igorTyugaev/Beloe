@@ -1,5 +1,5 @@
-@import "../fonts/TTInterfaces/stylesheet.css" all;
-@import "../fonts/Akrobat/stylesheet.css" all;
+@import "../../fonts/TTInterfaces/stylesheet.css" all;
+@import "../../fonts/Akrobat/stylesheet.css" all;
 .menu {
   padding: 1.5625vw;
   background: #F4F4F4;
@@ -211,7 +211,7 @@ main {
   font-family: Akrobat;
   font-style: normal;
   font-weight: 800;
-  font-size: 4.6875vw;
+  font-size: 3.90625vw;
   line-height: 90%;
   text-transform: uppercase;
   color: #249D6A;
@@ -259,6 +259,12 @@ main {
 [class*=ymaps-2][class*=-ground-pane] {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(100%);
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 12.5vw;
+  }
 }
 
 /*# sourceMappingURL=basic.css.map */

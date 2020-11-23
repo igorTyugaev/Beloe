@@ -1,4 +1,4 @@
-@import "helper";
+@import "media/helper";
 
 @media (max-device-aspect-ratio: 4/3) {
 
@@ -100,6 +100,7 @@
         }
       }
     }
+
 
     &__img {
       background: #249D6A;

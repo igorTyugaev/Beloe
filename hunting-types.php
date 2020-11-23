@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/hunting-types.css"/>
     <title>Виды охоты</title>
 </head>
+
 <body>
 
 <?php
@@ -17,7 +18,13 @@ include('header.php');
     <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
     <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
 </div>
+
 <main>
+
+    <button class="button button_white-border">
+        Меню
+    </button>
+
     <section class="first-slide">
         <div class="first-slide__img"></div>
         <div class="first-slide__lead">
@@ -37,6 +44,7 @@ include('header.php');
             </button>
         </div>
     </section>
+
     <section class="hunt__list">
         <div class="hunt__item">
             <div class="hunt__item-bg"></div>
@@ -79,6 +87,7 @@ include('header.php');
             <span>до 1 года: с 1 октября по 15 января.</span>
         </div>
     </section>
+
     <section class="calc">
         <h2 class="title title_green">калькулятор охотника</h2>
         <div class="calc__des">
@@ -133,10 +142,11 @@ include('header.php');
             </div>
         </div>
     </section>
+
     <section class="location">
-        <div class="location__text">
-            <h2 class="title">Как до нас доехать?</h2>
-            <div class="location__text-main">
+        <div class="location__inner">
+            <h2 class="location__inner-title">Как до нас доехать?</h2>
+            <div class="location__inner-text">
                 <b>Из г. Челябинск:</b>
                 <p>
                     трасса на Курган до г. Юргамыш далее г. Куртамыш
@@ -160,14 +170,19 @@ include('header.php');
                 </a>
             </div>
         </div>
-        <div id="map" class="map"></div>
+        <div id="map" class="location__map"></div>
     </section>
+
+
     <script
             src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
             type="text/javascript"
     ></script>
     <script src="./js/map.js"></script>
     <script src="./js/types-of-hunting.js"></script>
+
 </main>
+
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-@import "helper";
+@import "../helper";
 
 .article-news {
   display: flex;
@@ -59,6 +59,6 @@
   }
 }
 
-@import "news-card_media";
+@import "../media/news-card_media";
 
 

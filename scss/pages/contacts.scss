@@ -1,4 +1,4 @@
-@import "helper";
+@import "../helper";
 
 .contacts {
   display: flex;
@@ -63,10 +63,10 @@
     height: 100vh;
   }
 
+
   .button {
     display: none;
   }
 }
 
-@import "contacts_media";
-
+@import "../media/contacts_media";

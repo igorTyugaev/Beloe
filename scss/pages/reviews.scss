@@ -1,5 +1,5 @@
-@import "helper";
-@import "star-ratings";
+@import "../helper";
+@import "../blocks/star-ratings";
 
 .reviews {
 
@@ -101,6 +101,7 @@
     margin-top: get-vw(10px, 1280px);
   }
 
+
   &__massage {
     font-family: TT Interfaces;
     font-style: normal;
@@ -116,7 +117,6 @@
 
     max-height: 80px;
     overflow: hidden;
-
   }
 
   &__more {
@@ -134,5 +134,4 @@
   }
 }
 
-@import "reviews_media";
-
+@import "../media/reviews_media";

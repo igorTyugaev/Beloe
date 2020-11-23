@@ -100,7 +100,7 @@ include('header.php');
         </div>
     </section>
     <section class="location">
-        <div class="location__text">
+        <div class="location__inner">
             <h2 class="title">Как до нас доехать?</h2>
             <div class="location__text-main">
                 <b>Из г. Челябинск:</b>

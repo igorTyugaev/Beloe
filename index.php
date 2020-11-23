@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/basic.css"/>
     <link rel="stylesheet" href="css/index.css"/>
-    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
     <title>База "Белое"</title>
 </head>
 
@@ -282,7 +282,7 @@ include('header.php');
     </section>
 
     <section class="location">
-        <div class="location__text">
+        <div class="location__inner">
             <h2 class="title">Как до нас доехать?</h2>
             <div class="location__text-main">
                 <b>Из г. Челябинск:</b>

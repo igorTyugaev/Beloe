@@ -1,0 +1,260 @@
+@import "media/helper";
+
+@media (max-width: 420px) {
+
+  main {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .numbers {
+    display: none;
+
+    width: 0;
+    height: 0;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .first-slide {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+
+    &__img {
+      width: 100%;
+      height: 40%;
+    }
+
+    &__lead {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 60%;
+      flex-grow: 1;
+
+      h1 {
+        font-size: get-vw(40px, 320px);
+        line-height: 90%;
+        color: #FFFFFF;
+        margin: 0 0 get-vw(20px, 320px) 0;
+      }
+
+      p {
+        font-size: get-vw(14px, 320px);
+        line-height: 140%;
+        color: #FFFFFF;
+        flex-grow: 1;
+      }
+
+      .button_main-slider {
+        position: static;
+        font-size: get-vw(14px, 320px);
+        width: 100%;
+        padding: get-vw(20px, 320px) 0;
+        height: 10vh;
+      }
+    }
+  }
+
+  .hunt__item {
+    width: 100%;
+    height: get-vh(190px, 580px);
+    padding: 20px;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    &_active {
+      height: get-vh(220px, 580px);
+
+      .hunt__item-bg {
+        transform: scale(1.03);
+      }
+    }
+
+    h2 {
+      font-size: get-vw(20px, 320px);
+      line-height: 100%;
+      color: #FFFFFF;
+      margin: 0 0 get-vh(8px, 580px) 0;
+    }
+
+    b {
+      font-size: get-vw(14px, 320px);
+      margin-top: 1.5625vw;
+      line-height: 140%;
+      color: #FFFFFF;
+    }
+
+    p, span {
+      font-size: get-vw(14px, 320px);
+      line-height: 140%;
+      color: #FFFFFF;
+    }
+  }
+
+  .calc {
+    width: 100%;
+    padding: 20px;
+
+    &__des {
+      padding-top: 20px;
+      width: 100%;
+
+      span {
+        font-size: get-vw(14px, 320px);
+      }
+    }
+
+    &__button {
+      border: none;
+      height: 1.171875vw;
+      width: 2.34375vw;
+      border: none;
+      cursor: pointer;
+
+      &_left {
+        background: url('../../media/arrow-l.svg') no-repeat center;
+      }
+
+      &_right {
+        background: url('../../media/arrow-r.svg') no-repeat center;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    &__lead {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      input {
+        margin-bottom: 1.5625vw;
+        height: get-vw(36px, 320px);
+        font-size: get-vw(16px, 320px);
+      }
+    }
+
+    &__main {
+      padding-right: 1.5625vw;
+      width: 100%;
+    }
+
+    &__select {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &__list-item {
+      margin-bottom: 1.5625vw;
+      font-size: get-vw(16px, 320px);
+      line-height: 100%;
+
+      color: #FFFFFF;
+
+      &_accommodation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+    .button {
+      display: block;
+      height: 100%;
+      font-size: get-vw(16px, 320px);
+      padding: 20px 0;
+      margin: 0;
+    }
+  }
+
+  .button_white-border {
+    box-sizing: border-box;
+    display: block;
+    font-size: get-vw(16px, 320px);
+    height: 10vh;
+    width: calc(100vw - 40px);
+    padding: 21px 0;
+    margin: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+
+
+  .location {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 100%;
+
+    &__inner {
+      height: 100%;
+      width: 100vw;
+
+
+      &-title {
+        padding: 3vh 0 0 20px;
+        font-size: get-vw(40px, 320px);
+      }
+
+      &-text {
+        font-size: get-vw(12px, 320px);
+        font-family: TT Interfaces;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 140%;
+
+        b {
+          font-weight: bold;
+          font-size: get-vw(14px, 320px);
+        }
+
+        p, span, a {
+          font-size: get-vw(12px, 320px);
+        }
+      }
+    }
+
+    &__map {
+      background: #FFFFFF;
+      width: 100vw;
+      min-height: 220px;
+      height: 38vh;
+    }
+
+    .button {
+      display: block;
+      font-size: get-vw(14px, 320px);
+      height: 10vh;
+      width: calc(100vw - 40px);
+      padding: 21px 0;
+      margin: 20px 0;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

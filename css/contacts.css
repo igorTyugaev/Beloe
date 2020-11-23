@@ -1,155 +1,18 @@
-.contacts {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-}
-.contacts__inner {
-  width: 37.5vw;
-  flex-grow: 1;
-}
-.contacts__inner-title {
-  font-family: Akrobat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 4.6875vw;
-  line-height: 90%;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 7.8125vh 0 40px 20px;
-}
-.contacts__inner-text {
-  font-family: TT Interfaces, serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.9375vw;
-  line-height: 140%;
-  padding: 0 20px;
-  color: #FFFFFF;
-}
-.contacts__inner-text .place {
-  padding-bottom: 20px;
-}
-.contacts__inner-text b {
-  font-weight: bold;
-  font-size: 1.09375vw;
-}
-.contacts__inner-text p, .contacts__inner-text span, .contacts__inner-text a {
-  font-size: 0.9375vw;
-  padding: 0;
-  margin: 0;
-}
-.contacts__inner-text a {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-.contacts_green {
-  background: #249D6A;
-}
-.contacts__map {
-  background: #FFFFFF;
-  width: 37.5vw;
-  height: 100vh;
-}
-.contacts .button {
-  display: none;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "media/helper";
+ *   |         ^^^^^^^^^^^^^^
+ *   '
+ *   ../media/_contacts_media.scss 1:9  @import
+ *   contacts.scss 72:9                 root stylesheet */
 
-@media (max-device-aspect-ratio: 4/3) {
-  .contacts {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-  }
-  .contacts__inner {
-    height: 100%;
-  }
-  .contacts__map {
-    background: #FFFFFF;
-    width: 75vw;
-    height: 50vh;
-  }
-
-  .numbers_green {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"media/helper\";\a   \2502          ^^^^^^^^^^^^^^\a   \2575 \a   ../media/_contacts_media.scss 1:9  @import\a   contacts.scss 72:9                 root stylesheet";
 }
-@media (max-width: 418px) {
-  main {
-    margin-left: 0;
-    width: 100%;
-    position: static;
-  }
-
-  .numbers {
-    display: none;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .menu {
-    display: none;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .contacts {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    height: 100%;
-  }
-  .contacts__inner {
-    height: 100%;
-    width: 100vw;
-  }
-  .contacts__inner-title {
-    padding: 16vh 0 20px 20px;
-    font-size: 12.5vw;
-  }
-  .contacts__inner-text {
-    font-size: 3.75vw;
-    font-family: TT Interfaces;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 140%;
-  }
-  .contacts__inner-text b {
-    font-weight: bold;
-    font-size: 4.375vw;
-  }
-  .contacts__inner-text p, .contacts__inner-text span, .contacts__inner-text a {
-    font-size: 3.75vw;
-  }
-  .contacts__map {
-    background: #FFFFFF;
-    width: 100vw;
-    min-height: 220px;
-    height: 38vh;
-  }
-  .contacts .button {
-    display: block;
-    font-size: 4.375vw;
-    height: 10vh;
-    width: calc(100vw - 40px);
-    padding: 21px 0;
-    margin: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .numbers_green {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-  }
-}
-
-/*# sourceMappingURL=contacts.css.map */

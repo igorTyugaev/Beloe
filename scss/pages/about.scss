@@ -9,15 +9,13 @@
         font-weight: 500;
         font-size: 1.09375vw;
         line-height: 160%;
-        /* or 20px */
-
-
         color: #FFFFFF;
     }
 }
 
 .advantages {
     display: flex;
+
 
     &__overlay {
         background-color: rgba(0, 0, 0, 0.4);
@@ -57,19 +55,19 @@
 
 
         &_1 {
-            background-image: url('../media/advantages-1.png');
+            background-image: url('../../media/advantages-1.png');
         }
 
         &_2 {
-            background-image: url('../media/advantages-2.png');
+            background-image: url('../../media/advantages-2.png');
         }
 
         &_3 {
-            background-image: url('../media/advantages-3.png');
+            background-image: url('../../media/advantages-3.png');
         }
 
         &_4 {
-            background-image: url('../media/advantages-4.png');
+            background-image: url('../../media/advantages-4.png');
         }
     }
 }
