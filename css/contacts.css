@@ -1,18 +1,112 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "media/helper";
- *   |         ^^^^^^^^^^^^^^
- *   '
- *   ../media/_contacts_media.scss 1:9  @import
- *   contacts.scss 72:9                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"media/helper\";\a   \2502          ^^^^^^^^^^^^^^\a   \2575 \a   ../media/_contacts_media.scss 1:9  @import\a   contacts.scss 72:9                 root stylesheet";
+.contacts {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
 }
+.contacts__inner {
+  width: 37.5vw;
+  flex-grow: 1;
+  padding: 1.5625vw;
+}
+.contacts__title {
+  color: #249D6A;
+  padding-bottom: 1.5625vw;
+}
+.contacts__text-item {
+  padding-bottom: 1.5625vw;
+}
+.contacts__text-item b {
+  color: #131212;
+}
+.contacts__text-item p {
+  padding: 0;
+  color: rgba(19, 18, 18, 0.7);
+}
+.contacts__map {
+  background: #FFFFFF;
+  width: 37.5vw;
+  height: 100vh;
+}
+.contacts .button {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .contacts__inner {
+    width: 100%;
+    padding: 6.25vw;
+  }
+  .contacts__title {
+    color: #249D6A;
+    padding-bottom: 6.25vw;
+  }
+  .contacts__text-item {
+    padding-bottom: 6.25vw;
+  }
+  .contacts__map {
+    width: 100%;
+    height: 40vh;
+  }
+}
+.contacts_green {
+  background: #249D6A;
+}
+.contacts_green b, .contacts_green p, .contacts_green a, .contacts_green h2 {
+  color: #FFFFFF;
+}
+
+.button {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  main {
+    margin-left: 0;
+    width: 100%;
+    position: static;
+  }
+
+  .numbers {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .contacts__inner {
+    padding-top: 31.25vw;
+  }
+  .contacts .button {
+    display: block;
+    font-size: 4.375vw;
+    height: 10vh;
+    width: calc(100vw - 40px);
+    padding: 21px 0;
+    margin: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .numbers_green {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+}
+
+/*# sourceMappingURL=contacts.css.map */

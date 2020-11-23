@@ -62,11 +62,11 @@
 }
 .slider_main .slick-arrow.slick-prev {
   left: 1.2vw;
-  background-image: url("../../media/arrow-l.svg");
+  background-image: url("../media/arrow-l.svg");
 }
 .slider_main .slick-arrow.slick-next {
   left: 9.075vw;
-  background-image: url("../../media/arrow-r.svg");
+  background-image: url("../media/arrow-r.svg");
 }
 .slider_main .slider__item {
   padding: 1.5625vw;
@@ -162,11 +162,11 @@
 }
 .slider_about .slick-arrow.slick-prev {
   left: 1.2vw;
-  background-image: url("../../media/arrow-l.svg");
+  background-image: url("../media/arrow-l.svg");
 }
 .slider_about .slick-arrow.slick-next {
   right: 1.2vw;
-  background-image: url("../../media/arrow-r.svg");
+  background-image: url("../media/arrow-r.svg");
 }
 .slider_about .slider__item {
   height: 46.875vw;

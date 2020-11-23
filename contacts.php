@@ -31,9 +31,9 @@ include('header.php');
             Меню
         </button>
         <div class="contacts__inner">
-            <h2 class="contacts__inner-title">Как до нас <br> доехать?</h2>
-            <div class="contacts__inner-text">
-                <div class="place">
+            <h2 class="contacts__title">Как до нас <br> доехать?</h2>
+            <div class="contacts__text">
+                <div class="contacts__text-item">
                     <b>Из г. Челябинск:</b>
                     <p>
                         трасса на Курган до г. Юргамыш далее г. Куртамыш
@@ -42,7 +42,7 @@ include('header.php');
                     </p>
                 </div>
 
-                <div class="place">
+                <div class="contacts__text-item">
                     <b>Из г. Курган:</b>
                     <p>
                         трасса на г. Куртамыш далее на с. <br> Каминское до
@@ -50,11 +50,11 @@ include('header.php');
                     </p>
                 </div>
 
-                <div class="place">
-                     <span>
-                            Также, мы присутствуем на Яндекс.Картах. <br> Если у вас
-                            есть навигатор, просто напишите в нем:
-                        </span>
+                <div class="contacts__text-item">
+                    <p>
+                        Также, мы присутствуем на Яндекс.Картах. <br> Если у вас
+                        есть навигатор, просто напишите в нем:
+                    </p>
                     <br>
                     <a
                             target="_blank"

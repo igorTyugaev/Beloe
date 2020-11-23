@@ -281,34 +281,43 @@ include('header.php');
         </div>
     </section>
 
-    <section class="location">
-        <div class="location__inner">
-            <h2 class="title">Как до нас доехать?</h2>
-            <div class="location__text-main">
-                <b>Из г. Челябинск:</b>
-                <p>
-                    трасса на Курган до г. Юргамыш далее г. Куртамыш
-                    далее на с. Каминское до поворота с указателем
-                    «Охотничья база Белое».
-                </p>
-                <b>Из г. Курган:</b>
-                <p>
-                    трасса на г. Куртамыш далее на с. Каминское до
-                    поворота с указателем «Охотничья база Белое».
-                </p>
-                <span>
-                            Также, мы присутствуем на Яндекс.Картах. Если у вас
-                            есть навигатор, просто напишите в нем:
-                        </span>
-                <a
-                        target="_blank"
-                        href="https://yandex.ru/maps/?ll=64.950954%2C54.722367&mode=search&oid=45798440183&ol=biz&z=14.61"
-                >
-                    Охотничья база Белое
-                </a>
+    <section class="contacts">
+        <div class="contacts__inner">
+            <h2 class="contacts__title">Как до нас <br> доехать?</h2>
+            <div class="contacts__text">
+                <div class="contacts__text-item">
+                    <b>Из г. Челябинск:</b>
+                    <p>
+                        трасса на Курган до г. Юргамыш далее г. Куртамыш
+                        далее <br> на с. Каминское до поворота с указателем
+                        «Охотничья база Белое».
+                    </p>
+                </div>
+
+                <div class="contacts__text-item">
+                    <b>Из г. Курган:</b>
+                    <p>
+                        трасса на г. Куртамыш далее на с. <br> Каминское до
+                        поворота с указателем «Охотничья база Белое».
+                    </p>
+                </div>
+
+                <div class="contacts__text-item">
+                    <p>
+                        Также, мы присутствуем на Яндекс.Картах. <br> Если у вас
+                        есть навигатор, просто напишите в нем:
+                    </p>
+                    <br>
+                    <a
+                            target="_blank"
+                            href="https://yandex.ru/maps/?ll=64.950954%2C54.722367&mode=search&oid=45798440183&ol=biz&z=14.61"
+                    >
+                        Охотничья база Белое
+                    </a>
+                </div>
             </div>
         </div>
-        <div id="map" class="map"></div>
+        <div id="map" class="contacts__map"></div>
     </section>
 
 </main>

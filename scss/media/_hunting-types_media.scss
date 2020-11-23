@@ -1,4 +1,4 @@
-@import "media/helper";
+@import "../helper";
 
 @media (max-width: 420px) {
 
@@ -43,18 +43,10 @@
       width: 100%;
       height: 60%;
       flex-grow: 1;
-
-      h1 {
-        font-size: get-vw(40px, 320px);
-        line-height: 90%;
-        color: #FFFFFF;
-        margin: 0 0 get-vw(20px, 320px) 0;
-      }
+      padding: get-vw(20px, 320px);
 
       p {
-        font-size: get-vw(14px, 320px);
-        line-height: 140%;
-        color: #FFFFFF;
+        //font-size: get-vw(12px, 320px);
         flex-grow: 1;
       }
 
@@ -108,14 +100,27 @@
 
   .calc {
     width: 100%;
-    padding: 20px;
+    padding: get-vw(20px, 320px);
 
     &__des {
-      padding-top: 20px;
       width: 100%;
+    }
 
-      span {
-        font-size: get-vw(14px, 320px);
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .calc__params {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      .calc__form {
+        width: 100%;
+        padding-left: 0;
       }
     }
 
@@ -125,65 +130,17 @@
       width: 2.34375vw;
       border: none;
       cursor: pointer;
+      object-fit: cover;
+      text-align: center;
 
       &_left {
-        background: url('../../media/arrow-l.svg') no-repeat center;
+        text-align: center;
+        background: url('../media/arrow-l.svg') no-repeat center;
       }
 
       &_right {
-        background: url('../../media/arrow-r.svg') no-repeat center;
+        background: url('../media/arrow-r.svg') no-repeat center;
       }
-    }
-
-    &__inner {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-
-    &__lead {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-
-      input {
-        margin-bottom: 1.5625vw;
-        height: get-vw(36px, 320px);
-        font-size: get-vw(16px, 320px);
-      }
-    }
-
-    &__main {
-      padding-right: 1.5625vw;
-      width: 100%;
-    }
-
-    &__select {
-      display: flex;
-      justify-content: space-between;
-
-    }
-
-    &__list-item {
-      margin-bottom: 1.5625vw;
-      font-size: get-vw(16px, 320px);
-      line-height: 100%;
-
-      color: #FFFFFF;
-
-      &_accommodation {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-    }
-
-    .button {
-      display: block;
-      height: 100%;
-      font-size: get-vw(16px, 320px);
-      padding: 20px 0;
-      margin: 0;
     }
   }
 
@@ -202,7 +159,6 @@
     z-index: 100;
   }
 
-
   .location {
     flex-direction: column;
     flex-wrap: wrap;
@@ -212,28 +168,27 @@
     &__inner {
       height: 100%;
       width: 100vw;
+    }
 
+    &__title {
+      padding: 3vh 0 0 20px;
+      font-size: get-vw(40px, 320px);
+    }
 
-      &-title {
-        padding: 3vh 0 0 20px;
-        font-size: get-vw(40px, 320px);
+    &__text {
+      font-size: get-vw(12px, 320px);
+      font-family: TT Interfaces;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 140%;
+
+      b {
+        font-weight: bold;
+        font-size: get-vw(14px, 320px);
       }
 
-      &-text {
+      p, span, a {
         font-size: get-vw(12px, 320px);
-        font-family: TT Interfaces;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 140%;
-
-        b {
-          font-weight: bold;
-          font-size: get-vw(14px, 320px);
-        }
-
-        p, span, a {
-          font-size: get-vw(12px, 320px);
-        }
       }
     }
 

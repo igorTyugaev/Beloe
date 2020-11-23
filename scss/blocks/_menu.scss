@@ -8,6 +8,9 @@
   z-index: 10;
   flex-direction: column;
 
+  a {
+    text-decoration-line: none;
+  }
 
   &__link {
     font-family: Akrobat;

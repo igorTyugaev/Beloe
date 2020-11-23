@@ -1,30 +1,6 @@
-@import "media/helper";
+@import "../helper";
 
-@media (max-device-aspect-ratio: 4/3) {
-  .contacts {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-
-    &__inner {
-      height: 100%;
-    }
-
-    &__map {
-      background: #FFFFFF;
-      width: 75vw;
-      height: 50vh;
-    }
-  }
-
-  .numbers_green {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-  }
-}
-
-@media (max-width: 418px) {
+@media (max-width: 420px) {
 
   main {
     margin-left: 0;
@@ -48,45 +24,9 @@
     height: 0;
   }
 
-
   .contacts {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    height: 100%;
-
     &__inner {
-      height: 100%;
-      width: 100vw;
-
-      &-title {
-        padding: 16vh 0 20px 20px;
-        font-size: get-vw(40px, 320px);
-      }
-
-      &-text {
-        font-size: get-vw(12px, 320px);
-        font-family: TT Interfaces;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 140%;
-
-        b {
-          font-weight: bold;
-          font-size: get-vw(14px, 320px);
-        }
-
-        p, span, a {
-          font-size: get-vw(12px, 320px);
-        }
-      }
-    }
-
-    &__map {
-      background: #FFFFFF;
-      width: 100vw;
-      min-height: 220px;
-      height: 38vh;
+      padding-top: get-vw(100px, 320px);
     }
 
     .button {

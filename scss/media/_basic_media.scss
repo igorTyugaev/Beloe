@@ -1,5 +1,48 @@
 @media (max-width: 420px) {
-  .title {
+
+  .button {
+    padding: get-vw(22px, 320px) 0;
+    font-size: get-vw(14px, 320px);
+  }
+
+  //  BEGIN: Text style
+
+  h2 {
     font-size: get-vw(40px, 320px);
   }
+
+  h3 {
+    font-size: get-vw(20px, 320px);
+  }
+
+  p {
+    font-size: get-vw(14px, 320px);
+    padding: get-vw(20px, 320px) 0;
+  }
+
+  b {
+    font-size: get-vw(14px, 320px);
+  }
+
+  span {
+    font-size: get-vw(16px, 320px);
+  }
+
+  a {
+    font-size: get-vw(12px, 320px);
+  }
+
+  input {
+    border-bottom: get-vw(2px, 320px) solid rgba(255, 255, 255, 0.1);
+    padding: get-vw(20px, 320px) 0;
+    font-size: get-vw(16px, 320px);
+  }
+
+  hr {
+    background: #{$white};
+    border: get-vw(1px, 320px) solid #{$white};
+  }
+
+  //  END: Text style
 }
+

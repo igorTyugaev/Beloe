@@ -28,11 +28,11 @@ include('header.php');
     <section class="first-slide">
         <div class="first-slide__img"></div>
         <div class="first-slide__lead">
-            <h1>
+            <h2>
                 Виды
                 <br/>
                 охоты
-            </h1>
+            </h2>
             <p>
                 Охотничья база "Белое" предлагает охоту на лося, кабана
                 (с вышки), сибирскую косулю (трофейная, загонная), лису,
@@ -48,93 +48,100 @@ include('header.php');
     <section class="hunt__list">
         <div class="hunt__item">
             <div class="hunt__item-bg"></div>
-            <h2>Охота на лося</h2>
-            <b>Cезон охоты:</b>
-
-            <br/>
-            <span>старше 1 года: с 1 октября по 31 декабря.</span>
-            <br/>
-            <span>до 1 года: с 1 октября по 15 января.</span>
+            <h3>Охота на лося</h3>
+            <p>
+                <b>Cезон охоты:</b>
+                <br/>
+                <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                <br/>
+                <span>до 1 года: с 1 октября по 15 января.</span>
+            </p>
         </div>
         <div class="hunt__item">
             <div class="hunt__item-bg"></div>
-            <h2>Охота на лося</h2>
-            <b>Cезон охоты:</b>
-
-            <br/>
-            <span>старше 1 года: с 1 октября по 31 декабря.</span>
-            <br/>
-            <span>до 1 года: с 1 октября по 15 января.</span>
+            <h3>Охота на лося</h3>
+            <p>
+                <b>Cезон охоты:</b>
+                <br/>
+                <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                <br/>
+                <span>до 1 года: с 1 октября по 15 января.</span>
+            </p>
         </div>
         <div class="hunt__item">
             <div class="hunt__item-bg"></div>
-            <h2>Охота на лося</h2>
-            <b>Cезон охоты:</b>
-
-            <br/>
-            <span>старше 1 года: с 1 октября по 31 декабря.</span>
-            <br/>
-            <span>до 1 года: с 1 октября по 15 января.</span>
+            <h3>Охота на лося</h3>
+            <p>
+                <b>Cезон охоты:</b>
+                <br/>
+                <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                <br/>
+                <span>до 1 года: с 1 октября по 15 января.</span>
+            </p>
         </div>
         <div class="hunt__item">
             <div class="hunt__item-bg"></div>
-            <h2>Охота на лося</h2>
-            <b>Cезон охоты:</b>
-
-            <br/>
-            <span>старше 1 года: с 1 октября по 31 декабря.</span>
-            <br/>
-            <span>до 1 года: с 1 октября по 15 января.</span>
+            <h3>Охота на лося</h3>
+            <p>
+                <b>Cезон охоты:</b>
+                <br/>
+                <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                <br/>
+                <span>до 1 года: с 1 октября по 15 января.</span>
+            </p>
         </div>
     </section>
 
     <section class="calc">
-        <h2 class="title title_green">калькулятор охотника</h2>
         <div class="calc__des">
-                    <span>
-                        Охотничья база "Белое" предлагает вам расчитать
-                        приблизительную цену вашей охоты
-                    </span>
+            <h2>калькулятор охотника</h2>
+            <p>
+                Охотничья база "Белое" предлагает вам расчитать
+                приблизительную цену вашей охоты
+            </p>
         </div>
         <div class="calc__inner">
-            <div class="calc__main half-screen">
-                <ul>
-                    <li
-                            class="calc__list-item calc__list-item_accommodation"
-                    >
-                        проживание
-                        <div class="calc__select">
-                            <button
-                                    class="calc__button calc__button_left"
-                            ></button>
-                            <span>5 дней</span>
-                            <button
-                                    class="calc__button calc__button_right"
-                            ></button>
-                            <button
-                                    class="calc__button calc__button_left"
-                            ></button>
-                            <span>1 человек</span>
-                            <button
-                                    class="calc__button calc__button_right"
-                            ></button>
-                        </div>
+
+            <div class="calc__params">
+                <div class="calc__booking">
+                    <span>проживание</span>
+                    <div class="calc__select">
+                        <button
+                                class="calc__button calc__button_left"
+                        ></button>
+                        <span>5 дней</span>
+                        <button
+                                class="calc__button calc__button_right"
+                        ></button>
+                        <button
+                                class="calc__button calc__button_left"
+                        ></button>
+                        <span>1 человек</span>
+                        <button
+                                class="calc__button calc__button_right"
+                        ></button>
+                    </div>
+                </div>
+
+                <ul class="calc__list-item">
+                    <li>
+                        <span>Охота на лося</span>
                     </li>
-                    <li class="calc__list-item">
+                    <li>
                         <span>Охота на лося</span>
                     </li>
                     <li>
                         <hr/>
                     </li>
-                    <li
-                            class="calc__list-item calc__list-item_accommodation"
-                    >
-                        <span>Итого:</span>
-                        <span>3333 рублей</span>
-                    </li>
                 </ul>
+
+                <div class="calc__total">
+                    <span>Итого:</span>
+                    <span>3333 рублей</span>
+                </div>
             </div>
-            <div class="calc__lead half-screen">
+
+            <div class="calc__form">
                 <input type="text" placeholder="Ваш e-mail"/>
                 <input type="text" placeholder="ваш телефон"/>
                 <input type="text" placeholder="Ваше имя"/>
@@ -143,34 +150,43 @@ include('header.php');
         </div>
     </section>
 
-    <section class="location">
-        <div class="location__inner">
-            <h2 class="location__inner-title">Как до нас доехать?</h2>
-            <div class="location__inner-text">
-                <b>Из г. Челябинск:</b>
-                <p>
-                    трасса на Курган до г. Юргамыш далее г. Куртамыш
-                    далее на с. Каминское до поворота с указателем
-                    «Охотничья база Белое».
-                </p>
-                <b>Из г. Курган:</b>
-                <p>
-                    трасса на г. Куртамыш далее на с. Каминское до
-                    поворота с указателем «Охотничья база Белое».
-                </p>
-                <span>
-                            Также, мы присутствуем на Яндекс.Картах. Если у вас
-                            есть навигатор, просто напишите в нем:
-                        </span>
-                <a
-                        target="_blank"
-                        href="https://yandex.ru/maps/?ll=64.950954%2C54.722367&mode=search&oid=45798440183&ol=biz&z=14.61"
-                >
-                    Охотничья база Белое
-                </a>
+    <section class="contacts">
+        <div class="contacts__inner">
+            <h2 class="contacts__title">Как до нас <br> доехать?</h2>
+            <div class="contacts__text">
+                <div class="contacts__text-item">
+                    <b>Из г. Челябинск:</b>
+                    <p>
+                        трасса на Курган до г. Юргамыш далее г. Куртамыш
+                        далее <br> на с. Каминское до поворота с указателем
+                        «Охотничья база Белое».
+                    </p>
+                </div>
+
+                <div class="contacts__text-item">
+                    <b>Из г. Курган:</b>
+                    <p>
+                        трасса на г. Куртамыш далее на с. <br> Каминское до
+                        поворота с указателем «Охотничья база Белое».
+                    </p>
+                </div>
+
+                <div class="contacts__text-item">
+                    <p>
+                        Также, мы присутствуем на Яндекс.Картах. <br> Если у вас
+                        есть навигатор, просто напишите в нем:
+                    </p>
+                    <br>
+                    <a
+                            target="_blank"
+                            href="https://yandex.ru/maps/?ll=64.950954%2C54.722367&mode=search&oid=45798440183&ol=biz&z=14.61"
+                    >
+                        Охотничья база Белое
+                    </a>
+                </div>
             </div>
         </div>
-        <div id="map" class="location__map"></div>
+        <div id="map" class="contacts__map"></div>
     </section>
 
 
