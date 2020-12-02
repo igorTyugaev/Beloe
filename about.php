@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,15 +9,21 @@
     <link rel="stylesheet" href="./css/slick.css"/>
     <title>О нас</title>
 </head>
+
 <body>
 
 <?php
 include('header.php');
 ?>
 
+<div class="numbers">
+    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+</div>
+
 <main class="main">
     <section class="landing-about">
-        <h2 class="title title_green">Охотничья база “белое”</h2>
+        <h2>Охотничья база “белое”</h2>
         <p class="landing-about__text">
             Всем любителям охоты, тем, кто не видит своей жизни без
             этого общения с природой, рекомендуем богатые дичью
@@ -27,32 +34,27 @@ include('header.php');
             ярких впечатлений.
         </p>
     </section>
-    <section class="advantages">
-        <div
-                class="advantages__block advantages__block_1 quarter-screen"
-        >
-            <div class="advantages__overlay"></div>
-            <span>Комфортная охотничья базе</span>
+
+    <section class="features">
+        <div class="features__item">
+            <img src="media/advantages-1.png" alt="work-3" class="features__img">
+            <a href=""><h3 class="features__title">Комфортная охотничья базе</h3></a>
         </div>
-        <div
-                class="advantages__block advantages__block_2 quarter-screen"
-        >
-            <div class="advantages__overlay"></div>
-            <span>Высокий профессионализм наших специалистов</span>
+        <div class="features__item">
+            <img src="media/advantages-2.png" alt="work-3" class="features__img">
+            <a href=""><h3 class="features__title">Высокий профессионализм наших
+                    специалистов</h3></a>
         </div>
-        <div
-                class="advantages__block advantages__block_3 quarter-screen"
-        >
-            <div class="advantages__overlay"></div>
-            <span>Отдых для всей семьи на природе</span>
+        <div class="features__item">
+            <img src="media/advantages-3.png" alt="work-3" class="features__img">
+            <a href=""><h3 class="features__title">Отдых для всей семьи на природе</h3></a>
         </div>
-        <div
-                class="advantages__block advantages__block_4 quarter-screen"
-        >
-            <div class="advantages__overlay"></div>
-            <span>Частное лестничество</span>
+        <div class="features__item">
+            <img src="media/advantages-4.png" alt="work-3" class="features__img">
+            <a href=""><h3 class="features__title">Частное лестничество</h3></a>
         </div>
     </section>
+
     <section class="">
         <div class="slider_about">
             <div class="slider__item">
@@ -99,6 +101,7 @@ include('header.php');
             </div>
         </div>
     </section>
+
     <section class="contacts">
         <div class="contacts__inner">
             <h2 class="contacts__title">Как до нас <br> доехать?</h2>
@@ -139,11 +142,6 @@ include('header.php');
     </section>
 </main>
 
-<div class="numbers">
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-</div>
-
 <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
         type="text/javascript"
@@ -157,4 +155,5 @@ include('header.php');
 <script src="./js/slick.min.js" type="text/javascript"></script>
 
 </body>
+
 </html>

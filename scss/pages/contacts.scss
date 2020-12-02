@@ -1,18 +1,21 @@
 @import "../helper";
 
-@import "../blocks/contacts";
+@import "../basic";
+
+@import "../blocks/b-contact";
 
 .contacts_green {
-  background: #249D6A;
+  background: #{$green};
 
   b, p, a, h2 {
     color: #{$white};
   }
 }
 
-.button {
-  display: none;
+.contacts__inner {
+  padding-top: get-vw(100px, 1280px);
 }
 
+@import "../blocks/b-menu";
 
 @import "../media/contacts_media";

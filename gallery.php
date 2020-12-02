@@ -16,9 +16,14 @@
 include('header.php');
 ?>
 
+<div class="numbers numbers_green">
+    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+</div>
+
 <main class="main">
     <section class="gallery gallery_green">
-        <h1 class="gallery__title">Галерея</h1>
+        <h2 class="gallery__title">Галерея</h2>
         <div class="slider_about">
             <div class="slider__item">
                 <img
@@ -63,29 +68,22 @@ include('header.php');
                 />
             </div>
         </div>
-
         <div class="slider__list">
             <div class="slider__list__item">
                 <div class="slider__list__item-bg"></div>
-                <h2>Охота на лося</h2>
+                <h3>Охота на лося</h3>
             </div>
             <div class="slider__list__item">
                 <div class="slider__list__item-bg"></div>
-                <h2>Охота на лося</h2>
+                <h3>Охота на лося</h3>
             </div>
             <div class="slider__list__item">
                 <div class="slider__list__item-bg"></div>
-                <h2>Охота на лося</h2>
+                <h3>Охота на лося</h3>
             </div>
         </div>
     </section>
-
 </main>
-
-<div class="numbers numbers_green">
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-</div>
 
 <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"

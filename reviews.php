@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/reviews.css">
     <title>Отзывы</title>
 </head>
+
 <body>
 
 <?php
@@ -22,16 +24,13 @@ include('header.php');
 </div>
 
 <main>
-    <section class="reviews reviews_white">
-        <button class="button button_green-border">
-            Меню
-        </button>
-        <h1 class="reviews__title">Отзывы<br>
-            наших клиентов</h1>
+    <section class="reviews">
+        <h2 class="reviews__title">Отзывы<br>
+            наших клиентов</h2>
         <div class="reviews__list">
 
-            <div class="reviews__item reviews__item_white">
-                <div class="reviews__item-avatar reviews__item-avatar_white">
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
                 <div class="reviews__item-inner">
                     <ul class="reviews__item-inner__name">
@@ -39,7 +38,7 @@ include('header.php');
                         <li>Тишман</li>
                     </ul>
                     <div class="reviews__item-inner__mark">
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -49,7 +48,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -59,7 +58,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -69,7 +68,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -79,7 +78,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green ">
+                        <span class="mark-star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -100,9 +99,8 @@ include('header.php');
 
                 </div>
             </div>
-
-            <div class="reviews__item reviews__item_white">
-                <div class="reviews__item-avatar reviews__item-avatar_white">
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
                 <div class="reviews__item-inner">
                     <ul class="reviews__item-inner__name">
@@ -110,7 +108,7 @@ include('header.php');
                         <li>Тишман</li>
                     </ul>
                     <div class="reviews__item-inner__mark">
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -120,7 +118,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -130,7 +128,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -140,7 +138,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -150,7 +148,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green ">
+                        <span class="mark-star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -171,9 +169,8 @@ include('header.php');
 
                 </div>
             </div>
-
-            <div class="reviews__item reviews__item_white">
-                <div class="reviews__item-avatar reviews__item-avatar_white">
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
                 <div class="reviews__item-inner">
                     <ul class="reviews__item-inner__name">
@@ -181,7 +178,7 @@ include('header.php');
                         <li>Тишман</li>
                     </ul>
                     <div class="reviews__item-inner__mark">
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -191,7 +188,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -201,7 +198,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -211,7 +208,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -221,7 +218,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green ">
+                        <span class="mark-star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -242,9 +239,8 @@ include('header.php');
 
                 </div>
             </div>
-
-            <div class="reviews__item reviews__item_white">
-                <div class="reviews__item-avatar reviews__item-avatar_white">
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
                 <div class="reviews__item-inner">
                     <ul class="reviews__item-inner__name">
@@ -252,7 +248,7 @@ include('header.php');
                         <li>Тишман</li>
                     </ul>
                     <div class="reviews__item-inner__mark">
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -262,7 +258,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -272,7 +268,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -282,7 +278,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -292,7 +288,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green ">
+                        <span class="mark-star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -313,9 +309,8 @@ include('header.php');
 
                 </div>
             </div>
-
-            <div class="reviews__item reviews__item_white">
-                <div class="reviews__item-avatar reviews__item-avatar_white">
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
                 <div class="reviews__item-inner">
                     <ul class="reviews__item-inner__name">
@@ -323,7 +318,7 @@ include('header.php');
                         <li>Тишман</li>
                     </ul>
                     <div class="reviews__item-inner__mark">
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -333,7 +328,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -343,7 +338,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -353,7 +348,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -363,7 +358,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green ">
+                        <span class="mark-star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -384,9 +379,8 @@ include('header.php');
 
                 </div>
             </div>
-
-            <div class="reviews__item reviews__item_white">
-                <div class="reviews__item-avatar reviews__item-avatar_white">
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
                 <div class="reviews__item-inner">
                     <ul class="reviews__item-inner__name">
@@ -394,7 +388,7 @@ include('header.php');
                         <li>Тишман</li>
                     </ul>
                     <div class="reviews__item-inner__mark">
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -404,7 +398,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -414,7 +408,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -424,7 +418,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -434,7 +428,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green ">
+                        <span class="mark-star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -455,9 +449,8 @@ include('header.php');
 
                 </div>
             </div>
-
-            <div class="reviews__item reviews__item_white">
-                <div class="reviews__item-avatar reviews__item-avatar_white">
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
                 <div class="reviews__item-inner">
                     <ul class="reviews__item-inner__name">
@@ -465,7 +458,7 @@ include('header.php');
                         <li>Тишман</li>
                     </ul>
                     <div class="reviews__item-inner__mark">
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -475,7 +468,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -485,7 +478,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -495,7 +488,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -505,7 +498,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green ">
+                        <span class="mark-star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -526,9 +519,8 @@ include('header.php');
 
                 </div>
             </div>
-
-            <div class="reviews__item reviews__item_white">
-                <div class="reviews__item-avatar reviews__item-avatar_white">
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
                 <div class="reviews__item-inner">
                     <ul class="reviews__item-inner__name">
@@ -536,7 +528,7 @@ include('header.php');
                         <li>Тишман</li>
                     </ul>
                     <div class="reviews__item-inner__mark">
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -546,7 +538,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -556,7 +548,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -566,7 +558,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green mark-star_green_active">
+                        <span class="mark-star mark-star_active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -576,7 +568,7 @@ include('header.php');
                                   stroke="white" fill="white" stroke-width="2"/>
                             </svg>
                         </span>
-                        <span class="mark-star_green ">
+                        <span class="mark-star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                             <path id="star" d="M12 2L15.2328 7.55041L21.5106
@@ -603,4 +595,5 @@ include('header.php');
 </main>
 
 </body>
+
 </html>

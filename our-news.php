@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/our-news.css">
     <title>Новости</title>
 </head>
+
 <body>
 
 <?php
@@ -23,7 +25,7 @@ include('header.php');
 
 <main>
     <section class="news news_green">
-        <h1 class="news__title">Наши новости</h1>
+        <h2 class="news__title">Наши новости</h2>
         <div class="news__list">
 
             <div class="news__item">
@@ -107,4 +109,5 @@ include('header.php');
 </main>
 
 </body>
+
 </html>

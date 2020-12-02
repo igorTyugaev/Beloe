@@ -21,10 +21,6 @@ include('header.php');
 
 <main>
 
-    <button class="button button_white-border">
-        Меню
-    </button>
-
     <section class="first-slide">
         <div class="first-slide__img"></div>
         <div class="first-slide__lead">
@@ -195,7 +191,7 @@ include('header.php');
             type="text/javascript"
     ></script>
     <script src="./js/map.js"></script>
-    <script src="./js/types-of-hunting.js"></script>
+    <script src="js/hunting-types.js"></script>
 
 </main>
 

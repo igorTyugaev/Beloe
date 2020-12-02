@@ -18,7 +18,6 @@
 include('header.php');
 ?>
 
-
 <div class="numbers numbers_green">
     <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
     <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
@@ -27,9 +26,6 @@ include('header.php');
 <main>
 
     <section class="contacts contacts_green">
-        <button class="button button_white-border">
-            Меню
-        </button>
         <div class="contacts__inner">
             <h2 class="contacts__title">Как до нас <br> доехать?</h2>
             <div class="contacts__text">

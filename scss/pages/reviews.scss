@@ -1,137 +1,15 @@
 @import "../helper";
-@import "../blocks/star-ratings";
 
-.reviews {
+@import "../blocks/b-star-ratings";
 
-  .button {
-    display: none;
-  }
+@import "../blocks/b-reviews";
 
-  &__title {
-    font-family: Akrobat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: get-vw(60px, 1280px);
-    line-height: 90%;
-    text-transform: uppercase;
-    color: #249D6A;
-    margin: 0;
-    padding: get-vw(100px, 1280px) 0 get-vw(30px, 1280px) get-vw(20px, 1280px);
-  }
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-  }
-
-  &_white {
-    background: #FFFFFF;
-  }
-}
-
-.reviews__item {
-  display: flex;
-  width: 50%;
-  padding: 0 20px;
-  margin: get-vw(40px, 1280px) 0 0 0;
-
-  &_white {
-    background: #FFFFFF;
-  }
-
-  &:nth-child(odd) {
-    border-right: 2px solid rgba(19, 18, 18, 0.1);
-  }
-}
-
-.reviews__item-avatar {
-  min-width: 6.25vw;
-  height: 6.25vw;
-  width: 6.25vw;
-  border-radius: 50%;
-  background: #249D6A;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1.5625vw;
-
-  span {
-    font-family: Akrobat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 3.125vw;
-    line-height: 100%;
-
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-  }
-
-  &_white {
-    background: #249D6A;
-
-    span {
-      color: #FFFFFF;
-    }
-  }
-}
-
-.reviews__item-inner {
-  padding-right: 20px;
-
-  &__name {
-    font-family: Akrobat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: get-vw(20px, 1280px);
-    line-height: 100%;
-    text-transform: uppercase;
-
-    color: #249D6A;
-
-    padding: 0;
-    margin: 0;
-  }
-
-  &__mark {
-    padding: 0;
-    margin-top: get-vw(10px, 1280px);
-  }
-
-
-  &__massage {
-    font-family: TT Interfaces;
-    font-style: normal;
-    font-weight: 500;
-    font-size: get-vw(14px, 1280px);
-    line-height: 140%;
-
-    color: rgba(19, 18, 18, 0.7);
-
-    padding: 0;
-    margin-top: get-vw(20px, 1280px);
-    margin-bottom: get-vw(20px, 1280px);
-
-    max-height: 80px;
-    overflow: hidden;
-  }
-
-  &__more {
-    font-family: TT Interfaces;
-    font-style: normal;
-    font-weight: 500;
-    font-size: get-vw(12px, 1280px);
-    line-height: 140%;
-
-    text-decoration-line: underline;
-    color: rgba(19, 18, 18, 0.4);
-
-    bottom: 0;
-    margin: 0;
-  }
-}
+@import "../blocks/b-menu";
 
 @import "../media/reviews_media";
+
+.button_menu {
+  background: transparent;
+  border: 2px solid #{$green};
+  color: #{$green};
+}

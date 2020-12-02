@@ -23,9 +23,6 @@ include('header.php');
 
 <main>
     <article class="article-news">
-        <button class="button button_white-border">
-            Меню
-        </button>
         <div class="article-news__img">
             <img src="media/news_card.png" alt="news_card">
         </div>

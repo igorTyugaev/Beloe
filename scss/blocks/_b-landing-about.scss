@@ -1,0 +1,29 @@
+@import "../helper";
+
+.landing-about {
+  padding: get-vw(100px, 1280px) get-vw(20px, 1280px) get-vw(20px, 1280px);
+  background: #{$green};
+
+  &__text {
+    width: 50%;
+    color: #{$white};
+  }
+
+
+}
+
+@media (max-width: 640px) {
+  .landing-about {
+    padding: get-vw(100px, 640px) get-vw(20px, 640px) get-vw(20px, 640px);
+  }
+}
+
+@media (max-width: 420px) {
+  .landing-about {
+    padding: get-vw(100px, 320px) get-vw(20px, 320px) get-vw(20px, 320px);
+
+    &__text {
+      width: 100%;
+    }
+  }
+}

@@ -1,10 +1,8 @@
 @import "../fonts/TTInterfaces/stylesheet.css" all;
 @import "../fonts/Akrobat/stylesheet.css" all;
 @import "helper";
-@import "blocks/menu";
 
 //  BEGIN: Reset style
-
 *,
 *:before,
 *:after {
@@ -43,8 +41,8 @@ ul {
 
 //  END: Reset style
 
+// BEGIN: Language icons
 .lang {
-
   cursor: pointer;
   border: 0.15625vw solid rgba(19, 18, 18, 0.1);
   border-radius: 50%;
@@ -55,12 +53,14 @@ ul {
 }
 
 .lang:hover {
-  border: 0.15625vw solid #249D6A;
+  border: 0.15625vw solid #{$green};
 }
 
+// END: Language icons
+
 .button {
-  padding: get-vw(22px, 1280px) 0;
   font-size: get-vw(16px, 1280px);
+  padding: get-vw(22px, 1280px) 0;
 
   cursor: pointer;
   border: none;
@@ -76,49 +76,51 @@ ul {
   text-align: center;
   text-transform: uppercase;
 
-
   &:hover {
-    background: #19704c;
-    color: #FFFFFF;
+    background: #{$green};
+    color: #{$white};
   }
 
   &_green {
-    background: #249D6A;
-    color: #FFFFFF;
+    background: #{$green};
+    color: #{$white};
   }
 
   &_green:hover {
-    background: #fff;
-    color: #249D6A;
+    background: #{$white};
+    color: #{$green};
   }
 
   &_green-border {
+    font-size: get-vw(14px, 1280px);
     background: transparent;
-    border: 2px solid #249D6A;
-    color: #249D6A;
+    border: 2px solid #{$green};
+    color: #{$green};
+    display: none;
+    z-index: 1000
   }
 
   &_green-border:hover {
-    background: #249D6A;
-    color: #FFFFFF;
+    background: #{$green};
+    color: #{$white};
   }
 
-  &_white-border {
+  &_menu {
+    font-size: get-vw(14px, 1280px);
     background: transparent;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
+    border: 2px solid #{$white};
+    color: #{$white};
+    display: none;
+    z-index: 1000
   }
 
-  &_white-border:hover {
-    background: #FFFFFF;
-    color: #131212;
+  &_menu:hover {
+    background: #{$white};
+    color: #{$black};
   }
 
   &_main-slider {
-    width: 34.284375vw;
-    position: absolute;
-    bottom: 1.5625vw;
-    right: 1.5625vw;
+
   }
 }
 
@@ -145,7 +147,7 @@ h2 {
 h3 {
   font-family: Akrobat;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
   color: #{$white};
@@ -153,7 +155,7 @@ h3 {
   font-size: get-vw(20px, 1280px);
 }
 
-p {
+p, time {
   font-family: TT Interfaces;
   font-style: normal;
   font-weight: 500;
@@ -326,9 +328,9 @@ hr {
     font-size: 1.09375vw;
     color: rgba(0, 0, 0, 0.7);
   }
-
+  
   a {
-    color: #249D6A;
+    color: #{$green};
     text-decoration: underline;
 
   }

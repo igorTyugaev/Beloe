@@ -1,39 +1,28 @@
 @import "../helper";
 
+@import "../basic";
+
 body {
   background: #249D6A;
 }
 
 .news {
   &__title {
-    font-family: Akrobat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 90%;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin: 0;
-    padding: 100px 0 40px 20px;
+    padding: get-vw(100px, 1280px) get-vw(20px, 1280px) get-vw(40px, 1280px);
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
   }
-
-  &_green {
-    background: #249D6A;
-  }
 }
 
 .news__item {
-  display: inline-block;
   position: relative;
-  min-width: 420px;
   width: 50%;
-  height: 240px;
-
+  height: get-vw(240px, 1280px);
+  object-fit: cover;
+  
   &-bg {
     position: relative;
     width: 100%;
@@ -42,7 +31,8 @@ body {
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      margin: 0;
+      padding: 0;
       background-repeat: no-repeat;
     }
   }
@@ -59,62 +49,51 @@ body {
 }
 
 .news__item-inner {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
   color: #fff;
-  padding: 0px 20px 0px 20px;
+  padding: get-vw(20px, 1280px);
   height: 100%;
 
-  &__title {
-    margin-top: 20px;
-    font-family: Akrobat;
-    font-size: get-vw(20px, 1280px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-
-  &__text {
-    display: block;
-    font-family: TT Interfaces;
-    font-size: get-vw(14px, 1280px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    max-height: 40px;
-    overflow: hidden;
-    margin-bottom: 12px;
-  }
-
   &__read-more {
-    font-family: TT Interfaces;
-    font-size: get-vw(12px, 1280px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
+    flex-grow: 1;
     color: rgba(255, 255, 255, 0.4);
   }
+}
 
-  &__timestamp {
-    font-family: TT Interfaces;
-    font-size: get-vw(14px, 1280px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 20px;
+@import "../blocks/b-menu";
+
+@media (max-width: 640px) {
+  .news {
+    &__title {
+      padding: get-vw(100px, 640px) get-vw(20px, 640px) get-vw(40px, 640px);
+    }
+
+    &__item {
+      height: get-vw(240px, 640px);
+    }
+  }
+
+  .news__item-inner {
+    padding: get-vw(20px, 640px);
+  }
+}
+
+@media (max-width: 420px) {
+  .news {
+    &__title {
+      padding: get-vw(100px, 320px) get-vw(20px, 320px) get-vw(40px, 320px);
+    }
+
+    &__item {
+      height: get-vw(260px, 320px);
+      width: 100%;
+    }
+  }
+  .news__item-inner {
+    padding: get-vw(20px, 320px);
   }
 }

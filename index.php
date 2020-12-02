@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -21,263 +22,615 @@ include('header.php');
 </div>
 
 <main class="main">
+    <section class="first-slide">
+        <div class="first-slide__img"></div>
+        <div class="first-slide__lead">
+            <h2>
+                Виды
+                <br/>
+                охоты
+            </h2>
+            <p>
+                Охотничья база "Белое" предлагает охоту на лося, кабана
+                (с вышки), сибирскую косулю (трофейная, загонная), лису,
+                зайца глухаря, тетерева, водоплавающую дичь. Егерское
+                обслуживание.
+            </p>
+            <button class="button button_main-slider">
+                консультация
+            </button>
+        </div>
+    </section>
 
-    <section class="landing-slide">
-        <div
-                class="landing-slide__block landing-slide__block_1 half-screen"
-        ></div>
-        <div
-                class="landing-slide__block landing-slide__block_2 slider slider_main half-screen"
-        >
-            <div class="slider__item">
-                <h2>ОХОТА НА КОСУЛЮ ЗАГОНОМ</h2>
-                <div class="slider__text">
-                            <span class="slider__item-start">
-                                Сезон начинается:
-                            </span>
-                    <span class="slider__item-date">
-                                с 1 октября по 31 декабря.
-                            </span>
-                </div>
-                <button class="button button_main-slider">
-                    консультация
-                </button>
-            </div>
-            <div class="slider__item">
-                <h2>ОХОТА НА КОСУЛЮ ЗАГОНОМ</h2>
-                <div class="slider__text">
-                            <span class="slider__item-start">
-                                Сезон начинается:
-                            </span>
-                    <span class="slider__item-date">
-                                с 1 октября по 31 декабря.
-                            </span>
-                </div>
-                <button class="button button_main-slider">
-                    консультация
-                </button>
-            </div>
-            <div class="slider__item">
-                <h2>ОХОТА НА КОСУЛЮ ЗАГОНОМ</h2>
-                <div class="slider__text">
-                            <span class="slider__item-start">
-                                Сезон начинается:
-                            </span>
-                    <span class="slider__item-date">
-                                с 1 октября по 31 декабря.
-                            </span>
-                </div>
-                <button class="button button_main-slider">
-                    консультация
-                </button>
-            </div>
-            <div class="slider__item">
-                <h2>ОХОТА НА КОСУЛЮ ЗАГОНОМ</h2>
-                <div class="slider__text">
-                            <span class="slider__item-start">
-                                Сезон начинается:
-                            </span>
-                    <span class="slider__item-date">
-                                с 1 октября по 31 декабря.
-                            </span>
-                </div>
-                <button class="button button_main-slider">
-                    консультация
-                </button>
-            </div>
+    <section class="features">
+        <div class="features__item">
+            <img src="media/advantages-1.png" alt="work-3" class="features__img">
+            <a href=""><h3 class="features__title">Комфортная охотничья базе</h3></a>
         </div>
-        <div
-                class="advantages__block advantages__block_1 quarter-screen"
-        >
-            <div class="advantages__overlay"></div>
-            <span>Комфортная охотничья базе</span>
+        <div class="features__item">
+            <img src="media/advantages-2.png" alt="work-3" class="features__img">
+            <a href=""><h3 class="features__title">Высокий профессионализм наших
+                    специалистов</h3></a>
         </div>
-        <div
-                class="advantages__block advantages__block_2 quarter-screen"
-        >
-            <div class="advantages__overlay"></div>
-            <span>Высокий профессионализм наших специалистов</span>
+        <div class="features__item">
+            <img src="media/advantages-3.png" alt="work-3" class="features__img">
+            <a href=""><h3 class="features__title">Отдых для всей семьи на природе</h3></a>
         </div>
-        <div
-                class="advantages__block advantages__block_3 quarter-screen"
-        >
-            <div class="advantages__overlay"></div>
-            <span>Отдых для всей семьи на природе</span>
-        </div>
-        <div
-                class="advantages__block advantages__block_4 quarter-screen"
-        >
-            <div class="advantages__overlay"></div>
-            <span>Частное лестничество</span>
+        <div class="features__item">
+            <img src="media/advantages-4.png" alt="work-3" class="features__img">
+            <a href=""><h3 class="features__title">Частное лестничество</h3></a>
         </div>
     </section>
 
     <section class="reviews reviews_green">
-        <div class="reviews__title">
-            <h2 class="title title_green">Отзывы наших клиентов</h2>
-            <a href="">Все отзывы</a>
-        </div>
+        <button class="button button_green-border">
+            Меню
+        </button>
+        <h2 class="reviews__title">Отзывы<br>
+            наших клиентов</h2>
         <div class="reviews__list">
+
             <div class="reviews__item">
-                <div class="reviews__item-img"><span>ИТ</span></div>
+                <div class="reviews__item-avatar reviews__item">
+                    <span>ИТ</span></div>
                 <div class="reviews__item-inner">
-                    <h3 class="reviews__item-name">Игорь Тишман</h3>
-                    <div class="stars">
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star-empty.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
+                    <ul class="reviews__item-inner__name">
+                        <li>Игорь</li>
+                        <li>Тишман</li>
+                    </ul>
+                    <div class="reviews__item-inner__mark">
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star ">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
                     </div>
-                    <p class="reviews__item-text">
-                        Возможно самая шикарная охотничья база в
-                        Курганской области!!! Очень крутая гостиница с
-                        комфортабельными номерами, просторным холлом,
-                        бильярд, баня. В ближайшее время...
+                    <p class="reviews__item-inner__massage">Возможно самая шикарная
+                        охотничья
+                        база
+                        в Курганской области!!! Очень крутая гостиница с комфортабельными
+                        номерами, просторным холлом, бильярд, баня. В ближайшее время...
                     </p>
-                    <a href="">Читать отзыв полностью</a>
+                    <a href="" class="reviews__item-inner__more">Читать отзыв полностью</a>
+
                 </div>
             </div>
             <div class="reviews__item">
-                <div class="reviews__item-img"><span>ИТ</span></div>
+                <div class="reviews__item-avatar reviews__item">
+                    <span>ИТ</span></div>
                 <div class="reviews__item-inner">
-                    <h3 class="reviews__item-name">Игорь Тишман</h3>
-                    <div class="stars">
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star-empty.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
+                    <ul class="reviews__item-inner__name">
+                        <li>Игорь</li>
+                        <li>Тишман</li>
+                    </ul>
+                    <div class="reviews__item-inner__mark">
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star ">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
                     </div>
-                    <p class="reviews__item-text">
-                        Возможно самая шикарная охотничья база в
-                        Курганской области!!! Очень крутая гостиница с
-                        комфортабельными номерами, просторным холлом,
-                        бильярд, баня. В ближайшее время...
+                    <p class="reviews__item-inner__massage">Возможно самая шикарная
+                        охотничья
+                        база
+                        в Курганской области!!! Очень крутая гостиница с комфортабельными
+                        номерами, просторным холлом, бильярд, баня. В ближайшее время...
                     </p>
-                    <a href="">Читать отзыв полностью</a>
+                    <a href="" class="reviews__item-inner__more">Читать отзыв полностью</a>
+
                 </div>
             </div>
             <div class="reviews__item">
-                <div class="reviews__item-img"><span>ИТ</span></div>
+                <div class="reviews__item-avatar reviews__item">
+                    <span>ИТ</span></div>
                 <div class="reviews__item-inner">
-                    <h3 class="reviews__item-name">Игорь Тишман</h3>
-                    <div class="stars">
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star-empty.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
+                    <ul class="reviews__item-inner__name">
+                        <li>Игорь</li>
+                        <li>Тишман</li>
+                    </ul>
+                    <div class="reviews__item-inner__mark">
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star ">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
                     </div>
-                    <p class="reviews__item-text">
-                        Возможно самая шикарная охотничья база в
-                        Курганской области!!! Очень крутая гостиница с
-                        комфортабельными номерами, просторным холлом,
-                        бильярд, баня. В ближайшее время...
+                    <p class="reviews__item-inner__massage">Возможно самая шикарная
+                        охотничья
+                        база
+                        в Курганской области!!! Очень крутая гостиница с комфортабельными
+                        номерами, просторным холлом, бильярд, баня. В ближайшее время...
                     </p>
-                    <a href="">Читать отзыв полностью</a>
+                    <a href="" class="reviews__item-inner__more">Читать отзыв полностью</a>
+
                 </div>
             </div>
             <div class="reviews__item">
-                <div class="reviews__item-img"><span>ИТ</span></div>
+                <div class="reviews__item-avatar reviews__item">
+                    <span>ИТ</span></div>
                 <div class="reviews__item-inner">
-                    <h3 class="reviews__item-name">Игорь Тишман</h3>
-                    <div class="stars">
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
-                        <img
-                                src="./media/Star-empty.svg"
-                                alt="star"
-                                class="stars__item"
-                        />
+                    <ul class="reviews__item-inner__name">
+                        <li>Игорь</li>
+                        <li>Тишман</li>
+                    </ul>
+                    <div class="reviews__item-inner__mark">
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star ">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
                     </div>
-                    <p class="reviews__item-text">
-                        Возможно самая шикарная охотничья база в
-                        Курганской области!!! Очень крутая гостиница с
-                        комфортабельными номерами, просторным холлом,
-                        бильярд, баня. В ближайшее время...
+                    <p class="reviews__item-inner__massage">Возможно самая шикарная
+                        охотничья
+                        база
+                        в Курганской области!!! Очень крутая гостиница с комфортабельными
+                        номерами, просторным холлом, бильярд, баня. В ближайшее время...
                     </p>
-                    <a href="">Читать отзыв полностью</a>
+                    <a href="" class="reviews__item-inner__more">Читать отзыв полностью</a>
+
                 </div>
             </div>
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
+                    <span>ИТ</span></div>
+                <div class="reviews__item-inner">
+                    <ul class="reviews__item-inner__name">
+                        <li>Игорь</li>
+                        <li>Тишман</li>
+                    </ul>
+                    <div class="reviews__item-inner__mark">
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star ">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="reviews__item-inner__massage">Возможно самая шикарная
+                        охотничья
+                        база
+                        в Курганской области!!! Очень крутая гостиница с комфортабельными
+                        номерами, просторным холлом, бильярд, баня. В ближайшее время...
+                    </p>
+                    <a href="" class="reviews__item-inner__more">Читать отзыв полностью</a>
+
+                </div>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
+                    <span>ИТ</span></div>
+                <div class="reviews__item-inner">
+                    <ul class="reviews__item-inner__name">
+                        <li>Игорь</li>
+                        <li>Тишман</li>
+                    </ul>
+                    <div class="reviews__item-inner__mark">
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star ">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="reviews__item-inner__massage">Возможно самая шикарная
+                        охотничья
+                        база
+                        в Курганской области!!! Очень крутая гостиница с комфортабельными
+                        номерами, просторным холлом, бильярд, баня. В ближайшее время...
+                    </p>
+                    <a href="" class="reviews__item-inner__more">Читать отзыв полностью</a>
+
+                </div>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
+                    <span>ИТ</span></div>
+                <div class="reviews__item-inner">
+                    <ul class="reviews__item-inner__name">
+                        <li>Игорь</li>
+                        <li>Тишман</li>
+                    </ul>
+                    <div class="reviews__item-inner__mark">
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star ">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="reviews__item-inner__massage">Возможно самая шикарная
+                        охотничья
+                        база
+                        в Курганской области!!! Очень крутая гостиница с комфортабельными
+                        номерами, просторным холлом, бильярд, баня. В ближайшее время...
+                    </p>
+                    <a href="" class="reviews__item-inner__more">Читать отзыв полностью</a>
+
+                </div>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__item-avatar reviews__item">
+                    <span>ИТ</span></div>
+                <div class="reviews__item-inner">
+                    <ul class="reviews__item-inner__name">
+                        <li>Игорь</li>
+                        <li>Тишман</li>
+                    </ul>
+                    <div class="reviews__item-inner__mark">
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star mark-star_active">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="mark-star ">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
+                                  stroke="white" fill="white" stroke-width="2"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="reviews__item-inner__massage">Возможно самая шикарная
+                        охотничья
+                        база
+                        в Курганской области!!! Очень крутая гостиница с комфортабельными
+                        номерами, просторным холлом, бильярд, баня. В ближайшее время...
+                    </p>
+                    <a href="" class="reviews__item-inner__more">Читать отзыв полностью</a>
+
+                </div>
+            </div>
+
         </div>
     </section>
 

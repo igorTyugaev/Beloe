@@ -1,8 +1,72 @@
+@media (max-width: 640px) {
+
+  .button {
+    padding: get-vw(22px, 640px) 0;
+    font-size: get-vw(14px, 640px);
+
+    &_white-border {
+      font-size: get-vw(14px, 640px);
+    }
+
+    &_green-border {
+      font-size: get-vw(14px, 640px);
+    }
+  }
+
+  //  BEGIN: Text style
+
+  h2 {
+    font-size: get-vw(40px, 640px);
+  }
+
+  h3 {
+    font-size: get-vw(20px, 640px);
+  }
+
+  p, time {
+    font-size: get-vw(14px, 640px);
+    padding: get-vw(20px, 640px) 0;
+  }
+
+  b {
+    font-size: get-vw(14px, 640px);
+  }
+
+  span {
+    font-size: get-vw(16px, 640px);
+  }
+
+  a {
+    font-size: get-vw(12px, 640px);
+  }
+
+  input {
+    border-bottom: get-vw(2px, 640px) solid rgba(255, 255, 255, 0.1);
+    padding: get-vw(20px, 640px) 0;
+    font-size: get-vw(16px, 640px);
+  }
+
+  hr {
+    background: #{$white};
+    border: get-vw(1px, 640px) solid #{$white};
+  }
+
+  //  END: Text style
+}
+
 @media (max-width: 420px) {
 
   .button {
     padding: get-vw(22px, 320px) 0;
     font-size: get-vw(14px, 320px);
+
+    &_white-border {
+      font-size: get-vw(14px, 320px);
+    }
+
+    &_green-border {
+      font-size: get-vw(14px, 320px);
+    }
   }
 
   //  BEGIN: Text style
@@ -15,7 +79,7 @@
     font-size: get-vw(20px, 320px);
   }
 
-  p {
+  p, time {
     font-size: get-vw(14px, 320px);
     padding: get-vw(20px, 320px) 0;
   }
@@ -44,5 +108,9 @@
   }
 
   //  END: Text style
+
+  .numbers {
+    display: none;
+  }
 }
 

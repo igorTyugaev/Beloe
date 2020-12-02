@@ -77,3 +77,43 @@
     text-decoration: none;
   }
 }
+
+@media (max-width: 640px) {
+  main {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .button_menu {
+    font-size: get-vw(16px, 640px);
+    width: calc(50vw - #{get-vw(20px, 640px)});
+    margin-top: get-vw(20px, 640px);
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 420px) {
+  .button_menu {
+    display: block;
+    font-size: get-vw(16px, 320px);
+    width: calc(100vw - #{get-vw(30px, 320px)});
+    margin-top: get-vw(20px, 320px);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

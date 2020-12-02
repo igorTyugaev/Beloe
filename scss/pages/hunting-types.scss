@@ -1,24 +1,8 @@
 @import "../helper";
 
-.first-slide {
-  display: flex;
-  height: 100vh;
+@import "../basic";
 
-  &__img {
-    background-image: url('../media/bg-th.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-  }
-
-  &__lead {
-    width: 50%;
-    background: #249D6A;
-    position: relative;
-    padding: get-vw(100px, 1280px) get-vw(20px, 1280px) get-vw(20px, 1280px);
-  }
-}
+@import "../blocks/b-first-slide";
 
 .hunt__list {
   display: flex;
@@ -131,9 +115,12 @@
   }
 }
 
-.button_white-border {
+.button_menu {
   display: none;
 }
 
-@import "../blocks/contacts";
+@import "../blocks/b-contact";
+
+@import "../blocks/b-menu";
+
 @import "../media/hunting-types_media";

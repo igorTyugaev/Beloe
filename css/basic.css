@@ -67,6 +67,21 @@
   text-decoration: none;
 }
 
+@media (max-width: 640px) {
+  main {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+}
 *,
 *:before,
 *:after {
@@ -118,8 +133,8 @@ ul {
 }
 
 .button {
-  padding: 1.71875vw 0;
   font-size: 1.25vw;
+  padding: 1.71875vw 0;
   cursor: pointer;
   border: none;
   font-family: Akrobat;
@@ -132,7 +147,7 @@ ul {
   text-transform: uppercase;
 }
 .button:hover {
-  background: #19704c;
+  background: #249D6A;
   color: #FFFFFF;
 }
 .button_green {
@@ -140,34 +155,31 @@ ul {
   color: #FFFFFF;
 }
 .button_green:hover {
-  background: #fff;
+  background: #FFFFFF;
   color: #249D6A;
 }
 .button_green-border {
+  font-size: 1.09375vw;
   background: transparent;
   border: 2px solid #249D6A;
   color: #249D6A;
+  display: none;
 }
 .button_green-border:hover {
   background: #249D6A;
   color: #FFFFFF;
 }
-.button_white-border {
+.button_menu {
+  font-size: 1.09375vw;
   background: transparent;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
+  display: none;
 }
-.button_white-border:hover {
+.button_menu:hover {
   background: #FFFFFF;
   color: #131212;
 }
-.button_main-slider {
-  width: 34.284375vw;
-  position: absolute;
-  bottom: 1.5625vw;
-  right: 1.5625vw;
-}
-
 main {
   margin-left: 25%;
   width: 75%;
@@ -363,9 +375,63 @@ hr {
   -webkit-filter: grayscale(100%);
 }
 
+@media (max-width: 640px) {
+  .button {
+    padding: 3.4375vw 0;
+    font-size: 2.1875vw;
+  }
+  .button_menu {
+    font-size: 2.1875vw;
+  }
+  .button_green-border {
+    font-size: 2.1875vw;
+  }
+
+  h2 {
+    font-size: 6.25vw;
+  }
+
+  h3 {
+    font-size: 3.125vw;
+  }
+
+  p {
+    font-size: 2.1875vw;
+    padding: 3.125vw 0;
+  }
+
+  b {
+    font-size: 2.1875vw;
+  }
+
+  span {
+    font-size: 2.5vw;
+  }
+
+  a {
+    font-size: 1.875vw;
+  }
+
+  input {
+    border-bottom: 0.3125vw solid rgba(255, 255, 255, 0.1);
+    padding: 3.125vw 0;
+    font-size: 2.5vw;
+  }
+
+  hr {
+    background: #FFFFFF;
+    border: 0.15625vw solid #FFFFFF;
+  }
+}
 @media (max-width: 420px) {
   .button {
     padding: 6.875vw 0;
+    font-size: 4.375vw;
+  }
+  .button_menu {
+    font-size: 4.375vw;
+  }
+  .button_green-border {
     font-size: 4.375vw;
   }
 
