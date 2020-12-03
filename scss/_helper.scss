@@ -1,0 +1,14 @@
+@function get-vw($px-vw, $base-vw: 1280px) {
+  @return ($px-vw * 100vw) / $base-vw;
+}
+
+@function get-vh($px-vh, $base-vh: 600px) {
+  @return ($px-vh * 100vh) / $base-vh;
+}
+
+$green: #249D6A;
+$white: #FFFFFF;
+$gray: #F4F4F4;
+$gray-text: rgba(19, 18, 18, 0.7);
+$black: #131212;
+

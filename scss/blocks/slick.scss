@@ -170,11 +170,13 @@
         left: 50%;
         transform: translateX(-50%);
         display: flex;
+
     }
 
     .slick-dots li {
         display: none;
     }
+
 
     /* Слайд активный (показывается) */
     .slick-dots li.slick-active {

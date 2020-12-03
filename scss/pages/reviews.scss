@@ -1,0 +1,15 @@
+@import "../helper";
+
+@import "../blocks/b-star-ratings";
+
+@import "../blocks/b-reviews";
+
+@import "../blocks/b-menu";
+
+@import "../media/reviews_media";
+
+.button_menu {
+  background: transparent;
+  border: 2px solid #{$green};
+  color: #{$green};
+}

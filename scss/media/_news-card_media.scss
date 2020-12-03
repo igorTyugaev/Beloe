@@ -1,0 +1,138 @@
+@import "../helper";
+
+@media (max-device-aspect-ratio: 4/3) {
+
+  .numbers_green {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+
+  .article-news {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 75vw;
+
+    &__inner {
+      height: 100%;
+      width: 100%;
+
+      &-title {
+        padding: 20px 0 10px 20px;
+      }
+
+      &-text {
+        font-size: get-vw(16px, 1280px);
+        line-height: 160%;
+      }
+    }
+
+    &__img {
+      position: static;
+      background: #FFFFFF;
+      width: 75vw;
+      height: 25vh;
+
+      img {
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 418px) {
+
+  main {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .numbers {
+    display: none;
+
+    width: 0;
+    height: 0;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .article-news {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 100%;
+
+    &__inner {
+      height: 100%;
+      width: 100vw;
+
+      &-title {
+        padding: 20px 0 20px 20px;
+        font-size: get-vw(40px, 320px);
+      }
+
+      &-text {
+        font-size: get-vw(12px, 320px);
+        line-height: 160%;
+
+        b {
+          font-size: get-vw(14px, 320px);
+          line-height: 140%;
+        }
+
+        p, span, a {
+          margin: 0;
+          margin-bottom: 20px;
+          font-size: get-vw(14px, 320px);
+        }
+      }
+    }
+
+
+    &__img {
+      background: #249D6A;
+      position: static;
+      width: 100vw;
+      min-height: 220px;
+      height: 38vh;
+
+      img {
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+
+    .button {
+      display: block;
+      font-size: get-vw(14px, 320px);
+      height: 10vh;
+      width: calc(100vw - 40px);
+      padding: 21px 0;
+      margin: 20px 0;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .numbers_green {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+
+}
