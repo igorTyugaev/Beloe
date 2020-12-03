@@ -27,8 +27,8 @@ include('header.php');
             <img src="media/news_card.png" alt="news_card">
         </div>
         <div class="article-news__inner">
-            <h1 class="article-news__inner-title">Грибной сезон<br>
-                в Зауралье</h1>
+            <h2 class="article-news__inner-title">Грибной сезон<br>
+                в Зауралье</h2>
             <div class="article-news__inner-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores
                     autem
