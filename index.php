@@ -15,9 +15,9 @@
 include('header.php');
 ?>
 
-<div class="numbers">
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+<div class="numbers container">
+    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
 </div>
 
 <main class="main">
@@ -37,7 +37,7 @@ include('header.php');
                     обслуживание.
                 </p>
             </div>
-            <button class="button button_main-slider">
+            <button class="button">
                 консультация
             </button>
         </div>
@@ -64,9 +64,6 @@ include('header.php');
     </section>
 
     <section class="reviews reviews_green">
-        <button class="button button_green-border">
-            Меню
-        </button>
         <h2 class="reviews__title">Отзывы<br>
             наших клиентов</h2>
         <div class="reviews__list">

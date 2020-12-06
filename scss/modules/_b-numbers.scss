@@ -1,34 +1,34 @@
 .numbers {
-  width: calc(37.5vw - #{get-vw(40px, $break-point-large-screen)});
+  @include container(20px);
+  width: 37.5vw;
   position: fixed;
-  right: 20px;
-  top: 20px;
   display: flex;
-  z-index: 10;
-
-  a {
-    text-decoration-line: none;
-  }
-
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  right: 0;
+  top: 0;
+  z-index: $z-index-numbers;
+  color: $white;
+  border-color: $white;
 
   &_green {
-    color: #249D6A;
-    border-color: #249D6A;
+    color: $green;
+    border-color: $green;
   }
 
   &__block {
+    padding: 22px 0;
+    font-size: 16px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 50%;
-    height: 4.6875vw;
     font-family: Akrobat;
     font-style: normal;
     font-weight: bold;
     font-size: 1.25vw;
     line-height: 100%;
+    text-decoration-line: none;
 
     color: inherit;
     border-color: inherit;
@@ -42,17 +42,21 @@
 
 @media (min-width: $break-point-large-screen) {
   .numbers {
-    width: calc(37.5vw - #{get-vw(40px, $break-point-large-screen)});
-    right: get-vw(20px, $break-point-large-screen);
-    top: get-vw(20px, $break-point-large-screen);
+    &__block {
+      padding: get-vw(22px, $break-point-large-screen) 0;
+      font-size: get-vw(16px, $break-point-large-screen);
+    }
   }
 }
 
 @media (max-width: #{$break-point-tablet}) {
   .numbers {
-    width: calc(37.5vw - #{get-vw(40px, $break-point-tablet)});
-    right: get-vw(20px, $break-point-tablet);
-    top: get-vw(20px, $break-point-tablet);
+    width: 50vw;
+
+    &__block {
+      padding: get-vw(22px, $break-point-tablet) 0;
+      font-size: 14px;
+    }
   }
 }
 

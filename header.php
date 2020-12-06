@@ -18,14 +18,19 @@
 
             <hr class="menu__line"/>
 
-            <li class="menu__link-container"><a class="menu__link" href="about.php">О нас</a></li>
-            <li class="menu__link-container"><a class="menu__link" href="our-news.php">Новости</a></li>
-            <li class="menu__link-container"><a class="menu__link" href="reviews.php">Отзывы</a></li>
-            <li class="menu__link-container"><a class="menu__link" href="gallery.php">Галерея</a></li>
+            <li class="menu__link-container"><a class="menu__link" href="about.php">О
+                    нас</a></li>
+            <li class="menu__link-container"><a class="menu__link" href="our-news.php">Новости</a>
+            </li>
+            <li class="menu__link-container"><a class="menu__link"
+                                                href="reviews.php">Отзывы</a></li>
+            <li class="menu__link-container"><a class="menu__link" href="gallery.php">Галерея</a>
+            </li>
 
             <hr class="menu__line"/>
 
-            <li class="menu__link-container"><a class="menu__link" href="contacts.php">Контакты</a></li>
+            <li class="menu__link-container"><a class="menu__link" href="contacts.php">Контакты</a>
+            </li>
             <li class="menu__lang">
                 <img src="./media/RUS.svg" alt="RU" class="lang"/>
                 <img src="./media/DEU.svg" alt="DEU" class="lang"/>
@@ -47,7 +52,12 @@
 
 </header>
 
-<button class="button button_menu">
-    Меню
-</button>
+<div class="menu--small">
+    <button class="button button_menu">
+        Меню
+    </button>
+</div>
+
+
+
 

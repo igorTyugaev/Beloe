@@ -12,11 +12,11 @@
   }
 
   &__lead {
+    @include container(100px);
     display: flex;
     flex-direction: column;
     width: 50%;
     background: #{$green};
-    padding: get-vw(100px, 1280px) get-vw(20px, 1280px) get-vw(20px, 1280px);
   }
 
   &__text {
@@ -27,7 +27,7 @@
 @media (max-width: $break-point-tablet) {
   .first-slide {
     &__lead {
-      padding: get-vw(100px, $break-point-tablet) get-vw(20px, $break-point-tablet) get-vw(20px, $break-point-tablet);
+
     }
   }
 }
@@ -45,21 +45,12 @@
     }
 
     &__lead {
+      @include container();
       display: flex;
       flex-direction: column;
       width: 100%;
       height: 60%;
       flex-grow: 1;
-      padding: get-vw(20px, 320px);
-
-      p {
-        flex-grow: 1;
-      }
-
-      .button_main-slider {
-        font-size: get-vw(14px, 320px);
-        padding: get-vw(20px, 320px) 0;
-      }
     }
   }
 }

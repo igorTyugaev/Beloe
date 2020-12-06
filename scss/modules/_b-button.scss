@@ -1,6 +1,6 @@
 .button {
-  font-size: get-vw(16px, 1280px);
-  padding: get-vw(22px, 1280px) 0;
+  font-size: 16px;
+  padding: 22px;
 
   cursor: pointer;
   border: none;
@@ -31,45 +31,32 @@
     color: #{$green};
   }
 
-  &_green-border {
-    font-size: get-vw(14px, 1280px);
-    background: transparent;
-    border: 2px solid #{$green};
-    color: #{$green};
-    display: none;
-    z-index: 1000
-  }
-
-  &_green-border:hover {
-    background: #{$green};
-    color: #{$white};
-  }
-
   &_menu {
-    font-size: get-vw(14px, 1280px);
-    background: transparent;
-    border: 2px solid #{$white};
-    color: #{$white};
     display: none;
-    z-index: 1000
+    padding: 22px;
+    border: 2px solid #{$white};
+    font-size: 14px;
+    width: 100%;
+    background: transparent;
+    color: #{$white};
   }
 
   &_menu:hover {
     background: #{$white};
     color: #{$black};
   }
-
-  &_main-slider {
-
-  }
 }
 
 @media (min-width: $break-point-large-screen) {
+  .button {
+    font-size: get-vw(16px, $break-point-large-screen);
+    padding: get-vw(22px, $break-point-large-screen);
+  }
 }
 
 @media (max-width: #{$break-point-tablet}) {
   .button {
-    padding: 22px 0;
+    padding: get-vw(22px, $break-point-tablet) 0;
     font-size: 14px;
 
     &_white-border {
@@ -79,20 +66,31 @@
     &_green-border {
       font-size: 14px;
     }
+
+    &_menu {
+      display: block;
+      padding: get-vw(22px, $break-point-tablet);
+      font-size: 14px;
+    }
   }
 }
 
 @media (max-width: #{$break-point-mobile}) {
   .button {
-    padding: get-vw(22px, 320px) 0;
-    font-size: get-vw(14px, 320px);
+    padding: get-vw(22px, $break-point-mobile) 0;
+    font-size: 14px;
 
     &_white-border {
-      font-size: get-vw(14px, 320px);
+      font-size: 14px;
     }
 
     &_green-border {
-      font-size: get-vw(14px, 320px);
+      font-size: 14px;
+    }
+
+    &_menu {
+      padding: get-vw(22px, $break-point-mobile);
+      font-size: 14px;
     }
   }
 }

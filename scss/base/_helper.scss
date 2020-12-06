@@ -16,5 +16,9 @@ $black: #131212;
 
 //  Sass Screen Variables
 $break-point-large-screen: 1280px;
-$break-point-tablet: 640px;
-$break-point-mobile: 420px;
+$break-point-tablet: 900px;
+$break-point-mobile: 520px;
+
+//  Sass Z-index Variables
+$z-index-numbers: 10;
+$z-index-menu: 10;
