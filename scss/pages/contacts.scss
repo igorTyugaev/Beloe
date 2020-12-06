@@ -14,4 +14,34 @@
   padding-top: get-vw(100px, 1280px);
 }
 
-@import "../media/contacts_media";
+@media (max-width: 640px) {
+  .contacts__inner {
+    padding-top: get-vw(100px, 640px);
+  }
+}
+
+@media (max-width: 420px) {
+
+  .contacts {
+    &__inner {
+      padding-top: get-vw(100px, 320px);
+    }
+
+    .button {
+      display: block;
+      font-size: get-vw(14px, 320px);
+      height: 10vh;
+      width: calc(100vw - 40px);
+      padding: 21px 0;
+      margin: 20px 0;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .contacts__inner {
+    padding-top: get-vw(100px, 320px);
+  }
+}

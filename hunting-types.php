@@ -98,7 +98,6 @@ include('header.php');
             </p>
         </div>
         <div class="calc__inner">
-
             <div class="calc__params">
                 <div class="calc__booking">
                     <span>проживание</span>
@@ -137,7 +136,6 @@ include('header.php');
                     <span>3333 рублей</span>
                 </div>
             </div>
-
             <div class="calc__form">
                 <input type="text" placeholder="Ваш e-mail"/>
                 <input type="text" placeholder="ваш телефон"/>
