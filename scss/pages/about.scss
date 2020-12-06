@@ -1,11 +1,7 @@
-@import "../helper";
+@import "../base/basic";
 
-@import "../basic";
+@import "../modules/b-landing-about";
 
-@import "../blocks/b-landing-about";
+@import "../modules/b-features";
 
-@import "../blocks/b-features";
-
-@import "../blocks/b-contact";
-
-@import "../blocks/b-menu";
+@import "../modules/b-contact";

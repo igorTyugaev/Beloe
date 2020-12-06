@@ -1,5 +1,3 @@
-@import "../helper";
-
 .reviews {
   background: #{$white};
   padding: get-vw(20px, 1280px) get-vw(20px, 1280px) 0;
@@ -65,7 +63,7 @@
         font-family: Akrobat;
         font-style: normal;
         font-weight: bold;
-        font-size: get-vw(20px, 1280px);
+        font-size: 20px;
         line-height: 100%;
         text-transform: uppercase;
         padding: 0;

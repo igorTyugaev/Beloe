@@ -1,0 +1,206 @@
+@import "../fonts/TTInterfaces/stylesheet.css" all;
+@import "../fonts/Akrobat/stylesheet.css" all;
+
+h2 {
+  font-size: 60px;
+
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: #{$white};
+}
+
+h3 {
+  font-size: 20px;
+
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #{$white};
+}
+
+p, time {
+  font-size: 14px;
+  padding: 20px 0;
+
+  font-family: TT Interfaces;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  color: #{$white};
+}
+
+b {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+
+  font-family: TT Interfaces;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 140%;
+  color: #{$black};
+}
+
+span {
+  font-size: 16px;
+
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #{$white};
+}
+
+a {
+  font-size: 14px;
+
+  font-family: TT Interfaces;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #{$green};
+}
+
+input {
+  font-size: 16px;
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+  background-color: transparent;
+  border: none;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 1);
+
+  &:last-of-type {
+    margin-bottom: 3.125vw;
+  }
+
+  &:first-of-type {
+    margin-top: -0.78125vw;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (min-width: #{$break-point-large-screen}) {
+  h2 {
+    font-size: get-vw(60px, $break-point-large-screen);
+  }
+
+  h3 {
+    font-size: get-vw(20px, $break-point-large-screen);
+  }
+
+  p, time {
+    font-size: get-vw(14px, $break-point-large-screen);
+    padding: get-vw(20px, $break-point-large-screen) 0;
+  }
+
+  b {
+    font-size: get-vw(14px, $break-point-large-screen);
+  }
+
+  span {
+    font-size: get-vw(16px, $break-point-large-screen);
+  }
+
+  a {
+    font-size: get-vw(14px, $break-point-large-screen);
+  }
+
+  input {
+    border-bottom: get-vw(2px, $break-point-large-screen) solid rgba(255, 255, 255, 0.1);
+    padding: get-vw(20px, $break-point-large-screen) 0;
+    font-size: get-vw(16px, $break-point-large-screen);
+  }
+}
+
+@media (max-width: #{$break-point-tablet}) {
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p, time {
+    font-size: 14px;
+    padding: get-vw(20px, $break-point-tablet) 0;
+  }
+
+  b {
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  input {
+    border-bottom: get-vw(2px, $break-point-tablet) solid rgba(255, 255, 255, 0.1);
+    padding: get-vw(20px, $break-point-tablet) 0;
+    font-size: 16px;
+  }
+
+  hr {
+    background: #{$white};
+    border: get-vw(1px, $break-point-tablet) solid #{$white};
+  }
+}
+
+@media (max-width: #{$break-point-mobile}) {
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 20px
+  }
+
+  p, time {
+    font-size: 14px;
+    padding: get-vw(20px, $break-point-mobile) 0;
+  }
+
+  b {
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  input {
+    border-bottom: get-vw(2px, $break-point-mobile) solid rgba(255, 255, 255, 0.1);
+    padding: get-vw(20px, $break-point-mobile) 0;
+    font-size: 16px;
+  }
+
+  hr {
+    background: #{$white};
+    border: get-vw(1px, $break-point-mobile) solid #{$white};
+  }
+}

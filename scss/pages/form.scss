@@ -1,6 +1,8 @@
+@import "../base/basic";
+
 .consultation {
   width: 100%;
-  background: #249D6A;
+  background: #{$green};
   padding: 1.5625vw;
 
   &__button {

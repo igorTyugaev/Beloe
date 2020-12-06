@@ -1,13 +1,9 @@
-@import "helper";
+@import "base/basic";
 
-@import "basic";
+@import "modules/b-first-slide";
 
-@import "blocks/b-first-slide";
+@import "modules/b-features";
 
-@import "blocks/b-features";
+@import "modules/b-reviews";
 
-@import "blocks/b-reviews";
-
-@import "blocks/b-contact";
-
-@import "blocks/b-menu";
+@import "modules/b-contact";

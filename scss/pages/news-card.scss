@@ -1,6 +1,4 @@
-@import "../helper";
-
-@import "../basic";
+@import "../base/basic";
 
 .article-news {
   display: flex;
@@ -35,9 +33,6 @@
     }
   }
 }
-
-
-@import "../blocks/b-menu";
 
 @import "../media/news-card_media";
 

@@ -1,8 +1,6 @@
-@import "../helper";
+@import "../base/basic";
 
-@import "../basic";
-
-@import "../blocks/b-first-slide";
+@import "../modules/b-first-slide";
 
 .hunt__list {
   display: flex;
@@ -119,8 +117,6 @@
   display: none;
 }
 
-@import "../blocks/b-contact";
-
-@import "../blocks/b-menu";
+@import "../modules/b-contact";
 
 @import "../media/hunting-types_media";

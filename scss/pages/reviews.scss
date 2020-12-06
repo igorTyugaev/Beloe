@@ -1,10 +1,8 @@
-@import "../helper";
+@import "../base/basic";
 
-@import "../blocks/b-star-ratings";
+@import "../modules/b-star-ratings";
 
-@import "../blocks/b-reviews";
-
-@import "../blocks/b-menu";
+@import "../modules/b-reviews";
 
 @import "../media/reviews_media";
 

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/basic.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="css/slick.css"/>
     <title>База "Белое"</title>
@@ -30,12 +29,14 @@ include('header.php');
                 <br/>
                 охоты
             </h2>
-            <p>
-                Охотничья база "Белое" предлагает охоту на лося, кабана
-                (с вышки), сибирскую косулю (трофейная, загонная), лису,
-                зайца глухаря, тетерева, водоплавающую дичь. Егерское
-                обслуживание.
-            </p>
+            <div class="first-slide__text">
+                <p>
+                    Охотничья база "Белое" предлагает охоту на лося, кабана
+                    (с вышки), сибирскую косулю (трофейная, загонная), лису,
+                    зайца глухаря, тетерева, водоплавающую дичь. Егерское
+                    обслуживание.
+                </p>
+            </div>
             <button class="button button_main-slider">
                 консультация
             </button>

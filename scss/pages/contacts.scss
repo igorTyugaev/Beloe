@@ -1,8 +1,6 @@
-@import "../helper";
+@import "../base/basic";
 
-@import "../basic";
-
-@import "../blocks/b-contact";
+@import "../modules/b-contact";
 
 .contacts_green {
   background: #{$green};
@@ -15,7 +13,5 @@
 .contacts__inner {
   padding-top: get-vw(100px, 1280px);
 }
-
-@import "../blocks/b-menu";
 
 @import "../media/contacts_media";

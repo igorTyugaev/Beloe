@@ -1,6 +1,4 @@
-@import "../helper";
-
-@import "../basic";
+@import "../base/basic";
 
 .gallery {
   color: #{$green};
@@ -64,8 +62,6 @@
     }
   }
 }
-
-@import "../blocks/b-menu";
 
 .button_menu {
   background: transparent;
