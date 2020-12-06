@@ -1,51 +1,64 @@
 .reviews {
+  @include container();
   background: #{$white};
-  padding: get-vw(20px, 1280px) get-vw(20px, 1280px) 0;
 
   &__title {
     color: #{$green};
-    padding: 0;
+    padding: 0 0 10px;
+  }
+
+  &__more-item {
+    color: #{$white};
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0.4;
+    bottom: 0;
+    margin: 0;
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: get-vw(40px, 1280px);
+    padding-top: 40px;
   }
 
   &__item {
     background: #{$white};
     display: flex;
     width: 50%;
-    margin: 0 0 get-vw(40px, 1280px) 0;
+    margin-bottom: 40px;
 
     &:nth-child(odd) {
-      border-right: 2px solid rgba(255, 255, 255, 0.1);
-      padding-right: get-vw(20px, 1280px);
+      border-right: 2px solid $gray-border;
+      padding-right: 20px;
     }
 
     &:nth-child(even) {
-      padding-left: get-vw(20px, 1280px);
+      padding-left: 20px;
+      border-right: 2px solid transparent;
     }
 
     &-avatar {
+      margin-right: 20px;
+      min-width: 80px;
+      height: 80px;
+      width: 80px;
       background: #{$green};
       display: flex;
       align-items: center;
       justify-content: center;
-      min-width: 6.25vw;
-      height: 6.25vw;
-      width: 6.25vw;
       border-radius: 50%;
-      margin-right: 1.5625vw;
+      position: relative;
 
       span {
+        font-size: 40px;
         color: #{$white};
-        transform: translateX(+25%);
+        position: absolute;
+        left: 25%;
+        top: 25%;
         font-family: Akrobat;
         font-style: normal;
         font-weight: 800;
-        font-size: 3.125vw;
         line-height: 100%;
 
         display: flex;
@@ -55,8 +68,6 @@
     }
 
     &-inner {
-      padding-right: 20px;
-
       &__name {
         color: #{$green};
 
@@ -91,91 +102,224 @@
       }
     }
   }
+
+  &__star {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    #star {
+      fill: #{$white};
+      stroke: #{$green};
+    }
+
+    &--active {
+      #star {
+        fill: #{$green};
+        stroke: #{$green};
+      }
+    }
+  }
+
+  &_green {
+    background: #{$green};
+
+    .reviews {
+      &__title {
+        color: #{$white};
+      }
+
+      &__item {
+        background: #{$green};
+
+        &-avatar {
+          background: #{$white};
+
+          span {
+            color: #{$green};
+          }
+        }
+
+        &-inner {
+          &__name {
+            color: #{$white};
+          }
+
+          &__mark {
+            .reviews__star {
+              #star {
+                fill: #{$green};
+                stroke: #{$white};
+              }
+            }
+
+            .reviews__star--active {
+              #star {
+                fill: #{$white};
+                stroke: #{$white};
+              }
+            }
+          }
+
+          &__massage {
+            color: #{$white};
+            opacity: 0.7;
+          }
+
+          &__more {
+            color: #{$white};
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
 }
 
-.reviews_green {
-  background: #{$green};
-
+@media (min-width: $break-point-large-screen) {
   .reviews {
+
     &__title {
-      color: #{$white};
+      color: #{$green};
+      padding: 0 0 #{get-vw(10px, $break-point-large-screen)};
+    }
+
+    &__list {
+      padding-top: #{get-vw(40px, $break-point-large-screen)};
     }
 
     &__item {
-      background: #{$green};
+      margin-bottom: #{get-vw(40px, $break-point-large-screen)};
 
-      &-avatar {
-        background: #{$white};
+      &:nth-child(odd) {
+        border-right: #{get-vw(2px, $break-point-large-screen)} solid $gray-border;
+        padding-right: #{get-vw(20px, $break-point-large-screen)};
+      }
 
-        span {
-          color: #{$green};
-        }
+      &:nth-child(even) {
+        padding-left: #{get-vw(20px, $break-point-large-screen)};
+        border-right: #{get-vw(2px, $break-point-large-screen)} solid transparent;
       }
 
       &-inner {
         &__name {
-          color: #{$white};
+          font-size: #{get-vw(20px, $break-point-large-screen)};
         }
 
         &__mark {
-          .mark-star {
-            #star {
-              fill: #{$green};
-              stroke: #{$white};
-            }
-          }
-
-          .mark-star_active {
-            #star {
-              fill: #{$white};
-              stroke: #{$white};
-            }
-          }
+          margin-top: #{get-vw(7px, $break-point-large-screen)};
         }
 
         &__massage {
-          color: #{$white};
-          opacity: 0.7;
+          padding: #{get-vw(10px, $break-point-large-screen)} 0;
+          max-height: #{get-vw(80px, $break-point-large-screen)};
+          overflow: hidden;
         }
+      }
 
-        &__more {
-          color: #{$white};
-          opacity: 0.4;
+      &-avatar {
+        margin-right: #{get-vw(20px, $break-point-large-screen)};
+        min-width: #{get-vw(80px, $break-point-large-screen)};
+        height: #{get-vw(80px, $break-point-large-screen)};
+        width: #{get-vw(80px, $break-point-large-screen)};
+
+        span {
+          font-size: #{get-vw(40px, $break-point-large-screen)};
         }
+      }
+    }
+
+    &__star {
+      svg {
+        width: #{get-vw(20px, $break-point-large-screen)};
+        height: #{get-vw(20px, $break-point-large-screen)};
       }
     }
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $break-point-tablet) {
   .reviews {
-    padding: get-vw(100px, 640px) get-vw(20px, 640px) 0;
-  }
-  .mark-star {
-    svg {
-      width: 6%;
-      height: 6%;
+    &__title {
+      padding: 0 0 #{get-vw(20px, $break-point-tablet)};
+    }
+
+    &__list {
+      padding-top: #{get-vw(20px, $break-point-tablet)};
+    }
+
+    &__item {
+      margin-bottom: #{get-vw(40px, $break-point-tablet)};
+
+      &:nth-child(odd) {
+        border-right: #{get-vw(2px, $break-point-tablet)} solid $gray-border;
+        padding-right: #{get-vw(20px, $break-point-tablet)};
+      }
+
+      &:nth-child(even) {
+        padding-left: #{get-vw(20px, $break-point-tablet)};
+        border-right: #{get-vw(2px, $break-point-tablet)} solid transparent;
+      }
+
+      &-avatar {
+        margin-right: #{get-vw(20px, $break-point-tablet)};
+        min-width: #{get-vw(80px, $break-point-tablet)};
+        height: #{get-vw(80px, $break-point-tablet)};
+        width: #{get-vw(80px, $break-point-tablet)};
+
+        span {
+          font-size: #{get-vw(40px, $break-point-tablet)};
+        }
+      }
+    }
+
+    &__star {
+      svg {
+        width: #{get-vw(20px, $break-point-tablet)};
+        height: #{get-vw(20px, $break-point-tablet)};
+      }
     }
   }
 }
 
-@media (max-width: 420px) {
-
+@media (max-width: $break-point-mobile) {
   .reviews {
-    padding: get-vw(100px, 320px) get-vw(20px, 320px) 0;
+    &__title {
+      padding: 0 0 #{get-vw(20px, $break-point-mobile)};
+    }
+
+    &__more-item {
+      justify-content: flex-start;
+    }
+
+    &__list {
+      padding-top: 0;
+    }
+
     &__item {
       width: 100%;
-      margin: get-vw(20px, 320px) 0 get-vw(20px, 320px) 0;
-      padding-bottom: get-vw(20px, 320px);
-      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      margin: 0;
+      padding: 20px 0;
+      border-bottom: #{get-vw(2px, $break-point-tablet)} solid $gray-border;
 
       &:nth-child(odd) {
         border-right: none;
+        padding-right: 0;
+      }
+
+      &:nth-child(even) {
+        border-right: none;
+        padding-left: 0;
+      }
+
+      &:nth-last-child(1) {
+        border-bottom: none;
       }
 
       &-inner {
         &__name {
-          font-size: get-vw(20px, 320px);
+          font-size: 20px;
         }
 
         &__mark {
@@ -183,13 +327,13 @@
         }
 
         &__massage {
-          font-size: get-vw(14px, 320px);
-          margin-top: get-vw(15px, 320px);
-          margin-bottom: get-vw(20px, 320px);
+          font-size: 14px;
+          margin-top: #{get-vw(15px, $break-point-mobile)};
+          margin-bottom: #{get-vw(20px, $break-point-mobile)};
         }
 
         &__more {
-          font-size: get-vw(12px, 320px);
+          font-size: 12px;
         }
       }
 
@@ -197,11 +341,12 @@
         display: none;
       }
     }
-  }
-  .mark-star {
-    svg {
-      width: 6%;
-      height: 6%;
+
+    &__star {
+      svg {
+        width: #{get-vw(20px, $break-point-mobile)};
+        height: #{get-vw(20px, $break-point-mobile)};
+      }
     }
   }
 }

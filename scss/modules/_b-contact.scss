@@ -4,14 +4,14 @@
   min-height: 100vh;
 
   &__inner {
+    @include container();
     width: 37.5vw;
     flex-grow: 1;
-    padding: get-vw(20px, 1280px);
   }
 
   &__title {
     color: #{$green};
-    padding-bottom: get-vw(20px, 1280px);
+    padding-bottom: 40px;
   }
 
   &__text {
@@ -44,11 +44,22 @@
   -webkit-filter: grayscale(100%);
 }
 
-@media (max-width: 640px) {
+@media (min-width: $break-point-large-screen) {
   .contacts {
+    &__title {
+      padding-bottom: get-vw(40px, $break-point-large-screen);
+    }
+  }
+}
+
+@media (max-width: $break-point-tablet) {
+  .contacts {
+    &__title {
+      padding-bottom: get-vw(20px, $break-point-tablet);
+    }
+
     &__inner {
       width: 50vw;
-      padding: get-vw(20px, 640px);
     }
 
     &__map {
@@ -57,7 +68,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $break-point-mobile) {
   .contacts {
     display: flex;
     flex-direction: column;
@@ -65,16 +76,15 @@
 
     &__inner {
       width: 100%;
-      padding: get-vw(20px, 320px);
     }
 
     &__title {
       color: #{$green};
-      padding-bottom: get-vw(20px, 320px);
+      padding-bottom: get-vw(20px, $break-point-mobile);
     }
 
     &__text-item {
-      padding-bottom: get-vw(20px, 320px);
+      padding-bottom: get-vw(20px, $break-point-mobile);
     }
 
     &__map {
@@ -83,7 +93,3 @@
     }
   }
 }
-
-//media (min-width: 768px) and (max-width: 979px) {}
-//media (min-width: 481px) and (max-width: 767px) {}
-//media (max-width: 480px) {}

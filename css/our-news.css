@@ -258,6 +258,7 @@ input::placeholder {
   border-color: #249D6A;
 }
 .numbers__block {
+  border: 2px solid;
   padding: 22px 0;
   font-size: 16px;
   display: flex;
@@ -280,6 +281,7 @@ input::placeholder {
 
 @media (min-width: 1280px) {
   .numbers__block {
+    border: 0.15625vw solid;
     padding: 1.71875vw 0;
     font-size: 1.25vw;
   }
@@ -453,7 +455,7 @@ main {
   cursor: pointer;
   border: 2px solid rgba(19, 18, 18, 0.7);
   border-radius: 50%;
-  padding: 0.12vw;
+  padding: 3px;
   transition: 0.15s border;
   margin-right: 10px;
   width: 30px;
@@ -463,6 +465,18 @@ main {
   border: 2px solid #249D6A;
 }
 
+@media (min-width: 1280px) {
+  .lang {
+    border: 0.15625vw solid rgba(19, 18, 18, 0.7);
+    padding: 0.234375vw;
+    margin-right: 0.78125vw;
+    width: 2.34375vw;
+  }
+
+  .lang:hover {
+    border: 0.15625vw solid #249D6A;
+  }
+}
 @media (min-width: 1280px) {
   .menu__link {
     font-size: 1.25vw;

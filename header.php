@@ -46,9 +46,9 @@
 
     <a class="menu__drive" href="contacts.php">Как проехать?</a>
 
-    <a class="button button_green" href="order-form.php">
+    <button class="button button_green" href="order-form.php">
         Записаться на охоту
-    </a>
+    </button>
 
 </header>
 
