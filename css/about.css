@@ -535,23 +535,33 @@ main {
   }
 }
 .landing-about {
-  padding: 7.8125vw 1.5625vw 1.5625vw;
+  padding: 100px 20px 20px;
   background: #249D6A;
 }
-.landing-about__text {
+@media (min-width: 1280px) {
+  .landing-about {
+    padding: 7.8125vw 1.5625vw 1.5625vw;
+  }
+}
+@media (max-width: 900px) {
+  .landing-about {
+    padding: 11.1111111111vw 2.2222222222vw 2.2222222222vw;
+  }
+}
+@media (max-width: 520px) {
+  .landing-about {
+    padding: 19.2307692308vw 2.2222222222vw 2.2222222222vw;
+  }
+}
+.landing-about h2 {
   width: 50%;
+}
+.landing-about__text {
   color: #FFFFFF;
+  width: 50%;
 }
 
-@media (max-width: 640px) {
-  .landing-about {
-    padding: 15.625vw 3.125vw 3.125vw;
-  }
-}
-@media (max-width: 420px) {
-  .landing-about {
-    padding: 31.25vw 6.25vw 6.25vw;
-  }
+@media (max-width: 520px) {
   .landing-about__text {
     width: 100%;
   }

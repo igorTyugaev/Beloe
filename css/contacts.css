@@ -629,33 +629,21 @@ main {
 }
 
 .contacts__inner {
-  padding-top: 7.8125vw;
+  padding: 100px 20px 20px;
 }
-
-@media (max-width: 640px) {
+@media (min-width: 1280px) {
   .contacts__inner {
-    padding-top: 15.625vw;
+    padding: 7.8125vw 1.5625vw 1.5625vw;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 900px) {
   .contacts__inner {
-    padding-top: 31.25vw;
+    padding: 11.1111111111vw 2.2222222222vw 2.2222222222vw;
   }
-  .contacts .button {
-    display: block;
-    font-size: 4.375vw;
-    height: 10vh;
-    width: calc(100vw - 40px);
-    padding: 21px 0;
-    margin: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
+}
+@media (max-width: 520px) {
   .contacts__inner {
-    padding-top: 31.25vw;
+    padding: 19.2307692308vw 2.2222222222vw 2.2222222222vw;
   }
 }
 

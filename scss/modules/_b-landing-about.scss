@@ -1,25 +1,26 @@
 .landing-about {
-  padding: get-vw(100px, 1280px) get-vw(20px, 1280px) get-vw(20px, 1280px);
+  @include container(100px);
   background: #{$green};
 
-  &__text {
+  h2 {
     width: 50%;
+  }
+
+  &__text {
     color: #{$white};
+    width: 50%;
   }
 
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: $break-point-tablet) {
   .landing-about {
-    padding: get-vw(100px, 640px) get-vw(20px, 640px) get-vw(20px, 640px);
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $break-point-mobile) {
   .landing-about {
-    padding: get-vw(100px, 320px) get-vw(20px, 320px) get-vw(20px, 320px);
-
     &__text {
       width: 100%;
     }

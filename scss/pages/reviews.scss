@@ -2,10 +2,20 @@
 
 @import "../modules/b-reviews";
 
-@import "../media/reviews_media";
+.reviews {
+  @include container(100px);
+}
 
 .button_menu {
-  background: transparent;
   border: 2px solid #{$green};
   color: #{$green};
 }
+
+@media (max-width: $break-point-tablet) {
+
+}
+
+@media (max-width: $break-point-mobile) {
+
+}
+

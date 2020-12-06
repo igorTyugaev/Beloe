@@ -810,57 +810,26 @@ main {
     height: 3.8461538462vw;
   }
 }
-@media (max-width: 640px) {
-  .button {
-    display: block;
-    font-size: 2.1875vw;
-    width: calc(50vw - 3.125vw);
-    padding: 3.125vw 0;
-    margin: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 25%;
-    transform: translateX(-50%);
-  }
-
-  main {
-    position: static;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .numbers {
-    display: none;
-    width: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu {
-    display: none;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    height: 0;
+.reviews {
+  padding: 100px 20px 20px;
+}
+@media (min-width: 1280px) {
+  .reviews {
+    padding: 7.8125vw 1.5625vw 1.5625vw;
   }
 }
-@media (max-width: 420px) {
-  .button {
-    display: block;
-    font-size: 5vw;
-    height: 10vh;
-    width: calc(100vw - 40px);
-    padding: 21px 0;
-    margin: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+@media (max-width: 900px) {
+  .reviews {
+    padding: 11.1111111111vw 2.2222222222vw 2.2222222222vw;
   }
 }
+@media (max-width: 520px) {
+  .reviews {
+    padding: 19.2307692308vw 2.2222222222vw 2.2222222222vw;
+  }
+}
+
 .button_menu {
-  background: transparent;
   border: 2px solid #249D6A;
   color: #249D6A;
 }
