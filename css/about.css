@@ -250,7 +250,7 @@ input::placeholder {
 }
 @media (max-width: 520px) {
   .numbers {
-    padding: 3.8461538462vw 2.2222222222vw 2.2222222222vw;
+    padding: 3.8461538462vw 2.2222222222vw 20px;
   }
 }
 .numbers_green {
@@ -526,7 +526,7 @@ main {
 }
 @media (max-width: 900px) and (max-width: 520px) {
   .menu--small {
-    padding: 3.8461538462vw 2.2222222222vw 2.2222222222vw;
+    padding: 3.8461538462vw 2.2222222222vw 20px;
   }
 }
 @media (max-width: 520px) {
@@ -550,7 +550,7 @@ main {
 }
 @media (max-width: 520px) {
   .landing-about {
-    padding: 19.2307692308vw 2.2222222222vw 2.2222222222vw;
+    padding: 19.2307692308vw 2.2222222222vw 20px;
   }
 }
 .landing-about h2 {
@@ -658,7 +658,7 @@ main {
 }
 @media (max-width: 520px) {
   .contacts__inner {
-    padding: 3.8461538462vw 2.2222222222vw 2.2222222222vw;
+    padding: 3.8461538462vw 2.2222222222vw 20px;
   }
 }
 .contacts__title {
