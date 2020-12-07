@@ -1,3 +1,4 @@
+//  Sass Functions
 @function get-vw($px-vw, $base-vw: 1280px) {
   @return ($px-vw * 100vw) / $base-vw;
 }
@@ -6,9 +7,19 @@
   @return ($px-vh * 100vh) / $base-vh;
 }
 
+//  Sass Colors Variables
 $green: #249D6A;
 $white: #FFFFFF;
 $gray: #F4F4F4;
 $gray-text: rgba(19, 18, 18, 0.7);
+$gray-border: rgba(255, 255, 255, 0.1);
 $black: #131212;
 
+//  Sass Screen Variables
+$break-point-large-screen: 1280px;
+$break-point-tablet: 900px;
+$break-point-mobile: 520px;
+
+//  Sass Z-index Variables
+$z-index-numbers: 10;
+$z-index-menu: 10;

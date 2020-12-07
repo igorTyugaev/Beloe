@@ -1,4 +1,3 @@
-@import "../helper";
 
 .first-slide {
   display: flex;
@@ -13,25 +12,27 @@
   }
 
   &__lead {
+    @include container(100px);
     display: flex;
     flex-direction: column;
     width: 50%;
     background: #{$green};
-    padding: get-vw(100px, 1280px) get-vw(20px, 1280px) get-vw(20px, 1280px);
+  }
 
-    p {
-      flex-grow: 1;
+  &__text {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: $break-point-tablet) {
+  .first-slide {
+    &__lead {
+
     }
   }
 }
 
-
-@media (max-width: 640px) {
-  .first-slide {
-  }
-}
-
-@media (max-width: 420px) {
+@media (max-width: $break-point-mobile) {
   .first-slide {
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,22 +45,12 @@
     }
 
     &__lead {
+      @include container();
       display: flex;
       flex-direction: column;
       width: 100%;
       height: 60%;
       flex-grow: 1;
-      padding: get-vw(20px, 320px);
-
-      p {
-        //font-size: get-vw(12px, 320px);
-        flex-grow: 1;
-      }
-
-      .button_main-slider {
-        font-size: get-vw(14px, 320px);
-        padding: get-vw(20px, 320px) 0;
-      }
     }
   }
 }

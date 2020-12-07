@@ -1,39 +1,42 @@
+main {
+  margin-left: 25vw;
+  width: 75vw;
+  position: relative;
+}
+
 .menu {
   padding: 1.5625vw;
-  background: #F4F4F4;
+  background: #{$gray};
   width: 25vw;
   height: 100vh;
   position: fixed;
   display: flex;
-  z-index: 10;
+  z-index: $z-index-menu;
   flex-direction: column;
-
-  a {
-    text-decoration-line: none;
-  }
 
   &__link {
     font-family: Akrobat;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.25vw;
+    font-size: 16px;
     line-height: 100%;
+    text-decoration-line: none;
     margin: 0.9375vw 0;
     transition: .15s color;
     display: flex;
     align-items: center;
     text-transform: uppercase;
 
-    color: #131212;
+    color: #{$black};
   }
 
   &__link:hover {
-    color: #249D6A;
+    color: #{$green};
   }
 
   &__line {
     background-color: rgba(19, 18, 18, 0.1);
-    height: 0.15625vw;
+    height: 2px;
     border: none;
     margin: 1.5625vw 0;
   }
@@ -51,26 +54,27 @@
 
   &__address {
     font-family: TT Interfaces;
+    text-transform: unset;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.9375vw;
+    font-size: 12px;
     line-height: 140%;
     margin: 2.34375vw 0;
 
 
-    color: rgba(19, 18, 18, 0.4);
+    color: #{$gray-text};
   }
 
   &__drive {
     font-family: TT Interfaces;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.9375vw;
+    font-size: 12px;
     line-height: 140%;
     text-decoration: underline;
     margin-bottom: 3.125vw;
 
-    color: #249D6A;
+    color: #{$green};
   }
 
   &__drive:hover {
@@ -78,10 +82,32 @@
   }
 }
 
-@media (max-width: 640px) {
+@import "b-langs";
+
+@media (min-width: $break-point-large-screen) {
+  .menu {
+    &__link {
+      font-size: get-vw(16px, $break-point-large-screen);
+    }
+
+    &__line {
+      height: get-vw(2px, $break-point-large-screen);
+    }
+
+    &__address {
+      font-size: get-vw(12px, $break-point-large-screen);
+    }
+
+    &__drive {
+      font-size: get-vw(12px, $break-point-large-screen);
+    }
+  }
+}
+
+@media (max-width: $break-point-tablet) {
   main {
     position: static;
-    width: 100%;
+    width: 100vw;
     margin-left: 0;
   }
 
@@ -91,29 +117,22 @@
     padding: 0;
     width: 0;
     height: 0;
-  }
 
-  .button_menu {
-    font-size: get-vw(16px, 640px);
-    width: calc(50vw - #{get-vw(20px, 640px)});
-    margin-top: get-vw(20px, 640px);
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 25%;
-    transform: translateX(-50%);
+    &--small {
+      @include container();
+      position: fixed;
+      z-index: $z-index-menu;
+      width: 50vw;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
-@media (max-width: 420px) {
-  .button_menu {
-    display: block;
-    font-size: get-vw(16px, 320px);
-    width: calc(100vw - #{get-vw(30px, 320px)});
-    margin-top: get-vw(20px, 320px);
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+@media (max-width: $break-point-mobile) {
+  .menu {
+    &--small {
+      width: 100vw;
+    }
   }
 }

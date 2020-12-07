@@ -1,14 +1,12 @@
-@import "../helper";
-
-@import "../basic";
+@import "../base/basic";
 
 body {
-  background: #249D6A;
+  background: #{$green};
 }
 
 .news {
   &__title {
-    padding: get-vw(100px, 1280px) get-vw(20px, 1280px) get-vw(40px, 1280px);
+    @include container(100px);
   }
 
   &__list {
@@ -20,9 +18,9 @@ body {
 .news__item {
   position: relative;
   width: 50%;
-  height: get-vw(240px, 1280px);
+  height: 100%;
   object-fit: cover;
-  
+
   &-bg {
     position: relative;
     width: 100%;
@@ -54,8 +52,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
-  padding: get-vw(20px, 1280px);
+  color: #{$white};
+  padding: 20px;
   height: 100%;
 
   &__read-more {
@@ -64,36 +62,27 @@ body {
   }
 }
 
-@import "../blocks/b-menu";
-
-@media (max-width: 640px) {
+@media (max-width: $break-point-tablet) {
   .news {
-    &__title {
-      padding: get-vw(100px, 640px) get-vw(20px, 640px) get-vw(40px, 640px);
-    }
-
     &__item {
-      height: get-vw(240px, 640px);
+      height: get-vw(240px, $break-point-tablet);
     }
   }
 
   .news__item-inner {
-    padding: get-vw(20px, 640px);
+    padding: get-vw(20px, $break-point-tablet);
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $break-point-mobile) {
   .news {
-    &__title {
-      padding: get-vw(100px, 320px) get-vw(20px, 320px) get-vw(40px, 320px);
-    }
 
     &__item {
-      height: get-vw(260px, 320px);
+      height: get-vw(260px, $break-point-mobile);
       width: 100%;
     }
   }
   .news__item-inner {
-    padding: get-vw(20px, 320px);
+    padding: get-vw(20px, $break-point-mobile);
   }
 }

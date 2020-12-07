@@ -1,4 +1,4 @@
-@import "../helper";
+@import "../base/basic";
 
 .article-news {
   display: flex;
@@ -6,36 +6,15 @@
 
   &__inner {
     width: 37.5vw;
+    padding: get-vw(100px, 1280px) get-vw(20px, 1280px) 0;
 
     &-title {
-      font-family: Akrobat, serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: get-vw(60px, 1280px);
-      line-height: 90%;
-      text-transform: uppercase;
-      color: #249D6A;
-      margin: 0;
-      padding: 100px 0 20px 20px;
+      color: #{$green};
     }
 
     &-text {
-      font-family: TT Interfaces, serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: get-vw(14px, 1280px);
-      line-height: 140%;
-
-      padding: 0 20px;
-      color: rgba(19, 18, 18, 0.7);
-
-      b {
-        font-weight: bold;
-        font-size: get-vw(14px, 1280px);
-      }
-
-      p, span, a {
-        font-size: get-vw(14px, 1280px);
+      p {
+        color: #{$gray-text};
       }
     }
   }
@@ -52,10 +31,6 @@
       height: 100vh;
       object-fit: cover;
     }
-  }
-
-  .button {
-    display: none;
   }
 }
 

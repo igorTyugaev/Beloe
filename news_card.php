@@ -6,7 +6,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0,
           maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/news-card.css">
     <title>Карточка новости</title>
 </head>
@@ -27,8 +26,8 @@ include('header.php');
             <img src="media/news_card.png" alt="news_card">
         </div>
         <div class="article-news__inner">
-            <h1 class="article-news__inner-title">Грибной сезон<br>
-                в Зауралье</h1>
+            <h2 class="article-news__inner-title">Грибной сезон<br>
+                в Зауралье</h2>
             <div class="article-news__inner-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores
                     autem

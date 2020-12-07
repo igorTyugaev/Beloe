@@ -1,0 +1,95 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+
+  &__inner {
+    @include container();
+    width: 37.5vw;
+    flex-grow: 1;
+  }
+
+  &__title {
+    color: #{$green};
+    padding-bottom: 40px;
+  }
+
+  &__text {
+
+    &-item {
+      padding-bottom: get-vw(20px, 1280px);
+
+      b {
+        color: #{$black};
+      }
+
+      p {
+        padding: 0;
+        color: #{$gray-text};
+      }
+    }
+
+
+  }
+
+  &__map {
+    background: #FFFFFF;
+    width: 37.5vw;
+    height: 100vh;
+  }
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+}
+
+@media (min-width: $break-point-large-screen) {
+  .contacts {
+    &__title {
+      padding-bottom: get-vw(40px, $break-point-large-screen);
+    }
+  }
+}
+
+@media (max-width: $break-point-tablet) {
+  .contacts {
+    &__title {
+      padding-bottom: get-vw(20px, $break-point-tablet);
+    }
+
+    &__inner {
+      width: 50vw;
+    }
+
+    &__map {
+      width: 50vw;
+    }
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &__inner {
+      width: 100%;
+    }
+
+    &__title {
+      color: #{$green};
+      padding-bottom: get-vw(20px, $break-point-mobile);
+    }
+
+    &__text-item {
+      padding-bottom: get-vw(20px, $break-point-mobile);
+    }
+
+    &__map {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+}

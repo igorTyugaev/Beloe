@@ -1,15 +1,21 @@
-@import "../helper";
+@import "../base/basic";
 
-@import "../blocks/b-star-ratings";
+@import "../modules/b-reviews";
 
-@import "../blocks/b-reviews";
-
-@import "../blocks/b-menu";
-
-@import "../media/reviews_media";
+.reviews {
+  @include container(100px);
+}
 
 .button_menu {
-  background: transparent;
   border: 2px solid #{$green};
   color: #{$green};
 }
+
+@media (max-width: $break-point-tablet) {
+
+}
+
+@media (max-width: $break-point-mobile) {
+
+}
+

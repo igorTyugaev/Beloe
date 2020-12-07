@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/basic.css"/>
     <link rel="stylesheet" href="css/hunting-types.css"/>
     <title>Виды охоты</title>
 </head>
@@ -29,12 +28,14 @@ include('header.php');
                 <br/>
                 охоты
             </h2>
-            <p>
-                Охотничья база "Белое" предлагает охоту на лося, кабана
-                (с вышки), сибирскую косулю (трофейная, загонная), лису,
-                зайца глухаря, тетерева, водоплавающую дичь. Егерское
-                обслуживание.
-            </p>
+            <div class="first-slide__text">
+                <p>
+                    Охотничья база "Белое" предлагает охоту на лося, кабана
+                    (с вышки), сибирскую косулю (трофейная, загонная), лису,
+                    зайца глухаря, тетерева, водоплавающую дичь. Егерское
+                    обслуживание.
+                </p>
+            </div>
             <button class="button button_main-slider">
                 консультация
             </button>
@@ -97,7 +98,6 @@ include('header.php');
             </p>
         </div>
         <div class="calc__inner">
-
             <div class="calc__params">
                 <div class="calc__booking">
                     <span>проживание</span>
@@ -136,7 +136,6 @@ include('header.php');
                     <span>3333 рублей</span>
                 </div>
             </div>
-
             <div class="calc__form">
                 <input type="text" placeholder="Ваш e-mail"/>
                 <input type="text" placeholder="ваш телефон"/>

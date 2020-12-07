@@ -1,0 +1,26 @@
+.lang {
+  cursor: pointer;
+  border: 2px solid #{$gray-text};
+  border-radius: 50%;
+  padding: 3px;
+  transition: .15s border;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.lang:hover {
+  border: 2px solid #{$green};
+}
+
+@media (min-width: $break-point-large-screen) {
+  .lang {
+    border: #{get-vw(2px, $break-point-large-screen)} solid #{$gray-text};
+    padding: #{get-vw(3px, $break-point-large-screen)};
+    margin-right: #{get-vw(10px, $break-point-large-screen)};
+    width: #{get-vw(30px, $break-point-large-screen)};
+  }
+
+  .lang:hover {
+    border: #{get-vw(2px, $break-point-large-screen)} solid #{$green};
+  }
+}

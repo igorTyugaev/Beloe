@@ -1,73 +1,21 @@
-@import "../helper";
+@import "../base/helper";
 
-@media (max-device-aspect-ratio: 4/3) {
-
-  .numbers_green {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-  }
-
+@media (max-width: 640px) {
   .article-news {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    width: 75vw;
-
     &__inner {
       height: 100%;
-      width: 100%;
-
-      &-title {
-        padding: 20px 0 10px 20px;
-      }
-
-      &-text {
-        font-size: get-vw(16px, 1280px);
-        line-height: 160%;
-      }
+      width: 62.5vw;
+      padding: get-vw(100px, 640px) get-vw(20px, 640px) 0;
     }
+  }
 
-    &__img {
-      position: static;
-      background: #FFFFFF;
-      width: 75vw;
-      height: 25vh;
-
-      img {
-        width: 100%;
-        height: inherit;
-        object-fit: cover;
-      }
-    }
+  .button_menu {
+    border-color: #{$green};
+    color: #{$green};
   }
 }
 
-@media (max-width: 418px) {
-
-  main {
-    position: static;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .numbers {
-    display: none;
-
-    width: 0;
-    height: 0;
-
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu {
-    display: none;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    height: 0;
-  }
+@media (max-width: 420px) {
 
   .article-news {
     flex-direction: column;
@@ -78,26 +26,15 @@
     &__inner {
       height: 100%;
       width: 100vw;
+      padding: get-vw(20px, 320px) get-vw(20px, 320px) 0;
 
       &-title {
-        padding: 20px 0 20px 20px;
         font-size: get-vw(40px, 320px);
       }
 
       &-text {
         font-size: get-vw(12px, 320px);
         line-height: 160%;
-
-        b {
-          font-size: get-vw(14px, 320px);
-          line-height: 140%;
-        }
-
-        p, span, a {
-          margin: 0;
-          margin-bottom: 20px;
-          font-size: get-vw(14px, 320px);
-        }
       }
     }
 
@@ -115,24 +52,16 @@
         object-fit: cover;
       }
     }
-
-    .button {
-      display: block;
-      font-size: get-vw(14px, 320px);
-      height: 10vh;
-      width: calc(100vw - 40px);
-      padding: 21px 0;
-      margin: 20px 0;
-      position: fixed;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 
   .numbers_green {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
+    color: #{$white};
+    border-color: #{$white};
+  }
+
+  .button_menu {
+    border-color: #{$white};
+    color: #{$white};
   }
 
 }
