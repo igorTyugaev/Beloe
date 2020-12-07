@@ -13,59 +13,61 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-.news__item {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-
-  &-bg {
+  &__item {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 240px;
+    object-fit: cover;
+    overflow: hidden;
 
-    img {
+    &-bg {
+      position: relative;
       width: 100%;
       height: 100%;
-      margin: 0;
-      padding: 0;
-      background-repeat: no-repeat;
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-bg::after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(19, 18, 18, 0.8);
+    }
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #{$white};
+      padding: 20px;
+
+      &__read-more {
+        flex-grow: 1;
+        color: $gray-text-light;
+      }
     }
   }
-
-  &-bg::after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(19, 18, 18, 0.8);
-  }
 }
 
-.news__item-inner {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #{$white};
-  padding: 20px;
-  height: 100%;
 
-  &__read-more {
-    flex-grow: 1;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@media (max-width: $break-point-tablet) {
+@media (min-width: $break-point-large-screen) {
   .news {
     &__item {
-      height: get-vw(240px, $break-point-tablet);
+      height: #{get-vw(240px, $break-point-large-screen)};
     }
   }
 
@@ -74,15 +76,28 @@ body {
   }
 }
 
+@media (max-width: $break-point-tablet) {
+  .news {
+    &__item {
+      height: 240px;
+    }
+  }
+
+  .news__item-inner {
+    padding: 20px
+  }
+}
+
 @media (max-width: $break-point-mobile) {
   .news {
 
     &__item {
-      height: get-vw(260px, $break-point-mobile);
       width: 100%;
+      height: 260px;
     }
   }
+
   .news__item-inner {
-    padding: get-vw(20px, $break-point-mobile);
+    padding: 20px;
   }
 }
