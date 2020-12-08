@@ -391,7 +391,7 @@ main {
   padding: 1.5625vw;
   background: #F4F4F4;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   display: flex;
   z-index: 10;
@@ -952,7 +952,7 @@ main {
   padding: 1.5625vw;
   background: #F4F4F4;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   display: flex;
   z-index: 10;

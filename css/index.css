@@ -389,7 +389,7 @@ main {
   padding: 1.5625vw;
   background: #F4F4F4;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   display: flex;
   z-index: 10;
@@ -955,12 +955,11 @@ main {
 .contacts {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .contacts__inner {
   padding: 20px 20px 20px;
   width: 37.5vw;
-  flex-grow: 1;
 }
 @media (min-width: 1280px) {
   .contacts__inner {
@@ -981,9 +980,6 @@ main {
   color: #249D6A;
   padding-bottom: 40px;
 }
-.contacts__text-item {
-  padding-bottom: 1.5625vw;
-}
 .contacts__text-item b {
   color: #131212;
 }
@@ -994,7 +990,7 @@ main {
 .contacts__map {
   background: #FFFFFF;
   width: 37.5vw;
-  height: 100vh;
+  height: inherit;
 }
 
 [class*=ymaps-2][class*=-ground-pane] {
@@ -1022,7 +1018,6 @@ main {
   .contacts {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
   }
   .contacts__inner {
     width: 100%;
@@ -1031,12 +1026,9 @@ main {
     color: #249D6A;
     padding-bottom: 3.8461538462vw;
   }
-  .contacts__text-item {
-    padding-bottom: 3.8461538462vw;
-  }
   .contacts__map {
     width: 100%;
-    height: 40vh;
+    min-height: 40vh;
   }
 }
 
