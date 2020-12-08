@@ -38,7 +38,7 @@ include('header.php');
                         Далее мы расскажем о популярных видах
                         охоты в летний период.
                     </p>
-                    <a class="news__item-inner__read-more" href="">Читать новость
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать новость
                         полностью</a>
                     <div class="news__item-inner__timestamp">
                         <time datetime="2001-03-15">15.03.20</time>
@@ -57,7 +57,7 @@ include('header.php');
                         Далее мы расскажем о популярных видах
                         охоты в летний период.
                     </p>
-                    <a class="news__item-inner__read-more" href="">Читать новость
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать новость
                         полностью</a>
                     <div class="news__item-inner__timestamp">
                         <time datetime="2001-03-15">15.03.20</time>
@@ -76,7 +76,7 @@ include('header.php');
                         Далее мы расскажем о популярных видах
                         охоты в летний период.
                     </p>
-                    <a class="news__item-inner__read-more" href="">Читать новость
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать новость
                         полностью</a>
                     <div class="news__item-inner__timestamp">
                         <time datetime="2001-03-15">15.03.20</time>
@@ -95,7 +95,7 @@ include('header.php');
                         Далее мы расскажем о популярных видах
                         охоты в летний период.
                     </p>
-                    <a class="news__item-inner__read-more" href="">Читать новость
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать новость
                         полностью</a>
                     <div class="news__item-inner__timestamp">
                         <time datetime="2001-03-15">15.03.20</time>

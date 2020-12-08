@@ -1,22 +1,35 @@
-@import "../base/helper";
+@import "../base/basic";
 
-@media (max-width: 640px) {
-  .article-news {
-    &__inner {
-      height: 100%;
-      width: 62.5vw;
-      padding: get-vw(100px, 640px) get-vw(20px, 640px) 0;
-    }
+.article-news {
+  &__inner {
+    @include container(100px);
+    height: 100%;
+    width: 50%;
   }
 
-  .button_menu {
-    border-color: #{$green};
-    color: #{$green};
+  &__img {
+    background: $green;
+    width: $quarter-main-width;
+    min-height: 220px;
   }
 }
 
-@media (max-width: 420px) {
+@media (min-width: $break-point-large-screen) {
 
+}
+
+@media (max-width: $break-point-tablet) {
+  .article-news {
+    &__inner {
+    }
+
+    &__img {
+      width: $half-main-width;
+    }
+  }
+}
+
+@media (max-width: $break-point-mobile) {
   .article-news {
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,25 +38,11 @@
 
     &__inner {
       height: 100%;
-      width: 100vw;
-      padding: get-vw(20px, 320px) get-vw(20px, 320px) 0;
-
-      &-title {
-        font-size: get-vw(40px, 320px);
-      }
-
-      &-text {
-        font-size: get-vw(12px, 320px);
-        line-height: 160%;
-      }
+      width: $full-main-width;
     }
 
-
     &__img {
-      background: #249D6A;
-      position: static;
-      width: 100vw;
-      min-height: 220px;
+      width: $full-main-width;
       height: 38vh;
 
       img {
@@ -53,15 +52,4 @@
       }
     }
   }
-
-  .numbers_green {
-    color: #{$white};
-    border-color: #{$white};
-  }
-
-  .button_menu {
-    border-color: #{$white};
-    color: #{$white};
-  }
-
 }

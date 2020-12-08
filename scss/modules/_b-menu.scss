@@ -107,7 +107,7 @@ main {
 @media (max-width: $break-point-tablet) {
   main {
     position: static;
-    width: 100vw;
+    width: $full-main-width;
     margin-left: 0;
   }
 

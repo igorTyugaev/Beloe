@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/news-card.css">
     <title>Карточка новости</title>
 </head>
+
 <body>
 
 <?php
@@ -22,9 +24,7 @@ include('header.php');
 
 <main>
     <article class="article-news">
-        <div class="article-news__img">
-            <img src="media/news_card.png" alt="news_card">
-        </div>
+
         <div class="article-news__inner">
             <h2 class="article-news__inner-title">Грибной сезон<br>
                 в Зауралье</h2>
@@ -112,8 +112,13 @@ include('header.php');
             </div>
         </div>
 
+        <div class="article-news__img">
+            <img src="media/news_card.png" alt="news_card">
+        </div>
+
     </article>
 </main>
 
 </body>
+
 </html>
