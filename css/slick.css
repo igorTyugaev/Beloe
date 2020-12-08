@@ -146,15 +146,15 @@
   color: #FFFFFF;
 }
 .slider_about .slick-arrow {
+  height: 40px;
+  width: 40px;
   position: absolute;
   z-index: 9;
-  bottom: 21.8745vw;
+  bottom: 50%;
   font-size: 0;
-  height: 3.125vw;
-  width: 3.125vw;
   border: none;
   cursor: pointer;
-  background-size: 50%;
+  background-size: 25%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #249D6A;
@@ -169,7 +169,7 @@
   background-image: url("../media/arrow-r.svg");
 }
 .slider_about .slider__item {
-  height: 46.875vw;
+  height: 600px;
   position: relative;
 }
 .slider_about .slider__item-img {
@@ -216,6 +216,34 @@
   display: flex;
   align-items: center;
   color: white;
+}
+
+@media (min-width: 1280px) {
+  .slider_about .slick-arrow {
+    height: 3.125vw;
+    width: 3.125vw;
+  }
+  .slider_about .slider__item {
+    height: 46.875vw;
+  }
+}
+@media (max-width: 900px) {
+  .slider_about .slick-arrow {
+    height: 4.4444444444vw;
+    width: 4.4444444444vw;
+  }
+  .slider_about .slider__item {
+    height: 66.6666666667vw;
+  }
+}
+@media (max-width: 520px) {
+  .slider_about .slick-arrow {
+    height: 30px;
+    width: 30px;
+  }
+  .slider_about .slider__item {
+    height: 260px;
+  }
 }
 
 /*# sourceMappingURL=slick.css.map */

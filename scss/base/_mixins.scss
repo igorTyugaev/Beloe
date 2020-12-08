@@ -10,7 +10,7 @@
   }
 
   @media (max-width: #{$break-point-mobile}) {
-    padding: #{get-vw($padding-top, $break-point-mobile)} get-vw(20px, $break-point-tablet) get-vw(20px, $break-point-tablet);
+    padding: #{get-vw($padding-top, $break-point-mobile)} get-vw(20px, $break-point-tablet) 20px;
   }
 }
 

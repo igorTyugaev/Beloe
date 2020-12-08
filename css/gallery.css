@@ -250,7 +250,7 @@ input::placeholder {
 }
 @media (max-width: 520px) {
   .numbers {
-    padding: 3.8461538462vw 2.2222222222vw 2.2222222222vw;
+    padding: 3.8461538462vw 2.2222222222vw 20px;
   }
 }
 .numbers_green {
@@ -380,15 +380,15 @@ input::placeholder {
   }
 }
 main {
-  margin-left: 25vw;
-  width: 75vw;
+  margin-left: 25%;
+  width: 75%;
   position: relative;
 }
 
 .menu {
   padding: 1.5625vw;
   background: #F4F4F4;
-  width: 25vw;
+  width: 25%;
   height: 100vh;
   position: fixed;
   display: flex;
@@ -509,7 +509,7 @@ main {
     padding: 20px 20px 20px;
     position: fixed;
     z-index: 10;
-    width: 50vw;
+    width: 50%;
     top: 0;
     left: 0;
   }
@@ -526,12 +526,12 @@ main {
 }
 @media (max-width: 900px) and (max-width: 520px) {
   .menu--small {
-    padding: 3.8461538462vw 2.2222222222vw 2.2222222222vw;
+    padding: 3.8461538462vw 2.2222222222vw 20px;
   }
 }
 @media (max-width: 520px) {
   .menu--small {
-    width: 100vw;
+    width: 100%;
   }
 }
 .gallery {

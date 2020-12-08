@@ -45,21 +45,30 @@ include('header.php');
 
     <section class="features">
         <div class="features__item">
-            <img src="media/advantages-1.png" alt="work-3" class="features__img">
-            <a href=""><h3 class="features__title">Комфортная охотничья базе</h3></a>
+            <div class="features__item-inner">
+                <img src="media/advantages-1.png" alt="work-3" class="features__img">
+                <a href=""><h3 class="features__title">Комфортная охотничья базе</h3></a>
+            </div>
         </div>
         <div class="features__item">
-            <img src="media/advantages-2.png" alt="work-3" class="features__img">
-            <a href=""><h3 class="features__title">Высокий профессионализм наших
-                    специалистов</h3></a>
+            <div class="features__item-inner">
+                <img src="media/advantages-2.png" alt="work-3" class="features__img">
+                <a href=""><h3 class="features__title">Высокий профессионализм наших
+                        специалистов</h3></a>
+            </div>
         </div>
         <div class="features__item">
-            <img src="media/advantages-3.png" alt="work-3" class="features__img">
-            <a href=""><h3 class="features__title">Отдых для всей семьи на природе</h3></a>
+            <div class="features__item-inner">
+                <img src="media/advantages-3.png" alt="work-3" class="features__img">
+                <a href=""><h3 class="features__title">Отдых для всей семьи на природе</h3>
+                </a>
+            </div>
         </div>
         <div class="features__item">
-            <img src="media/advantages-4.png" alt="work-3" class="features__img">
-            <a href=""><h3 class="features__title">Частное лестничество</h3></a>
+            <div class="features__item-inner">
+                <img src="media/advantages-4.png" alt="work-3" class="features__img">
+                <a href=""><h3 class="features__title">Частное лестничество</h3></a>
+            </div>
         </div>
     </section>
 
