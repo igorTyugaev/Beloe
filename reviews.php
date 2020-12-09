@@ -40,7 +40,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -50,7 +50,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -60,7 +60,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -70,7 +70,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -80,7 +80,7 @@ include('header.php');
                         <span class="reviews__star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -110,7 +110,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -120,7 +120,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -130,7 +130,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -140,7 +140,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -150,7 +150,7 @@ include('header.php');
                         <span class="reviews__star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -180,7 +180,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -190,7 +190,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -200,7 +200,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -210,7 +210,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -220,7 +220,7 @@ include('header.php');
                         <span class="reviews__star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -250,7 +250,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -260,7 +260,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -270,7 +270,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -280,7 +280,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -290,7 +290,7 @@ include('header.php');
                         <span class="reviews__star">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -320,7 +320,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -330,7 +330,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -340,7 +340,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -350,7 +350,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -360,7 +360,7 @@ include('header.php');
                         <span class="reviews__star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -390,7 +390,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -400,7 +400,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -410,7 +410,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -420,7 +420,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -430,7 +430,7 @@ include('header.php');
                         <span class="reviews__star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -460,7 +460,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -470,7 +470,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -480,7 +480,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -490,7 +490,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -500,7 +500,7 @@ include('header.php');
                         <span class="reviews__star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -530,7 +530,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -540,7 +540,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -550,7 +550,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -560,7 +560,7 @@ include('header.php');
                         <span class="reviews__star reviews__star--active">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"
@@ -570,7 +570,7 @@ include('header.php');
                         <span class="reviews__star ">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                            <path id="star" d="M12 2L15.2328 7.55041L21.5106
+                            <path class="star" d="M12 2L15.2328 7.55041L21.5106
                             8.90983L17.2308 13.6996L17.8779
                             20.0902L12 17.5L6.12215 20.0902L6.76919
                             13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z"

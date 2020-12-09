@@ -16,9 +16,12 @@
                 <a class="menu__link" href="hunting-types.php">Все виды охоты</a>
             </li>
 
-            <hr class="menu__line"/>
+            <li>
+                <hr class="menu__line"/>
+            </li>
 
-            <li class="menu__link-container"><a class="menu__link" href="about.php">О
+            <li class="menu__link-container">
+                <a class="menu__link" href="about.php">О
                     нас</a></li>
             <li class="menu__link-container"><a class="menu__link" href="our-news.php">Новости</a>
             </li>
@@ -27,7 +30,9 @@
             <li class="menu__link-container"><a class="menu__link" href="gallery.php">Галерея</a>
             </li>
 
-            <hr class="menu__line"/>
+            <li>
+                <hr class="menu__line"/>
+            </li>
 
             <li class="menu__link-container"><a class="menu__link" href="contacts.php">Контакты</a>
             </li>

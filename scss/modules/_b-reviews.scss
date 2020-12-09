@@ -109,13 +109,13 @@
       height: 20px;
     }
 
-    #star {
+    .star {
       fill: #{$white};
       stroke: #{$green};
     }
 
     &--active {
-      #star {
+      .star {
         fill: #{$green};
         stroke: #{$green};
       }
@@ -148,14 +148,14 @@
 
           &__mark {
             .reviews__star {
-              #star {
+              .star {
                 fill: #{$green};
                 stroke: #{$white};
               }
             }
 
             .reviews__star--active {
-              #star {
+              .star {
                 fill: #{$white};
                 stroke: #{$white};
               }
