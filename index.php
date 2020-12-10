@@ -15,12 +15,13 @@
 include('header.php');
 ?>
 
-<div class="numbers container">
+<div id="numbers-main" class="numbers container">
     <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
     <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
 </div>
 
 <main class="main">
+
     <section class="first-slide">
         <div class="first-slide__img"></div>
         <div class="first-slide__lead">

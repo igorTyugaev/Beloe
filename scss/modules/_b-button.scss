@@ -41,6 +41,26 @@
     color: #{$white};
   }
 
+  &_close {
+    display: none;
+    background: url("../media/btn_close.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &_close-active {
+    display: flex;
+    align-self: center;
+  }
+
   &_menu:hover {
     background: #{$white};
     color: #{$black};

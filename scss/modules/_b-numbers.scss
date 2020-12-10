@@ -14,6 +14,16 @@
     border-color: $green;
   }
 
+  &_menu {
+    display: none;
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    color: $green;
+    border-color: $green;
+  }
+
   &__block {
     border: 2px solid;
     padding: 22px 0;
@@ -39,6 +49,10 @@
   &__block:last-of-type {
     border-left: none;
   }
+
+  &_toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $break-point-large-screen) {
@@ -47,6 +61,17 @@
       border: get-vw(2px, $break-point-large-screen) solid;
       padding: get-vw(22px, $break-point-large-screen) 0;
       font-size: get-vw(16px, $break-point-large-screen);
+    }
+
+    &_menu {
+      position: static;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+
+    &_menu {
+      display: none;
     }
   }
 }
@@ -59,11 +84,27 @@
       padding: get-vw(22px, $break-point-tablet) 0;
       font-size: 14px;
     }
+
+    &_menu {
+      display: flex;
+      position: static;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
   }
 }
 
 @media (max-width: #{$break-point-mobile}) {
   .numbers {
     display: none;
+
+    &_menu {
+      //display: block;
+      position: static;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
   }
 }
