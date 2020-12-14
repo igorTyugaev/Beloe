@@ -1,16 +1,24 @@
-<header id="menu" class="menu">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>Document</title>
+</head>
+<body>
 
-    <div class="menu__logo-container">
-        <a href="index.php" class="menu__logo-box">
-            <img
-                    src="./media/logo.svg"
-                    alt="Охотничья база Белое"
-                    class="menu__logo"
-            />
-        </a>
-        <button onclick="closeMenu()" id="btnCloseMenu" class="button_close"></button>
-    </div>
+<header class="menu">
 
+    <a href="index.php" class="logo-box">
+        <img
+                src="./media/logo.svg"
+                alt="Охотничья база Белое"
+                class="menu__logo"
+        />
+    </a>
 
     <hr class="menu__line"/>
 
@@ -47,33 +55,26 @@
         </ul>
     </nav>
 
-
     <span class="menu__address">
                 Россия, Курганская область лес
                 <br/>
                 Каминская Дача
             </span>
+
     <a class="menu__drive" href="contacts.php">Как проехать?</a>
 
-    <div class="menu__bottom-container">
-        <div class="numbers container numbers_menu">
-            <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-            <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-        </div>
-
-        <button class="button button_green" href="order-form.php">
-            Записаться на охоту
-        </button>
-    </div>
+    <button class="button button_green" href="order-form.php">
+        Записаться на охоту
+    </button>
 
 </header>
 
 <div class="menu--small">
-    <button onclick="toggleMenu()" id="btnDropDownMenu" class="button button_menu">
+    <button class="button button_menu">
         Меню
     </button>
 </div>
 
 
-
-
+</body>
+</html>

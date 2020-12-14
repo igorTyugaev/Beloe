@@ -257,6 +257,15 @@ input::placeholder {
   color: #249D6A;
   border-color: #249D6A;
 }
+.numbers_menu {
+  display: none;
+  position: static;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  color: #249D6A;
+  border-color: #249D6A;
+}
 .numbers__block {
   border: 2px solid;
   padding: 22px 0;
@@ -268,7 +277,6 @@ input::placeholder {
   font-family: Akrobat;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.25vw;
   line-height: 100%;
   text-decoration-line: none;
   color: inherit;
@@ -278,12 +286,24 @@ input::placeholder {
 .numbers__block:last-of-type {
   border-left: none;
 }
+.numbers_toggle {
+  display: none;
+}
 
 @media (min-width: 1280px) {
   .numbers__block {
     border: 0.15625vw solid;
     padding: 1.71875vw 0;
     font-size: 1.25vw;
+  }
+  .numbers_menu {
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .numbers_menu {
+    display: none;
   }
 }
 @media (max-width: 900px) {
@@ -294,10 +314,36 @@ input::placeholder {
     padding: 2.4444444444vw 0;
     font-size: 14px;
   }
+  .numbers_menu {
+    display: flex;
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 520px) {
   .numbers {
     display: none;
+  }
+  .numbers_menu {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .numbers__block {
+    font-size: 16px;
+    border: 2px solid;
+    padding: 4.2307692308vw 0;
+    width: 100%;
+    border: 2px solid;
+  }
+  .numbers__block:last-of-type {
+    border-left: 2px solid;
+    border-top: none;
   }
 }
 .button {
@@ -334,6 +380,24 @@ input::placeholder {
   width: 100%;
   background: transparent;
   color: #FFFFFF;
+}
+.button_close {
+  display: none;
+  background: url("../media/btn_close.svg") no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.button_close-active {
+  display: flex;
+  align-self: center;
 }
 .button_menu:hover {
   background: #FFFFFF;
@@ -384,30 +448,33 @@ main {
   width: 75%;
   position: relative;
 }
+main-fixed {
+  overflow: hidden;
+}
 
 .menu {
-  padding: 1.5625vw;
+  padding: 20px;
   background: #F4F4F4;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   display: flex;
   z-index: 10;
   flex-direction: column;
 }
 .menu__link {
+  font-size: 16px;
+  padding: 6px 0;
   font-family: Akrobat;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
   line-height: 100%;
   text-decoration-line: none;
-  margin: 0.9375vw 0;
+  text-transform: uppercase;
+  color: #131212;
   transition: 0.15s color;
   display: flex;
   align-items: center;
-  text-transform: uppercase;
-  color: #131212;
 }
 .menu__link:hover {
   color: #249D6A;
@@ -416,39 +483,50 @@ main {
   background-color: rgba(19, 18, 18, 0.1);
   height: 2px;
   border: none;
-  margin: 1.5625vw 0;
+  margin: 14px 0;
 }
-.menu__line:first-of-type {
-  margin-bottom: 0.625vw;
+.menu__logo-box {
+  margin: 0 auto;
 }
 .menu__logo {
-  position: relative;
-  width: 9.453125vw;
-  left: 50%;
-  margin-left: -4.6875vw;
+  width: 121px;
+  max-width: 100%;
+}
+.menu__logo-container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
 }
 .menu__address {
+  font-size: 12px;
+  margin: 30px 0;
   font-family: TT Interfaces;
   text-transform: unset;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
   line-height: 140%;
-  margin: 2.34375vw 0;
   color: rgba(19, 18, 18, 0.7);
+  display: block;
 }
 .menu__drive {
+  margin-bottom: 40px;
+  display: block;
   font-family: TT Interfaces;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 140%;
   text-decoration: underline;
-  margin-bottom: 3.125vw;
   color: #249D6A;
 }
 .menu__drive:hover {
   text-decoration: none;
+}
+.menu__bottom-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .lang {
@@ -457,6 +535,7 @@ main {
   border-radius: 50%;
   padding: 3px;
   transition: 0.15s border;
+  margin-top: 17px;
   margin-right: 10px;
   width: 30px;
 }
@@ -469,6 +548,7 @@ main {
   .lang {
     border: 0.15625vw solid rgba(19, 18, 18, 0.7);
     padding: 0.234375vw;
+    margin-top: 1.328125vw;
     margin-right: 0.78125vw;
     width: 2.34375vw;
   }
@@ -478,32 +558,66 @@ main {
   }
 }
 @media (min-width: 1280px) {
+  .menu {
+    padding: 1.5625vw;
+    width: 25%;
+  }
   .menu__link {
     font-size: 1.25vw;
+    padding: 0.46875vw 0;
   }
   .menu__line {
     height: 0.15625vw;
+    margin: 1.09375vw 0;
+  }
+  .menu__logo {
+    width: 9.453125vw;
   }
   .menu__address {
     font-size: 0.9375vw;
+    margin: 2.34375vw 0;
   }
   .menu__drive {
     font-size: 0.9375vw;
+    margin-bottom: 3.125vw;
   }
 }
 @media (max-width: 900px) {
   main {
     position: static;
-    width: 100vw;
+    width: 100%;
     margin-left: 0;
+  }
+  main-fixed {
+    overflow: hidden;
   }
 
   .menu {
     display: none;
+    padding: 2.2222222222vw;
+    width: 25%;
+  }
+  .menu__link {
+    font-size: 16px;
+    padding: 0.6666666667vw 0;
+  }
+  .menu__line {
+    height: 0.2222222222vw;
+    margin: 1.5555555556vw 0;
+  }
+  .menu__logo-box {
     margin: 0;
-    padding: 0;
-    width: 0;
-    height: 0;
+  }
+  .menu__logo {
+    width: 121px;
+  }
+  .menu__address {
+    font-size: 12px;
+    margin: 3.3333333333vw 0;
+  }
+  .menu__drive {
+    font-size: 12px;
+    margin-bottom: 4.4444444444vw;
   }
   .menu--small {
     padding: 20px 20px 20px;
@@ -529,9 +643,89 @@ main {
     padding: 3.8461538462vw 2.2222222222vw 20px;
   }
 }
+@media (max-width: 900px) {
+  .menu .button_green {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .menu_show {
+    padding: 20px 20px 20px;
+    z-index: 20;
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) and (min-width: 1280px) {
+  .menu_show {
+    padding: 1.5625vw 1.5625vw 1.5625vw;
+  }
+}
+@media (max-width: 900px) and (max-width: 900px) {
+  .menu_show {
+    padding: 2.2222222222vw 2.2222222222vw 2.2222222222vw;
+  }
+}
+@media (max-width: 900px) and (max-width: 520px) {
+  .menu_show {
+    padding: 3.8461538462vw 2.2222222222vw 20px;
+  }
+}
 @media (max-width: 520px) {
+  .menu {
+    display: none;
+    padding: 3.8461538462vw;
+    width: 25%;
+  }
+  .menu__link {
+    font-size: 16px;
+    padding: 1.1538461538vw 0;
+  }
+  .menu__line {
+    height: 0.3846153846vw;
+    margin: 2.6923076923vw 0;
+  }
+  .menu__logo-box {
+    margin: 0;
+  }
+  .menu__logo {
+    width: 121px;
+  }
+  .menu__address {
+    font-size: 12px;
+    margin: 5.7692307692vw 0;
+  }
+  .menu__drive {
+    font-size: 12px;
+    margin-bottom: 7.6923076923vw;
+  }
   .menu--small {
     width: 100%;
+  }
+  .menu .button_green {
+    width: 100%;
+  }
+
+  .menu_show {
+    padding: 20px 20px 20px;
+    z-index: 20;
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 520px) and (min-width: 1280px) {
+  .menu_show {
+    padding: 1.5625vw 1.5625vw 1.5625vw;
+  }
+}
+@media (max-width: 520px) and (max-width: 900px) {
+  .menu_show {
+    padding: 2.2222222222vw 2.2222222222vw 2.2222222222vw;
+  }
+}
+@media (max-width: 520px) and (max-width: 520px) {
+  .menu_show {
+    padding: 3.8461538462vw 2.2222222222vw 20px;
   }
 }
 .reviews {
@@ -642,11 +836,11 @@ main {
   width: 20px;
   height: 20px;
 }
-.reviews__star #star {
+.reviews__star .star {
   fill: #FFFFFF;
   stroke: #249D6A;
 }
-.reviews__star--active #star {
+.reviews__star--active .star {
   fill: #249D6A;
   stroke: #249D6A;
 }
@@ -668,11 +862,11 @@ main {
 .reviews_green .reviews__item-inner__name {
   color: #FFFFFF;
 }
-.reviews_green .reviews__item-inner__mark .reviews__star #star {
+.reviews_green .reviews__item-inner__mark .reviews__star .star {
   fill: #249D6A;
   stroke: #FFFFFF;
 }
-.reviews_green .reviews__item-inner__mark .reviews__star--active #star {
+.reviews_green .reviews__item-inner__mark .reviews__star--active .star {
   fill: #FFFFFF;
   stroke: #FFFFFF;
 }

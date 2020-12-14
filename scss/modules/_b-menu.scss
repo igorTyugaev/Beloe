@@ -2,32 +2,37 @@ main {
   margin-left: $menu-width;
   width: $main-width;
   position: relative;
+
+  &-fixed {
+    overflow: hidden;
+  }
 }
 
 .menu {
-  padding: 1.5625vw;
+  padding: 20px;
   background: #{$gray};
   width: $menu-width;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   display: flex;
   z-index: $z-index-menu;
   flex-direction: column;
 
   &__link {
+    font-size: 16px;
+    padding: 6px 0;
+
     font-family: Akrobat;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
     line-height: 100%;
     text-decoration-line: none;
-    margin: 0.9375vw 0;
+    text-transform: uppercase;
+    color: #{$black};
+
     transition: .15s color;
     display: flex;
     align-items: center;
-    text-transform: uppercase;
-
-    color: #{$black};
   }
 
   &__link:hover {
@@ -35,44 +40,51 @@ main {
   }
 
   &__line {
-    background-color: rgba(19, 18, 18, 0.1);
+    background-color: $gray-border-menu;
     height: 2px;
     border: none;
-    margin: 1.5625vw 0;
+    margin: 14px 0;
   }
 
-  &__line:first-of-type {
-    margin-bottom: 0.625vw;
+  &__logo-box {
+    margin: 0 auto;
   }
 
   &__logo {
-    position: relative;
-    width: 9.453125vw;
-    left: 50%;
-    margin-left: -4.6875vw;
+    width: 121px;
+    max-width: 100%;
+  }
+
+  &__logo-container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
   }
 
   &__address {
+    font-size: 12px;
+    margin: 30px 0;
+
     font-family: TT Interfaces;
     text-transform: unset;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
     line-height: 140%;
-    margin: 2.34375vw 0;
-
-
     color: #{$gray-text};
+    display: block;
   }
 
   &__drive {
+    margin-bottom: 40px;
+
+    display: block;
     font-family: TT Interfaces;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 140%;
     text-decoration: underline;
-    margin-bottom: 3.125vw;
 
     color: #{$green};
   }
@@ -80,26 +92,43 @@ main {
   &__drive:hover {
     text-decoration: none;
   }
+
+  &__bottom-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 @import "b-langs";
 
 @media (min-width: $break-point-large-screen) {
   .menu {
+    padding: get-vw(20px, $break-point-large-screen);
+    width: $menu-width;
+
     &__link {
       font-size: get-vw(16px, $break-point-large-screen);
+      padding: get-vw(6px, $break-point-large-screen) 0;
     }
 
     &__line {
       height: get-vw(2px, $break-point-large-screen);
+      margin: get-vw(14px, $break-point-large-screen) 0;
+    }
+
+    &__logo {
+      width: get-vw(121px, $break-point-large-screen);
     }
 
     &__address {
       font-size: get-vw(12px, $break-point-large-screen);
+      margin: get-vw(30px, $break-point-large-screen) 0;
     }
 
     &__drive {
       font-size: get-vw(12px, $break-point-large-screen);
+      margin-bottom: get-vw(40px, $break-point-large-screen);
     }
   }
 }
@@ -107,16 +136,46 @@ main {
 @media (max-width: $break-point-tablet) {
   main {
     position: static;
-    width: 100vw;
+    width: $full-main-width;
     margin-left: 0;
+
+    &-fixed {
+      overflow: hidden;
+    }
   }
 
   .menu {
     display: none;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    height: 0;
+    padding: get-vw(20px, $break-point-tablet);
+    width: $menu-width;
+
+    &__link {
+      font-size: 16px;
+      padding: get-vw(6px, $break-point-tablet) 0;
+    }
+
+    &__line {
+      height: get-vw(2px, $break-point-tablet);
+      margin: get-vw(14px, $break-point-tablet) 0;
+    }
+
+    &__logo-box {
+      margin: 0;
+    }
+
+    &__logo {
+      width: 121px;
+    }
+
+    &__address {
+      font-size: 12px;
+      margin: get-vw(30px, $break-point-tablet) 0;
+    }
+
+    &__drive {
+      font-size: 12px;
+      margin-bottom: get-vw(40px, $break-point-tablet);
+    }
 
     &--small {
       @include container();
@@ -126,13 +185,68 @@ main {
       top: 0;
       left: 0;
     }
+
+    .button_green {
+      width: $full-main-width;
+    }
+  }
+
+  .menu_show {
+    @include container();
+    z-index: $z-index-menu-show;
+    display: block;
+    width: $full-main-width;
   }
 }
 
 @media (max-width: $break-point-mobile) {
+
   .menu {
+    display: none;
+    padding: get-vw(20px, $break-point-mobile);
+    width: $menu-width;
+
+    &__link {
+      font-size: 16px;
+      padding: get-vw(6px, $break-point-mobile) 0;
+    }
+
+    &__line {
+      height: get-vw(2px, $break-point-mobile);
+      margin: get-vw(14px, $break-point-mobile) 0;
+    }
+
+    &__logo-box {
+      margin: 0;
+    }
+
+    &__logo {
+      width: 121px;
+    }
+
+    &__address {
+      font-size: 12px;
+      margin: get-vw(30px, $break-point-mobile) 0;
+    }
+
+    &__drive {
+      font-size: 12px;
+      margin-bottom: get-vw(40px, $break-point-mobile);
+    }
+
     &--small {
       width: $full-main-width;
     }
+
+    .button_green {
+      width: $full-main-width;
+    }
+  }
+
+  .menu_show {
+    @include container();
+    z-index: $z-index-menu-show;
+    display: block;
+    width: $full-main-width;
   }
 }

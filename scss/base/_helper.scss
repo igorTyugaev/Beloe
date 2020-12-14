@@ -14,11 +14,13 @@ $gray: #F4F4F4;
 $gray-text: rgba(19, 18, 18, 0.7);
 $gray-text-light: rgba(255, 255, 255, 0.4);;
 $gray-border: rgba(255, 255, 255, 0.1);
+$gray-border-menu: rgba(19, 18, 18, 0.1);
 $black: #131212;
 
 //  Sass Dimensions Variables
 $menu-width: 25%;
 $main-width: 75%;
+$quarter-main-width: 37.5%;
 $half-main-width: 50%;
 $full-main-width: 100%;
 
@@ -32,3 +34,4 @@ $break-point-mobile: 520px;
 $z-index-text: 2;
 $z-index-numbers: 10;
 $z-index-menu: 10;
+$z-index-menu-show: 20;
