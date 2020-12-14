@@ -164,7 +164,7 @@ main {
     }
 
     &__logo {
-      width: get-vw(121px, $break-point-tablet);
+      width: 121px;
     }
 
     &__address {
@@ -200,9 +200,53 @@ main {
 }
 
 @media (max-width: $break-point-mobile) {
+
   .menu {
+    display: none;
+    padding: get-vw(20px, $break-point-mobile);
+    width: $menu-width;
+
+    &__link {
+      font-size: 16px;
+      padding: get-vw(6px, $break-point-mobile) 0;
+    }
+
+    &__line {
+      height: get-vw(2px, $break-point-mobile);
+      margin: get-vw(14px, $break-point-mobile) 0;
+    }
+
+    &__logo-box {
+      margin: 0;
+    }
+
+    &__logo {
+      width: 121px;
+    }
+
+    &__address {
+      font-size: 12px;
+      margin: get-vw(30px, $break-point-mobile) 0;
+    }
+
+    &__drive {
+      font-size: 12px;
+      margin-bottom: get-vw(40px, $break-point-mobile);
+    }
+
     &--small {
       width: $full-main-width;
     }
+
+    .button_green {
+      width: $full-main-width;
+    }
+  }
+
+  .menu_show {
+    @include container();
+    z-index: $z-index-menu-show;
+    display: block;
+    width: $full-main-width;
   }
 }
