@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/gallery.css"/>
-    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
     <title>Галерея</title>
 </head>
 
@@ -23,78 +23,76 @@ include('header.php');
 <main class="main">
     <section class="gallery gallery_green">
         <h2 class="gallery__title">Галерея</h2>
-        <div class="slider_about">
-            <div class="slider__item">
-                <img
-                        src="./media/about/0349.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0086.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0336.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0346.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0426.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0465.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-        </div>
+
         <div class="slider__list">
-            <div class="slider__list__item">
-                <div class="slider__list__item-bg"></div>
-                <h3>Охота на лося</h3>
-            </div>
-            <div class="slider__list__item">
-                <div class="slider__list__item-bg"></div>
-                <h3>Охота на лося</h3>
-            </div>
-            <div class="slider__list__item">
-                <div class="slider__list__item-bg"></div>
-                <h3>Охота на лося</h3>
-            </div>
+            <button class="button-accordion button-accordion--active">
+                <div class="carousel-item">
+                    <div class="carousel"
+                         data-flickity='{"pageDots": false, "autoPlay": 4500}'>
+                        <div class="carousel-cell"><img
+                                    src="./media/about/0349.jpg"
+                                    alt=""
+                                    class="slider__item-img"
+                            /></div>
+                        <div class="carousel-cell"><img
+                                    src="./media/about/0349.jpg"
+                                    alt=""
+                                    class="slider__item-img"
+                            /></div>
+                        <div class="carousel-cell"><img
+                                    src="./media/about/0349.jpg"
+                                    alt=""
+                                    class="slider__item-img"
+                            /></div>
+                        <div class="carousel-cell">
+                            <img
+                                    src="./media/about/0349.jpg"
+                                    alt=""
+                                    class="slider__item-img"
+                            />
+                        </div>
+                    </div>
+                    <h3 class="carousel-title">База охоты</h3>
+                    <p class="carousel-status"></p>
+                </div>
+            </button>
+            <button class="button-accordion">
+                <div class="carousel-item">
+                    <div class="carousel"
+                         data-flickity='{"pageDots": false, "autoPlay": 4500}'>
+                        <div class="carousel-cell"><img
+                                    src="./media/about/0349.jpg"
+                                    alt=""
+                                    class="slider__item-img"
+                            /></div>
+                        <div class="carousel-cell"><img
+                                    src="./media/about/0349.jpg"
+                                    alt=""
+                                    class="slider__item-img"
+                            /></div>
+                        <div class="carousel-cell"><img
+                                    src="./media/about/0349.jpg"
+                                    alt=""
+                                    class="slider__item-img"
+                            /></div>
+                        <div class="carousel-cell">
+                            <img
+                                    src="./media/about/0349.jpg"
+                                    alt=""
+                                    class="slider__item-img"
+                            />
+                        </div>
+                    </div>
+                    <h3 class="carousel-title">База охоты</h3>
+                    <p class="carousel-status"></p>
+                </div>
+            </button>
         </div>
     </section>
 </main>
 
-<script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        type="text/javascript"
-></script>
-<script
-        src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
-        type="text/javascript"
-></script>
-<script src="./js/about.js"></script>
-<script src="./js/map.js"></script>
-<script src="./js/slick.min.js" type="text/javascript"></script>
+<script src="./js/gallery.js" type="text/javascript"></script>
+<script src="./js/flickity.pkgd.js" type="text/javascript"></script>
 
 </body>
 

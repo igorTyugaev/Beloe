@@ -728,6 +728,58 @@ main-fixed {
     padding: 3.8461538462vw 2.2222222222vw 20px;
   }
 }
+.carousel {
+  background: #FFFFFF;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 600px;
+  margin-right: 10px;
+  background: #F4F4F4;
+  counter-increment: carousel-cell;
+  object-fit: cover;
+}
+
+.carousel-cell img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.carousel-title {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 100%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.carousel-status {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  padding: 0;
+  color: white;
+  font-size: 24px;
+}
+
 .gallery {
   color: #249D6A;
   margin: 0;
@@ -741,17 +793,15 @@ main-fixed {
   display: flex;
   flex-wrap: wrap;
 }
-.slider__list__item {
+.slider__item {
   width: 100%;
   height: 18.75vw;
   padding: 1.5625vw;
-  transition: 0.3s;
-  position: relative;
-  cursor: pointer;
   overflow: hidden;
+  position: relative;
 }
-.slider__list__item-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hunt-list/image 1.png");
+.slider__item-bg {
+  background: #1199FF;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -763,13 +813,17 @@ main-fixed {
   transition: 0.3s;
   z-index: -1;
 }
-.slider__list__item:hover .hunt__item-bg {
+.slider__item:hover {
+  overflow: hidden;
+}
+.slider__item:hover .slider__item-bg {
   transform: scale(1.03);
 }
-.slider__list__item_active {
+.slider__item_active {
   height: 37.5vw;
+  overflow: hidden;
 }
-.slider__list__item_active .hunt__item-bg {
+.slider__item_active .slider__item-bg {
   transform: scale(1.03);
 }
 
@@ -777,6 +831,28 @@ main-fixed {
   background: transparent;
   border: 2px solid #249D6A;
   color: #249D6A;
+}
+
+.button-accordion {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: none;
+  background: transparent;
+}
+.button-accordion:hover .carousel {
+  transform: scale(1.03);
+}
+.button-accordion--active {
+  height: 100%;
+}
+.button-accordion--active:hover .carousel {
+  transform: none;
 }
 
 @media (max-width: 640px) {
