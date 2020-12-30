@@ -39,6 +39,46 @@
 
   }
 
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &-header {
+    display: block;
+    width: 100%;
+  }
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    height: 70%;
+
+    margin-left: -10px;
+  }
+
+  &-paragraph {
+    width: 50%;
+    flex-basis: calc((100% - (10px + 10px)) / 2);
+    margin-left: 10px;
+  }
+
+  &-bottom {
+    display: none;
+    @include container-left();
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    padding-left: 20px;
+  }
+
   &:hover {
     .hunt__item-bg {
       transform: scale(1.03);
@@ -46,23 +86,29 @@
   }
 
   &_active {
-    height: 480px;
+    min-height: 480px;
 
-    .hunt__item-bg {
-      transform: scale(1.03);
+    .hunt__item {
+      &-bg {
+        transform: scale(1.03);
+      }
+
+      &-bottom {
+        display: flex;
+      }
     }
   }
 }
 
-@media (min-width: $break-point-large-screen) {
-  .hunt__item {
-    height: get-vh(380px, $break-point-large-screen);
-
-    &_active {
-      height: get-vh(580px, $break-point-large-screen);
-    }
-  }
-}
+//@media (min-width: $break-point-large-screen) {
+//  .hunt__item {
+//    height: get-vh(380px, $break-point-large-screen);
+//
+//    &_active {
+//      height: get-vh(580px, $break-point-large-screen);
+//    }
+//  }
+//}
 
 @media (max-width: $break-point-tablet) {
   .hunt__item {

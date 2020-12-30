@@ -403,6 +403,9 @@ input::placeholder {
   background: #FFFFFF;
   color: #131212;
 }
+.button_calc {
+  width: 50%;
+}
 
 @media (min-width: 1280px) {
   .button {

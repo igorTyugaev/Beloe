@@ -43,50 +43,153 @@ include('header.php');
     </section>
 
     <section class="hunt__list">
+
+        <div class="hunt__item">
+            <div class="hunt__item-bg"></div>
+            <div class="hunt__item-inner">
+                <div class="hunt__item-header">
+                    <h3>Охота на лося</h3>
+                </div>
+
+                <div class="hunt__item-container">
+                    <p class="hunt__item-paragraph">
+                        <b>Cезон охоты:</b>
+                        <br/>
+                        <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                        <br/>
+                        <span>до 1 года: с 1 октября по 15 января.</span>
+                    </p>
+
+                    <p class="hunt__item-paragraph">
+                        <b>Cезон охоты:</b>
+                        <br/>
+                        <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                        <br/>
+                        <span>до 1 года: с 1 октября по 15 января.</span>
+                    </p>
+
+                    <p class="hunt__item-paragraph">
+                        <b>Cезон охоты:</b>
+                        <br/>
+                        <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                        <br/>
+                        <span>до 1 года: с 1 октября по 15 января.</span>
+                    </p>
+
+                    <p class="hunt__item-paragraph">
+                        <b>Cезон охоты:</b>
+                        <br/>
+                        <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                        <br/>
+                        <span>до 1 года: с 1 октября по 15 января.</span>
+                    </p>
+                </div>
+
+                <div class="hunt__item-bottom">
+
+                    <button class="button button_calc">
+                        добавить
+                        в калькулятор
+                    </button>
+
+                    <button class="button button_green button_calc">
+                        консультация
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
         <div class="hunt__item">
             <div class="hunt__item-bg"></div>
             <h3>Охота на лося</h3>
-            <p>
-                <b>Cезон охоты:</b>
-                <br/>
-                <span>старше 1 года: с 1 октября по 31 декабря.</span>
-                <br/>
-                <span>до 1 года: с 1 октября по 15 января.</span>
-            </p>
+            <div class="hunt__item-inner">
+                <p class="hunt__item-paragraph">
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+
+                <p class="hunt__item-paragraph">
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+
+                <p>
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+            </div>
         </div>
+
         <div class="hunt__item">
             <div class="hunt__item-bg"></div>
             <h3>Охота на лося</h3>
-            <p>
-                <b>Cезон охоты:</b>
-                <br/>
-                <span>старше 1 года: с 1 октября по 31 декабря.</span>
-                <br/>
-                <span>до 1 года: с 1 октября по 15 января.</span>
-            </p>
+            <div class="hunt__item-inner">
+                <p class="hunt__item-paragraph">
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+
+                <p class="hunt__item-paragraph">
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+
+                <p>
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+            </div>
         </div>
+
         <div class="hunt__item">
             <div class="hunt__item-bg"></div>
             <h3>Охота на лося</h3>
-            <p>
-                <b>Cезон охоты:</b>
-                <br/>
-                <span>старше 1 года: с 1 октября по 31 декабря.</span>
-                <br/>
-                <span>до 1 года: с 1 октября по 15 января.</span>
-            </p>
+            <div class="hunt__item-inner">
+                <p class="hunt__item-paragraph">
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+
+                <p class="hunt__item-paragraph">
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+
+                <p>
+                    <b>Cезон охоты:</b>
+                    <br/>
+                    <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                    <br/>
+                    <span>до 1 года: с 1 октября по 15 января.</span>
+                </p>
+            </div>
         </div>
-        <div class="hunt__item">
-            <div class="hunt__item-bg"></div>
-            <h3>Охота на лося</h3>
-            <p>
-                <b>Cезон охоты:</b>
-                <br/>
-                <span>старше 1 года: с 1 октября по 31 декабря.</span>
-                <br/>
-                <span>до 1 года: с 1 октября по 15 января.</span>
-            </p>
-        </div>
+
     </section>
 
     <section class="calc">
