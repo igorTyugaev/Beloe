@@ -61,9 +61,9 @@
             <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
         </div>
 
-        <button class="button button_green" href="order-form.php">
+        <a class="button button_green" href="#popup-consult">
             Записаться на охоту
-        </button>
+        </a>
     </div>
 
 </header>
@@ -72,6 +72,27 @@
     <button onclick="toggleMenu()" id="btnDropDownMenu" class="button button_menu">
         Меню
     </button>
+</div>
+
+
+<div id="popup-consult" class="popup">
+    <div class="popup__body">
+        <div class="popup__close">
+            <a href="##"><img src="media/close.svg" alt=""></a>
+        </div>
+        <h2 class="popup__title">Записаться<br>
+            на охоту</h2>
+        <div class="popup__form">
+            <input type="text" placeholder="Дата заезда"/>
+            <input type="text" placeholder="Время для звонка"/>
+            <input type="text" placeholder="ваш телефон"/>
+            <input type="text" placeholder="Ваше имя"/>
+            <button class="button">Консультация</button>
+        </div>
+        <p class="popup__success">
+            Скоро мы с вами свяжемся!
+        </p>
+    </div>
 </div>
 
 
