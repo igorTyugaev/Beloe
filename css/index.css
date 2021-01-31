@@ -890,7 +890,6 @@ main-fixed {
   padding-top: 50%;
   padding-bottom: 50%;
   object-fit: cover;
-  overflow: hidden;
 }
 .features__item-inner::after {
   content: "";
