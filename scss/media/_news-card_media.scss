@@ -31,7 +31,7 @@
 
 @media (max-width: $break-point-mobile) {
   .article-news {
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     margin: 0;
     height: 100%;
@@ -39,9 +39,11 @@
     &__inner {
       height: 100%;
       width: $full-main-width;
+      padding-top: 20px;
     }
 
     &__img {
+      position: relative;
       width: $full-main-width;
       height: 38vh;
 

@@ -38,7 +38,8 @@ include('header.php');
                         Далее мы расскажем о популярных видах
                         охоты в летний период.
                     </p>
-                    <a class="news__item-inner__read-more" href="news_card.php">Читать новость
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать
+                        новость
                         полностью</a>
                     <div class="news__item-inner__timestamp">
                         <time datetime="2001-03-15">15.03.20</time>
@@ -57,7 +58,8 @@ include('header.php');
                         Далее мы расскажем о популярных видах
                         охоты в летний период.
                     </p>
-                    <a class="news__item-inner__read-more" href="news_card.php">Читать новость
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать
+                        новость
                         полностью</a>
                     <div class="news__item-inner__timestamp">
                         <time datetime="2001-03-15">15.03.20</time>
@@ -76,7 +78,8 @@ include('header.php');
                         Далее мы расскажем о популярных видах
                         охоты в летний период.
                     </p>
-                    <a class="news__item-inner__read-more" href="news_card.php">Читать новость
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать
+                        новость
                         полностью</a>
                     <div class="news__item-inner__timestamp">
                         <time datetime="2001-03-15">15.03.20</time>
@@ -95,7 +98,8 @@ include('header.php');
                         Далее мы расскажем о популярных видах
                         охоты в летний период.
                     </p>
-                    <a class="news__item-inner__read-more" href="news_card.php">Читать новость
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать
+                        новость
                         полностью</a>
                     <div class="news__item-inner__timestamp">
                         <time datetime="2001-03-15">15.03.20</time>
@@ -103,6 +107,86 @@ include('header.php');
                 </div>
             </div>
 
+            <div class="news__item">
+                <div class="news__item-bg">
+                    <img src="media/bg-news-1.png" alt="news_item-background_img">
+                </div>
+                <div class="news__item-inner">
+                    <h3 class="news__item-inner__title">Летняя охота</h3>
+                    <p class="news__item-inner__text">Великолепное развлечение
+                        для настоящих мужчин, с этим спорить трудно!
+                        Далее мы расскажем о популярных видах
+                        охоты в летний период.
+                    </p>
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать
+                        новость
+                        полностью</a>
+                    <div class="news__item-inner__timestamp">
+                        <time datetime="2001-03-15">15.03.20</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news__item">
+                <div class="news__item-bg">
+                    <img src="media/bg-news-1.png" alt="news_item-background_img">
+                </div>
+                <div class="news__item-inner">
+                    <h3 class="news__item-inner__title">Летняя охота</h3>
+                    <p class="news__item-inner__text">Великолепное развлечение
+                        для настоящих мужчин, с этим спорить трудно!
+                        Далее мы расскажем о популярных видах
+                        охоты в летний период.
+                    </p>
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать
+                        новость
+                        полностью</a>
+                    <div class="news__item-inner__timestamp">
+                        <time datetime="2001-03-15">15.03.20</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news__item">
+                <div class="news__item-bg">
+                    <img src="media/bg-news-1.png" alt="news_item-background_img">
+                </div>
+                <div class="news__item-inner">
+                    <h3 class="news__item-inner__title">Летняя охота</h3>
+                    <p class="news__item-inner__text">Великолепное развлечение
+                        для настоящих мужчин, с этим спорить трудно!
+                        Далее мы расскажем о популярных видах
+                        охоты в летний период.
+                    </p>
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать
+                        новость
+                        полностью</a>
+                    <div class="news__item-inner__timestamp">
+                        <time datetime="2001-03-15">15.03.20</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news__item">
+                <div class="news__item-bg">
+                    <img src="media/bg-news-1.png" alt="news_item-background_img">
+                </div>
+                <div class="news__item-inner">
+                    <h3 class="news__item-inner__title">Летняя охота</h3>
+                    <p class="news__item-inner__text">Великолепное развлечение
+                        для настоящих мужчин, с этим спорить трудно!
+                        Далее мы расскажем о популярных видах
+                        охоты в летний период.
+                    </p>
+                    <a class="news__item-inner__read-more" href="news_card.php">Читать
+                        новость
+                        полностью</a>
+                    <div class="news__item-inner__timestamp">
+                        <time datetime="2001-03-15">15.03.20</time>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
 </main>

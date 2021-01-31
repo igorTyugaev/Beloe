@@ -1666,7 +1666,7 @@ main-fixed {
 }
 @media (max-width: 520px) {
   .article-news {
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     margin: 0;
     height: 100%;
@@ -1674,8 +1674,10 @@ main-fixed {
   .article-news__inner {
     height: 100%;
     width: 100%;
+    padding-top: 20px;
   }
   .article-news__img {
+    position: relative;
     width: 100%;
     height: 38vh;
   }
