@@ -670,15 +670,10 @@ include('header.php');
 </main>
 
 <script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        type="text/javascript"
-></script>
-<script
         src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
         type="text/javascript"
 ></script>
 <script src="./js/map.js"></script>
-<script src="./js/slick.min.js" type="text/javascript"></script>
 <script src="./js/main.js" type="text/javascript"></script>
 <script src="./js/cslider.js" type="text/javascript"></script>
 
