@@ -1320,7 +1320,7 @@ main-fixed {
 .cslider__control-panel {
   position: absolute;
   bottom: 130.4px;
-  bottom: 130.4px;
+  bottom: 130.4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1397,17 +1397,17 @@ main-fixed {
 
 @media (min-width: 1280px) {
   .cslider__control-panel {
-    bottom: calc(10.1875vw );
+    bottom: calc(10.34375vw );
   }
 }
 @media (max-width: 900px) {
   .cslider__control-panel {
-    bottom: calc(14.4888888889vw );
+    bottom: calc(17.0756944444vw );
   }
 }
 @media (max-width: 520px) {
   .cslider__control-panel {
-    bottom: calc(25.0769230769vw );
+    bottom: calc(29.4500534188vw );
   }
 }
 

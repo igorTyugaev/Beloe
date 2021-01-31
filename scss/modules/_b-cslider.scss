@@ -25,7 +25,8 @@
     bottom: 130.4px;
     bottom: #{(2 * 20 +
               2 * 1.4 * 14 +
-              2 * 1.6 * 16)}px;
+              2 * 1.6 * 16) +
+              abs(22 - 22)};
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -123,7 +124,9 @@
       bottom: calc(#{
               2 * get-vw(20px, $break-point-large-screen) +
               2 * 1.4 * get-vw(14px, $break-point-large-screen) +
-              2 * 1.6 * get-vw(16px, $break-point-large-screen)}
+              2 * 1.6 * get-vw(16px, $break-point-large-screen) +
+              abs(get-vw(22px, $break-point-large-screen) - get-vw(22px)) +
+              abs(get-vw(16px) - get-vw(14px, $break-point-large-screen))}
       );
     }
   }
@@ -135,7 +138,10 @@
       bottom: calc(#{
               2 * get-vw(20px, $break-point-tablet) +
               2 * 1.4 * get-vw(14px, $break-point-tablet) +
-              2 * 1.6 * get-vw(16px, $break-point-tablet)}
+              2 * 1.6 * get-vw(16px, $break-point-tablet) +
+              abs(get-vw(22px, $break-point-tablet) - get-vw(22px)) +
+              abs(get-vw(16px) - get-vw(14px, $break-point-tablet)) +
+              get-vw(14px, $break-point-tablet)}
       );
     }
   }
@@ -147,7 +153,10 @@
       bottom: calc(#{
               2 * get-vw(20px, $break-point-mobile) +
               2 * 1.4 * get-vw(14px, $break-point-mobile) +
-              2 * 1.6 * get-vw(16px, $break-point-mobile)}
+              2 * 1.6 * get-vw(16px, $break-point-mobile) +
+              abs(get-vw(22px, $break-point-mobile) - get-vw(22px)) +
+              abs(get-vw(16px) - get-vw(14px, $break-point-tablet)) +
+              get-vw(14px, $break-point-tablet)}
       );
     }
   }
