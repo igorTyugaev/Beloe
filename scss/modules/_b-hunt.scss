@@ -1,19 +1,16 @@
 .hunt__list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .hunt__item {
-  height: 280px;
-  min-height: 280px;
+  max-height: 280px;
   @include container();
 
   width: 100%;
-  transition: .3s;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   color: #{$white};
+  transition: max-height 0.6s 0s linear;
 
   b {
     color: #{$white};
@@ -71,19 +68,22 @@
     margin-left: 40px;
 
     &:not(:first-child) {
-      display: none;
+      opacity: 0;
+      transition: opacity .3s .0s;
     }
   }
 
   &-bottom {
     height: 100%;
     flex: 1;
-    display: none;
+    opacity: 0;
+    display: flex;
     padding-left: 20px;
     width: 50%;
     flex-direction: row;
     justify-content: space-between;
     align-self: flex-end;
+    transition: opacity .3s .0s;
   }
 
   &:hover {
@@ -93,9 +93,7 @@
   }
 
   &_active {
-    height: 100%;
-    min-height: 280px;
-    max-height: 100%;
+    max-height: 100vh;
 
     .hunt__item {
       &-bg {
@@ -103,11 +101,13 @@
       }
 
       &-bottom {
-        display: flex;
+        transition: opacity .3s .3s;
+        opacity: 1;
       }
 
       &-paragraph {
-        display: block;
+        transition: opacity .3s .3s;
+        opacity: 1;
       }
     }
   }

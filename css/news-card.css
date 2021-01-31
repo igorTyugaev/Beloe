@@ -669,9 +669,11 @@ main-fixed {
   }
 
   .menu {
-    display: none;
+    position: fixed;
+    top: -100vh;
     padding: 2.2222222222vw;
-    width: 25%;
+    width: 100%;
+    transition: transform 0.3s;
   }
   .menu__link {
     font-size: 16px;
@@ -728,8 +730,7 @@ main-fixed {
   .menu_show {
     padding: 20px 20px 20px;
     z-index: 20;
-    display: block;
-    width: 100%;
+    transform: translateY(100%);
   }
 }
 @media (max-width: 900px) and (min-width: 1280px) {
@@ -1498,9 +1499,11 @@ main-fixed {
   }
 
   .menu {
-    display: none;
+    position: fixed;
+    top: -100vh;
     padding: 2.2222222222vw;
-    width: 25%;
+    width: 100%;
+    transition: transform 0.3s;
   }
   .menu__link {
     font-size: 16px;
@@ -1557,8 +1560,7 @@ main-fixed {
   .menu_show {
     padding: 20px 20px 20px;
     z-index: 20;
-    display: block;
-    width: 100%;
+    transform: translateY(100%);
   }
 }
 @media (max-width: 900px) and (min-width: 1280px) {
