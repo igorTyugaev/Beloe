@@ -10,8 +10,23 @@
   }
 
   @media (max-width: #{$break-point-mobile}) {
-    padding: #{get-vw($padding-top, $break-point-mobile)} get-vw(20px, $break-point-tablet) 20px;
+    padding: #{get-vw($padding-top, $break-point-mobile)} get-vw(20px, $break-point-mobile);
   }
 }
 
+@mixin container-left($padding-left: 20px) {
+  padding-left: $padding-left;
+
+  @media (min-width: $break-point-large-screen) {
+    padding-left: #{get-vw($padding-left, $break-point-large-screen)};
+  }
+
+  @media (max-width: #{$break-point-tablet}) {
+    padding-left: #{get-vw($padding-left, $break-point-tablet)};
+  }
+
+  @media (max-width: #{$break-point-mobile}) {
+    padding-left: #{get-vw($padding-left, $break-point-mobile)};
+  }
+}
 

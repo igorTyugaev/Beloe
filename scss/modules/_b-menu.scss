@@ -102,6 +102,8 @@ main {
 
 @import "b-langs";
 
+@import "b-popup";
+
 @media (min-width: $break-point-large-screen) {
   .menu {
     padding: get-vw(20px, $break-point-large-screen);

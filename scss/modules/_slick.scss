@@ -16,11 +16,11 @@
   object-fit: cover;
 }
 
-.carousel-cell img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+//.carousel-cell img {
+//  height: 100%;
+//  width: 100%;
+//  object-fit: cover;
+//}
 
 .flickity-page-dots {
   display: none;
@@ -51,4 +51,21 @@
   padding: 0;
   color: white;
   font-size: 24px;
+}
+
+.carousel-cell-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  //opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
 }

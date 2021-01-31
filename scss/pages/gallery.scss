@@ -2,19 +2,12 @@
 
 @import "../modules/slick";
 
-//.carousel-item {
-//  height: get-vw(240px, 1280px);
-//  overflow: hidden;
-//}
-
 .gallery {
   color: #{$green};
-  margin: 0;
-  padding: 0;
 
   &__title {
     color: #{$green};
-    padding: get-vw(100px, 1280px) get-vw(20px, 1280px) get-vw(20px, 1280px);
+    padding: 100px 20px 20px;
   }
 
   &__slider {
@@ -99,18 +92,27 @@
 
   &--active {
     height: 100%;
+
     &:hover {
       .carousel {
-        transform:none;
+        transform: none;
       }
     }
   }
 }
 
-@media (max-width: 640px) {
+@media (min-width: $break-point-large-screen) {
   .gallery {
     &__title {
-      padding: get-vw(100px, 640px) get-vw(20px, 640px) get-vw(20px, 640px);
+      padding: #{get-vw(100px, $break-point-large-screen)} #{get-vw(20px, $break-point-large-screen)} #{get-vw(20px, $break-point-large-screen)};
+    }
+  }
+}
+
+@media (max-width: $break-point-tablet) {
+  .gallery {
+    &__title {
+      padding: #{get-vw(100px, $break-point-tablet)} #{get-vw(20px, $break-point-tablet)} #{get-vw(20px, $break-point-tablet)};
     }
   }
 
@@ -122,12 +124,18 @@
       }
     }
   }
+
+  .button-accordion {
+    &--active {
+      max-height: 64vh;
+    }
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $break-point-mobile) {
   .gallery {
     &__title {
-      padding: get-vw(100px, 320px) get-vw(20px, 320px) get-vw(20px, 320px);
+      padding: #{get-vw(100px, $break-point-mobile)} #{get-vw(20px, $break-point-mobile)} #{get-vw(20px, $break-point-mobile)};
     }
   }
 
@@ -137,6 +145,12 @@
         padding: get-vw(20px, 320px);
         height: get-vw(190px, 320px);
       }
+    }
+  }
+
+  .button-accordion {
+    &--active {
+      max-height: 80vh;
     }
   }
 }

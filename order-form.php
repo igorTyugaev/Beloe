@@ -8,14 +8,6 @@
 </head>
 <body>
 
-<?php
-include('header.php');
-?>
-
-<div class="numbers">
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-</div>
 <main>
     <section class="consultation">
         <h2>Записаться<br>
@@ -30,6 +22,4 @@ include('header.php');
     </section>
 </main>
 
-<script src="./js/main.js" type="text/javascript"></script>
-</body>
 </html>

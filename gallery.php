@@ -28,27 +28,27 @@ include('header.php');
             <button class="button-accordion button-accordion--active">
                 <div class="carousel-item">
                     <div class="carousel"
-                         data-flickity='{"pageDots": false, "autoPlay": 4500}'>
+                         data-flickity='{"pageDots": false, "autoPlay": 4500, "lazyLoad": true}'>
                         <div class="carousel-cell"><img
+                                    class="carousel-cell-image"
                                     src="./media/about/0349.jpg"
                                     alt=""
-                                    class="slider__item-img"
                             /></div>
                         <div class="carousel-cell"><img
-                                    src="./media/about/0349.jpg"
+                                    class="carousel-cell-image"
+                                    data-flickity-lazyload="./media/about/0349.jpg"
                                     alt=""
-                                    class="slider__item-img"
                             /></div>
                         <div class="carousel-cell"><img
-                                    src="./media/about/0349.jpg"
+                                    class="carousel-cell-image"
+                                    data-flickity-lazyload="./media/about/0349.jpg"
                                     alt=""
-                                    class="slider__item-img"
                             /></div>
                         <div class="carousel-cell">
                             <img
-                                    src="./media/about/0349.jpg"
+                                    class="carousel-cell-image"
+                                    data-flickity-lazyload="./media/about/0349.jpg"
                                     alt=""
-                                    class="slider__item-img"
                             />
                         </div>
                     </div>
@@ -59,29 +59,26 @@ include('header.php');
             <button class="button-accordion">
                 <div class="carousel-item">
                     <div class="carousel"
-                         data-flickity='{"pageDots": false, "autoPlay": 4500}'>
+                         data-flickity='{"pageDots": false, "autoPlay": 4500, "lazyLoad": true}'>
                         <div class="carousel-cell"><img
+                                    class="carousel-cell-image"
                                     src="./media/about/0349.jpg"
                                     alt=""
-                                    class="slider__item-img"
                             /></div>
                         <div class="carousel-cell"><img
-                                    src="./media/about/0349.jpg"
+                                    data-flickity-lazyload="./media/about/0349.jpg"
                                     alt=""
-                                    class="slider__item-img"
+                                    class="carousel-cell-image"
                             /></div>
                         <div class="carousel-cell"><img
-                                    src="./media/about/0349.jpg"
+                                    data-flickity-lazyload="./media/about/0349.jpg"
                                     alt=""
-                                    class="slider__item-img"
+                                    class="carousel-cell-image"
                             /></div>
-                        <div class="carousel-cell">
-                            <img
-                                    src="./media/about/0349.jpg"
+                        <div class="carousel-cell"><img
+                                    data-flickity-lazyload="./media/about/0349.jpg"
                                     alt=""
-                                    class="slider__item-img"
-                            />
-                        </div>
+                                    class="carousel-cell-image"/></div>
                     </div>
                     <h3 class="carousel-title">База охоты</h3>
                     <p class="carousel-status"></p>

@@ -25,22 +25,9 @@ include('header.php');
     <section class="first-slide">
         <div class="first-slide__img"></div>
         <div class="first-slide__lead">
-            <h2>
-                Виды
-                <br/>
-                охоты
-            </h2>
-            <div class="first-slide__text">
-                <p>
-                    Охотничья база "Белое" предлагает охоту на лося, кабана
-                    (с вышки), сибирскую косулю (трофейная, загонная), лису,
-                    зайца глухаря, тетерева, водоплавающую дичь. Егерское
-                    обслуживание.
-                </p>
-            </div>
-            <button class="button">
-                консультация
-            </button>
+            <?php
+            include('cons_slider.php');
+            ?>
         </div>
     </section>
 
@@ -693,6 +680,7 @@ include('header.php');
 <script src="./js/map.js"></script>
 <script src="./js/slick.min.js" type="text/javascript"></script>
 <script src="./js/main.js" type="text/javascript"></script>
+<script src="./js/cslider.js" type="text/javascript"></script>
 
 </body>
 

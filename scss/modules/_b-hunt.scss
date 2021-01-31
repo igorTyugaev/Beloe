@@ -5,6 +5,7 @@
 
 .hunt__item {
   height: 280px;
+  min-height: 280px;
   @include container();
 
   width: 100%;
@@ -39,6 +40,52 @@
 
   }
 
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &-header {
+    display: block;
+    width: 100%;
+  }
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 70%;
+    flex-grow: 1;
+
+    margin-left: -40px;
+
+  }
+
+  &-paragraph {
+    width: 50%;
+    flex-basis: calc((100% - (40px + 40px)) / 2);
+    margin-left: 40px;
+
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+
+  &-bottom {
+    height: 100%;
+    flex: 1;
+    display: none;
+    padding-left: 20px;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+
   &:hover {
     .hunt__item-bg {
       transform: scale(1.03);
@@ -46,30 +93,64 @@
   }
 
   &_active {
-    height: 480px;
+    height: 100%;
+    min-height: 280px;
+    max-height: 100%;
 
-    .hunt__item-bg {
-      transform: scale(1.03);
+    .hunt__item {
+      &-bg {
+        transform: scale(1.03);
+      }
+
+      &-bottom {
+        display: flex;
+      }
+
+      &-paragraph {
+        display: block;
+      }
     }
   }
 }
 
 @media (min-width: $break-point-large-screen) {
   .hunt__item {
-    height: get-vh(380px, $break-point-large-screen);
+    height: get-vw(280px, $break-point-large-screen);
+    min-height: get-vw(280px, $break-point-large-screen);
 
     &_active {
-      height: get-vh(580px, $break-point-large-screen);
+      height: 100%;
+      min-height: get-vw(280px, $break-point-large-screen);
+    }
+
+    &-container {
+      margin-left: get-vw(-40px, $break-point-large-screen);
+    }
+
+    &-paragraph {
+      flex-basis: calc((100% - (#{get-vw(80px, $break-point-large-screen)})) / 2);
+      margin-left: get-vw(40px, $break-point-large-screen);
+    }
+
+    &-bottom {
+      padding-left: get-vw(20px, $break-point-large-screen);
     }
   }
 }
 
 @media (max-width: $break-point-tablet) {
   .hunt__item {
-    height: 240px;
+    min-height: 240px;
+    max-height: 240px;
 
     &_active {
-      height: 480px;
+      height: 100%;
+      max-height: 100%;
+      min-height: 280px;
+    }
+
+    &-bottom {
+      padding-left: 20px;
     }
   }
 }
@@ -77,11 +158,34 @@
 @media (max-width: $break-point-mobile) {
   .hunt__item {
     width: 100%;
-    height: get-vh(190px, $break-point-mobile);
-
+    min-height: 190px;
+    max-height: 190px;
 
     &_active {
-      height: get-vh(260px, $break-point-mobile);
+      height: 100%;
+      max-height: 100%;
+      min-height: 160px;
     }
+
+    &-container {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    &-paragraph {
+      width: 100%;
+      flex-basis: 100%
+    }
+
+    &-bottom {
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0;
+    }
+  }
+
+  .button_calc {
+    width: 100%;
   }
 }

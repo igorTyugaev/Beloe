@@ -15,6 +15,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
     background: #{$green};
@@ -64,6 +65,10 @@
   &_menu:hover {
     background: #{$white};
     color: #{$black};
+  }
+
+  &_calc {
+    width: 50%;
   }
 }
 
