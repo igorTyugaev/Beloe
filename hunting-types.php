@@ -324,7 +324,7 @@ include('header.php');
                 </div>
 
                 <div class="contacts__text-item">
-                    <p>
+                    <p class="contacts__too">
                         Также, мы присутствуем на Яндекс.Картах. <br> Если у вас
                         есть навигатор, просто напишите в нем:
                     </p>

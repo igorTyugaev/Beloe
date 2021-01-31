@@ -1209,12 +1209,18 @@ main-fixed {
   color: #249D6A;
   padding-bottom: 40px;
 }
+.contacts__text-item {
+  margin-top: 20px;
+}
 .contacts__text-item b {
   color: #131212;
 }
 .contacts__text-item p {
   padding: 0;
   color: rgba(19, 18, 18, 0.7);
+}
+.contacts p.contacts__too {
+  opacity: 0.6;
 }
 .contacts__map {
   background: #FFFFFF;
