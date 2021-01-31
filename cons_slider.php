@@ -65,7 +65,6 @@
         </div>
     </div>
 
-
     <div class="cslider__control-panel">
         <a class="cslider__control cslider__control_left" href="#" role="button"></a>
         <div class="cslider__arrow">

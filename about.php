@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./css/about.css"/>
-    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
     <title>О нас</title>
 </head>
 
@@ -38,77 +38,58 @@ include('header.php');
         <div class="features__item">
             <div class="features__item-inner">
                 <img src="media/advantages-1.png" alt="work-3" class="features__img">
-                <a href=""><h3 class="features__title">Комфортная охотничья базе</h3></a>
+                <span href=""><h3
+                            class="features__title">Комфортная охотничья базе</h3></span>
             </div>
         </div>
         <div class="features__item">
             <div class="features__item-inner">
                 <img src="media/advantages-2.png" alt="work-3" class="features__img">
-                <a href=""><h3 class="features__title">Высокий профессионализм наших
-                        специалистов</h3></a>
+                <span href=""><h3 class="features__title">Высокий профессионализм наших
+                        специалистов</h3></span>
             </div>
         </div>
         <div class="features__item">
             <div class="features__item-inner">
                 <img src="media/advantages-3.png" alt="work-3" class="features__img">
-                <a href=""><h3 class="features__title">Отдых для всей семьи на природе</h3>
-                </a>
+                <span href=""><h3
+                            class="features__title">Отдых для всей семьи на природе</h3>
+                </span>
             </div>
         </div>
         <div class="features__item">
             <div class="features__item-inner">
                 <img src="media/advantages-4.png" alt="work-3" class="features__img">
-                <a href=""><h3 class="features__title">Частное лестничество</h3></a>
+                <span href=""><h3 class="features__title">Частное лестничество</h3></span>
             </div>
         </div>
     </section>
 
-    <section class="">
-        <div class="slider_about">
-            <div class="slider__item">
-                <img
-                        src="./media/about/0349.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0086.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0336.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0346.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0426.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
-            <div class="slider__item">
-                <img
-                        src="./media/about/0465.jpg"
-                        alt=""
-                        class="slider__item-img"
-                />
-            </div>
+    <div class="carousel"
+         data-flickity='{"pageDots": false, "autoPlay": 4500, "lazyLoad": true}'>
+        <div class="carousel-cell"><img
+                    class="carousel-cell-image"
+                    src="./media/about/0349.jpg"
+                    alt=""
+            /></div>
+        <div class="carousel-cell"><img
+                    class="carousel-cell-image"
+                    data-flickity-lazyload="./media/about/0349.jpg"
+                    alt=""
+            /></div>
+        <div class="carousel-cell"><img
+                    class="carousel-cell-image"
+                    data-flickity-lazyload="./media/about/0349.jpg"
+                    alt=""
+            /></div>
+        <div class="carousel-cell">
+            <img
+                    class="carousel-cell-image"
+                    data-flickity-lazyload="./media/about/0349.jpg"
+                    alt=""
+            />
         </div>
-    </section>
+    </div>
 
     <section class="contacts">
         <div class="contacts__inner">
@@ -151,17 +132,13 @@ include('header.php');
 </main>
 
 <script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        type="text/javascript"
-></script>
-<script
         src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
         type="text/javascript"
 ></script>
 <script src="./js/main.js" type="text/javascript"></script>
+<script src="./js/flickity.pkgd.js" type="text/javascript"></script>
 <script src="./js/about.js"></script>
 <script src="./js/map.js"></script>
-<script src="./js/slick.min.js" type="text/javascript"></script>
 
 </body>
 
