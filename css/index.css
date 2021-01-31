@@ -398,7 +398,6 @@ input::placeholder {
 }
 .button_close-active {
   display: flex;
-  align-self: center;
 }
 .button_menu:hover {
   background: #FFFFFF;
@@ -501,6 +500,7 @@ main-fixed {
   flex-direction: row;
   align-content: space-between;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .menu__address {
   font-size: 12px;
@@ -807,7 +807,7 @@ main-fixed {
   height: 100vh;
 }
 .first-slide__img {
-  background-image: url("../media/bg-th.png");
+  background-image: url("../media/bg-ls-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

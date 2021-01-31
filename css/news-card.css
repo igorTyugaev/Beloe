@@ -400,7 +400,6 @@ input::placeholder {
 }
 .button_close-active {
   display: flex;
-  align-self: center;
 }
 .button_menu:hover {
   background: #FFFFFF;
@@ -503,6 +502,7 @@ main-fixed {
   flex-direction: row;
   align-content: space-between;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .menu__address {
   font-size: 12px;
@@ -1229,7 +1229,6 @@ input::placeholder {
 }
 .button_close-active {
   display: flex;
-  align-self: center;
 }
 .button_menu:hover {
   background: #FFFFFF;
@@ -1332,6 +1331,7 @@ main-fixed {
   flex-direction: row;
   align-content: space-between;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .menu__address {
   font-size: 12px;

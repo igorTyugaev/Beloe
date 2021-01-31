@@ -60,6 +60,7 @@ main {
     flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   &__address {
