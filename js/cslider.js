@@ -1,4 +1,7 @@
-'use strict';
+let map = function (x, in_min, in_max, out_min, out_max) {
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
 let multiItemsSlider = (function () {
     return function (selector, config) {
         let
@@ -51,11 +54,6 @@ let multiItemsSlider = (function () {
             }
         }
 
-        let map = function (x, in_min, in_max, out_min, out_max) {
-            return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-        }
-
-
         let _transformItem = function (direction) {
             let nextItem;
             if (direction === 'right') {
@@ -79,7 +77,6 @@ let multiItemsSlider = (function () {
                 _transform += _step;
             }
             _csliderWrapper.style.transform = 'translateX(' + _transform + '%)';
-
             let pos = Math.abs(_positionLeftItem) % _items.length;
             pos = map(pos, 0, (_items.length - 1), 1, _items.length)
 
