@@ -1,0 +1,28 @@
+.landing-about {
+  @include container(100px);
+  background: #{$green};
+
+  h2 {
+    width: 50%;
+  }
+
+  &__text {
+    color: #{$white};
+    width: 50%;
+  }
+
+
+}
+
+@media (max-width: $break-point-tablet) {
+  .landing-about {
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+  .landing-about {
+    &__text {
+      width: 100%;
+    }
+  }
+}

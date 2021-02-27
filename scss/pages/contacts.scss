@@ -1,0 +1,16 @@
+@import "../base/basic";
+
+@import "../modules/b-contact";
+
+.contacts_green {
+  background: #{$green};
+  min-height: 100vh;
+
+  b, p, a, h2 {
+    color: #{$white};
+  }
+}
+
+.contacts__inner {
+  @include container(100px);
+}

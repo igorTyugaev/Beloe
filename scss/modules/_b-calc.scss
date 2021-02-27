@@ -1,0 +1,151 @@
+.calc {
+  @include container();
+  width: 100%;
+  background: #{$green};
+
+  &__des {
+    width: 50%;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__booking, &__total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__params {
+    width: 50%;
+
+    ul {
+      padding: 20px 0;
+
+      li {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  &__button {
+    height: 12px;
+    width: 5px;
+    border: none;
+    cursor: pointer;
+    object-fit: cover;
+    text-align: center;
+    object-fit: cover;
+
+    &_left {
+      text-align: center;
+      background: url('../media/arrow-l.svg') no-repeat center;
+      background-size: cover;
+      margin: 0 5px;
+    }
+
+    &_right {
+      background: url('../media/arrow-r.svg') no-repeat center;
+      background-size: cover;
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (min-width: $break-point-large-screen) {
+  .calc {
+    &__params {
+      width: 50%;
+
+      ul {
+        padding: #{get-vw(20px, $break-point-large-screen)} 0;
+
+        li {
+          padding: #{get-vw(10px, $break-point-large-screen)} 0;
+        }
+      }
+    }
+
+    &__button {
+      height: #{get-vw(12px, $break-point-large-screen)};
+      width: #{get-vw(5px, $break-point-large-screen)};
+
+      &_left {
+        margin: 0 #{get-vw(5px, $break-point-large-screen)};
+      }
+
+      &_right {
+        margin: 0 #{get-vw(5px, $break-point-large-screen)};
+      }
+    }
+  }
+}
+
+@media (max-width: $break-point-tablet) {
+  .calc {
+    &__params {
+      width: 50%;
+
+      ul {
+        padding: #{get-vw(20px, $break-point-tablet)} 0;
+
+        li {
+          padding: #{get-vw(10px, $break-point-tablet)} 0;
+        }
+      }
+    }
+
+    &__button {
+      height: #{get-vw(12px, $break-point-tablet)};
+      width: #{get-vw(5px, $break-point-tablet)};
+
+      &_left {
+        margin: 0 #{get-vw(1px, $break-point-tablet)};
+      }
+
+      &_right {
+        margin: 0 #{get-vw(1px, $break-point-tablet)};
+      }
+    }
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+  .calc {
+    width: 100%;
+
+    &__des {
+      width: 100%;
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    &__form {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    &__params {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}

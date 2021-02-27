@@ -1,0 +1,37 @@
+//  Sass Functions
+@function get-vw($px-vw, $base-vw: 1280px) {
+  @return ($px-vw * 100vw) / $base-vw;
+}
+
+@function get-vh($px-vh, $base-vh: 600px) {
+  @return ($px-vh * 100vh) / $base-vh;
+}
+
+//  Sass Colors Variables
+$green: #249D6A;
+$white: #FFFFFF;
+$gray: #F4F4F4;
+$gray-text: rgba(19, 18, 18, 0.7);
+$gray-text-light: rgba(255, 255, 255, 0.4);;
+$gray-border: rgba(255, 255, 255, 0.1);
+$gray-border-menu: rgba(19, 18, 18, 0.1);
+$black: #131212;
+
+//  Sass Dimensions Variables
+$menu-width: 25%;
+$main-width: 75%;
+$quarter-main-width: 37.5%;
+$half-main-width: 50%;
+$full-main-width: 100%;
+
+//  Sass Screen Variables
+$break-point-large-screen: 1280px;
+$break-point-tablet: 900px;
+//$break-point-tablet-2: 700px;
+$break-point-mobile: 520px;
+
+//  Sass Z-index Variables
+$z-index-text: 2;
+$z-index-numbers: 10;
+$z-index-menu: 10;
+$z-index-menu-show: 20;

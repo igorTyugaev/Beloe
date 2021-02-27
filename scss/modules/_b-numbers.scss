@@ -1,0 +1,125 @@
+.numbers {
+  @include container(20px);
+  width: 37.5vw;
+  position: fixed;
+  display: flex;
+  right: 0;
+  top: 0;
+  z-index: $z-index-numbers;
+  color: $white;
+  border-color: $white;
+
+  &_green {
+    color: $green;
+    border-color: $green;
+  }
+
+  &_menu {
+    display: none;
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    color: $green;
+    border-color: $green;
+  }
+
+  &__block {
+    border: 2px solid;
+    padding: 22px 0;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 100%;
+    text-decoration-line: none;
+
+    color: inherit;
+    border-color: inherit;
+    border: 2px solid;
+  }
+
+  &__block:last-of-type {
+    border-left: none;
+  }
+
+  &_toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $break-point-large-screen) {
+  .numbers {
+    &__block {
+      border: get-vw(2px, $break-point-large-screen) solid;
+      padding: get-vw(22px, $break-point-large-screen) 0;
+      font-size: get-vw(16px, $break-point-large-screen);
+    }
+
+    &_menu {
+      position: static;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+
+    &_menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: #{$break-point-tablet}) {
+  .numbers {
+    width: 50vw;
+
+    &__block {
+      padding: get-vw(22px, $break-point-tablet) 0;
+      font-size: 14px;
+    }
+
+    &_menu {
+      display: flex;
+      position: static;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: #{$break-point-mobile}) {
+  .numbers {
+    display: none;
+
+    &_menu {
+      display: flex;
+      flex-direction: column;
+      position: static;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+
+    &__block {
+      font-size: 16px;
+
+      border: 2px solid;
+      padding: get-vw(22px, $break-point-mobile) 0;
+
+      width: 100%;
+      border: 2px solid;
+    }
+
+    &__block:last-of-type {
+      border-left: 2px solid;
+      border-top: none;
+    }
+  }
+}

@@ -1,0 +1,254 @@
+main {
+  margin-left: $menu-width;
+  width: $main-width;
+  position: relative;
+
+  &-fixed {
+    overflow: hidden;
+  }
+}
+
+.menu {
+  padding: 20px;
+  background: #{$gray};
+  width: $menu-width;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  z-index: $z-index-menu;
+  flex-direction: column;
+
+  &__link {
+    font-size: 16px;
+    padding: 6px 0;
+
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 100%;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    color: #{$black};
+
+    transition: .15s color;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link:hover {
+    color: #{$green};
+  }
+
+  &__line {
+    background-color: $gray-border-menu;
+    height: 2px;
+    border: none;
+    margin: 14px 0;
+  }
+
+  &__logo-box {
+    margin: 0 auto;
+  }
+
+  &__logo {
+    width: 121px;
+    max-width: 100%;
+  }
+
+  &__logo-container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  &__address {
+    font-size: 12px;
+    margin: 30px 0;
+
+    font-family: TT Interfaces;
+    text-transform: unset;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    color: #{$gray-text};
+    display: block;
+  }
+
+  &__drive {
+    margin-bottom: 40px;
+
+    display: block;
+    font-family: TT Interfaces;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    text-decoration: underline;
+
+    color: #{$green};
+  }
+
+  &__drive:hover {
+    text-decoration: none;
+  }
+
+  &__bottom-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+@import "b-langs";
+
+@import "b-popup";
+
+@media (min-width: $break-point-large-screen) {
+  .menu {
+    padding: get-vw(20px, $break-point-large-screen);
+    width: $menu-width;
+
+    &__link {
+      font-size: get-vw(16px, $break-point-large-screen);
+      padding: get-vw(6px, $break-point-large-screen) 0;
+    }
+
+    &__line {
+      height: get-vw(2px, $break-point-large-screen);
+      margin: get-vw(14px, $break-point-large-screen) 0;
+    }
+
+    &__logo {
+      width: get-vw(121px, $break-point-large-screen);
+    }
+
+    &__address {
+      font-size: get-vw(12px, $break-point-large-screen);
+      margin: get-vw(30px, $break-point-large-screen) 0;
+    }
+
+    &__drive {
+      font-size: get-vw(12px, $break-point-large-screen);
+      margin-bottom: get-vw(40px, $break-point-large-screen);
+    }
+  }
+}
+
+@media (max-width: $break-point-tablet) {
+  main {
+    position: static;
+    width: $full-main-width;
+    margin-left: 0;
+
+    &-fixed {
+      overflow: hidden;
+    }
+  }
+
+  .menu {
+    display: none;
+    padding: get-vw(20px, $break-point-tablet);
+    width: $menu-width;
+
+    &__link {
+      font-size: 16px;
+      padding: get-vw(6px, $break-point-tablet) 0;
+    }
+
+    &__line {
+      height: get-vw(2px, $break-point-tablet);
+      margin: get-vw(14px, $break-point-tablet) 0;
+    }
+
+    &__logo-box {
+      margin: 0;
+    }
+
+    &__logo {
+      width: 121px;
+    }
+
+    &__address {
+      font-size: 12px;
+      margin: get-vw(30px, $break-point-tablet) 0;
+    }
+
+    &__drive {
+      font-size: 12px;
+      margin-bottom: get-vw(40px, $break-point-tablet);
+    }
+
+    &--small {
+      @include container();
+      position: fixed;
+      z-index: $z-index-menu;
+      width: $half-main-width;
+      top: 0;
+      left: 0;
+    }
+
+    .button_green {
+      width: $full-main-width;
+    }
+  }
+
+  .menu_show {
+    @include container();
+    z-index: $z-index-menu-show;
+    display: block;
+    width: $full-main-width;
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+
+  .menu {
+    display: none;
+    padding: get-vw(20px, $break-point-mobile);
+    width: $menu-width;
+
+    &__link {
+      font-size: 16px;
+      padding: get-vw(6px, $break-point-mobile) 0;
+    }
+
+    &__line {
+      height: get-vw(2px, $break-point-mobile);
+      margin: get-vw(14px, $break-point-mobile) 0;
+    }
+
+    &__logo-box {
+      margin: 0;
+    }
+
+    &__logo {
+      width: 121px;
+    }
+
+    &__address {
+      font-size: 12px;
+      margin: get-vw(30px, $break-point-mobile) 0;
+    }
+
+    &__drive {
+      font-size: 12px;
+      margin-bottom: get-vw(40px, $break-point-mobile);
+    }
+
+    &--small {
+      width: $full-main-width;
+    }
+
+    .button_green {
+      width: $full-main-width;
+    }
+  }
+
+  .menu_show {
+    @include container();
+    z-index: $z-index-menu-show;
+    display: block;
+    width: $full-main-width;
+  }
+}

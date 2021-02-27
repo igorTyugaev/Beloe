@@ -1,0 +1,55 @@
+@import "../base/basic";
+
+.article-news {
+  &__inner {
+    @include container(100px);
+    height: 100%;
+    width: 50%;
+  }
+
+  &__img {
+    background: $green;
+    width: $quarter-main-width;
+    min-height: 220px;
+  }
+}
+
+@media (min-width: $break-point-large-screen) {
+
+}
+
+@media (max-width: $break-point-tablet) {
+  .article-news {
+    &__inner {
+    }
+
+    &__img {
+      width: $half-main-width;
+    }
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+  .article-news {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 100%;
+
+    &__inner {
+      height: 100%;
+      width: $full-main-width;
+    }
+
+    &__img {
+      width: $full-main-width;
+      height: 38vh;
+
+      img {
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../base/basic";
+
+.article-news {
+  display: flex;
+  flex-direction: row;
+
+  &__inner {
+    width: 37.5vw;
+    padding: get-vw(100px, 1280px) get-vw(20px, 1280px) 0;
+
+    &-title {
+      color: #{$green};
+    }
+
+    &-text {
+      p {
+        color: #{$gray-text};
+      }
+    }
+  }
+
+  &__img {
+    background: #249D6A;
+    width: 37.5vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+
+@import "../media/news-card_media";
+
+
