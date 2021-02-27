@@ -14,8 +14,8 @@ include('header.php');
 ?>
 
 <div class="numbers">
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
 </div>
 
 <main>
@@ -44,7 +44,7 @@ include('header.php');
 
     <section class="hunt__list">
 
-        <div class="hunt__item">
+        <div id="hi_1" data-price="1000" class="hunt__item">
             <div class="hunt__item-bg"></div>
             <div class="hunt__item-inner">
                 <div class="hunt__item-header">
@@ -100,11 +100,11 @@ include('header.php');
             </div>
         </div>
 
-        <div class="hunt__item">
+        <div id="hi_2" data-price="2000" class="hunt__item">
             <div class="hunt__item-bg"></div>
             <div class="hunt__item-inner">
                 <div class="hunt__item-header">
-                    <h3>Охота на лося</h3>
+                    <h3>Охота на водоплавающую дичь</h3>
                 </div>
 
                 <div class="hunt__item-container">
@@ -187,11 +187,12 @@ include('header.php');
             </div>
         </div>
 
-        <div class="hunt__item">
+        <div id="hi_3" data-price="3000" class="hunt__item">
             <div class="hunt__item-bg"></div>
             <div class="hunt__item-inner">
                 <div class="hunt__item-header">
-                    <h3>Охота на лося</h3>
+                    <h3>Охота на сибирскую косулю
+                        (трофейная)</h3>
                 </div>
 
                 <div class="hunt__item-container">
@@ -258,29 +259,29 @@ include('header.php');
                 <div class="calc__booking">
                     <span>проживание</span>
                     <div class="calc__select">
-                        <button
+                        <button id="btn_day_left"
                                 class="calc__button calc__button_left"
                         ></button>
-                        <span>5 дней</span>
-                        <button
+                        <span id="day_field">5 дней</span>
+                        <button id="btn_day_right"
                                 class="calc__button calc__button_right"
                         ></button>
-                        <button
+                        <button id="btn_people_left"
                                 class="calc__button calc__button_left"
                         ></button>
-                        <span>1 человек</span>
-                        <button
+                        <span id="people_field">1 человек</span>
+                        <button id="btn_people_right"
                                 class="calc__button calc__button_right"
                         ></button>
                     </div>
                 </div>
 
-                <ul class="calc__list-item">
+                <ul id="cartList" class="calc__list-item">
                     <li>
-                        <span>Охота на лося</span>
+                        <span>Утиная охота</span>
                     </li>
                     <li>
-                        <span>Охота на лося</span>
+                        <span>Охота на лося (с вышки)</span>
                     </li>
                     <li>
                         <hr/>
@@ -289,7 +290,7 @@ include('header.php');
 
                 <div class="calc__total">
                     <span>Итого:</span>
-                    <span>3333 рублей</span>
+                    <span id="totalPriceCart">3333 рублей</span>
                 </div>
             </div>
             <div class="calc__form">
@@ -323,7 +324,7 @@ include('header.php');
                 </div>
 
                 <div class="contacts__text-item">
-                    <p>
+                    <p class="contacts__too">
                         Также, мы присутствуем на Яндекс.Картах. <br> Если у вас
                         есть навигатор, просто напишите в нем:
                     </p>
@@ -351,6 +352,7 @@ include('header.php');
 </main>
 
 <script src="./js/main.js" type="text/javascript"></script>
+<script src="./js/calc.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -16,8 +16,8 @@ include('header.php');
 ?>
 
 <div class="numbers numbers_green">
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-    <a href="" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
 </div>
 
 <main class="main">

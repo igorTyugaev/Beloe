@@ -4,7 +4,7 @@
             <div class="cslider__content">
 
                 <div class="cslider__title">
-                    <h3>1 Охотничья база “белое”</h3>
+                    <h3>Охотничья база “белое”</h3>
                     <h2>ОХОТА<br>
                         НА КОСУЛЮ<br>
                         ЗАГОНОМ</h2>
@@ -25,7 +25,7 @@
             <div class="cslider__content">
 
                 <div class="cslider__title">
-                    <h3>2 Охотничья база “белое”</h3>
+                    <h3>Охотничья база “белое”</h3>
                     <h2>ОХОТА<br>
                         НА КОСУЛЮ<br>
                         ЗАГОНОМ</h2>
@@ -46,7 +46,7 @@
             <div class="cslider__content">
 
                 <div class="cslider__title">
-                    <h3>3 Охотничья база “белое”</h3>
+                    <h3>Охотничья база “белое”</h3>
                     <h2>ОХОТА<br>
                         НА КОСУЛЮ<br>
                         ЗАГОНОМ</h2>

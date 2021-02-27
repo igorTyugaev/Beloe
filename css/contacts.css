@@ -398,7 +398,6 @@ input::placeholder {
 }
 .button_close-active {
   display: flex;
-  align-self: center;
 }
 .button_menu:hover {
   background: #FFFFFF;
@@ -501,6 +500,7 @@ main-fixed {
   flex-direction: row;
   align-content: space-between;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .menu__address {
   font-size: 12px;
@@ -667,9 +667,11 @@ main-fixed {
   }
 
   .menu {
-    display: none;
+    position: fixed;
+    top: -100vh;
     padding: 2.2222222222vw;
-    width: 25%;
+    width: 100%;
+    transition: transform 0.3s;
   }
   .menu__link {
     font-size: 16px;
@@ -726,8 +728,7 @@ main-fixed {
   .menu_show {
     padding: 20px 20px 20px;
     z-index: 20;
-    display: block;
-    width: 100%;
+    transform: translateY(100%);
   }
 }
 @media (max-width: 900px) and (min-width: 1280px) {
@@ -830,12 +831,18 @@ main-fixed {
   color: #249D6A;
   padding-bottom: 40px;
 }
+.contacts__text-item {
+  margin-top: 20px;
+}
 .contacts__text-item b {
   color: #131212;
 }
 .contacts__text-item p {
   padding: 0;
   color: rgba(19, 18, 18, 0.7);
+}
+.contacts p.contacts__too {
+  opacity: 0.6;
 }
 .contacts__map {
   background: #FFFFFF;

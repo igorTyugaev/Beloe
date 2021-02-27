@@ -11,7 +11,7 @@ function init() {
         {},
         {
             iconLayout: 'default#image',
-            iconImageHref: '../media/logo.svg',
+            iconImageHref: './media/logo.svg',
             iconImageSize: [0.0625 * windowWidth, 0.03125 * windowWidth],
             iconImageOffset: [
                 -0.03125 * windowWidth,
