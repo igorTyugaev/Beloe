@@ -1,4 +1,4 @@
-@import "../base/basic";
+@import "base/basic";
 
 .article-news {
   display: flex;
@@ -34,6 +34,6 @@
   }
 }
 
-@import "../media/news-card_media";
+@import "media/news-card_media";
 
 

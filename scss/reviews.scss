@@ -1,6 +1,6 @@
-@import "../base/basic";
+@import "base/basic";
 
-@import "../modules/b-reviews";
+@import "modules/b-reviews";
 
 .reviews {
   @include container(100px);
