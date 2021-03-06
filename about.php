@@ -65,6 +65,31 @@ include('header.php');
         </div>
     </section>
 
+    <section class="gallery" id="gallery">
+        <div class="slider">
+            <div class="slider__cover"></div>
+            <div class="slider__content">
+                <div class="slider__cell">
+                    <img src="./media/about/0349.jpg" alt="" class="slider__cell-img">
+                </div>
+                <div class="slider__cell"
+                     data-flickity-bg-lazyload="./media/about/0349.jpg">
+                </div>
+                <div class="slider__cell"
+                     data-flickity-bg-lazyload="./media/about/0349.jpg">
+                </div>
+                <div class="slider__cell"
+                     data-flickity-bg-lazyload="./media/about/0349.jpg">
+                </div>
+            </div>
+            <div class="slider__arrow">
+                <p class="slider__pre-item">01</p>
+                <div class="slider__line"></div>
+                <p class="slider__nex-item">02</p>
+            </div>
+        </div>
+    </section>
+
     <section class="contacts">
         <div class="contacts__inner">
             <h2 class="contacts__title">Как до нас <br> доехать?</h2>
@@ -110,10 +135,14 @@ include('header.php');
         type="text/javascript"
 ></script>
 
-<script src="./js/main.js" type="text/javascript"></script>
-<script src="./js/flickity.pkgd.js" type="text/javascript"></script>
+<script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
+<script src="./js/bg-lazyload.js" type="text/javascript"></script>
+
+<script src="./js/main.js"></script>
 <script src="./js/about.js"></script>
 <script src="./js/map.js"></script>
+<script src="./js/gallery.js" type="text/javascript"></script>
+
 
 </body>
 

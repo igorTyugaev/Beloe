@@ -1,4 +1,5 @@
 @import "base/basic";
+@import "modules/b-slider";
 
 .gallery {
   color: #{$green};
@@ -16,82 +17,11 @@
   }
 }
 
-.slider {
-  position: relative;
-  height: 240px;
-  width: 100%;
-  transition: height 0.8s ease;
-
-  &__title {
-    position: absolute;
-    margin: 20px 20px 20px;
-    top: 0;
-    left: 0;
-
-    font-family: Akrobat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 100%;
-
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-    z-index: 2;
-  }
-
-  &__content {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  &__cell {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transform: scale(1);
-    transition: transform 0.8s ease;
-
-    &:hover {
-      transform: scale(1.3);
-    }
-  }
-
-  .flickity-prev-next-button {
-    display: none;
-  }
-
-  &--show {
-    height: 600px;
-    width: 100%;
-
-    .flickity-prev-next-button {
-      display: block;
-    }
-  }
-
-  &--show &__cell {
-    transform: scale(1);
-
-    &:hover {
-      transform: scale(1);
-    }
-  }
-
-}
-
-
 .button_menu {
   background: transparent;
   border: 2px solid #{$green};
   color: #{$green};
 }
-
 
 @media (min-width: $break-point-large-screen) {
   .gallery {
@@ -99,6 +29,30 @@
       padding: #{get-vw(100px, $break-point-large-screen)} #{get-vw(20px, $break-point-large-screen)} #{get-vw(20px, $break-point-large-screen)};
     }
   }
+
+  .slider {
+    height: #{get-vw(240px, $break-point-large-screen)};
+
+    &__title {
+      margin: #{get-vw(20px, $break-point-large-screen)};
+      font-size: #{get-vw(32px, $break-point-large-screen)};
+    }
+
+    &--show {
+      height: #{get-vw(600px, $break-point-large-screen)};
+    }
+
+    &__arrow {
+      margin: #{get-vw(20px, $break-point-large-screen)};
+    }
+
+    &__line {
+      height: #{get-vw(2px, $break-point-large-screen)};
+      width: #{get-vw(20px, $break-point-large-screen)};
+      margin: auto #{get-vw(5px, $break-point-large-screen)};
+    }
+  }
+
 }
 
 @media (max-width: $break-point-tablet) {
@@ -107,12 +61,58 @@
       padding: #{get-vw(100px, $break-point-tablet)} #{get-vw(20px, $break-point-tablet)} #{get-vw(20px, $break-point-tablet)};
     }
   }
+
+  .slider {
+    height: #{get-vw(240px, $break-point-tablet)};
+
+    &__title {
+      margin: #{get-vw(20px, $break-point-tablet)};
+      font-size: #{get-vw(32px, $break-point-tablet)};
+    }
+
+    &--show {
+      height: #{get-vw(600px, $break-point-tablet)};
+    }
+
+    &__arrow {
+      margin: #{get-vw(20px, $break-point-tablet)};
+    }
+
+    &__line {
+      height: #{get-vw(2px, $break-point-tablet)};
+      width: #{get-vw(20px, $break-point-tablet)};
+      margin: auto #{get-vw(5px, $break-point-tablet)};
+    }
+  }
 }
 
 @media (max-width: $break-point-mobile) {
   .gallery {
     &__title {
       padding: #{get-vw(100px, $break-point-mobile)} #{get-vw(20px, $break-point-mobile)} #{get-vw(20px, $break-point-mobile)};
+    }
+  }
+
+  .slider {
+    height: #{get-vw(240px, $break-point-mobile)};
+
+    &__title {
+      margin: #{get-vw(20px, $break-point-mobile)};
+      font-size: #{get-vw(32px, $break-point-mobile)};
+    }
+
+    &--show {
+      height: #{get-vw(600px, $break-point-mobile)};
+    }
+
+    &__arrow {
+      margin: #{get-vw(20px, $break-point-mobile)};
+    }
+
+    &__line {
+      height: #{get-vw(2px, $break-point-mobile)};
+      width: #{get-vw(20px, $break-point-mobile)};
+      margin: auto #{get-vw(5px, $break-point-mobile)};
     }
   }
 }

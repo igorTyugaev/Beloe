@@ -27,9 +27,10 @@ include('header.php');
         <div class="gallery__wrapper">
             <div class="slider">
                 <h3 class="slider__title">База охоты</h3>
+                <div class="slider__cover"></div>
                 <div class="slider__content">
-                    <div class="slider__cell"
-                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    <div class="slider__cell">
+                        <img src="./media/about/0349.jpg" alt="" class="slider__cell-img">
                     </div>
                     <div class="slider__cell"
                          data-flickity-bg-lazyload="./media/about/0349.jpg">
@@ -41,12 +42,18 @@ include('header.php');
                          data-flickity-bg-lazyload="./media/about/0349.jpg">
                     </div>
                 </div>
+                <div class="slider__arrow">
+                    <p class="slider__pre-item">01</p>
+                    <div class="slider__line"></div>
+                    <p class="slider__nex-item">02</p>
+                </div>
             </div>
             <div class="slider">
                 <h3 class="slider__title">База охоты</h3>
+                <div class="slider__cover"></div>
                 <div class="slider__content">
-                    <div class="slider__cell"
-                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    <div class="slider__cell">
+                        <img src="./media/about/0349.jpg" alt="" class="slider__cell-img">
                     </div>
                     <div class="slider__cell"
                          data-flickity-bg-lazyload="./media/about/0349.jpg">
@@ -58,12 +65,18 @@ include('header.php');
                          data-flickity-bg-lazyload="./media/about/0349.jpg">
                     </div>
                 </div>
+                <div class="slider__arrow">
+                    <p class="slider__pre-item">01</p>
+                    <div class="slider__line"></div>
+                    <p class="slider__nex-item">02</p>
+                </div>
             </div>
             <div class="slider">
                 <h3 class="slider__title">База охоты</h3>
+                <div class="slider__cover"></div>
                 <div class="slider__content">
-                    <div class="slider__cell"
-                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    <div class="slider__cell">
+                        <img src="./media/about/0349.jpg" alt="" class="slider__cell-img">
                     </div>
                     <div class="slider__cell"
                          data-flickity-bg-lazyload="./media/about/0349.jpg">
@@ -74,6 +87,11 @@ include('header.php');
                     <div class="slider__cell"
                          data-flickity-bg-lazyload="./media/about/0349.jpg">
                     </div>
+                </div>
+                <div class="slider__arrow">
+                    <p class="slider__pre-item">01</p>
+                    <div class="slider__line"></div>
+                    <p class="slider__nex-item">02</p>
                 </div>
             </div>
         </div>
