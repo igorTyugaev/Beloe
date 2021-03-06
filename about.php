@@ -65,32 +65,6 @@ include('header.php');
         </div>
     </section>
 
-    <div class="carousel"
-         data-flickity='{"pageDots": false, "autoPlay": 4500, "lazyLoad": true}'>
-        <div class="carousel-cell"><img
-                    class="carousel-cell-image"
-                    src="./media/about/0349.jpg"
-                    alt=""
-            /></div>
-        <div class="carousel-cell"><img
-                    class="carousel-cell-image"
-                    data-flickity-lazyload="./media/about/0349.jpg"
-                    alt=""
-            /></div>
-        <div class="carousel-cell"><img
-                    class="carousel-cell-image"
-                    data-flickity-lazyload="./media/about/0349.jpg"
-                    alt=""
-            /></div>
-        <div class="carousel-cell">
-            <img
-                    class="carousel-cell-image"
-                    data-flickity-lazyload="./media/about/0349.jpg"
-                    alt=""
-            />
-        </div>
-    </div>
-
     <section class="contacts">
         <div class="contacts__inner">
             <h2 class="contacts__title">Как до нас <br> доехать?</h2>
@@ -135,6 +109,7 @@ include('header.php');
         src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
         type="text/javascript"
 ></script>
+
 <script src="./js/main.js" type="text/javascript"></script>
 <script src="./js/flickity.pkgd.js" type="text/javascript"></script>
 <script src="./js/about.js"></script>

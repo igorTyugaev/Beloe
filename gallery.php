@@ -21,75 +21,68 @@ include('header.php');
 </div>
 
 <main class="main">
-    <section class="gallery gallery_green">
+    <section class="gallery gallery_green" id="gallery">
         <h2 class="gallery__title">Галерея</h2>
 
-        <div class="slider__list">
-            <button class="button-accordion button-accordion--active">
-                <div class="carousel-item">
-                    <div class="carousel"
-                         data-flickity='{"pageDots": false, "autoPlay": 4500, "lazyLoad": true}'>
-                        <div class="carousel-cell"><img
-                                    class="carousel-cell-image"
-                                    src="./media/about/0349.jpg"
-                                    alt=""
-                            /></div>
-                        <div class="carousel-cell"><img
-                                    class="carousel-cell-image"
-                                    data-flickity-lazyload="./media/about/0349.jpg"
-                                    alt=""
-                            /></div>
-                        <div class="carousel-cell"><img
-                                    class="carousel-cell-image"
-                                    data-flickity-lazyload="./media/about/0349.jpg"
-                                    alt=""
-                            /></div>
-                        <div class="carousel-cell">
-                            <img
-                                    class="carousel-cell-image"
-                                    data-flickity-lazyload="./media/about/0349.jpg"
-                                    alt=""
-                            />
-                        </div>
+        <div class="gallery__wrapper">
+            <div class="slider">
+                <h3 class="slider__title">База охоты</h3>
+                <div class="slider__content">
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
                     </div>
-                    <h3 class="carousel-title">База охоты</h3>
-                    <p class="carousel-status"></p>
-                </div>
-            </button>
-            <button class="button-accordion">
-                <div class="carousel-item">
-                    <div class="carousel"
-                         data-flickity='{"pageDots": false, "autoPlay": 4500, "lazyLoad": true}'>
-                        <div class="carousel-cell"><img
-                                    class="carousel-cell-image"
-                                    src="./media/about/0349.jpg"
-                                    alt=""
-                            /></div>
-                        <div class="carousel-cell"><img
-                                    data-flickity-lazyload="./media/about/0349.jpg"
-                                    alt=""
-                                    class="carousel-cell-image"
-                            /></div>
-                        <div class="carousel-cell"><img
-                                    data-flickity-lazyload="./media/about/0349.jpg"
-                                    alt=""
-                                    class="carousel-cell-image"
-                            /></div>
-                        <div class="carousel-cell"><img
-                                    data-flickity-lazyload="./media/about/0349.jpg"
-                                    alt=""
-                                    class="carousel-cell-image"/></div>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
                     </div>
-                    <h3 class="carousel-title">База охоты</h3>
-                    <p class="carousel-status"></p>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
                 </div>
-            </button>
+            </div>
+            <div class="slider">
+                <h3 class="slider__title">База охоты</h3>
+                <div class="slider__content">
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <h3 class="slider__title">База охоты</h3>
+                <div class="slider__content">
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                    <div class="slider__cell"
+                         data-flickity-bg-lazyload="./media/about/0349.jpg">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
 
+<script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
+<script src="./js/bg-lazyload.js" type="text/javascript"></script>
 <script src="./js/gallery.js" type="text/javascript"></script>
-<script src="./js/flickity.pkgd.js" type="text/javascript"></script>
 
 </body>
 
