@@ -1,4 +1,8 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 16px;
   padding: 22px;
 
@@ -17,19 +21,45 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &__wrapper {
+    overflow: hidden;
+    height: 1em;
+  }
+
   &:hover {
-    background: #{$green};
+    background-color: #{$green};
     color: #{$white};
+
+    .button__inner {
+      transition: .3s;
+      transform: translateY(-2em);
+    }
   }
 
-  &_green {
+  &--green {
     background: #{$green};
+    border: 2px solid #{$green};
     color: #{$white};
+
+    &:hover {
+      background: #{$white};
+      color: #{$green};
+    }
   }
 
-  &_green:hover {
+  &--white {
     background: #{$white};
-    color: #{$green};
+    border: 2px solid #{$white};
+    color: #{$black};
+
+    &:hover {
+      background: #{$green};
+      color: #{$white};
+    }
+  }
+
+  &__inner {
+    margin-top: -0.1em;
   }
 
   &_menu {
@@ -40,6 +70,7 @@
     width: 100%;
     background: transparent;
     color: #{$white};
+    border: 2px solid #{$white};
   }
 
   &_close {
@@ -69,6 +100,10 @@
 
   &_calc {
     width: 50%;
+  }
+
+  &--hunt-slider {
+    width: 100%;
   }
 }
 

@@ -17,7 +17,11 @@
             <input type="text" placeholder="Время для звонка"/>
             <input type="text" placeholder="ваш телефон"/>
             <input type="text" placeholder="Ваше имя"/>
-            <button class="button">Консультация</button>
+            <button class="button button--white">
+                <div class="button__wrapper">
+                    <div class="button__inner">Консультация<br><br>Консультация</div>
+                </div>
+            </button>
         </div>
     </section>
 </main>

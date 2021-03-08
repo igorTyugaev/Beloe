@@ -16,8 +16,10 @@
                         с 1 октября по 31 декабря.
                     </p>
                 </div>
-                <button class="button">
-                    консультация
+                <button class="button button--white">
+                    <div class="button__wrapper">
+                        <div class="button__inner">Консультация<br><br>Консультация</div>
+                    </div>
                 </button>
             </div>
         </div>
@@ -37,8 +39,10 @@
                         с 1 октября по 31 декабря.
                     </p>
                 </div>
-                <button class="button">
-                    консультация
+                <button class="button button--white">
+                    <div class="button__wrapper">
+                        <div class="button__inner">Консультация<br><br>Консультация</div>
+                    </div>
                 </button>
             </div>
         </div>
@@ -58,8 +62,10 @@
                         с 1 октября по 31 декабря.
                     </p>
                 </div>
-                <button class="button">
-                    консультация
+                <button class="button button--white">
+                    <div class="button__wrapper">
+                        <div class="button__inner">Консультация<br><br>Консультация</div>
+                    </div>
                 </button>
             </div>
         </div>

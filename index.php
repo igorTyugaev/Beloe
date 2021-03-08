@@ -5,7 +5,6 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/index.css"/>
-    <link rel="stylesheet" href="css/slick.css"/>
     <title>База "Белое"</title>
 </head>
 
@@ -21,13 +20,150 @@ include('header.php');
 </div>
 
 <main class="main">
+    <section class="hunt-slider">
+        <div id="hunt-slider" class="hunt-slider__wrapper">
+            <div class="hunt-slider__cell">
+                <div class="hunt-slider__inner">
+                    <div class="hunt-slider__col hunt-slider__col--img">
+                        <img class="hunt-slider__img" src="./media/bg-ls-1.png"
+                             alt="slider-img-1">
+                    </div>
+                    <div class="hunt-slider__col">
+                        <div class="hunt-slider__content">
+                            <div class="hunt-slider__body">
+                                <h3 class="hunt-slider__subtitle">
+                                    Охотничья база “белое”
+                                </h3>
+                                <h2 class="hunt-slider__title">
+                                    ОХОТА<br>
+                                    НА КОСУЛЮ
+                                    ЗАГОНОМ
+                                </h2>
+                            </div>
 
-    <section class="first-slide">
-        <div class="first-slide__img"></div>
-        <div class="first-slide__lead">
-            <?php
-            include('cons_slider.php');
-            ?>
+                            <div class="hunt-slider__footer">
+                                <div class="hunt-slider__nav slider-navbar">
+                                    <button class="slider-navbar__btn slider-navbar__btn--left"></button>
+                                    <div class="slider-navbar__inner">
+                                        <p class="slider-navbar__prev-cell">01</p>
+                                        <div class="slider-navbar__hyphen"></div>
+                                        <p class="slider-navbar__next-cell">02</p>
+                                    </div>
+                                    <button class="slider-navbar__btn slider-navbar__btn--right"></button>
+                                </div>
+                                <div class="hunt-slider__info">
+                                    <p class="hunt-slider__text">
+                                <span class="hunt-slider__text hunt-slider__text--accent">
+                                    Сезон начинается:
+                                </span>
+                                        с 1 октября по 31 декабря.
+                                    </p>
+                                </div>
+                                <button class="button button--white button--hunt-slider">
+                                    <div class="button__wrapper">
+                                        <div class="button__inner">Консультация<br><br>Консультация
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hunt-slider__cell">
+                <div class="hunt-slider__inner">
+                    <div class="hunt-slider__col hunt-slider__col--img"
+                         data-flickity-bg-lazyload="./media/bg-ls-1.png">
+                    </div>
+                    <div class="hunt-slider__col">
+                        <div class="hunt-slider__content">
+                            <div class="hunt-slider__body">
+                                <h3 class="hunt-slider__subtitle">
+                                    Охотничья база “белое”
+                                </h3>
+                                <h2 class="hunt-slider__title">
+                                    ОХОТА<br>
+                                    НА КОСУЛЮ
+                                    ЗАГОНОМ
+                                </h2>
+                            </div>
+
+                            <div class="hunt-slider__footer">
+                                <div class="hunt-slider__nav slider-navbar">
+                                    <button class="slider-navbar__btn slider-navbar__btn--left"></button>
+                                    <div class="slider-navbar__inner">
+                                        <p class="slider-navbar__prev-cell">01</p>
+                                        <div class="slider-navbar__hyphen"></div>
+                                        <p class="slider-navbar__next-cell">02</p>
+                                    </div>
+                                    <button class="slider-navbar__btn slider-navbar__btn--right"></button>
+                                </div>
+                                <div class="hunt-slider__info">
+                                    <p class="hunt-slider__text">
+                                <span class="hunt-slider__text hunt-slider__text--accent">
+                                    Сезон начинается:
+                                </span>
+                                        с 1 октября по 31 декабря.
+                                    </p>
+                                </div>
+                                <button class="button button--white button--hunt-slider">
+                                    <div class="button__wrapper">
+                                        <div class="button__inner">Консультация<br><br>Консультация
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hunt-slider__cell">
+                <div class="hunt-slider__inner">
+                    <div class="hunt-slider__col hunt-slider__col--img"
+                         data-flickity-bg-lazyload="./media/bg-ls-1.png">
+                    </div>
+                    <div class="hunt-slider__col">
+                        <div class="hunt-slider__content">
+                            <div class="hunt-slider__body">
+                                <h3 class="hunt-slider__subtitle">
+                                    Охотничья база “белое”
+                                </h3>
+                                <h2 class="hunt-slider__title">
+                                    ОХОТА<br>
+                                    НА КОСУЛЮ
+                                    ЗАГОНОМ
+                                </h2>
+                            </div>
+
+                            <div class="hunt-slider__footer">
+                                <div class="hunt-slider__nav slider-navbar">
+                                    <button class="slider-navbar__btn slider-navbar__btn--left"></button>
+                                    <div class="slider-navbar__inner">
+                                        <p class="slider-navbar__prev-cell">01</p>
+                                        <div class="slider-navbar__hyphen"></div>
+                                        <p class="slider-navbar__next-cell">02</p>
+                                    </div>
+                                    <button class="slider-navbar__btn slider-navbar__btn--right"></button>
+                                </div>
+                                <div class="hunt-slider__info">
+                                    <p class="hunt-slider__text">
+                                <span class="hunt-slider__text hunt-slider__text--accent">
+                                    Сезон начинается:
+                                </span>
+                                        с 1 октября по 31 декабря.
+                                    </p>
+                                </div>
+                                <button class="button button--white button--hunt-slider">
+                                    <div class="button__wrapper">
+                                        <div class="button__inner">Консультация<br><br>Консультация
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -674,8 +810,10 @@ include('header.php');
         type="text/javascript"
 ></script>
 <script src="./js/map.js"></script>
+<script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
+<script src="./js/bg-lazyload.js" type="text/javascript"></script>
 <script src="./js/main.js" type="text/javascript"></script>
-<script src="./js/cslider.js" type="text/javascript"></script>
+<script src="./js/hunt-slider.js" type="text/javascript"></script>
 
 </body>
 

@@ -1,0 +1,166 @@
+.hunt-slider {
+  height: 100vh;
+  width: 100%;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__cell {
+    width: 100%;
+    height: 100vh;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__col {
+    width: 50%;
+    height: 100%;
+
+    &--img {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    @include container(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background: #{$green};
+  }
+
+  &__body {
+    width: 64%;
+    flex: 3;
+  }
+
+  &__footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__info {
+
+  }
+
+  &__text {
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    font-family: TT Interfaces;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+
+    &--accent {
+      margin: 0;
+      color: #{$white};
+      text-transform: none;
+      display: block;
+      font-size: 12px;
+      line-height: 160%;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__title {
+    margin: 10px 0 0 0;
+  }
+}
+
+.slider-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    color: #{$white};
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    &:hover, &:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+
+    }
+
+    &--left {
+      left: 0;
+
+      &:before {
+        background-image: url("../media/control_left.svg");
+      }
+    }
+
+    &--right {
+      right: 0;
+
+      &:before {
+        background-image: url("../media/control_right.svg");
+      }
+    }
+
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  &__prev-cell, &__next-cell {
+    padding: 0;
+  }
+
+  &__hyphen {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    margin: auto 5px;
+  }
+}

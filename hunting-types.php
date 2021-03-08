@@ -20,15 +20,15 @@ include('header.php');
 
 <main>
 
-    <section class="first-slide">
-        <div class="first-slide__img"></div>
-        <div class="first-slide__lead">
+    <section class="hunt-slider">
+        <div class="hunt-slider__img"></div>
+        <div class="hunt-slider__lead">
             <h2>
                 Виды
                 <br/>
                 охоты
             </h2>
-            <div class="first-slide__text">
+            <div class="hunt-slider__text">
                 <p>
                     Охотничья база "Белое" предлагает охоту на лося, кабана
                     (с вышки), сибирскую косулю (трофейная, загонная), лису,
@@ -36,8 +36,10 @@ include('header.php');
                     обслуживание.
                 </p>
             </div>
-            <button class="button button_main-slider">
-                консультация
+            <button class="button button--white button_main-slider">
+                <div class="button__wrapper">
+                    <div class="button__inner">Консультация<br><br>Консультация</div>
+                </div>
             </button>
         </div>
     </section>
@@ -93,7 +95,10 @@ include('header.php');
                     </button>
 
                     <button class="button button_green button_calc">
-                        консультация
+                        <div class="button__wrapper">
+                            <div class="button__inner">Консультация<br><br>Консультация
+                            </div>
+                        </div>
                     </button>
 
                 </div>
@@ -179,8 +184,11 @@ include('header.php');
                         в калькулятор
                     </button>
 
-                    <button class="button button_green button_calc">
-                        консультация
+                    <button class="button button--green button_calc">
+                        <div class="button__wrapper">
+                            <div class="button__inner">Консультация<br><br>Консультация
+                            </div>
+                        </div>
                     </button>
 
                 </div>
@@ -236,8 +244,11 @@ include('header.php');
                         в калькулятор
                     </button>
 
-                    <button class="button button_green button_calc">
-                        консультация
+                    <button class="button button--green button_calc">
+                        <div class="button__wrapper">
+                            <div class="button__inner">Консультация<br><br>Консультация
+                            </div>
+                        </div>
                     </button>
 
                 </div>
@@ -297,7 +308,11 @@ include('header.php');
                 <input type="text" placeholder="Ваш e-mail"/>
                 <input type="text" placeholder="ваш телефон"/>
                 <input type="text" placeholder="Ваше имя"/>
-                <button class="button">Консультация</button>
+                <button class="button button--white">
+                    <div class="button__wrapper">
+                        <div class="button__inner">Консультация<br><br>Консультация</div>
+                    </div>
+                </button>
             </div>
         </div>
     </section>
