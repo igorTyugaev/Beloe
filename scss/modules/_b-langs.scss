@@ -1,12 +1,16 @@
 .lang {
   cursor: pointer;
-  border: 2px solid #{$gray-text};
+  border: 2px solid #{$gray-border-menu};
   border-radius: 50%;
   padding: 3px;
   transition: .15s border;
   margin-top: 17px;
   margin-right: 10px;
   width: 30px;
+
+  &--active {
+    border: 2px solid #{$green};
+  }
 }
 
 .lang:hover {
@@ -15,11 +19,15 @@
 
 @media (min-width: $break-point-large-screen) {
   .lang {
-    border: #{get-vw(2px, $break-point-large-screen)} solid #{$gray-text};
+    border: #{get-vw(2px, $break-point-large-screen)} solid #{$gray-border-menu};
     padding: #{get-vw(3px, $break-point-large-screen)};
     margin-top: #{get-vw(17px, $break-point-large-screen)};
     margin-right: #{get-vw(10px, $break-point-large-screen)};
     width: #{get-vw(30px, $break-point-large-screen)};
+
+    &--active {
+      border: #{get-vw(2px, $break-point-large-screen)} solid #{$green};
+    }
   }
 
   .lang:hover {

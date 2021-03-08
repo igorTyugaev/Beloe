@@ -589,13 +589,16 @@ main-fixed {
 
 .lang {
   cursor: pointer;
-  border: 2px solid rgba(19, 18, 18, 0.7);
+  border: 2px solid rgba(19, 18, 18, 0.1);
   border-radius: 50%;
   padding: 3px;
   transition: 0.15s border;
   margin-top: 17px;
   margin-right: 10px;
   width: 30px;
+}
+.lang--active {
+  border: 2px solid #249D6A;
 }
 
 .lang:hover {
@@ -604,11 +607,14 @@ main-fixed {
 
 @media (min-width: 1280px) {
   .lang {
-    border: 0.15625vw solid rgba(19, 18, 18, 0.7);
+    border: 0.15625vw solid rgba(19, 18, 18, 0.1);
     padding: 0.234375vw;
     margin-top: 1.328125vw;
     margin-right: 0.78125vw;
     width: 2.34375vw;
+  }
+  .lang--active {
+    border: 0.15625vw solid #249D6A;
   }
 
   .lang:hover {
@@ -1475,13 +1481,16 @@ main-fixed {
 
 .lang {
   cursor: pointer;
-  border: 2px solid rgba(19, 18, 18, 0.7);
+  border: 2px solid rgba(19, 18, 18, 0.1);
   border-radius: 50%;
   padding: 3px;
   transition: 0.15s border;
   margin-top: 17px;
   margin-right: 10px;
   width: 30px;
+}
+.lang--active {
+  border: 2px solid #249D6A;
 }
 
 .lang:hover {
@@ -1490,11 +1499,14 @@ main-fixed {
 
 @media (min-width: 1280px) {
   .lang {
-    border: 0.15625vw solid rgba(19, 18, 18, 0.7);
+    border: 0.15625vw solid rgba(19, 18, 18, 0.1);
     padding: 0.234375vw;
     margin-top: 1.328125vw;
     margin-right: 0.78125vw;
     width: 2.34375vw;
+  }
+  .lang--active {
+    border: 0.15625vw solid #249D6A;
   }
 
   .lang:hover {

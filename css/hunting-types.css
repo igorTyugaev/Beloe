@@ -587,13 +587,16 @@ main-fixed {
 
 .lang {
   cursor: pointer;
-  border: 2px solid rgba(19, 18, 18, 0.7);
+  border: 2px solid rgba(19, 18, 18, 0.1);
   border-radius: 50%;
   padding: 3px;
   transition: 0.15s border;
   margin-top: 17px;
   margin-right: 10px;
   width: 30px;
+}
+.lang--active {
+  border: 2px solid #249D6A;
 }
 
 .lang:hover {
@@ -602,11 +605,14 @@ main-fixed {
 
 @media (min-width: 1280px) {
   .lang {
-    border: 0.15625vw solid rgba(19, 18, 18, 0.7);
+    border: 0.15625vw solid rgba(19, 18, 18, 0.1);
     padding: 0.234375vw;
     margin-top: 1.328125vw;
     margin-right: 0.78125vw;
     width: 2.34375vw;
+  }
+  .lang--active {
+    border: 0.15625vw solid #249D6A;
   }
 
   .lang:hover {
@@ -860,7 +866,6 @@ html {
 }
 
 .hunt-slider {
-  position: relative;
   height: 100vh;
   width: 100%;
 }
@@ -890,6 +895,7 @@ html {
   height: 100%;
 }
 .hunt-slider__col--img {
+  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -949,7 +955,7 @@ html {
 }
 .hunt-slider__arrow-down {
   position: absolute;
-  left: 25%;
+  left: 50%;
   bottom: 0;
   color: #FFFFFF;
   cursor: pointer;
@@ -1108,6 +1114,97 @@ html {
     height: 0.2222222222vw;
     width: 2.2222222222vw;
     margin: auto 0.5555555556vw;
+  }
+}
+@media (max-width: 520px) {
+  .hunt-slider__cell {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .hunt-slider__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  .hunt-slider__img {
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .hunt-slider__col {
+    width: 100%;
+    height: 60%;
+  }
+  .hunt-slider__col--img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40%;
+  }
+  .hunt-slider__content {
+    padding: 20px 20px 20px;
+  }
+}
+@media (max-width: 520px) and (min-width: 1280px) {
+  .hunt-slider__content {
+    padding: 1.5625vw 1.5625vw 1.5625vw;
+  }
+}
+@media (max-width: 520px) and (max-width: 900px) {
+  .hunt-slider__content {
+    padding: 2.2222222222vw 2.2222222222vw 2.2222222222vw;
+  }
+}
+@media (max-width: 520px) and (max-width: 520px) {
+  .hunt-slider__content {
+    padding: 3.8461538462vw 3.8461538462vw;
+  }
+}
+@media (max-width: 520px) {
+  .hunt-slider__body {
+    width: 85%;
+  }
+}
+@media (max-width: 520px) {
+  .hunt-slider__text {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+  }
+  .hunt-slider__text--accent {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+@media (max-width: 520px) {
+  .hunt-slider__title {
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 520px) {
+  .hunt-slider__arrow-down {
+    margin: 0 0 40px 0;
+    height: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .slider-navbar {
+    margin-bottom: 3.8461538462vw;
+  }
+  .slider-navbar__btn:before {
+    width: 3.8461538462vw;
+    height: 3.8461538462vw;
+  }
+  .slider-navbar__inner {
+    margin: 0 0.9615384615vw;
+    padding: 0;
+  }
+  .slider-navbar__hyphen {
+    height: 0.3846153846vw;
+    width: 3.8461538462vw;
+    margin: auto 0.9615384615vw;
   }
 }
 .hunt__item {
