@@ -543,6 +543,9 @@ main-fixed {
 .menu__logo-box {
   margin: 0 auto;
 }
+.menu__logo-box:hover {
+  transform: scale(1.1);
+}
 .menu__logo {
   width: 121px;
   max-width: 100%;
@@ -1093,6 +1096,9 @@ html {
   width: 100%;
   transition: height 0.5s ease;
 }
+.slider:hover .slider__cell img {
+  transform: scale(1.1);
+}
 .slider__title {
   position: absolute;
   margin: 20px;
@@ -1123,9 +1129,6 @@ html {
   transform: scale(1);
   transition: transform 0.5s ease;
 }
-.slider__cell:hover {
-  transform: scale(1.1);
-}
 .slider__cell-img {
   display: block;
   object-fit: cover;
@@ -1142,6 +1145,9 @@ html {
 }
 .slider--show .flickity-prev-next-button {
   display: block;
+}
+.slider--show:hover .slider__cell img {
+  transform: scale(1);
 }
 .slider--show .slider__cover {
   z-index: -1;

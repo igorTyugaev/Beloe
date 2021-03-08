@@ -543,6 +543,9 @@ main-fixed {
 .menu__logo-box {
   margin: 0 auto;
 }
+.menu__logo-box:hover {
+  transform: scale(1.1);
+}
 .menu__logo {
   width: 121px;
   max-width: 100%;
@@ -897,6 +900,9 @@ body {
   height: 240px;
   object-fit: cover;
   overflow: hidden;
+}
+.news__item:hover .news__item-bg img {
+  transform: scale(1.1);
 }
 .news__item-bg {
   position: relative;

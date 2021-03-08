@@ -21,6 +21,12 @@ body {
     object-fit: cover;
     overflow: hidden;
 
+    &:hover {
+      .news__item-bg img {
+        transform: scale(1.1);
+      }
+    }
+
     &-bg {
       position: relative;
       width: 100%;
