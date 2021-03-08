@@ -27,6 +27,10 @@ include('header.php');
                     <div class="hunt-slider__col hunt-slider__col--img">
                         <img class="hunt-slider__img" src="./media/bg-ls-1.png"
                              alt="slider-img-1">
+                        <button class="hunt-slider__arrow-down">
+                            <img src="./media/arrow_down.svg" alt="arrow_down"
+                                 class="hunt-slider__arrow-img">
+                        </button>
                     </div>
                     <div class="hunt-slider__col">
                         <div class="hunt-slider__content">
@@ -74,6 +78,10 @@ include('header.php');
                 <div class="hunt-slider__inner">
                     <div class="hunt-slider__col hunt-slider__col--img"
                          data-flickity-bg-lazyload="./media/bg-ls-1.png">
+                        <button class="hunt-slider__arrow-down">
+                            <img src="./media/arrow_down.svg" alt="arrow_down"
+                                 class="hunt-slider__arrow-img">
+                        </button>
                     </div>
                     <div class="hunt-slider__col">
                         <div class="hunt-slider__content">
@@ -121,6 +129,10 @@ include('header.php');
                 <div class="hunt-slider__inner">
                     <div class="hunt-slider__col hunt-slider__col--img"
                          data-flickity-bg-lazyload="./media/bg-ls-1.png">
+                        <button class="hunt-slider__arrow-down">
+                            <img src="./media/arrow_down.svg" alt="arrow_down"
+                                 class="hunt-slider__arrow-img">
+                        </button>
                     </div>
                     <div class="hunt-slider__col">
                         <div class="hunt-slider__content">
@@ -167,7 +179,7 @@ include('header.php');
         </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="features__item">
             <div class="features__item-inner">
                 <img src="media/advantages-1.png" alt="work-3" class="features__img">

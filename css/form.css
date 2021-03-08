@@ -314,6 +314,22 @@ input::placeholder {
   display: none;
 }
 
+@media (min-width: 1280px) {
+  .numbers__block {
+    border: 0.15625vw solid;
+    padding: 1.71875vw 0;
+    font-size: 1.25vw;
+  }
+  .numbers_menu {
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .numbers_menu {
+    display: none;
+  }
+}
 @media (max-width: 900px) {
   .numbers {
     width: 50vw;
@@ -839,6 +855,10 @@ main-fixed {
     padding: 3.8461538462vw 3.8461538462vw;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .consultation {
   width: 100%;
   background: #249D6A;
