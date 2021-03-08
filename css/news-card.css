@@ -678,7 +678,8 @@ main-fixed {
   vertical-align: center;
 }
 .popup__close img:hover {
-  transform: scale(1.6);
+  transform: rotate(90deg);
+  transition: transform 0.5s;
 }
 .popup__success {
   display: none;
@@ -1573,7 +1574,8 @@ main-fixed {
   vertical-align: center;
 }
 .popup__close img:hover {
-  transform: scale(1.6);
+  transform: rotate(90deg);
+  transition: transform 0.5s;
 }
 .popup__success {
   display: none;
