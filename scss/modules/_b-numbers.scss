@@ -1,17 +1,16 @@
 .numbers {
-  @include container(20px);
-  width: 37.5vw;
   position: fixed;
-  display: flex;
   right: 0;
   top: 0;
   z-index: $z-index-numbers;
+
   color: $white;
-  border-color: $white;
+  display: flex;
+  @include container(20px);
+  width: 37.5vw;
 
   &_green {
     color: $green;
-    border-color: $green;
   }
 
   &_menu {
@@ -43,7 +42,7 @@
 
     color: inherit;
     border-color: inherit;
-    border: 2px solid;
+    border: 2px solid inherit;
 
     &__wrapper {
       overflow: hidden;

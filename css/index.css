@@ -228,15 +228,14 @@ input::placeholder {
   }
 }
 .numbers {
-  padding: 20px 20px 20px;
-  width: 37.5vw;
   position: fixed;
-  display: flex;
   right: 0;
   top: 0;
   z-index: 10;
   color: #FFFFFF;
-  border-color: #FFFFFF;
+  display: flex;
+  padding: 20px 20px 20px;
+  width: 37.5vw;
 }
 @media (min-width: 1280px) {
   .numbers {
@@ -255,7 +254,6 @@ input::placeholder {
 }
 .numbers_green {
   color: #249D6A;
-  border-color: #249D6A;
 }
 .numbers_menu {
   display: none;
@@ -281,7 +279,7 @@ input::placeholder {
   text-decoration-line: none;
   color: inherit;
   border-color: inherit;
-  border: 2px solid;
+  border: 2px solid inherit;
 }
 .numbers__block__wrapper {
   overflow: hidden;
@@ -509,25 +507,13 @@ main-fixed {
 
 .menu {
   padding: 20px;
-  background: transparent;
+  background: #F4F4F4;
   width: 25%;
   height: 100%;
   position: fixed;
   display: flex;
   z-index: 20;
   flex-direction: column;
-}
-.menu--colorbg {
-  background: #F4F4F4;
-}
-.menu__wrapper {
-  display: none;
-}
-.menu--show {
-  background: #F4F4F4;
-}
-.menu--show .menu__wrapper {
-  display: block;
 }
 .menu__link {
   font-size: 16px;
@@ -599,7 +585,6 @@ main-fixed {
   flex-direction: column;
   flex-grow: 1;
 }
-
 .lang {
   cursor: pointer;
   border: 2px solid rgba(19, 18, 18, 0.1);
@@ -826,9 +811,6 @@ main-fixed {
     transform: translatey(-100vh);
     width: 25%;
   }
-  .menu__wrapper {
-    display: none;
-  }
   .menu_show {
     transform: translatey(100vh);
   }
@@ -888,7 +870,7 @@ html {
 }
 
 .preloader {
-  z-index: 20;
+  z-index: 30;
   position: fixed;
   left: 0;
   top: 0;
@@ -896,6 +878,24 @@ html {
   width: 100%;
   transition: top 0.6s;
   background: #F4F4F4;
+  padding: 20px;
+}
+.preloader__logo-container {
+  width: 25%;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  opacity: 1;
+}
+.preloader__logo-box {
+  display: block;
+  margin: 0 auto;
+}
+.preloader__logo {
+  display: block;
+  margin: 0 auto;
+  width: 121px;
+  max-width: 100%;
 }
 .preloader--done {
   top: -100vh;
@@ -915,13 +915,48 @@ html {
   overflow: hidden;
 }
 
+@media (min-width: 1280px) {
+  .preloader {
+    padding: 1.5625vw;
+  }
+  .preloader__logo-container {
+    top: 1.5625vw;
+  }
+  .preloader__logo {
+    width: 9.453125vw;
+  }
+  .preloader__line {
+    width: 0.15625vw;
+  }
+}
+@media (max-width: 900px) {
+  .preloader {
+    padding: 2.2222222222vw;
+  }
+  .preloader__logo-container {
+    top: 2.2222222222vw;
+  }
+  .preloader__logo {
+    width: 13.4444444444vw;
+  }
+  .preloader__line {
+    width: 0.2222222222vw;
+  }
+}
 @media (max-width: 520px) {
+  .preloader__logo-container {
+    top: 20px;
+    left: 20px;
+  }
   .preloader__line {
     height: 2px;
     width: 0;
     position: absolute;
     bottom: 50%;
     left: 0;
+  }
+  .preloader__logo {
+    width: 121px;
   }
 }
 .hunt-slider {

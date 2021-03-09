@@ -11,6 +11,15 @@
 <body>
 
 <section class="preloader">
+    <div class="preloader__logo-container" id="preloader__logo-container">
+        <a href="index.php" class="preloader__logo-box">
+            <img
+                    src="./media/logo.svg"
+                    alt="Охотничья база Белое"
+                    class="preloader__logo"
+            />
+        </a>
+    </div>
     <div class="preloader__line"></div>
 </section>
 
@@ -18,10 +27,24 @@
 include('header.php');
 ?>
 
-<div id="numbers-main" class="numbers container">
-    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-</div>
+<!--<div id="numbers-main" class="numbers container">-->
+<!--    <div class="numbers__wrapper">-->
+<!--        <br href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52 </br>8-->
+<!--        (3523) 99 — 30 — 52</a>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="numbers__wrapper">-->
+<!--        <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52 </br>8-->
+<!--            (3523) 99 — 30 — 52</a>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<button class="button button--white button--hunt-slider">-->
+<!--    <div class="button__wrapper">-->
+<!--        <div class="button__inner">Консультация<br><br>Консультация-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</button>-->
 
 <main class="main">
     <section class="hunt-slider">

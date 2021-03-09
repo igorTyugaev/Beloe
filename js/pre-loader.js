@@ -1,27 +1,16 @@
 (function () {
     let percent = 0;
-    let isHorizontal = false;
     const line = document.querySelector('.preloader__line');
-    if (screen.width <= 520) {
-        isHorizontal = true;
-        document.getElementById("menu").classList.toggle("menu_show");
-    }
+
     const preloaderInterval = setInterval(() => {
-        if (!isHorizontal)
+        if (screen.width > 520)
             line.style.height = percent++ + '%';
         else
             line.style.width = percent++ + '%';
-        // percentBlock.innerHTML = percent + '%';
         if (percent >= 100) {
-            // canScroll = 'down';
             document.body.classList.remove('no-scroll');
-            // document
-            //     .querySelector('.main-logo')
-            //     .classList.add('main-logo_active');
             document.body.classList.add('active');
-            // gallerySlider();
-            // infoSliderInit();
-            // changeHeaderColor('add');
+
             clearInterval(preloaderInterval);
             document
                 .querySelector('.preloader')
@@ -29,9 +18,14 @@
             document
                 .getElementById('menu')
                 .classList.add('menu--show');
-
-            if (isHorizontal)
-                document.getElementById("menu").classList.toggle("menu_show");
+            if (screen.width > 900)
+                setTimeout(function () {
+                    document
+                        .getElementById('preloader__logo-container').remove();
+                }, 600);
+            else
+                document
+                    .getElementById('preloader__logo-container').remove();
 
         }
     }, 20);

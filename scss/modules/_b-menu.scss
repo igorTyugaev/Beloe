@@ -10,30 +10,13 @@ main {
 
 .menu {
   padding: 20px;
-  //background: #E5E5E5;
-  background: transparent;
+  background: #{$gray};
   width: $menu-width;
   height: 100%;
   position: fixed;
   display: flex;
   z-index: $z-index-menu-show;
   flex-direction: column;
-
-  &--colorbg {
-    background: #{$gray};
-  }
-
-  &__wrapper {
-    display: none;
-  }
-
-  &--show {
-    background: #{$gray};
-
-    .menu__wrapper {
-      display: block;
-    }
-  }
 
   &__link {
     font-size: 16px;
@@ -119,6 +102,10 @@ main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+  }
+
+  &__cover {
+
   }
 }
 
@@ -230,11 +217,6 @@ main {
     padding: get-vw(20px, $break-point-mobile);
     transform: translatey(-100vh);
     width: $menu-width;
-
-    &__wrapper {
-      display: none;
-    }
-
 
     &_show {
       transform: translatey(100vh);

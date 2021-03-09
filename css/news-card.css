@@ -230,15 +230,14 @@ input::placeholder {
   }
 }
 .numbers {
-  padding: 20px 20px 20px;
-  width: 37.5vw;
   position: fixed;
-  display: flex;
   right: 0;
   top: 0;
   z-index: 10;
   color: #FFFFFF;
-  border-color: #FFFFFF;
+  display: flex;
+  padding: 20px 20px 20px;
+  width: 37.5vw;
 }
 @media (min-width: 1280px) {
   .numbers {
@@ -257,7 +256,6 @@ input::placeholder {
 }
 .numbers_green {
   color: #249D6A;
-  border-color: #249D6A;
 }
 .numbers_menu {
   display: none;
@@ -283,7 +281,7 @@ input::placeholder {
   text-decoration-line: none;
   color: inherit;
   border-color: inherit;
-  border: 2px solid;
+  border: 2px solid inherit;
 }
 .numbers__block__wrapper {
   overflow: hidden;
@@ -511,25 +509,13 @@ main-fixed {
 
 .menu {
   padding: 20px;
-  background: transparent;
+  background: #F4F4F4;
   width: 25%;
   height: 100%;
   position: fixed;
   display: flex;
   z-index: 20;
   flex-direction: column;
-}
-.menu--colorbg {
-  background: #F4F4F4;
-}
-.menu__wrapper {
-  display: none;
-}
-.menu--show {
-  background: #F4F4F4;
-}
-.menu--show .menu__wrapper {
-  display: block;
 }
 .menu__link {
   font-size: 16px;
@@ -601,7 +587,6 @@ main-fixed {
   flex-direction: column;
   flex-grow: 1;
 }
-
 .lang {
   cursor: pointer;
   border: 2px solid rgba(19, 18, 18, 0.1);
@@ -827,9 +812,6 @@ main-fixed {
     padding: 3.8461538462vw;
     transform: translatey(-100vh);
     width: 25%;
-  }
-  .menu__wrapper {
-    display: none;
   }
   .menu_show {
     transform: translatey(100vh);
@@ -1144,15 +1126,14 @@ input::placeholder {
   }
 }
 .numbers {
-  padding: 20px 20px 20px;
-  width: 37.5vw;
   position: fixed;
-  display: flex;
   right: 0;
   top: 0;
   z-index: 10;
   color: #FFFFFF;
-  border-color: #FFFFFF;
+  display: flex;
+  padding: 20px 20px 20px;
+  width: 37.5vw;
 }
 @media (min-width: 1280px) {
   .numbers {
@@ -1171,7 +1152,6 @@ input::placeholder {
 }
 .numbers_green {
   color: #249D6A;
-  border-color: #249D6A;
 }
 .numbers_menu {
   display: none;
@@ -1197,7 +1177,7 @@ input::placeholder {
   text-decoration-line: none;
   color: inherit;
   border-color: inherit;
-  border: 2px solid;
+  border: 2px solid inherit;
 }
 .numbers__block__wrapper {
   overflow: hidden;
@@ -1425,25 +1405,13 @@ main-fixed {
 
 .menu {
   padding: 20px;
-  background: transparent;
+  background: #F4F4F4;
   width: 25%;
   height: 100%;
   position: fixed;
   display: flex;
   z-index: 20;
   flex-direction: column;
-}
-.menu--colorbg {
-  background: #F4F4F4;
-}
-.menu__wrapper {
-  display: none;
-}
-.menu--show {
-  background: #F4F4F4;
-}
-.menu--show .menu__wrapper {
-  display: block;
 }
 .menu__link {
   font-size: 16px;
@@ -1515,7 +1483,6 @@ main-fixed {
   flex-direction: column;
   flex-grow: 1;
 }
-
 .lang {
   cursor: pointer;
   border: 2px solid rgba(19, 18, 18, 0.1);
@@ -1741,9 +1708,6 @@ main-fixed {
     padding: 3.8461538462vw;
     transform: translatey(-100vh);
     width: 25%;
-  }
-  .menu__wrapper {
-    display: none;
   }
   .menu_show {
     transform: translatey(100vh);
