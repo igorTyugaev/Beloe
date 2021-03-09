@@ -11,76 +11,77 @@
         <button onclick="closeMenu()" id="btnCloseMenu" class="button_close"></button>
     </div>
 
+    <div class="menu__wrapper">
+        <hr class="menu__line"/>
 
-    <hr class="menu__line"/>
+        <nav class="menu__nav">
+            <ul>
+                <li class="menu__link-container">
+                    <a class="menu__link" href="hunting-types.php">Все виды охоты</a>
+                </li>
 
-    <nav class="menu__nav">
-        <ul>
-            <li class="menu__link-container">
-                <a class="menu__link" href="hunting-types.php">Все виды охоты</a>
-            </li>
+                <li>
+                    <hr class="menu__line"/>
+                </li>
 
-            <li>
-                <hr class="menu__line"/>
-            </li>
+                <li class="menu__link-container">
+                    <a class="menu__link" href="about.php">О
+                        нас</a></li>
+                <li class="menu__link-container"><a class="menu__link" href="our-news.php">Новости</a>
+                </li>
+                <li class="menu__link-container"><a class="menu__link"
+                                                    href="reviews.php">Отзывы</a></li>
+                <li class="menu__link-container"><a class="menu__link" href="gallery.php">Галерея</a>
+                </li>
 
-            <li class="menu__link-container">
-                <a class="menu__link" href="about.php">О
-                    нас</a></li>
-            <li class="menu__link-container"><a class="menu__link" href="our-news.php">Новости</a>
-            </li>
-            <li class="menu__link-container"><a class="menu__link"
-                                                href="reviews.php">Отзывы</a></li>
-            <li class="menu__link-container"><a class="menu__link" href="gallery.php">Галерея</a>
-            </li>
+                <li>
+                    <hr class="menu__line"/>
+                </li>
 
-            <li>
-                <hr class="menu__line"/>
-            </li>
-
-            <li class="menu__link-container"><a class="menu__link" href="contacts.php">Контакты</a>
-            </li>
-            <li class="menu__lang">
-                <img src="./media/RUS.svg" alt="RU" class="lang lang--active"/>
-                <img src="./media/DEU.svg" alt="DEU" class="lang"/>
-            </li>
-        </ul>
-    </nav>
+                <li class="menu__link-container"><a class="menu__link" href="contacts.php">Контакты</a>
+                </li>
+                <li class="menu__lang">
+                    <img src="./media/RUS.svg" alt="RU" class="lang lang--active"/>
+                    <img src="./media/DEU.svg" alt="DEU" class="lang"/>
+                </li>
+            </ul>
+        </nav>
 
 
-    <span class="menu__address">
+        <span class="menu__address">
                 Россия, Курганская область лес
                 <br/>
                 Каминская Дача
             </span>
-    <a class="menu__drive" href="contacts.php">Как проехать?</a>
+        <a class="menu__drive" href="contacts.php">Как проехать?</a>
 
-    <div class="menu__bottom-container">
-        <div class="numbers container numbers_menu">
-            <a href="tel:+73523993052" class="numbers__block">
-                <div class="numbers__block__wrapper">
-                    <div class="numbers__block__inner">
-                        8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52
+        <div class="menu__bottom-container">
+            <div class="numbers container numbers_menu">
+                <a href="tel:+73523993052" class="numbers__block">
+                    <div class="numbers__block__wrapper">
+                        <div class="numbers__block__inner">
+                            8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="tel:+73523993052" class="numbers__block">
-                <div class="numbers__block__wrapper">
-                    <div class="numbers__block__inner">
-                        8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52
+                </a>
+                <a href="tel:+73523993052" class="numbers__block">
+                    <div class="numbers__block__wrapper">
+                        <div class="numbers__block__inner">
+                            8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-
-        <a href="#popup-consult" class="button button--green">
-            <div class="button__wrapper">
-                <div class="button__inner">
-                    Записаться на охоту<br><br>Записаться на охоту
-                </div>
+                </a>
             </div>
-        </a>
 
+            <a href="#popup-consult" class="button button--green">
+                <div class="button__wrapper">
+                    <div class="button__inner">
+                        Записаться на охоту<br><br>Записаться на охоту
+                    </div>
+                </div>
+            </a>
+
+        </div>
     </div>
 
 </header>

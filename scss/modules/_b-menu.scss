@@ -10,13 +10,26 @@ main {
 
 .menu {
   padding: 20px;
-  background: #{$gray};
+  //background: #E5E5E5;
+  background: transparent;
   width: $menu-width;
   height: 100%;
   position: fixed;
   display: flex;
-  z-index: $z-index-menu;
+  z-index: $z-index-menu-show;
   flex-direction: column;
+
+  &__wrapper {
+    display: none;
+  }
+
+  &--show {
+    background: #{$gray};
+
+    .menu__wrapper {
+      display: block;
+    }
+  }
 
   &__link {
     font-size: 16px;
@@ -204,16 +217,24 @@ main {
     @include container();
     z-index: $z-index-menu-show;
     transform: translateY(100%);
-
   }
 }
 
 @media (max-width: $break-point-mobile) {
 
   .menu {
-    display: none;
     padding: get-vw(20px, $break-point-mobile);
+    transform: translatey(-100vh);
     width: $menu-width;
+
+    &__wrapper {
+      display: none;
+    }
+
+
+    &_show {
+      transform: translatey(100vh);
+    }
 
     &__link {
       font-size: 16px;
