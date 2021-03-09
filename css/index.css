@@ -1484,12 +1484,21 @@ html {
   padding: 0.78125vw 0;
   max-height: 80px;
   overflow: hidden;
+  transition: all 0.5s;
+}
+.reviews__item-inner__massage--show {
+  max-height: 100%;
+  overflow: visible;
 }
 .reviews__item-inner__more {
   color: #131212;
   opacity: 0.4;
-  bottom: 0;
-  margin: 0;
+  margin: 13px 0 0 0;
+  background: none;
+  border: none;
+  text-decoration: none;
+  padding: 0;
+  cursor: pointer;
 }
 .reviews__star svg {
   width: 20px;
@@ -1567,6 +1576,10 @@ html {
     padding: 0.78125vw 0;
     max-height: 6.25vw;
     overflow: hidden;
+  }
+  .reviews__item-inner__massage--show {
+    max-height: 100%;
+    overflow: visible;
   }
   .reviews__item-avatar {
     margin-right: 1.5625vw;
