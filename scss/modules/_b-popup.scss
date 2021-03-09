@@ -36,14 +36,12 @@
       vertical-align: center;
     }
 
-
     img {
       &:hover {
         transform: rotate(90deg);
         transition: transform 0.5s;
       }
     }
-
   }
 
   &__success {

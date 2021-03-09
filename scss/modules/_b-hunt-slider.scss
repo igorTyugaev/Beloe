@@ -1,4 +1,5 @@
 .hunt-slider {
+  position: relative;
   height: 100vh;
   width: 100%;
 
@@ -90,7 +91,7 @@
 
   &__arrow-down {
     position: absolute;
-    left: 50%;
+    left: 25%;
     bottom: 0;
     color: #{$white};
     cursor: pointer;
@@ -118,10 +119,13 @@
 }
 
 .slider-navbar {
+  position: absolute;
+  left: 50%;
+  bottom: 137px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px;
 
   &__btn {
     display: flex;
@@ -141,7 +145,6 @@
       outline: 0;
       opacity: .9;
     }
-
 
     &:before {
       content: '';
@@ -206,6 +209,7 @@
       font-size: get-vw(14px, $break-point-large-screen);
 
       &--accent {
+        margin: 0;
         font-size: get-vw(12px, $break-point-large-screen);
       }
     }
@@ -221,7 +225,8 @@
   }
 
   .slider-navbar {
-    margin-bottom: get-vw(20px, $break-point-large-screen);
+    margin: get-vw(20px, $break-point-large-screen);
+    bottom: get-vw(137px, $break-point-large-screen);
 
     &__btn {
       &:before {
@@ -255,6 +260,7 @@
       font-size: get-vw(14px, $break-point-tablet);
 
       &--accent {
+        margin: 0;
         font-size: get-vw(12px, $break-point-tablet);
       }
     }
@@ -270,12 +276,13 @@
   }
 
   .slider-navbar {
-    margin-bottom: get-vw(20px, $break-point-tablet);
+    margin: get-vw(20px, $break-point-tablet);
+    bottom: get-vw(137px, $break-point-tablet);
 
     &__btn {
       &:before {
-        width: get-vw(20px, $break-point-tablet);
-        height: get-vw(20px, $break-point-tablet);
+        width: get-vw(24px, $break-point-tablet);
+        height: get-vw(24px, $break-point-tablet);
       }
     }
 
@@ -356,7 +363,9 @@
   }
 
   .slider-navbar {
-    margin-bottom: get-vw(20px, $break-point-mobile);
+    left: 0;
+    margin: get-vw(20px, $break-point-mobile);
+    bottom: get-vw(140px, $break-point-mobile);
 
     &__btn {
       &:before {
