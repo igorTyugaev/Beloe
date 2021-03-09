@@ -519,6 +519,9 @@ main-fixed {
   z-index: 20;
   flex-direction: column;
 }
+.menu--colorbg {
+  background: #E5E5E5;
+}
 .menu__wrapper {
   display: none;
 }
@@ -576,7 +579,7 @@ main-fixed {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
-  color: rgba(19, 18, 18, 0.7);
+  color: rgba(19, 18, 18, 0.4);
   display: block;
 }
 .menu__drive {
@@ -1430,6 +1433,9 @@ main-fixed {
   z-index: 20;
   flex-direction: column;
 }
+.menu--colorbg {
+  background: #E5E5E5;
+}
 .menu__wrapper {
   display: none;
 }
@@ -1487,7 +1493,7 @@ main-fixed {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
-  color: rgba(19, 18, 18, 0.7);
+  color: rgba(19, 18, 18, 0.4);
   display: block;
 }
 .menu__drive {

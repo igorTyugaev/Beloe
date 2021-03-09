@@ -19,6 +19,10 @@ main {
   z-index: $z-index-menu-show;
   flex-direction: column;
 
+  &--colorbg {
+    background: #E5E5E5;
+  }
+
   &__wrapper {
     display: none;
   }
@@ -89,7 +93,7 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
-    color: #{$gray-text};
+    color: rgba(19, 18, 18, 0.4);
     display: block;
   }
 
