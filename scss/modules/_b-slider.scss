@@ -8,6 +8,15 @@
     .slider__cell img {
       transform: scale(1.1);
     }
+
+    .slider__cover {
+      background: transparent;
+    }
+  }
+
+
+  &:hover .slider__cover {
+    background: transparent;
   }
 
   &__title {
@@ -52,6 +61,8 @@
     object-position: center;
     width: 100%;
     height: 100%;
+
+    transition: transform 0.3s;
   }
 
   .flickity-prev-next-button {

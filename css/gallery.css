@@ -879,6 +879,12 @@ html {
 .slider:hover .slider__cell img {
   transform: scale(1.1);
 }
+.slider:hover .slider__cover {
+  background: transparent;
+}
+.slider:hover .slider__cover {
+  background: transparent;
+}
 .slider__title {
   position: absolute;
   margin: 20px;
@@ -915,6 +921,7 @@ html {
   object-position: center;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s;
 }
 .slider .flickity-prev-next-button {
   display: none;
