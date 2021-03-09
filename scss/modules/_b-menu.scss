@@ -20,7 +20,7 @@ main {
   flex-direction: column;
 
   &--colorbg {
-    background: #E5E5E5;
+    background: #{$gray};
   }
 
   &__wrapper {
