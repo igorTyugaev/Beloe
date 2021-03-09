@@ -90,7 +90,8 @@ include('header.php');
                                         с 1 октября по 31 декабря.
                                     </p>
                                 </div>
-                                <button class="button button--white button--hunt-slider">
+                                <button class="button button--white button--hunt-slider"
+                                        data-show-popup="consult">
                                     <div class="button__wrapper">
                                         <div class="button__inner">Консультация<br><br>Консультация
                                         </div>
@@ -850,6 +851,7 @@ include('header.php');
         type="text/javascript"
 ></script>
 <script src="./js/map.js"></script>
+<script src="./js/popup.js"></script>
 <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
 <script src="./js/bg-lazyload.js" type="text/javascript"></script>
 <script src="./js/main.js" type="text/javascript"></script>

@@ -540,6 +540,7 @@ main-fixed {
 }
 .menu__logo-box {
   margin: 0 auto;
+  transition: transform 0.3s;
 }
 .menu__logo-box:hover {
   transform: scale(1.1);
@@ -623,15 +624,11 @@ main-fixed {
   position: fixed;
   width: 75%;
   z-index: 20;
-  height: 100%;
+  height: 100vh;
   right: 0;
   top: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-.popup:target {
-  opacity: 1;
-  visibility: visible;
+  transform: translateY(-100vh);
+  transition: transform 0.5s;
 }
 .popup__body {
   display: flex;
@@ -664,6 +661,7 @@ main-fixed {
 .popup__close {
   text-align: right;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .popup__close a {
   content: " ";
@@ -683,6 +681,9 @@ main-fixed {
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
+}
+.popup__active {
+  transform: translateY(0);
 }
 
 @media (min-width: 1280px) {
@@ -972,6 +973,7 @@ html {
   min-width: 100%;
   width: 100%;
   height: 100%;
+  transition: transform 0.5s;
 }
 .features__title {
   font-size: 14px;
@@ -982,6 +984,7 @@ html {
   transform: translate(-50%, -50%);
   justify-content: center;
   text-align: center;
+  cursor: default;
 }
 
 @media (min-width: 1280px) {

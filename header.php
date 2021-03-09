@@ -72,13 +72,13 @@
             </a>
         </div>
 
-        <a href="#popup-consult" class="button button--green">
+        <button class="button button--green" data-show-popup="consult">
             <div class="button__wrapper">
                 <div class="button__inner">
                     Записаться на охоту<br><br>Записаться на охоту
                 </div>
             </div>
-        </a>
+        </button>
 
     </div>
 
@@ -92,15 +92,38 @@
     </button>
 </div>
 
-<div id="popup-consult" class="popup">
+<div id="popup-order" class="popup">
     <div class="popup__body">
-        <div class="popup__close">
-            <a href="##"><img src="media/close.svg" alt=""></a>
-        </div>
+        <button class="popup__close">
+            <img src="media/close.svg" alt="">
+        </button>
         <h2 class="popup__title">Записаться<br>
             на охоту</h2>
         <div class="popup__form">
             <input type="text" placeholder="Дата заезда"/>
+            <input type="text" placeholder="Время для звонка"/>
+            <input type="text" placeholder="ваш телефон"/>
+            <input type="text" placeholder="Ваше имя"/>
+            <button class="button button--white">
+                <div class="button__wrapper">
+                    <div class="button__inner">Консультация<br><br>Консультация</div>
+                </div>
+            </button>
+        </div>
+        <p class="popup__success">
+            Скоро мы с вами свяжемся!
+        </p>
+    </div>
+</div>
+
+<div id="popup-consult" class="popup">
+    <div class="popup__body">
+        <div class="popup__close">
+            <img src="media/close.svg" alt="">
+        </div>
+        <h2 class="popup__title">Записаться<br>
+            на охоту</h2>
+        <div class="popup__form">
             <input type="text" placeholder="Время для звонка"/>
             <input type="text" placeholder="ваш телефон"/>
             <input type="text" placeholder="Ваше имя"/>

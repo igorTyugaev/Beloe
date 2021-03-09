@@ -1,6 +1,7 @@
 (function () {
     let percent = 0;
     const line = document.querySelector('.preloader__line');
+    document.body.classList.add('no-scroll');
 
     const preloaderInterval = setInterval(() => {
         if (screen.width > 520)
