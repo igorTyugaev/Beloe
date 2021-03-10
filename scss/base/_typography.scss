@@ -69,32 +69,20 @@ a {
   color: #{$green};
 }
 
-input {
-  font-size: 16px;
-  padding: 20px 0;
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-
-  background-color: transparent;
-  border: none;
-  font-family: Akrobat;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 100%;
-  text-transform: uppercase;
-
-  color: rgba(255, 255, 255, 1);
-
-  &:last-of-type {
-    margin-bottom: 3.125vw;
-  }
-
-  &:first-of-type {
-    margin-top: -0.78125vw;
-  }
-
-  &::placeholder {
-    color: rgba(255, 255, 255, 0.4);
-  }
+  -webkit-text-fill-color: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 @media (min-width: #{$break-point-large-screen}) {

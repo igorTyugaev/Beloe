@@ -99,17 +99,67 @@
         </div>
         <h2 class="popup__title">Записаться<br>
             на охоту</h2>
-        <div class="popup__form">
-            <input type="text" placeholder="Дата заезда"/>
-            <input type="text" placeholder="Время для звонка"/>
-            <input type="text" placeholder="ваш телефон"/>
-            <input type="text" placeholder="Ваше имя"/>
-            <button class="button button--white">
+        <form novalidate class="popup__form form" name="order" action="/">
+
+            <input class="form__input" type="text" name="arrival_date"
+                   placeholder="Дата заезда"
+                   min="2021-01-01" max="2099-12-31">
+
+            <select class="form__input" type="text" form="order"
+                    name="time_call" required>
+                <option value="" disabled selected>
+                    Время для звонка
+                </option>
+                <option value="0:00">9:00</option>
+                <option value="0:30">9:30</option>
+
+                <option value="0:00">10:00</option>
+                <option value="0:30">10:30</option>
+
+                <option value="0:00">11:00</option>
+                <option value="0:30">11:30</option>
+
+                <option value="0:00">12:00</option>
+                <option value="0:30">12:30</option>
+
+                <option value="0:00">13:00</option>
+                <option value="0:30">13:30</option>
+
+                <option value="0:00">14:00</option>
+                <option value="0:30">14:30</option>
+
+                <option value="0:00">14:00</option>
+                <option value="0:30">14:30</option>
+
+                <option value="0:00">14:00</option>
+                <option value="0:30">14:30</option>
+
+                <option value="0:00">15:00</option>
+                <option value="0:30">15:30</option>
+
+                <option value="0:00">16:00</option>
+                <option value="0:30">16:30</option>
+            </select>
+
+            <div class="form__input-wrapper">
+                <input class="form__input" name="phone" type="tel"
+                       placeholder="Ваш телефон"
+                       pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                       required/>
+                <span class="form__input-wrapper__error"></span>
+            </div>
+            <div class="form__input-wrapper">
+                <input class="form__input" name="name" type="text"
+                       placeholder="Ваше имя"
+                       required/>
+                <span class="form__input-wrapper__error"></span>
+            </div>
+            <button type="submit" class="button button--white form__btn">
                 <div class="button__wrapper">
                     <div class="button__inner">Консультация<br><br>Консультация</div>
                 </div>
             </button>
-        </div>
+        </form>
         <p class="popup__success">
             Скоро мы с вами свяжемся!
         </p>
@@ -123,16 +173,27 @@
         </div>
         <h2 class="popup__title">Получить<br>
             консультацию</h2>
-        <div class="popup__form">
+        <form novalidate class="popup__form form" name="order" action="/">
             <input type="text" placeholder="Время для звонка"/>
-            <input type="text" placeholder="ваш телефон"/>
-            <input type="text" placeholder="Ваше имя"/>
-            <button class="button button--white">
+            <div class="form__input-wrapper">
+                <input class="form__input" name="phone" type="tel"
+                       placeholder="Ваш телефон"
+                       pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                       required/>
+                <span class="form__input-wrapper__error"></span>
+            </div>
+            <div class="form__input-wrapper">
+                <input class="form__input" name="name" type="text"
+                       placeholder="Ваше имя"
+                       required/>
+                <span class="form__input-wrapper__error"></span>
+            </div>
+            <button type="submit" class="button button--white form__btn">
                 <div class="button__wrapper">
                     <div class="button__inner">Консультация<br><br>Консультация</div>
                 </div>
             </button>
-        </div>
+        </form>
         <p class="popup__success">
             Скоро мы с вами свяжемся!
         </p>

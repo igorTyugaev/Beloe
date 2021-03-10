@@ -58,10 +58,72 @@
   }
 }
 
+.form {
+  &__input {
+    font-size: 16px;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 1);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__error {
+      display: none;
+      font-family: TT Interfaces;
+      text-transform: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 140%;
+      color: #FF2B2B;
+      padding: 4px 0;
+
+      &--show {
+        display: block;
+      }
+    }
+  }
+}
+
 @media (min-width: $break-point-large-screen) {
   .popup {
     &__success {
       font-size: get-vw(14px, $break-point-large-screen);
     }
   }
+}
+
+@media (max-width: $break-point-tablet) {
+  .popup {
+    width: 100%;
+
+    &__form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+
 }
