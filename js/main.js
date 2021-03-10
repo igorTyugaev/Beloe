@@ -1,13 +1,18 @@
+const _menu = document.getElementById("menu");
+const _btnCloseMenu = document.getElementById("btnCloseMenu");
+const _numBlock = document.getElementById("numbers-main");
+const _body = document.getElementsByTagName('body');
+
 function toggleMenu() {
-    document.getElementById("menu").classList.toggle("menu_show");
-    document.getElementById("btnCloseMenu").classList.toggle("button_close-active");
-    document.getElementById("numbers-main").classList.toggle("numbers_toggle");
-    document.getElementsByTagName('body').item(0).style.overflow = 'hidden';
+    _menu.classList.toggle("menu_show");
+    _btnCloseMenu.classList.toggle("button_close-active");
+    if (_numBlock) _numBlock.classList.toggle("numbers_toggle");
+    _body.item(0).style.overflow = 'hidden';
 }
 
 function closeMenu() {
-    document.getElementById("menu").classList.remove("menu_show");
-    document.getElementById("btnCloseMenu").classList.remove("button_close-active");
-    document.getElementById("numbers-main").classList.remove("numbers_toggle");
-    document.getElementsByTagName('body').item(0).style.overflow = '';
+    _menu.classList.remove("menu_show");
+    _btnCloseMenu.classList.remove("button_close-active");
+    if (_numBlock) _numBlock.classList.remove("numbers_toggle");
+    _body.item(0).style.overflow = '';
 }

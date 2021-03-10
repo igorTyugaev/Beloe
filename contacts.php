@@ -14,7 +14,7 @@
 <body>
 
 <?php
-include('header2.php');
+include('header.php');
 ?>
 
 <div class="numbers numbers_green">
@@ -71,6 +71,7 @@ include('header2.php');
 ></script>
 <script src="./js/main.js" type="text/javascript"></script>
 <script src="./js/map.js"></script>
+<script src="./js/popup.js"></script>
 </body>
 
 </html>

@@ -1198,7 +1198,8 @@ html {
 }
 @media (max-width: 520px) {
   .hunt-slider__arrow-down {
-    margin: 0 0 40px 0;
+    left: 50%;
+    top: calc(40% - 40px);
     height: 20px;
   }
 }
@@ -1206,7 +1207,7 @@ html {
   .slider-navbar {
     left: 0;
     margin: 3.8461538462vw;
-    bottom: 26.9230769231vw;
+    bottom: 27.8846153846vw;
   }
   .slider-navbar__btn:before {
     width: 3.8461538462vw;
@@ -1220,6 +1221,11 @@ html {
     height: 0.3846153846vw;
     width: 3.8461538462vw;
     margin: auto 0.9615384615vw;
+  }
+}
+@media (max-width: 420px) {
+  .slider-navbar {
+    bottom: 18%;
   }
 }
 .hunt__item {

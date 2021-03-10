@@ -12,7 +12,7 @@
 <body>
 
 <?php
-include('header2.php');
+include('header.php');
 ?>
 
 <div class="numbers numbers_green">
@@ -101,6 +101,7 @@ include('header2.php');
 <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
 <script src="./js/bg-lazyload.js" type="text/javascript"></script>
 <script src="./js/gallery.js" type="text/javascript"></script>
+<script src="./js/popup.js"></script>
 
 </body>
 

@@ -12,7 +12,7 @@
 <body>
 
 <?php
-include('header2.php');
+include('header.php');
 ?>
 
 <div class="numbers">
@@ -142,6 +142,7 @@ include('header2.php');
 <script src="./js/about.js"></script>
 <script src="./js/map.js"></script>
 <script src="./js/gallery.js" type="text/javascript"></script>
+<script src="./js/popup.js"></script>
 
 
 </body>

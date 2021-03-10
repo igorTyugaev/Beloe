@@ -14,7 +14,7 @@
 <body>
 
 <?php
-include('header2.php');
+include('header.php');
 ?>
 
 <div class="numbers">
@@ -192,6 +192,7 @@ include('header2.php');
 </main>
 
 <script src="./js/main.js" type="text/javascript"></script>
+<script src="./js/popup.js"></script>
 </body>
 
 </html>

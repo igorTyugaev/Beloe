@@ -357,7 +357,8 @@
     }
 
     &__arrow-down {
-      margin: 0 0 40px 0;
+      left: 50%;
+      top: calc(40% - 40px);
       height: 20px;
     }
   }
@@ -365,7 +366,7 @@
   .slider-navbar {
     left: 0;
     margin: get-vw(20px, $break-point-mobile);
-    bottom: get-vw(140px, $break-point-mobile);
+    bottom: get-vw(145px, $break-point-mobile);
 
     &__btn {
       &:before {
@@ -384,5 +385,11 @@
       width: get-vw(20px, $break-point-mobile);
       margin: auto get-vw(5px, $break-point-mobile);
     }
+  }
+}
+
+@media (max-width: 420px) {
+  .slider-navbar {
+    bottom: 18%;
   }
 }

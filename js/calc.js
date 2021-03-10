@@ -108,7 +108,9 @@
             button
         });
 
-        button.addEventListener("click", () => {
+        button.addEventListener("click", (e) => {
+            const {currentTarget} = e;
+            const btnInner = button.querySelector('.button__inner')
             huntCart.push({
                 title,
                 price,
@@ -116,6 +118,7 @@
             });
 
             updateCartList(huntCart);
+            btnInner.innerHTML = "Добавлено</br></br>Добавлено";
         })
     })
 
