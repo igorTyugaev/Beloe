@@ -27,24 +27,10 @@
 include('header.php');
 ?>
 
-<!--<div id="numbers-main" class="numbers container">-->
-<!--    <div class="numbers__wrapper">-->
-<!--        <br href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52 </br>8-->
-<!--        (3523) 99 — 30 — 52</a>-->
-<!--    </div>-->
-<!---->
-<!--    <div class="numbers__wrapper">-->
-<!--        <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52 </br>8-->
-<!--            (3523) 99 — 30 — 52</a>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<button class="button button--white button--hunt-slider">-->
-<!--    <div class="button__wrapper">-->
-<!--        <div class="button__inner">Консультация<br><br>Консультация-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</button>-->
+<div class="numbers">
+    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+</div>
 
 <main class="main">
     <section class="hunt-slider">

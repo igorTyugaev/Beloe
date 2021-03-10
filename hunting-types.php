@@ -18,7 +18,7 @@ include('header2.php');
     <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
 </div>
 
-<main>
+<main class="main">
     <section class="hunt-slider">
         <div id="hunt-slider" class="hunt-slider__wrapper">
             <div class="hunt-slider__cell">
@@ -26,10 +26,6 @@ include('header2.php');
                     <div class="hunt-slider__col hunt-slider__col--img">
                         <img class="hunt-slider__img" src="./media/bg-ls-1.png"
                              alt="slider-img-1">
-                        <button class="hunt-slider__arrow-down">
-                            <img src="./media/arrow_down.svg" alt="arrow_down"
-                                 class="hunt-slider__arrow-img">
-                        </button>
                     </div>
                     <div class="hunt-slider__col">
                         <div class="hunt-slider__content">
@@ -45,15 +41,6 @@ include('header2.php');
                             </div>
 
                             <div class="hunt-slider__footer">
-                                <div class="hunt-slider__nav slider-navbar">
-                                    <button class="slider-navbar__btn slider-navbar__btn--left"></button>
-                                    <div class="slider-navbar__inner">
-                                        <p class="slider-navbar__prev-cell">01</p>
-                                        <div class="slider-navbar__hyphen"></div>
-                                        <p class="slider-navbar__next-cell">02</p>
-                                    </div>
-                                    <button class="slider-navbar__btn slider-navbar__btn--right"></button>
-                                </div>
                                 <div class="hunt-slider__info">
                                     <p class="hunt-slider__text">
                                 <span class="hunt-slider__text hunt-slider__text--accent">
@@ -62,7 +49,8 @@ include('header2.php');
                                         с 1 октября по 31 декабря.
                                     </p>
                                 </div>
-                                <button class="button button--white button--hunt-slider">
+                                <button class="button button--white button--hunt-slider"
+                                        data-show-popup="consult">
                                     <div class="button__wrapper">
                                         <div class="button__inner">Консультация<br><br>Консультация
                                         </div>
@@ -75,12 +63,9 @@ include('header2.php');
             </div>
             <div class="hunt-slider__cell">
                 <div class="hunt-slider__inner">
-                    <div class="hunt-slider__col hunt-slider__col--img"
-                         data-flickity-bg-lazyload="./media/bg-ls-1.png">
-                        <button class="hunt-slider__arrow-down">
-                            <img src="./media/arrow_down.svg" alt="arrow_down"
-                                 class="hunt-slider__arrow-img">
-                        </button>
+                    <div class="hunt-slider__col hunt-slider__col--img">
+                        <img class="hunt-slider__img" src="./media/bg-ls-1.png"
+                             alt="slider-img-1">
                     </div>
                     <div class="hunt-slider__col">
                         <div class="hunt-slider__content">
@@ -96,15 +81,6 @@ include('header2.php');
                             </div>
 
                             <div class="hunt-slider__footer">
-                                <div class="hunt-slider__nav slider-navbar">
-                                    <button class="slider-navbar__btn slider-navbar__btn--left"></button>
-                                    <div class="slider-navbar__inner">
-                                        <p class="slider-navbar__prev-cell">01</p>
-                                        <div class="slider-navbar__hyphen"></div>
-                                        <p class="slider-navbar__next-cell">02</p>
-                                    </div>
-                                    <button class="slider-navbar__btn slider-navbar__btn--right"></button>
-                                </div>
                                 <div class="hunt-slider__info">
                                     <p class="hunt-slider__text">
                                 <span class="hunt-slider__text hunt-slider__text--accent">
@@ -113,7 +89,8 @@ include('header2.php');
                                         с 1 октября по 31 декабря.
                                     </p>
                                 </div>
-                                <button class="button button--white button--hunt-slider">
+                                <button class="button button--white button--hunt-slider"
+                                        data-show-popup="consult">
                                     <div class="button__wrapper">
                                         <div class="button__inner">Консультация<br><br>Консультация
                                         </div>
@@ -126,12 +103,9 @@ include('header2.php');
             </div>
             <div class="hunt-slider__cell">
                 <div class="hunt-slider__inner">
-                    <div class="hunt-slider__col hunt-slider__col--img"
-                         data-flickity-bg-lazyload="./media/bg-ls-1.png">
-                        <button class="hunt-slider__arrow-down">
-                            <img src="./media/arrow_down.svg" alt="arrow_down"
-                                 class="hunt-slider__arrow-img">
-                        </button>
+                    <div class="hunt-slider__col hunt-slider__col--img">
+                        <img class="hunt-slider__img" src="./media/bg-ls-1.png"
+                             alt="slider-img-1">
                     </div>
                     <div class="hunt-slider__col">
                         <div class="hunt-slider__content">
@@ -147,15 +121,6 @@ include('header2.php');
                             </div>
 
                             <div class="hunt-slider__footer">
-                                <div class="hunt-slider__nav slider-navbar">
-                                    <button class="slider-navbar__btn slider-navbar__btn--left"></button>
-                                    <div class="slider-navbar__inner">
-                                        <p class="slider-navbar__prev-cell">01</p>
-                                        <div class="slider-navbar__hyphen"></div>
-                                        <p class="slider-navbar__next-cell">02</p>
-                                    </div>
-                                    <button class="slider-navbar__btn slider-navbar__btn--right"></button>
-                                </div>
                                 <div class="hunt-slider__info">
                                     <p class="hunt-slider__text">
                                 <span class="hunt-slider__text hunt-slider__text--accent">
@@ -164,7 +129,8 @@ include('header2.php');
                                         с 1 октября по 31 декабря.
                                     </p>
                                 </div>
-                                <button class="button button--white button--hunt-slider">
+                                <button class="button button--white button--hunt-slider"
+                                        data-show-popup="consult">
                                     <div class="button__wrapper">
                                         <div class="button__inner">Консультация<br><br>Консультация
                                         </div>
@@ -175,6 +141,23 @@ include('header2.php');
                     </div>
                 </div>
             </div>
+        </div>
+
+        <button class="hunt-slider__arrow-down" id="btn_scroll">
+            <img src="./media/arrow_down.svg" alt="arrow_down"
+                 class="hunt-slider__arrow-img">
+        </button>
+
+        <div class="hunt-slider__nav slider-navbar">
+            <button class="slider-navbar__btn slider-navbar__btn--left"
+                    id="btn_prev"></button>
+            <div class="slider-navbar__inner">
+                <p class="slider-navbar__prev-cell" id="prev-cell">01</p>
+                <div class="slider-navbar__hyphen"></div>
+                <p class="slider-navbar__next-cell" id="next-cell">02</p>
+            </div>
+            <button class="slider-navbar__btn slider-navbar__btn--right"
+                    id="btn_next"></button>
         </div>
     </section>
 
@@ -223,12 +206,15 @@ include('header2.php');
 
                 <div class="hunt__item-bottom">
 
-                    <button class="button button_calc">
-                        добавить
-                        в калькулятор
+                    <button class="button button--white button_calc">
+                        <div class="button__wrapper">
+                            <div class="button__inner">
+                                добавить в калькулятор<br><br>добавить в калькулятор
+                            </div>
+                        </div>
                     </button>
 
-                    <button class="button button_green button_calc">
+                    <button class="button button--green button_calc">
                         <div class="button__wrapper">
                             <div class="button__inner">Консультация<br><br>Консультация
                             </div>
@@ -313,9 +299,12 @@ include('header2.php');
                 </div>
 
                 <div class="hunt__item-bottom">
-                    <button class="button button_calc">
-                        добавить
-                        в калькулятор
+                    <button class="button button--white button_calc">
+                        <div class="button__wrapper">
+                            <div class="button__inner">
+                                добавить в калькулятор<br><br>добавить в калькулятор
+                            </div>
+                        </div>
                     </button>
 
                     <button class="button button--green button_calc">
@@ -373,9 +362,12 @@ include('header2.php');
 
                 <div class="hunt__item-bottom">
 
-                    <button class="button button_calc">
-                        добавить
-                        в калькулятор
+                    <button class="button button--white button_calc">
+                        <div class="button__wrapper">
+                            <div class="button__inner">
+                                добавить в калькулятор<br><br>добавить в калькулятор
+                            </div>
+                        </div>
                     </button>
 
                     <button class="button button--green button_calc">
