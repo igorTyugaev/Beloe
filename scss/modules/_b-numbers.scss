@@ -9,10 +9,6 @@
   @include container(20px);
   width: 37.5vw;
 
-  &_green {
-    color: $green;
-  }
-
   &_menu {
     display: none;
     position: static;
@@ -60,9 +56,9 @@
     }
 
     &--green {
-      background: #{$green};
+      background: transparent;
       border: 2px solid #{$green};
-      color: #{$white};
+      color: #{$green};
 
       &:hover {
         background: #{$white};

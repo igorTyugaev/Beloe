@@ -16,8 +16,10 @@ include('header.php');
 ?>
 
 <div class="numbers numbers_green">
-    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
-    <a href="tel:+73523993052" class="numbers__block">8 (3523) 99 — 30 — 52</a>
+    <a href="tel:+73523993052" class="numbers__block numbers__block--green">8 (3523) 99 — 30
+        — 52</a>
+    <a href="tel:+73523993052" class="numbers__block numbers__block--green">8 (3523) 99 — 30
+        — 52</a>
 </div>
 
 <main class="main">
@@ -101,8 +103,8 @@ include('header.php');
 <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
 <script src="./js/bg-lazyload.js" type="text/javascript"></script>
 <script src="./js/gallery.js" type="text/javascript"></script>
+<script src="./js/main.js"></script>
 <script src="./js/popup.js"></script>
-
 </body>
 
 </html>

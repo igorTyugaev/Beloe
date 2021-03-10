@@ -252,9 +252,6 @@ input::placeholder {
     padding: 3.8461538462vw 3.8461538462vw;
   }
 }
-.numbers_green {
-  color: #249D6A;
-}
 .numbers_menu {
   display: none;
   position: static;
@@ -294,9 +291,9 @@ input::placeholder {
   transform: translateY(-2em);
 }
 .numbers__block--green {
-  background: #249D6A;
+  background: transparent;
   border: 2px solid #249D6A;
-  color: #FFFFFF;
+  color: #249D6A;
 }
 .numbers__block--green:hover {
   background: #FFFFFF;
