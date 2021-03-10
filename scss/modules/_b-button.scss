@@ -105,6 +105,10 @@
   &--hunt-slider {
     width: 100%;
   }
+
+  &--opacity {
+    opacity: 0.4;
+  }
 }
 
 @media (min-width: $break-point-large-screen) {

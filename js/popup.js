@@ -2,8 +2,8 @@ const duration = 0.5;
 let currentShowPopUp = 0;
 
 function initPopUp(button) {
-    const numberPopUp = button.dataset.showPopup;
-    const idPopUp = 'popup-' + numberPopUp;
+    const namePopUp = button.dataset.showPopup;
+    const idPopUp = 'popup-' + namePopUp;
     const _popUp = document.getElementById(idPopUp);
     const _closeButton = _popUp.querySelector('.popup__close');
 
@@ -26,11 +26,14 @@ function initPopUp(button) {
     }
 
     button.addEventListener('click', (e) => {
-        const _currentBtn = e.target;
+        if (namePopUp === 'order')
+            button.classList.add('button--opacity');
         showPopUpLogic();
     });
 
     _closeButton.addEventListener('click', () => {
+        if (namePopUp === 'order')
+            button.classList.remove('button--opacity');
         closePopUp(_popUp, duration);
     });
 

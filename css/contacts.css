@@ -453,6 +453,9 @@ input::placeholder {
 .button--hunt-slider {
   width: 100%;
 }
+.button--opacity {
+  opacity: 0.4;
+}
 
 @media (min-width: 1280px) {
   .button {

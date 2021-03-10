@@ -72,7 +72,7 @@
             </a>
         </div>
 
-        <button class="button button--green" data-show-popup="consult">
+        <button class="button button--green" data-show-popup="order">
             <div class="button__wrapper">
                 <div class="button__inner">
                     Записаться на охоту<br><br>Записаться на охоту
@@ -94,9 +94,9 @@
 
 <div id="popup-order" class="popup">
     <div class="popup__body">
-        <button class="popup__close">
+        <div class="popup__close">
             <img src="media/close.svg" alt="">
-        </button>
+        </div>
         <h2 class="popup__title">Записаться<br>
             на охоту</h2>
         <div class="popup__form">
@@ -121,8 +121,8 @@
         <div class="popup__close">
             <img src="media/close.svg" alt="">
         </div>
-        <h2 class="popup__title">Записаться<br>
-            на охоту</h2>
+        <h2 class="popup__title">Получить<br>
+            консультацию</h2>
         <div class="popup__form">
             <input type="text" placeholder="Время для звонка"/>
             <input type="text" placeholder="ваш телефон"/>
