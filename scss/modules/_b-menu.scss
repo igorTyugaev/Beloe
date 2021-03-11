@@ -159,9 +159,11 @@ main {
   .menu {
     position: fixed;
     top: -100vh;
+    height: 100%;
+    overflow: hidden;
     padding: get-vw(20px, $break-point-tablet);
     width: $full-main-width;
-    transition: transform 0.3s;
+    transition: top 0.3s;
 
     &__link {
       font-size: 16px;
@@ -208,7 +210,9 @@ main {
   .menu_show {
     @include container();
     z-index: $z-index-menu-show;
-    transform: translateY(100%);
+    top: 0;
+    height: 100%;
+    overflow: hidden;
   }
 }
 
@@ -218,6 +222,9 @@ main {
     padding: get-vw(20px, $break-point-mobile);
     transform: translatey(-100vh);
     width: $menu-width;
+    top: -100vh;
+    height: 100%;
+    overflow: hidden;
 
     &_show {
       transform: translatey(100vh);
@@ -265,5 +272,8 @@ main {
     z-index: $z-index-menu-show;
     display: block;
     width: $full-main-width;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
   }
 }

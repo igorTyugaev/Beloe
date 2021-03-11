@@ -766,14 +766,14 @@ main-fixed {
   }
 }
 .popup {
-  position: fixed;
-  width: 75%;
   z-index: 20;
-  height: 100vh;
+  position: fixed;
   right: 0;
-  top: 0;
-  transform: translateY(-100vh);
-  transition: transform 0.5s;
+  top: -100vh;
+  width: 75%;
+  height: 100%;
+  overflow: hidden;
+  transition: top 0.5s;
 }
 .popup__body {
   display: flex;
@@ -828,7 +828,7 @@ main-fixed {
   line-height: 140%;
 }
 .popup__active {
-  transform: translateY(0);
+  top: 0;
 }
 
 .form__input {
@@ -871,15 +871,28 @@ main-fixed {
 }
 
 @media (min-width: 1280px) {
+  .popup {
+    height: 100%;
+    overflow: hidden;
+  }
   .popup__success {
     font-size: 1.09375vw;
   }
 }
 @media (max-width: 900px) {
   .popup {
+    height: 100%;
+    overflow: hidden;
     width: 100%;
   }
   .popup__form {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .popup {
+    height: 100%;
+    overflow: hidden;
     width: 100%;
   }
 }
@@ -921,9 +934,11 @@ main-fixed {
   .menu {
     position: fixed;
     top: -100vh;
+    height: 100%;
+    overflow: hidden;
     padding: 2.2222222222vw;
     width: 100%;
-    transition: transform 0.3s;
+    transition: top 0.3s;
   }
   .menu__link {
     font-size: 16px;
@@ -980,7 +995,9 @@ main-fixed {
   .menu_show {
     padding: 20px 20px 20px;
     z-index: 20;
-    transform: translateY(100%);
+    top: 0;
+    height: 100%;
+    overflow: hidden;
   }
 }
 @media (max-width: 900px) and (min-width: 1280px) {
@@ -1003,6 +1020,9 @@ main-fixed {
     padding: 3.8461538462vw;
     transform: translatey(-100vh);
     width: 25%;
+    top: -100vh;
+    height: 100%;
+    overflow: hidden;
   }
   .menu_show {
     transform: translatey(100vh);
@@ -1041,6 +1061,9 @@ main-fixed {
     z-index: 20;
     display: block;
     width: 100%;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
   }
 }
 @media (max-width: 520px) and (min-width: 1280px) {
@@ -2124,14 +2147,14 @@ main-fixed {
   }
 }
 .popup {
-  position: fixed;
-  width: 75%;
   z-index: 20;
-  height: 100vh;
+  position: fixed;
   right: 0;
-  top: 0;
-  transform: translateY(-100vh);
-  transition: transform 0.5s;
+  top: -100vh;
+  width: 75%;
+  height: 100%;
+  overflow: hidden;
+  transition: top 0.5s;
 }
 .popup__body {
   display: flex;
@@ -2186,7 +2209,7 @@ main-fixed {
   line-height: 140%;
 }
 .popup__active {
-  transform: translateY(0);
+  top: 0;
 }
 
 .form__input {
@@ -2229,15 +2252,28 @@ main-fixed {
 }
 
 @media (min-width: 1280px) {
+  .popup {
+    height: 100%;
+    overflow: hidden;
+  }
   .popup__success {
     font-size: 1.09375vw;
   }
 }
 @media (max-width: 900px) {
   .popup {
+    height: 100%;
+    overflow: hidden;
     width: 100%;
   }
   .popup__form {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .popup {
+    height: 100%;
+    overflow: hidden;
     width: 100%;
   }
 }
@@ -2279,9 +2315,11 @@ main-fixed {
   .menu {
     position: fixed;
     top: -100vh;
+    height: 100%;
+    overflow: hidden;
     padding: 2.2222222222vw;
     width: 100%;
-    transition: transform 0.3s;
+    transition: top 0.3s;
   }
   .menu__link {
     font-size: 16px;
@@ -2338,7 +2376,9 @@ main-fixed {
   .menu_show {
     padding: 20px 20px 20px;
     z-index: 20;
-    transform: translateY(100%);
+    top: 0;
+    height: 100%;
+    overflow: hidden;
   }
 }
 @media (max-width: 900px) and (min-width: 1280px) {
@@ -2361,6 +2401,9 @@ main-fixed {
     padding: 3.8461538462vw;
     transform: translatey(-100vh);
     width: 25%;
+    top: -100vh;
+    height: 100%;
+    overflow: hidden;
   }
   .menu_show {
     transform: translatey(100vh);
@@ -2399,6 +2442,9 @@ main-fixed {
     z-index: 20;
     display: block;
     width: 100%;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
   }
 }
 @media (max-width: 520px) and (min-width: 1280px) {
