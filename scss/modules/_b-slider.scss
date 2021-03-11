@@ -8,15 +8,11 @@
     .slider__cell img {
       transform: scale(1.1);
     }
-
-    .slider__cover {
-      background: transparent;
-    }
   }
 
 
   &:hover .slider__cover {
-    background: transparent;
+    opacity: 0;
   }
 
   &__title {
@@ -129,6 +125,7 @@
   &--show &__arrow {
     z-index: 2;
     opacity: 1;
+    transition: z-index .5s, opacity 0.5s;
   }
 
   &__pre-item, &__nex-item {

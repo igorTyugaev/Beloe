@@ -70,10 +70,20 @@
     font-weight: bold;
     line-height: 100%;
     text-transform: uppercase;
+    appearance: none;
 
     color: rgba(255, 255, 255, 1);
 
+
     &::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  &__option {
+    padding: 0;
+
+    &--opacity {
       color: rgba(255, 255, 255, 0.4);
     }
   }
@@ -81,7 +91,6 @@
   &__btn {
     margin-top: 40px;
   }
-
 
   &__input-wrapper {
     display: flex;

@@ -107,38 +107,39 @@
 
             <select class="form__input" type="text" form="order"
                     name="time_call" required>
-                <option value="" disabled selected>
+                <option class="form__option form__option--opacity" value="" disabled
+                        selected>
                     Время для звонка
                 </option>
-                <option value="0:00">9:00</option>
-                <option value="0:30">9:30</option>
+                <option class="form__option" value="0:00">9:00</option>
+                <option class="form__option" value="0:30">9:30</option>
 
-                <option value="0:00">10:00</option>
-                <option value="0:30">10:30</option>
+                <option class="form__option" value="0:00">10:00</option>
+                <option class="form__option" value="0:30">10:30</option>
 
-                <option value="0:00">11:00</option>
-                <option value="0:30">11:30</option>
+                <option class="form__option" value="0:00">11:00</option>
+                <option class="form__option" value="0:30">11:30</option>
 
-                <option value="0:00">12:00</option>
-                <option value="0:30">12:30</option>
+                <option class="form__option" value="0:00">12:00</option>
+                <option class="form__option" value="0:30">12:30</option>
 
-                <option value="0:00">13:00</option>
-                <option value="0:30">13:30</option>
+                <option class="form__option" value="0:00">13:00</option>
+                <option class="form__option" value="0:30">13:30</option>
 
-                <option value="0:00">14:00</option>
-                <option value="0:30">14:30</option>
+                <option class="form__option" value="0:00">14:00</option>
+                <option class="form__option" value="0:30">14:30</option>
 
-                <option value="0:00">14:00</option>
-                <option value="0:30">14:30</option>
+                <option class="form__option" value="0:00">14:00</option>
+                <option class="form__option" value="0:30">14:30</option>
 
-                <option value="0:00">14:00</option>
-                <option value="0:30">14:30</option>
+                <option class="form__option" value="0:00">14:00</option>
+                <option class="form__option" value="0:30">14:30</option>
 
-                <option value="0:00">15:00</option>
-                <option value="0:30">15:30</option>
+                <option class="form__option" value="0:00">15:00</option>
+                <option class="form__option" value="0:30">15:30</option>
 
-                <option value="0:00">16:00</option>
-                <option value="0:30">16:30</option>
+                <option class="form__option" value="0:00">16:00</option>
+                <option class="form__option" value="0:30">16:30</option>
             </select>
 
             <div class="form__input-wrapper">
@@ -174,7 +175,42 @@
         <h2 class="popup__title">Получить<br>
             консультацию</h2>
         <form novalidate class="popup__form form" name="order" action="/">
-            <input type="text" placeholder="Время для звонка"/>
+            <select class="form__input form__input--time" type="text" form="order"
+                    name="time_call" required>
+                <option class="form__option form__option--opacity" value="" disabled
+                        selected>
+                    Время для звонка
+                </option>
+                <option class="form__option" value="0:00">9:00</option>
+                <option class="form__option" value="0:30">9:30</option>
+
+                <option class="form__option" value="0:00">10:00</option>
+                <option class="form__option" value="0:30">10:30</option>
+
+                <option class="form__option" value="0:00">11:00</option>
+                <option class="form__option" value="0:30">11:30</option>
+
+                <option class="form__option" value="0:00">12:00</option>
+                <option class="form__option" value="0:30">12:30</option>
+
+                <option class="form__option" value="0:00">13:00</option>
+                <option class="form__option" value="0:30">13:30</option>
+
+                <option class="form__option" value="0:00">14:00</option>
+                <option class="form__option" value="0:30">14:30</option>
+
+                <option class="form__option" value="0:00">14:00</option>
+                <option class="form__option" value="0:30">14:30</option>
+
+                <option class="form__option" value="0:00">14:00</option>
+                <option class="form__option" value="0:30">14:30</option>
+
+                <option class="form__option" value="0:00">15:00</option>
+                <option class="form__option" value="0:30">15:30</option>
+
+                <option class="form__option" value="0:00">16:00</option>
+                <option class="form__option" value="0:30">16:30</option>
+            </select>
             <div class="form__input-wrapper">
                 <input class="form__input" name="phone" type="tel"
                        placeholder="Ваш телефон"

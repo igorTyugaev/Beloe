@@ -840,9 +840,16 @@ main-fixed {
   font-weight: bold;
   line-height: 100%;
   text-transform: uppercase;
+  appearance: none;
   color: white;
 }
 .form__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.form__option {
+  padding: 0;
+}
+.form__option--opacity {
   color: rgba(255, 255, 255, 0.4);
 }
 .form__btn {
@@ -1588,10 +1595,7 @@ html {
   transform: scale(1.1);
 }
 .slider:hover .slider__cover {
-  background: transparent;
-}
-.slider:hover .slider__cover {
-  background: transparent;
+  opacity: 0;
 }
 .slider__title {
   position: absolute;
@@ -1683,6 +1687,7 @@ html {
 .slider--show .slider__arrow {
   z-index: 2;
   opacity: 1;
+  transition: z-index 0.5s, opacity 0.5s;
 }
 .slider__pre-item, .slider__nex-item {
   padding: 0;

@@ -840,9 +840,16 @@ main-fixed {
   font-weight: bold;
   line-height: 100%;
   text-transform: uppercase;
+  appearance: none;
   color: white;
 }
 .form__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.form__option {
+  padding: 0;
+}
+.form__option--opacity {
   color: rgba(255, 255, 255, 0.4);
 }
 .form__btn {
