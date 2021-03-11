@@ -105,7 +105,7 @@
                    placeholder="Дата заезда"
                    min="2021-01-01" max="2099-12-31">
 
-            <select class="form__input" type="text" form="order"
+            <select class="form__input form__input--time" type="text" form="order"
                     name="time_call" required>
                 <option class="form__option form__option--opacity" value="" disabled
                         selected>

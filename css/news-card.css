@@ -845,6 +845,9 @@ main-fixed {
   appearance: none;
   color: white;
 }
+.form__input--time {
+  color: rgba(255, 255, 255, 0.4);
+}
 .form__input::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
@@ -2232,6 +2235,9 @@ main-fixed {
   text-transform: uppercase;
   appearance: none;
   color: white;
+}
+.form__input--time {
+  color: rgba(255, 255, 255, 0.4);
 }
 .form__input::placeholder {
   color: rgba(255, 255, 255, 0.4);
