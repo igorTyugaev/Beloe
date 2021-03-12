@@ -62,7 +62,7 @@ function closePopUp(popUp, duration = false) {
 }
 
 function addAnimation(item, duration) {
-    item.style.transition = `transform ${duration}s`;
+    item.style.top = `transform ${duration}s`;
 
     setTimeout(() => {
         item.style.transition = ``;
