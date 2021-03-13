@@ -157,6 +157,7 @@ function initDatePiker(input) {
 
 const _datePikers = document.querySelectorAll('input[name="arrival_date"]');
 _datePikers.forEach((_datePiker) => {
+    console.log(_datePiker);
     initDatePiker(_datePiker);
 });
 

@@ -3,149 +3,323 @@
   width: 100%;
   background: #{$green};
 
-  &__des {
+  &__header {
     width: 50%;
   }
 
-  &__inner {
+  &__body {
     display: flex;
-  }
-
-  &__booking, &__total {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    margin-left: -20px;
   }
 
-  &__params {
-    width: 50%;
-
-    ul {
-      padding: 20px 0;
-
-      li {
-        padding: 10px 0;
-      }
-    }
-  }
-
-  &__list {
-    display: flex;
+  &__col {
+    flex: 1;
     justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  &__line {
+    width: 100%;
+    background: #{$white};
+    border: 1px solid #{$white};
   }
 
   &__form {
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+  }
+}
+
+.calc-list {
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
   }
 
-  &__button {
-    height: 12px;
-    width: 5px;
+  &__title {
+    padding-right: 0;
+  }
+
+  &__controls {}
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+
+.control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -40px;
+
+  &__group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+
+    &--day {}
+
+    &--people {}
+  }
+
+  &__btn {
+    font-size: 16px;
+    width: 12px;
+    height: 1em;
     border: none;
     cursor: pointer;
-    object-fit: cover;
-    text-align: center;
-    object-fit: cover;
 
-    &_left {
+    &--left {
       text-align: center;
       background: url('../media/arrow-l.svg') no-repeat center;
-      background-size: cover;
-      margin: 0 5px;
+      background-size: contain;
     }
 
-    &_right {
+    &--right {
       background: url('../media/arrow-r.svg') no-repeat center;
-      background-size: cover;
-      margin: 0 5px;
+      background-size: contain;
     }
+  }
+
+  &__title {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
+.cart {
+
+  &__item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__close-item {
+    cursor: pointer;
+  }
+
+  &__close-img {
+    height: 1em;
+    object-fit: contain;
+    object-position: center;
   }
 }
 
 @media (min-width: $break-point-large-screen) {
   .calc {
-    &__params {
+    &__header {
       width: 50%;
-
-      ul {
-        padding: #{get-vw(20px, $break-point-large-screen)} 0;
-
-        li {
-          padding: #{get-vw(10px, $break-point-large-screen)} 0;
-        }
-      }
     }
 
-    &__button {
-      height: #{get-vw(12px, $break-point-large-screen)};
-      width: #{get-vw(5px, $break-point-large-screen)};
+    &__body {
+      flex-direction: row;
+      margin-left: #{get-vw(-20px, $break-point-large-screen)};
+    }
 
-      &_left {
-        margin: 0 #{get-vw(5px, $break-point-large-screen)};
-      }
+    &__col {
+      flex: 1;
+      justify-content: space-between;
+      margin-left: #{get-vw(20px, $break-point-large-screen)};
+    }
 
-      &_right {
-        margin: 0 #{get-vw(5px, $break-point-large-screen)};
-      }
+    &__line {
+      border: #{get-vw(1px, $break-point-large-screen)} solid #{$white};
+    }
+  }
+
+  .calc-list {
+    &__header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: #{get-vw(20px, $break-point-large-screen)} 0;
+    }
+
+    &__title {
+      padding-right: 0;
+    }
+
+    &__footer {
+      margin-top: 0;
+    }
+  }
+
+  .control {
+    margin-left: #{get-vw(40px, $break-point-large-screen)};
+
+    &__group {
+      margin-left: #{get-vw(40px, $break-point-large-screen)};
+    }
+
+    &__btn {
+      font-size: #{get-vw(16px, $break-point-large-screen)};
+      width: #{get-vw(12px, $break-point-large-screen)};
+    }
+
+    &__title {
+      font-size: #{get-vw(16px, $break-point-large-screen)};
+      padding: 0 #{get-vw(10px, $break-point-large-screen)};
+    }
+  }
+
+  .cart {
+    &__item {
+      margin-top: #{get-vw(20px, $break-point-large-screen)};
     }
   }
 }
 
 @media (max-width: $break-point-tablet) {
   .calc {
-    &__params {
+    &__header {
       width: 50%;
-
-      ul {
-        padding: #{get-vw(20px, $break-point-tablet)} 0;
-
-        li {
-          padding: #{get-vw(10px, $break-point-tablet)} 0;
-        }
-      }
     }
 
-    &__button {
-      height: #{get-vw(12px, $break-point-tablet)};
-      width: #{get-vw(5px, $break-point-tablet)};
+    &__body {
+      flex-direction: row;
+      margin-left: #{get-vw(-20px, $break-point-tablet)};
+    }
 
-      &_left {
-        margin: 0 #{get-vw(1px, $break-point-tablet)};
-      }
+    &__col {
+      flex: 1;
+      justify-content: space-between;
+      margin-left: #{get-vw(20px, $break-point-tablet)};
+    }
 
-      &_right {
-        margin: 0 #{get-vw(1px, $break-point-tablet)};
-      }
+    &__line {
+      border: #{get-vw(1px, $break-point-tablet)} solid #{$white};
+    }
+  }
+
+  .calc-list {
+    &__header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: #{get-vw(20px, $break-point-tablet)} 0;
+    }
+
+    &__title {
+      padding-right: #{get-vw(25px, $break-point-tablet)};
+    }
+
+    &__footer {
+      margin-top: #{get-vw(20px, $break-point-tablet)};
+    }
+  }
+
+  .control {
+    margin-left: #{get-vw(-30px, $break-point-tablet)};
+
+    &__group {
+      margin-left: #{get-vw(30px, $break-point-tablet)};
+    }
+
+    &__btn {
+      font-size: #{get-vw(16px, $break-point-tablet)};
+      width: #{get-vw(12px, $break-point-tablet)};
+    }
+
+    &__title {
+      font-size: #{get-vw(16px, $break-point-tablet)};
+      padding: 0 #{get-vw(10px, $break-point-tablet)};
+    }
+  }
+
+  .cart {
+    &__item {
+      margin-top: #{get-vw(20px, $break-point-tablet)};
     }
   }
 }
 
 @media (max-width: $break-point-mobile) {
   .calc {
-    width: 100%;
-
-    &__des {
+    &__header {
       width: 100%;
     }
 
-    &__inner {
-      display: flex;
+    &__body {
       flex-direction: column;
-      flex-wrap: wrap;
+      margin-left: 0;
     }
 
-    &__form {
+    &__col {
+      justify-content: space-between;
+      margin-left: 0;
       width: 100%;
-      padding-left: 0;
     }
 
-    &__params {
-      width: 100%;
-      display: flex;
+    &__line {
+      border: #{get-vw(1px, $break-point-mobile)} solid #{$white};
+    }
+  }
+
+  .calc-list {
+    &__header {
       flex-direction: column;
-      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: #{get-vw(20px, $break-point-mobile)} 0;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      padding-right: 15px;
+    }
+
+    &__controls {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__footer {
+      margin-top: #{get-vw(20px, $break-point-mobile)};
+    }
+  }
+
+  .control {
+    margin-left: 0;
+
+    &__group {
+      margin-left: 0;
+    }
+
+    &__btn {
+      font-size: #{get-vw(16px, $break-point-mobile)};
+      width: #{get-vw(12px, $break-point-mobile)};
+    }
+
+    &__title {
+      font-size: #{get-vw(16px, $break-point-mobile)};
+      padding: 0 #{get-vw(10px, $break-point-mobile)};
+    }
+  }
+
+  .cart {
+    &__item {
+      margin-top: #{get-vw(20px, $break-point-mobile)};
     }
   }
 }

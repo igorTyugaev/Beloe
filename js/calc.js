@@ -13,7 +13,6 @@
         _totalPriceCart = document.getElementById('totalPriceCart');
 
 
-    console.log(_huntItems);
     let countPeople = 1,
         countDay = 7;
 
@@ -80,13 +79,30 @@
 
 
     const updateCartList = (newHuntCart) => {
-        let cartListInnerHTML = '<li><span>Утиная охота</span></li> <li><span>Охота на лося (с вышки)</span></li>'
+        let cartListInnerHTML = `<li class="cart__item">
+                            <span>Утиная охота</span>
+                            <button class="cart__close-item">
+                                <img class="cart__close-img" src="./media/close.svg" alt="close_btn">
+                            </button>
+                        </li>
+                        <li class="cart__item">
+                            <span>Охота на лося (с вышки)</span>
+                            <button class="cart__close-item">
+                                <img class="cart__close-img" src="./media/close.svg" alt="close_btn">
+                            </button>
+                        </li>`
         let totalPrice = 5000
         newHuntCart.forEach((item) => {
-            cartListInnerHTML += `<li><span>${item['title']}</span></li>`
+            cartListInnerHTML += `
+            <li class="cart__item">
+                <span>${item['title']}</span>
+                <button class="cart__close-item">
+                    <img class="cart__close-img" src="./media/close.svg" alt="close_btn">
+                </button>
+            </li>`
             totalPrice += Number.parseInt(item['price'])
         });
-        cartListInnerHTML += "<li><hr/></li>"
+        cartListInnerHTML += `<li class="cart__item"><hr class="calc__line"/></li>`
 
         _cartList.innerHTML = cartListInnerHTML;
         _totalPriceCart.innerText = +totalPrice * +countPeople * +countDay;
@@ -109,7 +125,7 @@
         });
 
         button.addEventListener("click", (e) => {
-            const {currentTarget} = e;
+            const { currentTarget } = e;
             const btnInner = button.querySelector('.button__inner')
             huntCart.push({
                 title,
@@ -122,5 +138,12 @@
         })
     })
 
-
 })()
+
+function removeItemCart(e) {
+    // const _totalPriceCart = document.getElementById('totalPriceCart');
+    console.log(e);
+    e.parentNode.remove();
+
+    // _totalPriceCart.innerText = +totalPrice * +countPeople * +countDay;
+}
