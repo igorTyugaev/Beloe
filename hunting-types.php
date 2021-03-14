@@ -406,26 +406,28 @@ include('header.php');
                     </div>
 
                     <ul id="cartList" class="calc-list__body cart">
-                        <li class="cart__item">
+                        <!-- <li class="cart__item">
                             <span>Утиная охота</span>
-                            <button class="cart__close-item" onclick="removeItemCart(this)">
+                            <button class="cart__close-item">
                                 <img class="cart__close-img" src="./media/close.svg" alt="close_btn">
                             </button>
                         </li>
                         <li class="cart__item">
                             <span>Охота на лося (с вышки)</span>
-                            <button class="cart__close-item" onclick="removeItemCart(this)">
+                            <button class="cart__close-item">
                                 <img class="cart__close-img" src="./media/close.svg" alt="close_btn">
                             </button>
-                        </li>
-                        <li class="cart__item">
-                            <hr class="calc__line" />
-                        </li>
+                        </li> -->
                     </ul>
 
                     <div class="calc-list__footer">
-                        <span>Итого:</span>
-                        <span id="totalPriceCart">3333 рублей</span>
+                        <div class="calc-list__footer-col">
+                            <hr class="calc__line" />
+                        </div>
+                        <div class="calc-list__footer-col">
+                            <span>Итого:</span>
+                            <span id="totalPriceCart">3333 рублей</span>
+                        </div>
                     </div>
                 </div>
 

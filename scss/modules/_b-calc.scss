@@ -51,6 +51,12 @@
 
   &__footer {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__footer-col {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
