@@ -17,12 +17,18 @@
 include('header.php');
 ?>
 
-<div class="numbers">
-    <a href="tel:+73523993052" class="numbers__block numbers__block--green">8 (3523) 99 —
-        30 — 52</a>
-    <a href="tel:+73523993052" class="numbers__block numbers__block--green">8 (3523) 99 — 30
-        — 52</a>
-</div>
+    <div class="numbers numbers--green">
+        <a href="tel:+73523993052" class="button button--phone-green">
+            <div class="button__wrapper">
+                <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
+            </div>
+        </a>
+        <a href="tel:+73523993052" class="button button--phone-green">
+            <div class="button__wrapper">
+                <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
+            </div>
+        </a>
+    </div>
 
 <main class="main">
     <section class="reviews">

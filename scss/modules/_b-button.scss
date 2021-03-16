@@ -106,6 +106,42 @@
     width: 100%;
   }
 
+  &--phone-white {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+
+    &:last-of-type {
+      border-left: none;
+    }
+
+    border: 2px solid #{$white};
+    color: inherit;
+
+    &:hover {
+      background: #{$white};
+      color: #{$green};
+    }
+  }
+
+  &--phone-green {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+
+    &:last-of-type {
+      border-left: none;
+    }
+
+    border: 2px solid #{$green};
+    color: inherit;
+
+    &:hover {
+      background: #{$green};
+      color: #{$white};
+    }
+  }
+
   &--opacity {
     opacity: 0.4;
   }

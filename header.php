@@ -55,21 +55,17 @@
     <a class="menu__drive" href="contacts.php">Как проехать?</a>
 
     <div class="menu__bottom-container">
-        <div class="numbers container numbers_menu">
-            <a href="tel:+73523993052" class="numbers__block">
-                <div class="numbers__block__wrapper">
-                    <div class="numbers__block__inner">
-                        8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52
-                    </div>
-                </div>
-            </a>
-            <a href="tel:+73523993052" class="numbers__block">
-                <div class="numbers__block__wrapper">
-                    <div class="numbers__block__inner">
-                        8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52
-                    </div>
-                </div>
-            </a>
+        <div class="numbers numbers--green container numbers_menu">
+        <a href="tel:+73523993052" class="button button--phone-green">
+            <div class="button__wrapper">
+                <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
+            </div>
+        </a>
+        <a href="tel:+73523993052" class="button button--phone-green">
+            <div class="button__wrapper">
+                <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
+            </div>
+        </a>
         </div>
 
         <button class="button button--green" data-show-popup="order">

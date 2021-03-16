@@ -4,10 +4,17 @@
   top: 0;
   z-index: $z-index-numbers;
 
-  color: $white;
   display: flex;
   @include container(20px);
   width: 37.5vw;
+
+  &--white {
+    color: $white;
+  }
+
+  &--green {
+    color: $green;
+  }
 
   &_menu {
     display: none;
@@ -18,61 +25,6 @@
 
     color: $green;
     border-color: $green;
-  }
-
-  &__block {
-    border: 2px solid;
-    padding: 22px 0;
-    font-size: 16px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 50%;
-    font-family: Akrobat;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 100%;
-    text-decoration-line: none;
-
-    color: inherit;
-    border-color: inherit;
-    border: 2px solid inherit;
-
-    &__wrapper {
-      overflow: hidden;
-      height: 1em;
-    }
-
-    &:hover {
-      background-color: #{$green};
-      color: #{$white};
-
-      .button__inner {
-        transition: .3s;
-        transform: translateY(-2em);
-      }
-    }
-
-    &--green {
-      background: transparent;
-      border: 2px solid #{$green};
-      color: #{$green};
-
-      &:hover {
-        background: #{$white};
-        color: #{$green};
-      }
-    }
-
-    &__inner {
-      margin-top: -0.1em;
-    }
-  }
-
-  &__block:last-of-type {
-    border-left: none;
   }
 
   &_toggle {
