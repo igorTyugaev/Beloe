@@ -24,7 +24,9 @@ include('header.php');
 
 <main>
     <section class="news news_green">
-        <h2 class="news__title">Наши новости</h2>
+        <h2 class="news__title">
+            <span class="title-block">Наши новости</span>
+        </h2>
         <div class="news__list">
 
             <div class="news__item">

@@ -24,10 +24,12 @@ include('header.php');
 
 <main class="main">
     <section class="gallery gallery_green" id="gallery">
-        <h2 class="gallery__title">Галерея</h2>
+        <h2 class="gallery__title">
+            <span class="title-block">Галерея</span>
+        </h2>
 
         <div class="gallery__wrapper">
-            <div class="slider">
+            <div class="slider slider--show">
                 <h3 class="slider__title">База охоты</h3>
                 <div class="slider__cover"></div>
                 <div class="slider__content">

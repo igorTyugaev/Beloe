@@ -26,8 +26,10 @@ include('header.php');
 
 <main class="main">
     <section class="reviews">
-        <h2 class="reviews__title">Отзывы<br>
-            наших клиентов</h2>
+        <h2 class="reviews__title">
+            <span class="title-block">Отзывы</span>
+            <span class="title-block">наших клиентов</span>
+        </h2>
         <div class="reviews__list">
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">

@@ -26,8 +26,10 @@ include('header.php');
     <article class="article-news">
 
         <div class="article-news__inner">
-            <h2 class="article-news__inner-title">Грибной сезон<br>
-                в Зауралье</h2>
+            <h2 class="article-news__inner-title">
+                <span class="title-block">Грибной сезон</span>
+                <span class="title-block">в Зауралье</span>
+                </h2>
             <div class="article-news__inner-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores
                     autem

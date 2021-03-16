@@ -97,8 +97,11 @@
         <div class="popup__close">
             <img src="media/close.svg" alt="">
         </div>
-        <h2 class="popup__title">Записаться<br>
-            на охоту</h2>
+        <h2 class="popup__title">
+            Записаться
+            на охоту
+
+        </h2>
         <form novalidate class="popup__form form" name="order" action="/">
 
             <input class="form__input" type="text" name="arrival_date"
@@ -172,8 +175,10 @@
         <div class="popup__close">
             <img src="media/close.svg" alt="">
         </div>
-        <h2 class="popup__title">Получить<br>
-            консультацию</h2>
+        <h2 class="popup__title">
+            Получить
+            консультацию
+        </h2>
         <form novalidate class="popup__form form" name="order" action="/">
             <select class="form__input form__input--time" type="text" form="order"
                     name="time_call" required>
@@ -235,7 +240,3 @@
         </p>
     </div>
 </div>
-
-
-
-

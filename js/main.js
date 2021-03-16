@@ -157,7 +157,6 @@ function initDatePiker(input) {
 
 const _datePikers = document.querySelectorAll('input[name="arrival_date"]');
 _datePikers.forEach((_datePiker) => {
-    console.log(_datePiker);
     initDatePiker(_datePiker);
 });
 
@@ -169,33 +168,44 @@ _datePikers.forEach((_datePiker) => {
         let wrapper = document;
 
         const heightBlcok = appearBlock.clientHeight;
-        appearBlock.setAttribute("style", `height:${heightBlcok}px;padding-bottom:0;padding-top:${heightBlcok}px;overflow: hidden;transition: .7s;`);
+        appearBlock.setAttribute("style", `height:${heightBlcok}px;padding-bottom:0;padding-top:${heightBlcok}px;overflow: hidden;transition: padding .7s;`);
+        if (flag) flag = showBlock(appearBlock, callback, border);
 
         wrapper.addEventListener('scroll', () => {
-            // возвращает размер элемента и его позицию относительно viewport
-            let appearTop = appearBlock.getBoundingClientRect();
-            let vh = document.documentElement.clientHeight;
-            let appearValue = appearTop.top - vh * border;
-
-            if (appearValue <= 0 && flag) {
-                callback();
-                flag = false;
-            }
+            if (flag) flag = showBlock(appearBlock, callback, border);
         });
     }
 
-    function appearAction(block) {
-        isFlag++;
-        if (isFlag != 0) {
+    function showBlock(appearBlock, callback, border) {
+        // возвращает размер элемента и его позицию относительно viewport
+        const appearTop = appearBlock.getBoundingClientRect();
+        const vh = document.documentElement.clientHeight;
+        const appearValue = vh * border;
+        const foorValue = (appearTop.top / appearValue) >> 0;
+        const condition = (Math.abs(foorValue) === 0);
+
+        if (condition) {
+            callback();
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function appearAction(block, index) {
+        if (isFlag != 0 || index === 0) {
+            isFlag++;
             setTimeout(() => {
                 queueClear(block);
             }, (300 * (+isFlag)));
         } else {
+            isFlag++;
             queueClear(block);
         }
     }
 
     function queueClear(block) {
+        block.classList.add('title-block--show');
         block.style.paddingTop = 0;
         setTimeout(() => {
             block.removeAttribute('style');
@@ -205,6 +215,6 @@ _datePikers.forEach((_datePiker) => {
 
     const caseDescs = document.querySelectorAll('.title-block');
     caseDescs.forEach((caseDesc, index) => {
-        appearScroll(caseDesc, () => appearAction(caseDesc), 0.95);
+        appearScroll(caseDesc, () => appearAction(caseDesc, index), 0.85);
     });
 })();

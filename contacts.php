@@ -27,7 +27,10 @@ include('header.php');
 
     <section class="contacts contacts_green">
         <div class="contacts__inner">
-            <h2 class="contacts__title">Как до нас <br> доехать?</h2>
+            <h2 class="contacts__title">
+                <span class="title-block">Как до нас</span>
+                <span class="title-block">доехать?</span>
+            </h2>
             <div class="contacts__text">
                 <div class="contacts__text-item">
                     <b>Из г. Челябинск:</b>

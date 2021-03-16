@@ -48,9 +48,15 @@ include('header.php');
                                     Охотничья база “белое”
                                 </h3>
                                 <h2 class="hunt-slider__title">
-                                    ОХОТА<br>
-                                    НА КОСУЛЮ
-                                    ЗАГОНОМ
+                                        <span class="title-block">
+                                            ОХОТА
+                                        </span>
+                                        <span class="title-block">
+                                            НА КОСУЛЮ
+                                        </span>
+                                        <span class="title-block">
+                                            ЗАГОНОМ
+                                        </span>
                                 </h2>
                             </div>
 
@@ -205,8 +211,10 @@ include('header.php');
     </section>
 
     <section class="reviews reviews_green">
-        <h2 class="reviews__title">Отзывы<br>
-            наших клиентов</h2>
+        <h2 class="reviews__title">
+            <span class="title-block">Отзывы</span>
+            <span class="title-block">наших клиентов</span>
+            </h2>
         <a href="reviews.php" class="reviews__more-item">Все отзывы</a>
         <div class="reviews__list">
             <div class="reviews__item">
@@ -785,7 +793,10 @@ include('header.php');
 
     <section class="contacts">
         <div class="contacts__inner">
-            <h2 class="contacts__title">Как до нас <br> доехать?</h2>
+            <h2 class="contacts__title">
+                <span class="title-block">Как до нас</span>
+                <span class="title-block">доехать?</span>
+            </h2>
             <div class="contacts__text">
                 <div class="contacts__text-item">
                     <b>Из г. Челябинск:</b>

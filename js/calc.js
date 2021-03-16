@@ -59,8 +59,10 @@
 
         cartItemBtnClose.addEventListener('click', () => {
             const idItem = cartItemBtnClose.getAttribute('data-id', product.id);
+            console.log(productCart.get(idItem).price);
+            totalPriceProduct -= productCart.get(idItem).price;
+            _totalPriceCart.innerText = (+totalPriceProduct) * (+order.countPeople) * (+order.countDay);
             cartItemBtnClose.parentNode.remove();
-            _totalPriceCart.innerText = (+totalPriceProduct - productCart.get(idItem).price) * (+order.countPeople) * (+order.countDay);
         });
 
         cartItemWrapper.append(cartItemTitle);
