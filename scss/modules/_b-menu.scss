@@ -105,9 +105,7 @@ main {
     flex-grow: 1;
   }
 
-  &__cover {
-
-  }
+  &__cover {}
 }
 
 @import "b-langs";
@@ -219,16 +217,13 @@ main {
 @media (max-width: $break-point-mobile) {
 
   .menu {
-    padding: get-vw(20px, $break-point-mobile);
-    transform: translatey(-100vh);
-    width: $menu-width;
+    position: fixed;
     top: -100vh;
     height: 100%;
     overflow: hidden;
-
-    &_show {
-      transform: translatey(100vh);
-    }
+    padding: get-vw(20px, $break-point-mobile);
+    width: $full-main-width;
+    transition: top 0.3s;
 
     &__link {
       font-size: 16px;
@@ -259,7 +254,12 @@ main {
     }
 
     &--small {
-      width: $full-main-width;
+      @include container();
+      position: fixed;
+      z-index: $z-index-menu;
+      width: 100%;
+      top: 0;
+      left: 0;
     }
 
     .button_green {
@@ -270,8 +270,6 @@ main {
   .menu_show {
     @include container();
     z-index: $z-index-menu-show;
-    display: block;
-    width: $full-main-width;
     top: 0;
     height: 100%;
     overflow: hidden;

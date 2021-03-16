@@ -192,5 +192,22 @@
       padding: get-vw(22px, $break-point-mobile);
       font-size: 14px;
     }
+
+    &--phone-white {
+      &:last-of-type {
+        border-left: 2px solid #{$white};
+        border-top: none;
+      }
+    }
+
+
+    &--phone-green {
+      &:last-of-type {
+        border-left: 2px solid #{$green};
+        border-top: none;
+      }
+    }
+
+
   }
 }
