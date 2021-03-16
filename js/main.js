@@ -20,7 +20,7 @@ function closeMenu() {
 function initForm(_form) {
     _form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const {currentTarget} = e;
+        const { currentTarget } = e;
 
         const data = scrabbleInputs(currentTarget);
 
@@ -129,8 +129,8 @@ function initForm(_form) {
                 .post(
                     url,
                     sendData,
-                    {withCredentials: true},
-                    {headers: headers}
+                    { withCredentials: true },
+                    { headers: headers }
                 )
                 .then(
                     (response) => {
@@ -161,3 +161,50 @@ _datePikers.forEach((_datePiker) => {
     initDatePiker(_datePiker);
 });
 
+(function () {
+    let isFlag = 0;
+
+    function appearScroll(appearBlock, callback, border) {
+        let flag = true;
+        let wrapper = document;
+
+        const heightBlcok = appearBlock.clientHeight;
+        appearBlock.setAttribute("style", `height:${heightBlcok}px;padding-bottom:0;padding-top:${heightBlcok}px;overflow: hidden;transition: .7s;`);
+
+        wrapper.addEventListener('scroll', () => {
+            // возвращает размер элемента и его позицию относительно viewport
+            let appearTop = appearBlock.getBoundingClientRect();
+            let vh = document.documentElement.clientHeight;
+            let appearValue = appearTop.top - vh * border;
+
+            if (appearValue <= 0 && flag) {
+                callback();
+                flag = false;
+            }
+        });
+    }
+
+    function appearAction(block) {
+        isFlag++;
+        if (isFlag != 0) {
+            setTimeout(() => {
+                queueClear(block);
+            }, (300 * (+isFlag)));
+        } else {
+            queueClear(block);
+        }
+    }
+
+    function queueClear(block) {
+        block.style.paddingTop = 0;
+        setTimeout(() => {
+            block.removeAttribute('style');
+            isFlag--;
+        }, 700);
+    }
+
+    const caseDescs = document.querySelectorAll('.title-block');
+    caseDescs.forEach((caseDesc, index) => {
+        appearScroll(caseDesc, () => appearAction(caseDesc), 0.95);
+    });
+})();

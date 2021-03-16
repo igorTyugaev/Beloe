@@ -592,7 +592,7 @@ include('header.php');
         </div>
     </section>
 </main>
-
+<script src="./js/datepicker.js"></script>
 <script src="./js/reviews.js"></script>
 <script src="./js/main.js" type="text/javascript"></script>
 <script src="./js/popup.js"></script>

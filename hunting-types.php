@@ -34,9 +34,15 @@ include('header.php');
                                         Охотничья база “белое”
                                     </h3>
                                     <h2 class="hunt-slider__title">
-                                        ОХОТА<br>
-                                        НА КОСУЛЮ
-                                        ЗАГОНОМ
+                                        <span class="title-block">
+                                            ОХОТА
+                                        </span>
+                                        <span class="title-block">
+                                            НА КОСУЛЮ
+                                        </span>
+                                        <span class="title-block">
+                                            ЗАГОНОМ
+                                        </span>
                                     </h2>
                                 </div>
 
@@ -378,7 +384,12 @@ include('header.php');
         <section class="calc">
             <div class="calc__header">
                 <h2 class="calc__title">
-                    калькулятор охотника
+                    <span class="title-block">
+                        калькулятор
+                    </span>
+                    <span class="title-block">
+                        охотника
+                    </span>
                 </h2>
                 <p class="calc__subtitle">
                     Охотничья база "Белое" предлагает вам расчитать
@@ -460,7 +471,10 @@ include('header.php');
 
         <section class="contacts">
             <div class="contacts__inner">
-                <h2 class="contacts__title">Как до нас <br> доехать?</h2>
+                <h2 class="contacts__title">
+                    <span class="title-block">Как до нас</span>
+                    <span class="title-block">доехать?</span>
+                </h2>
                 <div class="contacts__text">
                     <div class="contacts__text-item">
                         <b>Из г. Челябинск:</b>

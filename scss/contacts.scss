@@ -6,7 +6,10 @@
   background: #{$green};
   min-height: 100vh;
 
-  b, p, a, h2 {
+  b,
+  p,
+  a,
+  h2 {
     color: #{$white};
   }
 }

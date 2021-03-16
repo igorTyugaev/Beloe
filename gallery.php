@@ -102,6 +102,7 @@ include('header.php');
 
 <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
 <script src="./js/bg-lazyload.js" type="text/javascript"></script>
+<script src="./js/datepicker.js"></script>
 <script src="./js/gallery.js" type="text/javascript"></script>
 <script src="./js/main.js"></script>
 <script src="./js/popup.js"></script>

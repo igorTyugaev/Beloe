@@ -4,6 +4,10 @@ body {
   background: #{$green};
 }
 
+.news__item-bg img {
+  transition: transform 0.5s;
+}
+
 .news {
   &__title {
     @include container(100px);
