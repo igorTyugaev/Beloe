@@ -38,7 +38,7 @@ include('header.php');
                 <span class="title-block">Как до нас</span>
                 <span class="title-block">доехать?</span>
             </h2>
-            <div class="contacts__text">
+            <div class="contacts__text opacity-block">
                 <div class="contacts__text-item">
                     <b>Из г. Челябинск:</b>
                     <p>

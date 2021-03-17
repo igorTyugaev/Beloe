@@ -31,3 +31,14 @@ html {
     opacity: 1;
   }
 }
+
+.opacity-block {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .7s;
+
+  &--show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

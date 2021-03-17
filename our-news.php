@@ -41,7 +41,7 @@ include('header.php');
                 <div class="news__item-bg">
                     <img src="media/bg-news-1.png" alt="news_item-background_img">
                 </div>
-                <div class="news__item-inner">
+                <div class="news__item-inner opacity-block">
                     <h3 class="news__item-inner__title">Летняя охота</h3>
                     <p class="news__item-inner__text">Великолепное развлечение
                         для настоящих мужчин, с этим спорить трудно!
@@ -61,7 +61,7 @@ include('header.php');
                 <div class="news__item-bg">
                     <img src="media/bg-news-1.png" alt="news_item-background_img">
                 </div>
-                <div class="news__item-inner">
+                <div class="news__item-inner opacity-block">
                     <h3 class="news__item-inner__title">Летняя охота</h3>
                     <p class="news__item-inner__text">Великолепное развлечение
                         для настоящих мужчин, с этим спорить трудно!
@@ -81,7 +81,7 @@ include('header.php');
                 <div class="news__item-bg">
                     <img src="media/bg-news-1.png" alt="news_item-background_img">
                 </div>
-                <div class="news__item-inner">
+                <div class="news__item-inner opacity-block">
                     <h3 class="news__item-inner__title">Летняя охота</h3>
                     <p class="news__item-inner__text">Великолепное развлечение
                         для настоящих мужчин, с этим спорить трудно!
@@ -101,7 +101,7 @@ include('header.php');
                 <div class="news__item-bg">
                     <img src="media/bg-news-1.png" alt="news_item-background_img">
                 </div>
-                <div class="news__item-inner">
+                <div class="news__item-inner opacity-block">
                     <h3 class="news__item-inner__title">Летняя охота</h3>
                     <p class="news__item-inner__text">Великолепное развлечение
                         для настоящих мужчин, с этим спорить трудно!
@@ -121,7 +121,7 @@ include('header.php');
                 <div class="news__item-bg">
                     <img src="media/bg-news-1.png" alt="news_item-background_img">
                 </div>
-                <div class="news__item-inner">
+                <div class="news__item-inner opacity-block">
                     <h3 class="news__item-inner__title">Летняя охота</h3>
                     <p class="news__item-inner__text">Великолепное развлечение
                         для настоящих мужчин, с этим спорить трудно!
@@ -141,7 +141,7 @@ include('header.php');
                 <div class="news__item-bg">
                     <img src="media/bg-news-1.png" alt="news_item-background_img">
                 </div>
-                <div class="news__item-inner">
+                <div class="news__item-inner opacity-block">
                     <h3 class="news__item-inner__title">Летняя охота</h3>
                     <p class="news__item-inner__text">Великолепное развлечение
                         для настоящих мужчин, с этим спорить трудно!
@@ -161,7 +161,7 @@ include('header.php');
                 <div class="news__item-bg">
                     <img src="media/bg-news-1.png" alt="news_item-background_img">
                 </div>
-                <div class="news__item-inner">
+                <div class="news__item-inner opacity-block">
                     <h3 class="news__item-inner__title">Летняя охота</h3>
                     <p class="news__item-inner__text">Великолепное развлечение
                         для настоящих мужчин, с этим спорить трудно!
@@ -181,7 +181,7 @@ include('header.php');
                 <div class="news__item-bg">
                     <img src="media/bg-news-1.png" alt="news_item-background_img">
                 </div>
-                <div class="news__item-inner">
+                <div class="news__item-inner opacity-block">
                     <h3 class="news__item-inner__title">Летняя охота</h3>
                     <p class="news__item-inner__text">Великолепное развлечение
                         для настоящих мужчин, с этим спорить трудно!

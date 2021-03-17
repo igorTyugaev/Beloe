@@ -40,7 +40,7 @@ include('header.php');
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
-                <div class="reviews__item-inner">
+                <div class="reviews__item-inner opacity-block">
                     <ul class="reviews__item-inner__name">
                         <li>Игорь</li>
                         <li>Тишман</li>
@@ -110,7 +110,7 @@ include('header.php');
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
-                <div class="reviews__item-inner">
+                <div class="reviews__item-inner opacity-block">
                     <ul class="reviews__item-inner__name">
                         <li>Игорь</li>
                         <li>Тишман</li>
@@ -180,7 +180,7 @@ include('header.php');
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
-                <div class="reviews__item-inner">
+                <div class="reviews__item-inner opacity-block">
                     <ul class="reviews__item-inner__name">
                         <li>Игорь</li>
                         <li>Тишман</li>
@@ -250,7 +250,7 @@ include('header.php');
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
-                <div class="reviews__item-inner">
+                <div class="reviews__item-inner opacity-block">
                     <ul class="reviews__item-inner__name">
                         <li>Игорь</li>
                         <li>Тишман</li>
@@ -320,7 +320,7 @@ include('header.php');
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
-                <div class="reviews__item-inner">
+                <div class="reviews__item-inner opacity-block">
                     <ul class="reviews__item-inner__name">
                         <li>Игорь</li>
                         <li>Тишман</li>
@@ -390,7 +390,7 @@ include('header.php');
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
-                <div class="reviews__item-inner">
+                <div class="reviews__item-inner opacity-block">
                     <ul class="reviews__item-inner__name">
                         <li>Игорь</li>
                         <li>Тишман</li>
@@ -460,7 +460,7 @@ include('header.php');
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
-                <div class="reviews__item-inner">
+                <div class="reviews__item-inner opacity-block">
                     <ul class="reviews__item-inner__name">
                         <li>Игорь</li>
                         <li>Тишман</li>
@@ -530,7 +530,7 @@ include('header.php');
             <div class="reviews__item">
                 <div class="reviews__item-avatar reviews__item">
                     <span>ИТ</span></div>
-                <div class="reviews__item-inner">
+                <div class="reviews__item-inner opacity-block">
                     <ul class="reviews__item-inner__name">
                         <li>Игорь</li>
                         <li>Тишман</li>

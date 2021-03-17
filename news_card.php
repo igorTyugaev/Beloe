@@ -38,7 +38,7 @@ include('header.php');
                 <span class="title-block">Грибной сезон</span>
                 <span class="title-block">в Зауралье</span>
                 </h2>
-            <div class="article-news__inner-text">
+            <div class="article-news__inner-text opacity-block">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores
                     autem
                     corporis est magni molestiae nesciunt, perferendis placeat quis quo

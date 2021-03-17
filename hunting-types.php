@@ -37,7 +37,7 @@ include('header.php');
                         <div class="hunt-slider__col">
                             <div class="hunt-slider__content">
                                 <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle">
+                                    <h3 class="hunt-slider__subtitle opacity-block">
                                         Охотничья база “белое”
                                     </h3>
                                     <h2 class="hunt-slider__title">
@@ -53,7 +53,7 @@ include('header.php');
                                     </h2>
                                 </div>
 
-                                <div class="hunt-slider__footer">
+                                <div class="hunt-slider__footer opacity-block">
                                     <div class="hunt-slider__info">
                                         <p class="hunt-slider__text">
                                             <span class="hunt-slider__text hunt-slider__text--accent">
@@ -155,7 +155,7 @@ include('header.php');
                 <img src="./media/arrow_down.svg" alt="arrow_down" class="hunt-slider__arrow-img">
             </button>
 
-            <div class="hunt-slider__nav slider-navbar">
+            <div class="hunt-slider__nav slider-navbar opacity-block">
                 <button class="slider-navbar__btn slider-navbar__btn--left" id="btn_prev"></button>
                 <div class="slider-navbar__inner">
                     <p class="slider-navbar__prev-cell" id="prev-cell">01</p>
@@ -170,7 +170,7 @@ include('header.php');
 
             <div id="hi_1" data-price="1000" class="hunt__item">
                 <div class="hunt__item-bg"></div>
-                <div class="hunt__item-inner">
+                <div class="hunt__item-inner opacity-block">
                     <div class="hunt__item-header">
                         <h3>Охота на лося</h3>
                     </div>
@@ -232,7 +232,7 @@ include('header.php');
 
             <div id="hi_2" data-price="2000" class="hunt__item">
                 <div class="hunt__item-bg"></div>
-                <div class="hunt__item-inner">
+                <div class="hunt__item-inner opacity-block">
                     <div class="hunt__item-header">
                         <h3>Охота на водоплавающую дичь</h3>
                     </div>
@@ -325,7 +325,7 @@ include('header.php');
 
             <div id="hi_3" data-price="3000" class="hunt__item">
                 <div class="hunt__item-bg"></div>
-                <div class="hunt__item-inner">
+                <div class="hunt__item-inner opacity-block">
                     <div class="hunt__item-header">
                         <h3>Охота на сибирскую косулю
                             (трофейная)</h3>
@@ -398,12 +398,12 @@ include('header.php');
                         охотника
                     </span>
                 </h2>
-                <p class="calc__subtitle">
+                <p class="calc__subtitle opacity-block">
                     Охотничья база "Белое" предлагает вам расчитать
                     приблизительную цену вашей охоты
                 </p>
             </div>
-            <div class="calc__body">
+            <div class="calc__body opacity-block">
                 <div class="calc__col calc-list">
                     <div class="calc-list__header">
                         <span class="calc-list__title">проживание</span>
@@ -482,7 +482,7 @@ include('header.php');
                     <span class="title-block">Как до нас</span>
                     <span class="title-block">доехать?</span>
                 </h2>
-                <div class="contacts__text">
+                <div class="contacts__text opacity-block">
                     <div class="contacts__text-item">
                         <b>Из г. Челябинск:</b>
                         <p>

@@ -47,7 +47,7 @@ include('header.php');
                         <div class="hunt-slider__col">
                             <div class="hunt-slider__content">
                                 <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle">
+                                    <h3 class="hunt-slider__subtitle opacity-block">
                                         Охотничья база “белое”
                                     </h3>
                                     <h2 class="hunt-slider__title">
@@ -63,7 +63,7 @@ include('header.php');
                                     </h2>
                                 </div>
 
-                                <div class="hunt-slider__footer">
+                                <div class="hunt-slider__footer opacity-block">
                                     <div class="hunt-slider__info">
                                         <p class="hunt-slider__text">
                                             <span class="hunt-slider__text hunt-slider__text--accent">
@@ -165,7 +165,7 @@ include('header.php');
                 <img src="./media/arrow_down.svg" alt="arrow_down" class="hunt-slider__arrow-img">
             </button>
 
-            <div class="hunt-slider__nav slider-navbar">
+            <div class="hunt-slider__nav slider-navbar opacity-block">
                 <button class="slider-navbar__btn slider-navbar__btn--left" id="btn_prev"></button>
                 <div class="slider-navbar__inner">
                     <p class="slider-navbar__prev-cell" id="prev-cell">01</p>
@@ -180,34 +180,25 @@ include('header.php');
             <div class="features__item">
                 <div class="features__item-inner">
                     <img src="media/advantages-1.png" alt="work-3" class="features__img">
-                    <a href="">
-                        <h3 class="features__title">Комфортная охотничья базе</h3>
-                    </a>
+                    <h3 class="features__title">Комфортная охотничья базе</h3>
                 </div>
             </div>
             <div class="features__item">
                 <div class="features__item-inner">
                     <img src="media/advantages-2.png" alt="work-3" class="features__img">
-                    <a href="">
-                        <h3 class="features__title">Высокий профессионализм наших
-                            специалистов</h3>
-                    </a>
+                    <h3 class="features__title">Высокий профессионализм наших специалистов</h3>
                 </div>
             </div>
             <div class="features__item">
                 <div class="features__item-inner">
                     <img src="media/advantages-3.png" alt="work-3" class="features__img">
-                    <a href="">
-                        <h3 class="features__title">Отдых для всей семьи на природе</h3>
-                    </a>
+                    <h3 class="features__title">Отдых для всей семьи на природе</h3>
                 </div>
             </div>
             <div class="features__item">
                 <div class="features__item-inner">
                     <img src="media/advantages-4.png" alt="work-3" class="features__img">
-                    <a href="">
-                        <h3 class="features__title">Частное лестничество</h3>
-                    </a>
+                    <h3 class="features__title">Частное лестничество</h3>
                 </div>
             </div>
         </section>
@@ -217,9 +208,9 @@ include('header.php');
                 <span class="title-block">Отзывы</span>
                 <span class="title-block">наших клиентов</span>
             </h2>
-            <a href="reviews.php" class="reviews__more-item">Все отзывы</a>
+            <a href="reviews.php" class="reviews__more-item opacity-block">Все отзывы</a>
             <div class="reviews__list">
-                <div class="reviews__item">
+                <div class="reviews__item opacity-block">
                     <div class="reviews__item-avatar reviews__item">
                         <span>ИТ</span>
                     </div>
@@ -291,152 +282,7 @@ include('header.php');
                         </button>
                     </div>
                 </div>
-                <div class="reviews__item">
-                    <div class="reviews__item-avatar reviews__item">
-                        <span>ИТ</span>
-                    </div>
-                    <div class="reviews__item-inner">
-                        <ul class="reviews__item-inner__name">
-                            <li>Игорь</li>
-                            <li>Тишман</li>
-                        </ul>
-                        <div class="reviews__item-inner__mark">
-                            <span class="reviews__star reviews__star--active">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                            <span class="reviews__star reviews__star--active">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                            <span class="reviews__star reviews__star--active">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                            <span class="reviews__star reviews__star--active">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                            <span class="reviews__star ">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                        </div>
-                        <p class="reviews__item-inner__massage">Возможно самая шикарная
-                            охотничья
-                            база
-                            в Курганской области!!! Очень крутая гостиница с комфортабельными
-                            номерами, просторным холлом, бильярд, баня. В ближайшее время...
-                        </p>
-                        <button class="reviews__item-inner__more">
-                            Читать отзыв полностью
-                        </button>
-                    </div>
-                </div>
-
-                <div class="reviews__item">
-                    <div class="reviews__item-avatar reviews__item">
-                        <span>ИТ</span>
-                    </div>
-                    <div class="reviews__item-inner">
-                        <ul class="reviews__item-inner__name">
-                            <li>Игорь</li>
-                            <li>Тишман</li>
-                        </ul>
-                        <div class="reviews__item-inner__mark">
-                            <span class="reviews__star reviews__star--active">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                            <span class="reviews__star reviews__star--active">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                            <span class="reviews__star reviews__star--active">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                            <span class="reviews__star reviews__star--active">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                            <span class="reviews__star ">
-                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
-                            8.90983L17.2308 13.6996L17.8779
-                            20.0902L12 17.5L6.12215 20.0902L6.76919
-                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
-                                        stroke-width="2" />
-                                </svg>
-                            </span>
-                        </div>
-                        <p class="reviews__item-inner__massage">Возможно самая шикарная
-                            охотничья
-                            база
-                            в Курганской области!!! Очень крутая гостиница с комфортабельными
-                            номерами, просторным холлом, бильярд, баня. В ближайшее время...
-                        </p>
-                        <button class="reviews__item-inner__more">
-                            Читать отзыв полностью
-                        </button>
-                    </div>
-                </div>
-                <div class="reviews__item">
+                <div class="reviews__item opacity-block">
                     <div class="reviews__item-avatar reviews__item">
                         <span>ИТ</span>
                     </div>
@@ -509,7 +355,7 @@ include('header.php');
                     </div>
                 </div>
 
-                <div class="reviews__item">
+                <div class="reviews__item opacity-block">
                     <div class="reviews__item-avatar reviews__item">
                         <span>ИТ</span>
                     </div>
@@ -581,7 +427,7 @@ include('header.php');
                         </button>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item opacity-block">
                     <div class="reviews__item-avatar reviews__item">
                         <span>ИТ</span>
                     </div>
@@ -654,7 +500,7 @@ include('header.php');
                     </div>
                 </div>
 
-                <div class="reviews__item">
+                <div class="reviews__item opacity-block">
                     <div class="reviews__item-avatar reviews__item">
                         <span>ИТ</span>
                     </div>
@@ -726,7 +572,152 @@ include('header.php');
                         </button>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item opacity-block">
+                    <div class="reviews__item-avatar reviews__item">
+                        <span>ИТ</span>
+                    </div>
+                    <div class="reviews__item-inner">
+                        <ul class="reviews__item-inner__name">
+                            <li>Игорь</li>
+                            <li>Тишман</li>
+                        </ul>
+                        <div class="reviews__item-inner__mark">
+                            <span class="reviews__star reviews__star--active">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <span class="reviews__star reviews__star--active">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <span class="reviews__star reviews__star--active">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <span class="reviews__star reviews__star--active">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <span class="reviews__star ">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="reviews__item-inner__massage">Возможно самая шикарная
+                            охотничья
+                            база
+                            в Курганской области!!! Очень крутая гостиница с комфортабельными
+                            номерами, просторным холлом, бильярд, баня. В ближайшее время...
+                        </p>
+                        <button class="reviews__item-inner__more">
+                            Читать отзыв полностью
+                        </button>
+                    </div>
+                </div>
+
+                <div class="reviews__item opacity-block">
+                    <div class="reviews__item-avatar reviews__item">
+                        <span>ИТ</span>
+                    </div>
+                    <div class="reviews__item-inner">
+                        <ul class="reviews__item-inner__name">
+                            <li>Игорь</li>
+                            <li>Тишман</li>
+                        </ul>
+                        <div class="reviews__item-inner__mark">
+                            <span class="reviews__star reviews__star--active">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <span class="reviews__star reviews__star--active">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <span class="reviews__star reviews__star--active">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <span class="reviews__star reviews__star--active">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <span class="reviews__star ">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="star" d="M12 2L15.2328 7.55041L21.5106
+                            8.90983L17.2308 13.6996L17.8779
+                            20.0902L12 17.5L6.12215 20.0902L6.76919
+                            13.6996L2.48944 8.90983L8.76718 7.55041L12 2Z" stroke="white" fill="white"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="reviews__item-inner__massage">Возможно самая шикарная
+                            охотничья
+                            база
+                            в Курганской области!!! Очень крутая гостиница с комфортабельными
+                            номерами, просторным холлом, бильярд, баня. В ближайшее время...
+                        </p>
+                        <button class="reviews__item-inner__more">
+                            Читать отзыв полностью
+                        </button>
+                    </div>
+                </div>
+                <div class="reviews__item opacity-block">
                     <div class="reviews__item-avatar reviews__item">
                         <span>ИТ</span>
                     </div>
@@ -802,7 +793,7 @@ include('header.php');
         </section>
 
         <section class="contacts">
-            <div class="contacts__inner">
+            <div class="contacts__inner opacity-block">
                 <h2 class="contacts__title">
                     <span class="title-block">Как до нас</span>
                     <span class="title-block">доехать?</span>

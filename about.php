@@ -34,7 +34,7 @@ include('header.php');
                 <span class="title-block">Охотничья база</span>
                 <span class="title-block">“белое”</span>
             </h2>
-            <p class="landing-about__text">
+            <p class="landing-about__text opacity-block">
                 Всем любителям охоты, тем, кто не видит своей жизни без
                 этого общения с природой, рекомендуем богатые дичью
                 охотничьи угодья. В наших угодьях обитают такие животные,
@@ -104,7 +104,7 @@ include('header.php');
         </section>
 
         <section class="contacts">
-            <div class="contacts__inner">
+            <div class="contacts__inner opacity-block">
                 <h2 class="contacts__title">
                     <span class="title-block">Как до нас</span>
                     <span class="title-block">доехать?</span>
