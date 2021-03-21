@@ -169,7 +169,95 @@ _datePikers.forEach((_datePiker) => {
 
         const heightBlcok = appearBlock.clientHeight;
         appearBlock.setAttribute("style", `height:${heightBlcok}px;padding-bottom:0;padding-top:${heightBlcok}px;overflow: hidden;transition: padding .7s;`);
-        if (flag) flag = showBlock(appearBlock, callback, border);
+        const htmlName = window.location.pathname.split("/").pop().split('.')[0];
+
+        if (flag) {
+            if (htmlName === 'index') {
+                setTimeout(() => {
+                    flag = showBlock(appearBlock, callback, border);
+                }, 2100);
+            } else {
+                flag = showBlock(appearBlock, callback, border);
+            }
+        }
+
+        wrapper.addEventListener('scroll', () => {
+            if (flag) flag = showBlock(appearBlock, callback, border);
+        });
+    }
+
+    function showBlock(appearBlock, callback, border) {
+        // возвращает размер элемента и его позицию относительно viewport
+        const appearTop = appearBlock.getBoundingClientRect();
+        const vh = document.documentElement.clientHeight;
+        const vw = document.documentElement.clientWidth;
+
+        const appearValueHeight = vh * border;
+        const appearValueWidth = vw * border;
+
+        const foorValueHeight = (appearTop.top / appearValueHeight) >> 0;
+        const foorValueWidth = (appearTop.left / appearValueWidth) >> 0;
+
+        const conditionHeight = (Math.abs(foorValueHeight) === 0);
+        const conditionWidth = (Math.abs(foorValueWidth) === 0);
+
+        if (conditionHeight && conditionWidth) {
+            callback();
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function appearAction(block, index) {
+        if (isFlag != 0 || index === 0) {
+            isFlag++;
+            setTimeout(() => {
+                queueClear(block);
+            }, (300 * (+isFlag)));
+        } else {
+            isFlag++;
+            queueClear(block);
+        }
+    }
+
+    function queueClear(block) {
+        // block.classList.add('title-block--show');
+        block.classList.add('show-block');
+        block.style.paddingTop = 0;
+        setTimeout(() => {
+            block.removeAttribute('style');
+            isFlag--;
+        }, 700);
+    }
+
+    const caseDescs = document.querySelectorAll('.title-block');
+    caseDescs.forEach((caseDesc, index) => {
+        appearScroll(caseDesc, () => appearAction(caseDesc, index), 0.85);
+    });
+})();
+
+(function () {
+    let isFlag = 0;
+
+    function appearScroll(appearBlock, callback, border) {
+        let flag = true;
+        let wrapper = document;
+
+        const heightBlcok = appearBlock.clientHeight;
+        appearBlock.setAttribute("style", `height:${heightBlcok}px;padding-bottom:0;padding-top:${heightBlcok}px;overflow: hidden;transition: padding .7s;`);
+        const htmlName = window.location.pathname.split("/").pop().split('.')[0];
+        console.log(htmlName)
+
+        if (flag) {
+            if (htmlName === 'index') {
+                setTimeout(() => {
+                    flag = showBlock(appearBlock, callback, border);
+                }, 2100);
+            } else {
+                flag = showBlock(appearBlock, callback, border);
+            }
+        }
 
         wrapper.addEventListener('scroll', () => {
             if (flag) flag = showBlock(appearBlock, callback, border);
@@ -197,7 +285,7 @@ _datePikers.forEach((_datePiker) => {
             isFlag++;
             setTimeout(() => {
                 queueClear(block);
-            }, (300 * (+isFlag)));
+            }, (140 * (+isFlag)));
         } else {
             isFlag++;
             queueClear(block);
@@ -205,7 +293,8 @@ _datePikers.forEach((_datePiker) => {
     }
 
     function queueClear(block) {
-        block.classList.add('title-block--show');
+        // block.classList.add('title-block--show');
+        block.classList.add('show-block');
         block.style.paddingTop = 0;
         setTimeout(() => {
             block.removeAttribute('style');
@@ -213,7 +302,7 @@ _datePikers.forEach((_datePiker) => {
         }, 700);
     }
 
-    const caseDescs = document.querySelectorAll('.title-block');
+    const caseDescs = document.querySelectorAll('.nav-block');
     caseDescs.forEach((caseDesc, index) => {
         appearScroll(caseDesc, () => appearAction(caseDesc, index), 0.85);
     });
@@ -227,8 +316,17 @@ _datePikers.forEach((_datePiker) => {
         let wrapper = document;
 
         const heightBlcok = appearBlock.clientHeight;
-        // appearBlock.setAttribute("style", `transform:translateY(0px);opacity:0;transition: transform .7s;`);
-        if (flag) flag = showBlock(appearBlock, callback, border);
+        const htmlName = window.location.pathname.split("/").pop().split('.')[0];
+
+        if (flag) {
+            if (htmlName === 'index') {
+                setTimeout(() => {
+                    flag = showBlock(appearBlock, callback, border);
+                }, 2100);
+            } else {
+                flag = showBlock(appearBlock, callback, border);
+            }
+        }
 
         wrapper.addEventListener('scroll', () => {
             if (flag) flag = showBlock(appearBlock, callback, border);

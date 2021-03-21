@@ -11,6 +11,7 @@
 <body>
 
     <section class="preloader">
+        <div class="preloader__cover"></div>
         <div class="preloader__logo-container" id="preloader__logo-container">
             <a href="index.php" class="preloader__logo-box">
                 <img src="./media/logo.svg" alt="Охотничья база Белое" class="preloader__logo" />
@@ -23,7 +24,7 @@
 include('header.php');
 ?>
 
-    <div class="numbers numbers--white">
+    <div class="numbers numbers--white opacity-block">
         <a href="tel:+73523993052" class="button button--phone-white">
             <div class="button__wrapper">
                 <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
@@ -91,17 +92,23 @@ include('header.php');
                         <div class="hunt-slider__col">
                             <div class="hunt-slider__content">
                                 <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle">
+                                    <h3 class="hunt-slider__subtitle opacity-block">
                                         Охотничья база “белое”
                                     </h3>
                                     <h2 class="hunt-slider__title">
-                                        ОХОТА<br>
-                                        НА КОСУЛЮ
-                                        ЗАГОНОМ
+                                        <span class="title-block">
+                                            ОХОТА
+                                        </span>
+                                        <span class="title-block">
+                                            НА КОСУЛЮ
+                                        </span>
+                                        <span class="title-block">
+                                            ЗАГОНОМ
+                                        </span>
                                     </h2>
                                 </div>
 
-                                <div class="hunt-slider__footer">
+                                <div class="hunt-slider__footer opacity-block">
                                     <div class="hunt-slider__info">
                                         <p class="hunt-slider__text">
                                             <span class="hunt-slider__text hunt-slider__text--accent">
@@ -129,17 +136,23 @@ include('header.php');
                         <div class="hunt-slider__col">
                             <div class="hunt-slider__content">
                                 <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle">
+                                    <h3 class="hunt-slider__subtitle opacity-block">
                                         Охотничья база “белое”
                                     </h3>
                                     <h2 class="hunt-slider__title">
-                                        ОХОТА<br>
-                                        НА КОСУЛЮ
-                                        ЗАГОНОМ
+                                        <span class="title-block">
+                                            ОХОТА
+                                        </span>
+                                        <span class="title-block">
+                                            НА КОСУЛЮ
+                                        </span>
+                                        <span class="title-block">
+                                            ЗАГОНОМ
+                                        </span>
                                     </h2>
                                 </div>
 
-                                <div class="hunt-slider__footer">
+                                <div class="hunt-slider__footer opacity-block">
                                     <div class="hunt-slider__info">
                                         <p class="hunt-slider__text">
                                             <span class="hunt-slider__text hunt-slider__text--accent">

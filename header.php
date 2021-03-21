@@ -2,80 +2,79 @@
 
     <div class="menu__logo-container">
         <a href="index.php" class="menu__logo-box">
-            <img
-                    src="./media/logo.svg"
-                    alt="Охотничья база Белое"
-                    class="menu__logo"
-            />
+            <img src="./media/logo.svg" alt="Охотничья база Белое" class="menu__logo" />
         </a>
         <button onclick="closeMenu()" id="btnCloseMenu" class="button_close"></button>
     </div>
 
-    <hr class="menu__line"/>
+    <div class="nav-block">
+        <hr class="menu__line" />
+    </div>
 
     <nav class="menu__nav">
         <ul>
-            <li class="menu__link-container">
+            <li class="menu__link-container nav-block">
                 <a class="menu__link" href="hunting-types.php">Все виды охоты</a>
             </li>
 
             <li>
-                <hr class="menu__line"/>
+                <hr class="menu__line nav-block" />
             </li>
 
-            <li class="menu__link-container">
+            <li class="menu__link-container nav-block">
                 <a class="menu__link" href="about.php">О
-                    нас</a></li>
-            <li class="menu__link-container"><a class="menu__link" href="our-news.php">Новости</a>
+                    нас</a>
             </li>
-            <li class="menu__link-container"><a class="menu__link"
-                                                href="reviews.php">Отзывы</a></li>
-            <li class="menu__link-container"><a class="menu__link" href="gallery.php">Галерея</a>
+            <li class="menu__link-container nav-block"><a class="menu__link" href="our-news.php">Новости</a>
+            </li>
+            <li class="menu__link-container nav-block"><a class="menu__link" href="reviews.php">Отзывы</a></li>
+            <li class="menu__link-container nav-block"><a class="menu__link" href="gallery.php">Галерея</a>
             </li>
 
             <li>
-                <hr class="menu__line"/>
+                <hr class="menu__line nav-block" />
             </li>
 
-            <li class="menu__link-container"><a class="menu__link" href="contacts.php">Контакты</a>
+            <li class="menu__link-container nav-block"><a class="menu__link" href="contacts.php">Контакты</a>
             </li>
-            <li class="menu__lang">
-                <img src="./media/RUS.svg" alt="RU" class="lang lang--active"/>
-                <img src="./media/DEU.svg" alt="DEU" class="lang"/>
+            <li class="menu__lang nav-block">
+                <img src="./media/RUS.svg" alt="RU" class="lang lang--active" />
+                <img src="./media/DEU.svg" alt="DEU" class="lang" />
             </li>
         </ul>
     </nav>
 
 
-    <span class="menu__address">
-                Россия, Курганская область лес
-                <br/>
-                Каминская Дача
-            </span>
-    <a class="menu__drive" href="contacts.php">Как проехать?</a>
+    <span class="menu__address nav-block">
+        Россия, Курганская область лес
+        <br />
+        Каминская Дача
+    </span>
+    <a class="menu__drive nav-block" href="contacts.php">Как проехать?</a>
 
     <div class="menu__bottom-container">
         <div class="numbers numbers--green container numbers_menu">
-        <a href="tel:+73523993052" class="button button--phone-green">
-            <div class="button__wrapper">
-                <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
-            </div>
-        </a>
-        <a href="tel:+73523993052" class="button button--phone-green">
-            <div class="button__wrapper">
-                <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
-            </div>
-        </a>
+            <a href="tel:+73523993052" class="button button--phone-green">
+                <div class="button__wrapper">
+                    <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
+                </div>
+            </a>
+            <a href="tel:+73523993052" class="button button--phone-green">
+                <div class="button__wrapper">
+                    <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
+                </div>
+            </a>
         </div>
 
-        <button class="button button--green" data-show-popup="order">
-            <div class="button__wrapper">
-                <div class="button__inner">
-                    Записаться на охоту<br><br>Записаться на охоту
+        <div class="nav-block">
+            <button class="button button--green" data-show-popup="order">
+                <div class="button__wrapper">
+                    <div class="button__inner">
+                        Записаться на охоту<br><br>Записаться на охоту
+                    </div>
                 </div>
-            </div>
-        </button>
-
+            </button>
+        </div>
     </div>
 
     <div class="menu__cover"></div>
@@ -100,14 +99,11 @@
         </h2>
         <form novalidate class="popup__form form" name="order" action="/">
 
-            <input class="form__input" type="text" name="arrival_date"
-                   placeholder="Дата заезда"
-                   min="2021-01-01" max="2099-12-31">
+            <input class="form__input" type="text" name="arrival_date" placeholder="Дата заезда" min="2021-01-01"
+                max="2099-12-31">
 
-            <select class="form__input form__input--time" type="text" form="order"
-                    name="time_call" required>
-                <option class="form__option form__option--opacity" value="" disabled
-                        selected>
+            <select class="form__input form__input--time" type="text" form="order" name="time_call" required>
+                <option class="form__option form__option--opacity" value="" disabled selected>
                     Время для звонка
                 </option>
                 <option class="form__option" value="0:00">9:00</option>
@@ -142,16 +138,12 @@
             </select>
 
             <div class="form__input-wrapper">
-                <input class="form__input" name="phone" type="tel"
-                       placeholder="Ваш телефон"
-                       pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
-                       required/>
+                <input class="form__input" name="phone" type="tel" placeholder="Ваш телефон"
+                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required />
                 <span class="form__input-wrapper__error"></span>
             </div>
             <div class="form__input-wrapper">
-                <input class="form__input" name="name" type="text"
-                       placeholder="Ваше имя"
-                       required/>
+                <input class="form__input" name="name" type="text" placeholder="Ваше имя" required />
                 <span class="form__input-wrapper__error"></span>
             </div>
             <button type="submit" class="button button--white form__btn">
@@ -176,10 +168,8 @@
             консультацию
         </h2>
         <form novalidate class="popup__form form" name="order" action="/">
-            <select class="form__input form__input--time" type="text" form="order"
-                    name="time_call" required>
-                <option class="form__option form__option--opacity" value="" disabled
-                        selected>
+            <select class="form__input form__input--time" type="text" form="order" name="time_call" required>
+                <option class="form__option form__option--opacity" value="" disabled selected>
                     Время для звонка
                 </option>
                 <option class="form__option" value="0:00">9:00</option>
@@ -213,16 +203,12 @@
                 <option class="form__option" value="0:30">16:30</option>
             </select>
             <div class="form__input-wrapper">
-                <input class="form__input" name="phone" type="tel"
-                       placeholder="Ваш телефон"
-                       pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
-                       required/>
+                <input class="form__input" name="phone" type="tel" placeholder="Ваш телефон"
+                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required />
                 <span class="form__input-wrapper__error"></span>
             </div>
             <div class="form__input-wrapper">
-                <input class="form__input" name="name" type="text"
-                       placeholder="Ваше имя"
-                       required/>
+                <input class="form__input" name="name" type="text" placeholder="Ваше имя" required />
                 <span class="form__input-wrapper__error"></span>
             </div>
             <button type="submit" class="button button--white form__btn">
