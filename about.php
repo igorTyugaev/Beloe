@@ -15,7 +15,7 @@
 include('header.php');
 ?>
 
-    <div class="numbers numbers--white">
+    <div class="numbers numbers--white opacity-block">
         <a href="tel:+73523993052" class="button button--phone-white">
             <div class="button__wrapper">
                 <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
@@ -145,7 +145,7 @@ include('header.php');
     </main>
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-
+    <script src="./js/show-animation.js"></script>
     <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
     <script src="./js/bg-lazyload.js" type="text/javascript"></script>
     <script src="./js/datepicker.js"></script>

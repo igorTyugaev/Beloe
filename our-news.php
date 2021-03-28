@@ -17,7 +17,7 @@
 include('header.php');
 ?>
 
-    <div class="numbers numbers--white">
+    <div class="numbers numbers--white opacity-block">
         <a href="tel:+73523993052" class="button button--phone-white">
             <div class="button__wrapper">
                 <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
@@ -201,6 +201,7 @@ include('header.php');
     </section>
 </main>
 <script src="./js/datepicker.js"></script>
+<script src="./js/show-animation.js"></script>
 <script src="./js/main.js" type="text/javascript"></script>
 <script src="./js/popup.js"></script>
 </body>

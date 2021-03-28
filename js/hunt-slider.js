@@ -12,7 +12,6 @@ function initSlider(_carousel) {
         setGallerySize: false,
         on: {
             change: function (index) {
-                // console.log()
                 const currentSlide = this.cells[index].element;
                 const allSlideis = this.cells;
                 index++;

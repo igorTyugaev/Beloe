@@ -21,7 +21,7 @@
     </section>
 
     <?php
-include('header.php');
+include('header_index.php');
 ?>
 
     <div class="numbers numbers--white opacity-block">

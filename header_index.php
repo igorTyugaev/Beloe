@@ -7,37 +7,37 @@
         <button onclick="closeMenu()" id="btnCloseMenu" class="button_close"></button>
     </div>
 
-    <div class=" ">
+    <div class="nav-block">
         <hr class="menu__line" />
     </div>
 
     <nav class="menu__nav">
         <ul>
-            <li class="menu__link-container  ">
+            <li class="menu__link-container nav-block">
                 <a class="menu__link" href="hunting-types.php">Все виды охоты</a>
             </li>
 
             <li>
-                <hr class="menu__line  " />
+                <hr class="menu__line nav-block" />
             </li>
 
-            <li class="menu__link-container  ">
+            <li class="menu__link-container nav-block">
                 <a class="menu__link" href="about.php">О
                     нас</a>
             </li>
-            <li class="menu__link-container  "><a class="menu__link" href="our-news.php">Новости</a>
+            <li class="menu__link-container nav-block"><a class="menu__link" href="our-news.php">Новости</a>
             </li>
-            <li class="menu__link-container  "><a class="menu__link" href="reviews.php">Отзывы</a></li>
-            <li class="menu__link-container  "><a class="menu__link" href="gallery.php">Галерея</a>
+            <li class="menu__link-container nav-block"><a class="menu__link" href="reviews.php">Отзывы</a></li>
+            <li class="menu__link-container nav-block"><a class="menu__link" href="gallery.php">Галерея</a>
             </li>
 
             <li>
-                <hr class="menu__line  " />
+                <hr class="menu__line nav-block" />
             </li>
 
-            <li class="menu__link-container  "><a class="menu__link" href="contacts.php">Контакты</a>
+            <li class="menu__link-container nav-block"><a class="menu__link" href="contacts.php">Контакты</a>
             </li>
-            <li class="menu__lang  ">
+            <li class="menu__lang nav-block">
                 <img src="./media/RUS.svg" alt="RU" class="lang lang--active" />
                 <img src="./media/DEU.svg" alt="DEU" class="lang" />
             </li>
@@ -45,12 +45,12 @@
     </nav>
 
 
-    <span class="menu__address  ">
+    <span class="menu__address nav-block">
         Россия, Курганская область лес
         <br />
         Каминская Дача
     </span>
-    <a class="menu__drive  " href="contacts.php">Как проехать?</a>
+    <a class="menu__drive nav-block" href="contacts.php">Как проехать?</a>
 
     <div class="menu__bottom-container">
         <div class="numbers numbers--green container numbers_menu">
@@ -66,13 +66,15 @@
             </a>
         </div>
 
-        <button class="button button--green" data-show-popup="order">
+        <div class="nav-block">
+            <button class="button button--green" data-show-popup="order">
                 <div class="button__wrapper">
                     <div class="button__inner">
                         Записаться на охоту<br><br>Записаться на охоту
                     </div>
                 </div>
             </button>
+        </div>
     </div>
 
     <div class="menu__cover"></div>
