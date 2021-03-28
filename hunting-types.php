@@ -28,7 +28,7 @@ include('header.php');
     </div>
     <main class="main">
         <section class="hunt-slider">
-            <div id="hunt-slider" class="hunt-slider__wrapper">
+            <div class="hunt-slider__wrapper">
                 <div class="hunt-slider__cell">
                     <div class="hunt-slider__inner">
                         <div class="hunt-slider__col hunt-slider__col--img">
@@ -36,108 +36,24 @@ include('header.php');
                         </div>
                         <div class="hunt-slider__col">
                             <div class="hunt-slider__content">
-                                <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle opacity-block">
-                                        Охотничья база “белое”
-                                    </h3>
+                                <div class="hunt-slider__body--hunt">
                                     <h2 class="hunt-slider__title">
                                         <span class="title-block">
-                                            ОХОТА
+                                            Виды
                                         </span>
                                         <span class="title-block">
-                                            НА КОСУЛЮ
-                                        </span>
-                                        <span class="title-block">
-                                            ЗАГОНОМ
+                                            охоты
                                         </span>
                                     </h2>
+                                    <p class="hunt-slider__paragraph opacity-block">
+                    Охотничья база "Белое" предлагает охоту на лося, кабана
+                    (с вышки), сибирскую косулю (трофейная, загонная), лису,
+                    зайца глухаря, тетерева, водоплавающую дичь. Егерское
+                    обслуживание.
+                </p>
                                 </div>
 
                                 <div class="hunt-slider__footer opacity-block">
-                                    <div class="hunt-slider__info">
-                                        <p class="hunt-slider__text">
-                                            <span class="hunt-slider__text hunt-slider__text--accent">
-                                                Сезон начинается:
-                                            </span>
-                                            с 1 октября по 31 декабря.
-                                        </p>
-                                    </div>
-                                    <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                        <div class="button__wrapper">
-                                            <div class="button__inner">Консультация<br><br>Консультация
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hunt-slider__cell">
-                    <div class="hunt-slider__inner">
-                        <div class="hunt-slider__col hunt-slider__col--img">
-                            <img class="hunt-slider__img" src="./media/bg-ls-1.png" alt="slider-img-1">
-                        </div>
-                        <div class="hunt-slider__col">
-                            <div class="hunt-slider__content">
-                                <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle">
-                                        Охотничья база “белое”
-                                    </h3>
-                                    <h2 class="hunt-slider__title">
-                                        ОХОТА<br>
-                                        НА КОСУЛЮ
-                                        ЗАГОНОМ
-                                    </h2>
-                                </div>
-
-                                <div class="hunt-slider__footer">
-                                    <div class="hunt-slider__info">
-                                        <p class="hunt-slider__text">
-                                            <span class="hunt-slider__text hunt-slider__text--accent">
-                                                Сезон начинается:
-                                            </span>
-                                            с 1 октября по 31 декабря.
-                                        </p>
-                                    </div>
-                                    <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                        <div class="button__wrapper">
-                                            <div class="button__inner">Консультация<br><br>Консультация
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hunt-slider__cell">
-                    <div class="hunt-slider__inner">
-                        <div class="hunt-slider__col hunt-slider__col--img">
-                            <img class="hunt-slider__img" src="./media/bg-ls-1.png" alt="slider-img-1">
-                        </div>
-                        <div class="hunt-slider__col">
-                            <div class="hunt-slider__content">
-                                <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle">
-                                        Охотничья база “белое”
-                                    </h3>
-                                    <h2 class="hunt-slider__title">
-                                        ОХОТА<br>
-                                        НА КОСУЛЮ
-                                        ЗАГОНОМ
-                                    </h2>
-                                </div>
-
-                                <div class="hunt-slider__footer">
-                                    <div class="hunt-slider__info">
-                                        <p class="hunt-slider__text">
-                                            <span class="hunt-slider__text hunt-slider__text--accent">
-                                                Сезон начинается:
-                                            </span>
-                                            с 1 октября по 31 декабря.
-                                        </p>
-                                    </div>
                                     <button class="button button--white button--hunt-slider" data-show-popup="consult">
                                         <div class="button__wrapper">
                                             <div class="button__inner">Консультация<br><br>Консультация
@@ -154,16 +70,6 @@ include('header.php');
             <button class="hunt-slider__arrow-down" id="btn_scroll">
                 <img src="./media/arrow_down.svg" alt="arrow_down" class="hunt-slider__arrow-img">
             </button>
-
-            <div class="hunt-slider__nav slider-navbar opacity-block">
-                <button class="slider-navbar__btn slider-navbar__btn--left" id="btn_prev"></button>
-                <div class="slider-navbar__inner">
-                    <p class="slider-navbar__prev-cell" id="prev-cell">01</p>
-                    <div class="slider-navbar__hyphen"></div>
-                    <p class="slider-navbar__next-cell" id="next-cell">02</p>
-                </div>
-                <button class="slider-navbar__btn slider-navbar__btn--right" id="btn_next"></button>
-            </div>
         </section>
 
         <section class="hunt__list">
@@ -522,12 +428,9 @@ include('header.php');
 
     </main>
 
-    <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
-    <script src="./js/bg-lazyload.js" type="text/javascript"></script>
     <script src="./js/datepicker.js"></script>
     <script src="./js/show-animation.js"></script>
     <script src="./js/main.js" type="text/javascript"></script>
-    <script src="./js/hunt-slider.js" type="text/javascript"></script>
     <script src="./js/calc.js" type="text/javascript"></script>
     <script src="./js/popup.js"></script>
 </body>
