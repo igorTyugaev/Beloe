@@ -39,135 +39,159 @@ include('header_index.php');
 
     <main class="main">
         <section class="hunt-slider">
-            <div id="hunt-slider" class="hunt-slider__wrapper">
-                <div class="hunt-slider__cell">
-                    <div class="hunt-slider__inner">
-                        <div class="hunt-slider__col hunt-slider__col--img">
-                            <img class="hunt-slider__img" src="./media/bg-ls-1.png" alt="slider-img-1">
-                        </div>
-                        <div class="hunt-slider__col">
-                            <div class="hunt-slider__content">
-                                <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle opacity-block">
-                                        Охотничья база “белое”
-                                    </h3>
-                                    <h2 class="hunt-slider__title">
-                                        <span class="title-block">
-                                            ОХОТА
-                                        </span>
-                                        <span class="title-block">
-                                            НА КОСУЛЮ
-                                        </span>
-                                        <span class="title-block">
-                                            ЗАГОНОМ
-                                        </span>
-                                    </h2>
-                                </div>
+            <div class="hunt-slider__col hunt-slider__col--img" id="img-box">
+                <img class="hunt-slider__img hunt-slider__img--show" src="./media/bg-ls-1.png" alt="slider-img-1">
+                <img class="hunt-slider__img" src="./media/bg-ls-2.jpg" alt="slider-img-1">
+                <img class="hunt-slider__img" src="./media/bg-ls-1.png" alt="slider-img-1">
+                <img class="hunt-slider__img" src="./media/bg-ls-2.jpg" alt="slider-img-1">
+            </div>
 
-                                <div class="hunt-slider__footer opacity-block">
-                                    <div class="hunt-slider__info">
-                                        <p class="hunt-slider__text">
-                                            <span class="hunt-slider__text hunt-slider__text--accent">
-                                                Сезон начинается:
-                                            </span>
-                                            с 1 октября по 31 декабря.
-                                        </p>
-                                    </div>
-                                    <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                        <div class="button__wrapper">
-                                            <div class="button__inner">Консультация<br><br>Консультация
-                                            </div>
-                                        </div>
-                                    </button>
+            <div class="hunt-slider__col">
+                <div id="hunt-slider" class="hunt-slider__wrapper">
+                    <div class="hunt-slider__cell">
+                        <div class="hunt-slider__content">
+                            <div class="hunt-slider__body">
+                                <h3 class="hunt-slider__subtitle opacity-block">
+                                    Охотничья база “белое”
+                                </h3>
+                                <h2 class="hunt-slider__title">
+                                    <span class="title-block">
+                                        ОХОТА
+                                    </span>
+                                    <span class="title-block">
+                                        НА КОСУЛЮ
+                                    </span>
+                                    <span class="title-block">
+                                        ЗАГОНОМ
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="hunt-slider__footer opacity-block">
+                                <div class="hunt-slider__info">
+                                    <p class="hunt-slider__text">
+                                        <span class="hunt-slider__text hunt-slider__text--accent">
+                                            Сезон начинается:
+                                        </span>
+                                        с 1 октября по 31 декабря.
+                                    </p>
                                 </div>
+                                <button class="button button--white button--hunt-slider" data-show-popup="consult">
+                                    <div class="button__wrapper">
+                                        <div class="button__inner">Консультация<br><br>Консультация
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="hunt-slider__cell">
-                    <div class="hunt-slider__inner">
-                        <div class="hunt-slider__col hunt-slider__col--img">
-                            <img class="hunt-slider__img" src="./media/bg-ls-1.png" alt="slider-img-1">
-                        </div>
-                        <div class="hunt-slider__col">
-                            <div class="hunt-slider__content">
-                                <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle opacity-block">
-                                        Охотничья база “белое”
-                                    </h3>
-                                    <h2 class="hunt-slider__title">
-                                        <span class="title-block">
-                                            ОХОТА
-                                        </span>
-                                        <span class="title-block">
-                                            НА КОСУЛЮ
-                                        </span>
-                                        <span class="title-block">
-                                            ЗАГОНОМ
-                                        </span>
-                                    </h2>
-                                </div>
 
-                                <div class="hunt-slider__footer opacity-block">
-                                    <div class="hunt-slider__info">
-                                        <p class="hunt-slider__text">
-                                            <span class="hunt-slider__text hunt-slider__text--accent">
-                                                Сезон начинается:
-                                            </span>
-                                            с 1 октября по 31 декабря.
-                                        </p>
-                                    </div>
-                                    <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                        <div class="button__wrapper">
-                                            <div class="button__inner">Консультация<br><br>Консультация
-                                            </div>
-                                        </div>
-                                    </button>
+                    <div class="hunt-slider__cell">
+                        <div class="hunt-slider__content">
+                            <div class="hunt-slider__body">
+                                <h3 class="hunt-slider__subtitle opacity-block">
+                                    Охотничья база “белое”
+                                </h3>
+                                <h2 class="hunt-slider__title">
+                                    <span class="title-block">
+                                        ОХОТА
+                                    </span>
+                                    <span class="title-block">
+                                        НА КОСУЛЮ
+                                    </span>
+                                    <span class="title-block">
+                                        ЗАГОНОМ
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="hunt-slider__footer opacity-block">
+                                <div class="hunt-slider__info">
+                                    <p class="hunt-slider__text">
+                                        <span class="hunt-slider__text hunt-slider__text--accent">
+                                            Сезон начинается:
+                                        </span>
+                                        с 1 октября по 31 декабря.
+                                    </p>
                                 </div>
+                                <button class="button button--white button--hunt-slider" data-show-popup="consult">
+                                    <div class="button__wrapper">
+                                        <div class="button__inner">Консультация<br><br>Консультация
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="hunt-slider__cell">
-                    <div class="hunt-slider__inner">
-                        <div class="hunt-slider__col hunt-slider__col--img">
-                            <img class="hunt-slider__img" src="./media/bg-ls-1.png" alt="slider-img-1">
-                        </div>
-                        <div class="hunt-slider__col">
-                            <div class="hunt-slider__content">
-                                <div class="hunt-slider__body">
-                                    <h3 class="hunt-slider__subtitle opacity-block">
-                                        Охотничья база “белое”
-                                    </h3>
-                                    <h2 class="hunt-slider__title">
-                                        <span class="title-block">
-                                            ОХОТА
-                                        </span>
-                                        <span class="title-block">
-                                            НА КОСУЛЮ
-                                        </span>
-                                        <span class="title-block">
-                                            ЗАГОНОМ
-                                        </span>
-                                    </h2>
-                                </div>
 
-                                <div class="hunt-slider__footer opacity-block">
-                                    <div class="hunt-slider__info">
-                                        <p class="hunt-slider__text">
-                                            <span class="hunt-slider__text hunt-slider__text--accent">
-                                                Сезон начинается:
-                                            </span>
-                                            с 1 октября по 31 декабря.
-                                        </p>
-                                    </div>
-                                    <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                        <div class="button__wrapper">
-                                            <div class="button__inner">Консультация<br><br>Консультация
-                                            </div>
-                                        </div>
-                                    </button>
+                    <div class="hunt-slider__cell">
+                        <div class="hunt-slider__content">
+                            <div class="hunt-slider__body">
+                                <h3 class="hunt-slider__subtitle opacity-block">
+                                    Охотничья база “белое”
+                                </h3>
+                                <h2 class="hunt-slider__title">
+                                    <span class="title-block">
+                                        ОХОТА
+                                    </span>
+                                    <span class="title-block">
+                                        НА КОСУЛЮ
+                                    </span>
+                                    <span class="title-block">
+                                        ЗАГОНОМ
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="hunt-slider__footer opacity-block">
+                                <div class="hunt-slider__info">
+                                    <p class="hunt-slider__text">
+                                        <span class="hunt-slider__text hunt-slider__text--accent">
+                                            Сезон начинается:
+                                        </span>
+                                        с 1 октября по 31 декабря.
+                                    </p>
                                 </div>
+                                <button class="button button--white button--hunt-slider" data-show-popup="consult">
+                                    <div class="button__wrapper">
+                                        <div class="button__inner">Консультация<br><br>Консультация
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hunt-slider__cell">
+                        <div class="hunt-slider__content">
+                            <div class="hunt-slider__body">
+                                <h3 class="hunt-slider__subtitle opacity-block">
+                                    Охотничья база “белое”
+                                </h3>
+                                <h2 class="hunt-slider__title">
+                                    <span class="title-block">
+                                        ОХОТА
+                                    </span>
+                                    <span class="title-block">
+                                        НА КОСУЛЮ
+                                    </span>
+                                    <span class="title-block">
+                                        ЗАГОНОМ
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="hunt-slider__footer opacity-block">
+                                <div class="hunt-slider__info">
+                                    <p class="hunt-slider__text">
+                                        <span class="hunt-slider__text hunt-slider__text--accent">
+                                            Сезон начинается:
+                                        </span>
+                                        с 1 октября по 31 декабря.
+                                    </p>
+                                </div>
+                                <button class="button button--white button--hunt-slider" data-show-popup="consult">
+                                    <div class="button__wrapper">
+                                        <div class="button__inner">Консультация<br><br>Консультация
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>

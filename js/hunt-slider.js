@@ -1,6 +1,14 @@
 function initSlider(_carousel) {
     const _preItem = document.getElementById('prev-cell');
     const _nexItem = document.getElementById('next-cell');
+    const _imgBox = document.getElementById('img-box');
+    const _imagesIntoBox = _imgBox.querySelectorAll('hunt-slider__img');
+    let oldCell = 0;
+
+    const images = new Map([]);
+    _imagesIntoBox.forEach((imageIntoBox, index) => {
+        images.set(index, imageIntoBox);
+    })
 
     const flickityCarousel = new Flickity(_carousel, {
         cellAlign: 'left',
@@ -14,6 +22,16 @@ function initSlider(_carousel) {
             change: function (index) {
                 const currentSlide = this.cells[index].element;
                 const allSlideis = this.cells;
+
+                const imgContainer = document.querySelector('.hunt-slider__col--img');
+                const imgs = imgContainer.querySelectorAll('.hunt-slider__img');
+
+                imgs[oldCell].classList.remove('hunt-slider__img--show');
+                imgs[index].classList.add('hunt-slider__img--show');
+                // imgs[oldCell].classList.add('hunt-slider__img--scale');
+                console.log(imgs[index - 1]);
+                oldCell = index;
+
                 index++;
                 _preItem.innerHTML = ('0' + index).slice(-2);
 

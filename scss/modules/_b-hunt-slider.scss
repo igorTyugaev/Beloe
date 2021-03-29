@@ -2,6 +2,10 @@
   position: relative;
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #{$green};
 
   &__wrapper {
     width: 100%;
@@ -22,10 +26,27 @@
   }
 
   &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
     object-position: center;
     object-fit: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+
+    transition: transform ease-in-out 1s, opacity ease-in-out 1s, z-index ease-in-out 1.1s;
+    transform: scale(1.08);
+    opacity: 0;
+    z-index: -1;
+
+    &--show {
+      transform: scale(1);
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &--scale {}
   }
 
   &__col {
@@ -38,6 +59,7 @@
       background-position: center;
       background-repeat: no-repeat;
       height: 100%;
+      overflow: hidden;
     }
   }
 
