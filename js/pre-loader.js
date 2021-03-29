@@ -46,7 +46,7 @@
         if (flag) {
             setTimeout(() => {
                 flag = showBlock(appearBlock, callback, border);
-            }, 2100);
+            }, 2400);
         }
 
         wrapper.addEventListener('scroll', () => {
@@ -120,7 +120,7 @@
         if (flag) {
             setTimeout(() => {
                 flag = showBlock(appearBlock, callback, border);
-            }, 2100);
+            }, 2400);
         }
 
         wrapper.addEventListener('scroll', () => {
@@ -185,7 +185,7 @@
         if (flag) {
             setTimeout(() => {
                 flag = showBlock(appearBlock, callback, border);
-            }, 2100);
+            }, 2400);
         }
 
         wrapper.addEventListener('scroll', () => {

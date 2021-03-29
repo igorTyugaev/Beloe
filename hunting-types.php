@@ -32,7 +32,7 @@ include('header.php');
                 <div class="hunt-slider__cell">
                     <div class="hunt-slider__inner">
                         <div class="hunt-slider__col hunt-slider__col--img">
-                            <img class="hunt-slider__img" src="./media/bg-ls-1.png" alt="slider-img-1">
+                            <img class="hunt-slider__img hunt-slider__img--only" src="./media/bg-ls-1.png" alt="slider-img-1" loading="lazy">
                         </div>
                         <div class="hunt-slider__col">
                             <div class="hunt-slider__content">
