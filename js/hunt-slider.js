@@ -27,9 +27,13 @@ function initSlider(_carousel) {
                 const imgs = imgContainer.querySelectorAll('.hunt-slider__img');
 
                 imgs[oldCell].classList.remove('hunt-slider__img--show');
+                imgs[oldCell].style.transform = "scale(1.08)";
                 imgs[index].classList.add('hunt-slider__img--show');
-                // imgs[oldCell].classList.add('hunt-slider__img--scale');
-                console.log(imgs[index - 1]);
+
+                setTimeout(() => {
+                    imgContainer.querySelector('[style]').removeAttribute('style');
+                }, 1000);
+
                 oldCell = index;
 
                 index++;

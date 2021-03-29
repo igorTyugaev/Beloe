@@ -22,8 +22,7 @@
             </li>
 
             <li class="menu__link-container nav-block">
-                <a class="menu__link" href="about.php">О
-                    нас</a>
+                <a class="menu__link" href="about.php">О нас</a>
             </li>
             <li class="menu__link-container nav-block"><a class="menu__link" href="our-news.php">Новости</a>
             </li>
