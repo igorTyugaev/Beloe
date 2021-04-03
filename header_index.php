@@ -67,11 +67,11 @@
 
         <div class="nav-block">
             <button class="button button--green" data-show-popup="order">
-                <div class="button__wrapper">
-                    <div class="button__inner">
+                <span class="button__wrapper">
+                    <span class="button__inner">
                         Записаться на охоту<br><br>Записаться на охоту
-                    </div>
-                </div>
+                    </span>
+                </span>
             </button>
         </div>
     </div>
@@ -98,10 +98,9 @@
         </h2>
         <form novalidate class="popup__form form" name="order" action="/">
 
-            <input class="form__input" type="text" name="arrival_date" placeholder="Дата заезда" min="2021-01-01"
-                max="2099-12-31">
+            <input class="form__input" type="text" name="arrival_date" placeholder="Дата заезда">
 
-            <select class="form__input form__input--time" type="text" form="order" name="time_call" required>
+            <select class="form__input form__input--time" name="time_call" required>
                 <option class="form__option form__option--opacity" value="" disabled selected>
                     Время для звонка
                 </option>
@@ -146,9 +145,9 @@
                 <span class="form__input-wrapper__error"></span>
             </div>
             <button type="submit" class="button button--white form__btn">
-                <div class="button__wrapper">
-                    <div class="button__inner">Консультация<br><br>Консультация</div>
-                </div>
+                <span class="button__wrapper">
+                    <span class="button__inner">Консультация<br><br>Консультация</span>
+                </span>
             </button>
         </form>
         <p class="popup__success">
@@ -167,7 +166,7 @@
             консультацию
         </h2>
         <form novalidate class="popup__form form" name="order" action="/">
-            <select class="form__input form__input--time" type="text" form="order" name="time_call" required>
+            <select class="form__input form__input--time" name="time_call" required>
                 <option class="form__option form__option--opacity" value="" disabled selected>
                     Время для звонка
                 </option>
@@ -211,9 +210,9 @@
                 <span class="form__input-wrapper__error"></span>
             </div>
             <button type="submit" class="button button--white form__btn">
-                <div class="button__wrapper">
-                    <div class="button__inner">Консультация<br><br>Консультация</div>
-                </div>
+                <span class="button__wrapper">
+                    <span class="button__inner">Консультация<br><br>Консультация</span>
+                </span>
             </button>
         </form>
         <p class="popup__success">
