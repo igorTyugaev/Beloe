@@ -10,9 +10,7 @@
 
 <body>
 
-    <?php
-include('header.php');
-?>
+    <?php include('header.php'); ?>
 
     <div class="numbers numbers--white opacity-block">
         <a href="tel:+73523993052" class="button button--phone-white">
@@ -32,7 +30,8 @@ include('header.php');
                 <div class="hunt-slider__cell">
                     <div class="hunt-slider__inner">
                         <div class="hunt-slider__col hunt-slider__col--img">
-                            <img class="hunt-slider__img hunt-slider__img--only" src="./media/bg-ls-1.png" alt="slider-img-1" loading="lazy">
+                            <img class="hunt-slider__img hunt-slider__img--only" src="./media/bg-ls-1.png"
+                                alt="slider-img-1" loading="lazy">
                         </div>
                         <div class="hunt-slider__col">
                             <div class="hunt-slider__content">
@@ -55,10 +54,10 @@ include('header.php');
 
                                 <div class="hunt-slider__footer opacity-block">
                                     <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                        <div class="button__wrapper">
-                                            <div class="button__inner">Консультация<br><br>Консультация
-                                            </div>
-                                        </div>
+                                        <span class="button__wrapper">
+                                            <span class="button__inner">Консультация<br><br>Консультация
+                                            </span>
+                                        </span>
                                     </button>
                                 </div>
                             </div>
@@ -85,51 +84,51 @@ include('header.php');
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
                     </div>
 
                     <div class="hunt__item-bottom">
 
                         <button class="button button--white button_calc">
-                            <div class="button__wrapper">
-                                <div class="button__inner">
+                            <span class="button__wrapper">
+                                <span class="button__inner">
                                     добавить в калькулятор<br><br>добавить в калькулятор
-                                </div>
-                            </div>
+                                </span>
+                            </span>
                         </button>
 
-                        <button class="button button--green button_calc">
-                            <div class="button__wrapper">
-                                <div class="button__inner">Консультация<br><br>Консультация
-                                </div>
-                            </div>
+                        <button class="button button--green button_calc" data-show-popup="consult">
+                            <span class="button__wrapper">
+                                <span class="button__inner">Консультация<br><br>Консультация
+                                </span>
+                            </span>
                         </button>
 
                     </div>
@@ -147,82 +146,82 @@ include('header.php');
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
                     </div>
 
                     <div class="hunt__item-bottom">
                         <button class="button button--white button_calc">
-                            <div class="button__wrapper">
-                                <div class="button__inner">
+                            <span class="button__wrapper">
+                                <span class="button__inner">
                                     добавить в калькулятор<br><br>добавить в калькулятор
-                                </div>
-                            </div>
+                                </span>
+                            </span>
                         </button>
 
-                        <button class="button button--green button_calc">
-                            <div class="button__wrapper">
-                                <div class="button__inner">Консультация<br><br>Консультация
-                                </div>
-                            </div>
+                        <button class="button button--green button_calc" data-show-popup="consult">
+                            <span class="button__wrapper">
+                                <span class="button__inner">Консультация<br><br>Консультация
+                                </span>
+                            </span>
                         </button>
 
                     </div>
@@ -241,51 +240,51 @@ include('header.php');
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
 
                         <p class="hunt__item-paragraph">
                             <b>Cезон охоты:</b>
                             <br />
-                            <span>старше 1 года: с 1 октября по 31 декабря.</span>
+                            <span class="hunt__item-span">старше 1 года: с 1 октября по 31 декабря.</span>
                             <br />
-                            <span>до 1 года: с 1 октября по 15 января.</span>
+                            <span class="hunt__item-span">до 1 года: с 1 октября по 15 января.</span>
                         </p>
                     </div>
 
                     <div class="hunt__item-bottom">
 
                         <button class="button button--white button_calc">
-                            <div class="button__wrapper">
-                                <div class="button__inner">
+                            <span class="button__wrapper">
+                                <span class="button__inner">
                                     добавить в калькулятор<br><br>добавить в калькулятор
-                                </div>
-                            </div>
+                                </span>
+                            </span>
                         </button>
 
-                        <button class="button button--green button_calc">
-                            <div class="button__wrapper">
-                                <div class="button__inner">Консультация<br><br>Консультация
-                                </div>
-                            </div>
+                        <button class="button button--green button_calc" data-show-popup="consult">
+                            <span class="button__wrapper">
+                                <span class="button__inner">Консультация<br><br>Консультация
+                                </span>
+                            </span>
                         </button>
 
                     </div>
@@ -309,6 +308,7 @@ include('header.php');
                     приблизительную цену вашей охоты
                 </p>
             </div>
+
             <div class="calc__body opacity-block">
                 <div class="calc__col calc-list">
                     <div class="calc-list__header">
@@ -330,18 +330,7 @@ include('header.php');
                     </div>
 
                     <ul id="cartList" class="calc-list__body cart">
-                        <!-- <li class="cart__item">
-                            <span>Утиная охота</span>
-                            <button class="cart__close-item">
-                                <img class="cart__close-img" src="./media/close.svg" alt="close_btn">
-                            </button>
-                        </li>
-                        <li class="cart__item">
-                            <span>Охота на лося (с вышки)</span>
-                            <button class="cart__close-item">
-                                <img class="cart__close-img" src="./media/close.svg" alt="close_btn">
-                            </button>
-                        </li> -->
+
                     </ul>
 
                     <div class="calc-list__footer">
@@ -349,7 +338,7 @@ include('header.php');
                             <hr class="calc__line" />
                         </div>
                         <div class="calc-list__footer-col">
-                            <span>Итого:</span>
+                            <span class="hunt__item-span">Итого:</span>
                             <span id="totalPriceCart">3333 рублей</span>
                         </div>
                     </div>
@@ -373,9 +362,9 @@ include('header.php');
                             <span class="form__input-wrapper__error"></span>
                         </div>
                         <button type="submit" class="button button--white form__btn">
-                            <div class="button__wrapper">
-                                <div class="button__inner">Консультация<br><br>Консультация</div>
-                            </div>
+                            <span class="button__wrapper">
+                                <span class="button__inner">Консультация<br><br>Консультация</span>
+                            </span>
                         </button>
                     </form>
                 </div>
@@ -421,17 +410,15 @@ include('header.php');
             </div>
             <div id="map" class="contacts__map"></div>
         </section>
-
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-        <script src="./js/map.js"></script>
-        <script src="js/hunting-types.js"></script>
-
     </main>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=your_key&lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
+    <script src="js/hunting-types.js"></script>
     <script src="./js/datepicker.js"></script>
     <script src="./js/show-animation.js"></script>
-    <script src="./js/main.js" type="text/javascript"></script>
-    <script src="./js/calc.js" type="text/javascript"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/calc.js"></script>
     <script src="./js/popup.js"></script>
 </body>
 

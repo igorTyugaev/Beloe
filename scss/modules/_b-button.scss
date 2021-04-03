@@ -25,7 +25,11 @@
     display: block;
     overflow: hidden;
     height: 1em;
+
     color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
   }
 
   &:hover {
@@ -65,6 +69,9 @@
     display: block;
     margin-top: -0.1em;
     color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
   }
 
   &_menu {

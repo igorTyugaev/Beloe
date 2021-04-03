@@ -1,5 +1,4 @@
-.hunt__list {
-}
+.hunt__list {}
 
 .hunt__item {
   max-height: 280px;
@@ -16,7 +15,7 @@
     color: #{$white};
   }
 
-  span {
+  &-span {
     font-family: TT Interfaces;
     text-transform: none;
     font-weight: normal;
