@@ -30,10 +30,10 @@
 
     <section class="contacts contacts_green">
         <div class="contacts__inner">
-            <h2 class="contacts__title">
+            <h1 class="title-main">
                 <span class="title-block">Как до нас</span>
                 <span class="title-block">доехать?</span>
-            </h2>
+            </h1>
             <div class="contacts__text opacity-block">
                 <div class="contacts__text-item">
                     <b>Из г. Челябинск:</b>

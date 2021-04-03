@@ -34,10 +34,10 @@ include('header.php');
     <article class="article-news">
 
         <div class="article-news__inner">
-            <h2 class="article-news__inner-title">
+            <h1 class="title-main title-main--green article-news__inner-title">
                 <span class="title-block">Грибной сезон</span>
                 <span class="title-block">в Зауралье</span>
-                </h2>
+            </h1>
             <div class="article-news__inner-text opacity-block">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores
                     autem

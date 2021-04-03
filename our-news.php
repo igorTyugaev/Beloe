@@ -32,9 +32,9 @@ include('header.php');
 
 <main>
     <section class="news news_green">
-        <h2 class="news__title">
+        <h1 class="title-main news__title">
             <span class="title-block">Наши новости</span>
-        </h2>
+        </h1>
         <div class="news__list">
 
             <div class="news__item">

@@ -6,8 +6,16 @@
   width: 100%;
 
   &__title {
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90%;
+    text-transform: uppercase;
+    text-align: left;
+
     color: #{$green};
     padding: 100px 20px 20px;
+    font-size: 60px;
   }
 
   &__wrapper {
@@ -26,6 +34,7 @@
 @media (min-width: $break-point-large-screen) {
   .gallery {
     &__title {
+      font-size: get-vw(60px, $break-point-large-screen);
       padding: #{get-vw(100px, $break-point-large-screen)} #{get-vw(20px, $break-point-large-screen)} #{get-vw(20px, $break-point-large-screen)};
     }
   }
@@ -58,6 +67,7 @@
 @media (max-width: $break-point-tablet) {
   .gallery {
     &__title {
+      font-size: 50px;
       padding: #{get-vw(100px, $break-point-tablet)} #{get-vw(20px, $break-point-tablet)} #{get-vw(20px, $break-point-tablet)};
     }
   }
@@ -89,6 +99,7 @@
 @media (max-width: $break-point-mobile) {
   .gallery {
     &__title {
+      font-size: 40px;
       padding: #{get-vw(100px, $break-point-mobile)} #{get-vw(20px, $break-point-mobile)} #{get-vw(20px, $break-point-mobile)};
     }
   }

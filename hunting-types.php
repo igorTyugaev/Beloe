@@ -37,20 +37,20 @@ include('header.php');
                         <div class="hunt-slider__col">
                             <div class="hunt-slider__content">
                                 <div class="hunt-slider__body--hunt">
-                                    <h2 class="hunt-slider__title">
+                                    <h1 class="title-main hunt-slider__title">
                                         <span class="title-block">
                                             Виды
                                         </span>
                                         <span class="title-block">
                                             охоты
                                         </span>
-                                    </h2>
+                                    </h1>
                                     <p class="hunt-slider__paragraph opacity-block">
-                    Охотничья база "Белое" предлагает охоту на лося, кабана
-                    (с вышки), сибирскую косулю (трофейная, загонная), лису,
-                    зайца глухаря, тетерева, водоплавающую дичь. Егерское
-                    обслуживание.
-                </p>
+                                        Охотничья база "Белое" предлагает охоту на лося, кабана
+                                        (с вышки), сибирскую косулю (трофейная, загонная), лису,
+                                        зайца глухаря, тетерева, водоплавающую дичь. Егерское
+                                        обслуживание.
+                                    </p>
                                 </div>
 
                                 <div class="hunt-slider__footer opacity-block">

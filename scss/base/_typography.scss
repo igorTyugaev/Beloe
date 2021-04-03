@@ -1,6 +1,26 @@
 @import "../fonts/TTInterfaces/stylesheet.css"all;
 @import "../fonts/Akrobat/stylesheet.css"all;
 
+.title-main {
+  font-size: 60px;
+
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 90%;
+  text-transform: uppercase;
+  text-align: left;
+  color: #{$white};
+
+  &--white {
+    color: #{$white};
+  }
+
+  &--green {
+    color: #{$green};
+  }
+}
+
 h2 {
   font-size: 60px;
 
@@ -87,6 +107,10 @@ select:-webkit-autofill:focus {
 }
 
 @media (min-width: #{$break-point-large-screen}) {
+  .title-main {
+    font-size: get-vw(60px, $break-point-large-screen);
+  }
+
   h2 {
     font-size: get-vw(60px, $break-point-large-screen);
   }
@@ -115,6 +139,10 @@ select:-webkit-autofill:focus {
 }
 
 @media (max-width: #{$break-point-tablet}) {
+  .title-main {
+    font-size: 50px;
+  }
+
   h2 {
     font-size: 50px;
   }
@@ -148,6 +176,10 @@ select:-webkit-autofill:focus {
 }
 
 @media (max-width: #{$break-point-mobile}) {
+  .title-main {
+    font-size: 40px;
+  }
+
   h2 {
     font-size: 40px;
   }

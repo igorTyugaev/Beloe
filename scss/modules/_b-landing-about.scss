@@ -2,8 +2,16 @@
   @include container(100px);
   background: #{$green};
 
-  h2 {
+  &__title {
     width: 50%;
+    font-size: 60px;
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90%;
+    text-transform: uppercase;
+    text-align: left;
+    color: #{$white};
   }
 
   &__text {
@@ -14,9 +22,14 @@
 
 }
 
-@media (max-width: $break-point-tablet) {
+@media (max-width: $break-point-large-screen) {
   .landing-about {
+    &__title {}
   }
+}
+
+@media (max-width: $break-point-tablet) {
+  .landing-about {}
 }
 
 @media (max-width: $break-point-mobile) {

@@ -28,10 +28,10 @@
 
     <main class="main">
         <section class="landing-about">
-            <h2>
+            <h1 class="title-main">
                 <span class="title-block">Охотничья база</span>
                 <span class="title-block">“белое”</span>
-            </h2>
+            </h1>
             <p class="landing-about__text opacity-block">
                 Всем любителям охоты, тем, кто не видит своей жизни без
                 этого общения с природой, рекомендуем богатые дичью
