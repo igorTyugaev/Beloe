@@ -20,10 +20,12 @@ function initSlider(_slider) {
                     nextIndex = index;
 
                 _preItem.innerHTML = ('0' + index).slice(-2)
-                _nexItem.innerHTML = ('0' + nextIndex).slice(-2)
+                _nexItem.innerHTML = ('0' + slidesLength).slice(-2)
             }
         }
     });
+
+    _nexItem.innerHTML = ('0' + flickityCarousel.slides.length).slice(-2)
 
     _slider.addEventListener('click', (e) => {
         const {currentTarget} = e;

@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0,
-          maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reviews.css">
     <title>Отзывы</title>
@@ -603,7 +602,7 @@ include('header.php');
 <script src="./js/datepicker.js"></script>
 <script src="./js/show-animation.js"></script>
 <script src="./js/reviews.js"></script>
-<script src="./js/main.js" type="text/javascript"></script>
+<script src="./js/main.js"></script>
 <script src="./js/popup.js"></script>
 </body>
 

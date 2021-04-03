@@ -320,7 +320,6 @@
 
 @media (max-width: $break-point-tablet) {
   .hunt-slider {
-    flex-direction: column;
 
     &__main-title {
       top: get-vw(100px, $break-point-tablet);
@@ -348,7 +347,7 @@
     }
 
     &__title {
-      margin: get-vw(24px, $break-point-tablet) 0 0 0;
+      margin: get-vw(28px, $break-point-tablet) 0 0 0;
     }
 
     &__arrow-down {
@@ -386,7 +385,7 @@
     flex-direction: column;
 
     &__main-title {
-      top: get-vw(100px, $break-point-mobile);
+      top: get-vw(20px, $break-point-mobile);
       left: get-vw(22px, $break-point-mobile);
       font-size: 20px;
     }
