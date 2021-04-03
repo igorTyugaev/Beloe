@@ -128,8 +128,16 @@
     transition: z-index .5s, opacity 0.5s;
   }
 
-  &__pre-item, &__nex-item {
+  &__pre-item,
+  &__nex-item {
     padding: 0;
+    font-size: 14px;
+
+    font-family: TT Interfaces;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    color: #{$white};
   }
 
   &__line {
@@ -144,6 +152,11 @@
 @media (min-width: $break-point-large-screen) {
   .slider {
     height: #{get-vw(240px, $break-point-large-screen)};
+
+    &__pre-item,
+    &__nex-item {
+      font-size: #{get-vw(14px, $break-point-large-screen)};
+    }
 
     &__title {
       margin: #{get-vw(20px, $break-point-large-screen)};
@@ -170,6 +183,11 @@
   .slider {
     height: #{get-vw(240px, $break-point-tablet)};
 
+    &__pre-item,
+    &__nex-item {
+      font-size: 14px;
+    }
+
     &__title {
       margin: #{get-vw(20px, $break-point-tablet)};
       font-size: #{get-vw(32px, $break-point-tablet)};
@@ -194,6 +212,11 @@
 @media (max-width: $break-point-mobile) {
   .slider {
     height: #{get-vw(240px, $break-point-mobile)};
+
+    &__pre-item,
+    &__nex-item {
+      font-size: 14px;
+    }
 
     &__title {
       margin: #{get-vw(20px, $break-point-mobile)};

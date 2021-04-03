@@ -11,9 +11,7 @@
 
 <body>
 
-    <?php
-include('header.php');
-?>
+    <?php include('header.php');?>
 
     <div class="numbers numbers--white opacity-block">
         <a href="tel:+73523993052" class="button button--phone-white">
@@ -49,34 +47,26 @@ include('header.php');
             <div class="features__item">
                 <div class="features__item-inner">
                     <img src="media/advantages-1.png" alt="work-3" class="features__img">
-                    <span href="">
                         <h3 class="features__title">Комфортная охотничья базе</h3>
-                    </span>
                 </div>
             </div>
             <div class="features__item">
                 <div class="features__item-inner">
                     <img src="media/advantages-2.png" alt="work-3" class="features__img">
-                    <span href="">
                         <h3 class="features__title">Высокий профессионализм наших
                             специалистов</h3>
-                    </span>
                 </div>
             </div>
             <div class="features__item">
                 <div class="features__item-inner">
                     <img src="media/advantages-3.png" alt="work-3" class="features__img">
-                    <span href="">
                         <h3 class="features__title">Отдых для всей семьи на природе</h3>
-                    </span>
                 </div>
             </div>
             <div class="features__item">
                 <div class="features__item-inner">
                     <img src="media/advantages-4.png" alt="work-3" class="features__img">
-                    <span href="">
                         <h3 class="features__title">Частное лестничество</h3>
-                    </span>
                 </div>
             </div>
         </section>
@@ -96,9 +86,9 @@ include('header.php');
                     </div>
                 </div>
                 <div class="slider__arrow">
-                    <p class="slider__pre-item">01</p>
+                    <h5 class="slider__pre-item">01</h5>
                     <div class="slider__line"></div>
-                    <p class="slider__nex-item">02</p>
+                    <h5 class="slider__nex-item">02</h5>
                 </div>
             </div>
         </section>
@@ -144,15 +134,15 @@ include('header.php');
         </section>
     </main>
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=your_key&lang=ru_RU"></script>
     <script src="./js/show-animation.js"></script>
-    <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
-    <script src="./js/bg-lazyload.js" type="text/javascript"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
+    <script src="./js/bg-lazyload.js"></script>
     <script src="./js/datepicker.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/about.js"></script>
     <script src="./js/map.js"></script>
-    <script src="./js/gallery.js" type="text/javascript"></script>
+    <script src="./js/gallery.js"></script>
     <script src="./js/popup.js"></script>
 
 
