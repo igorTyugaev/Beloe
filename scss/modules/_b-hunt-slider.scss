@@ -25,6 +25,22 @@
     height: 100%;
   }
 
+  &__main-title {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 22px;
+
+    font-size: 20px;
+
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #{$white};
+  }
+
   &__img {
     position: absolute;
     top: 0;
@@ -53,6 +69,7 @@
   }
 
   &__col {
+    position: relative;
     width: 50%;
     height: 100%;
 
@@ -124,7 +141,7 @@
   }
 
   &__title {
-    margin: 10px 0 0 0;
+    margin: 24px 0 0 0;
   }
 
   &__arrow-down {
@@ -242,6 +259,11 @@
 
 @media (min-width: $break-point-large-screen) {
   .hunt-slider {
+    &__main-title {
+      top: get-vw(100px, $break-point-large-screen);
+      left: get-vw(22px, $break-point-large-screen);
+      font-size: get-vw(20px, $break-point-large-screen);
+    }
 
     &__body {
       width: 64%;
@@ -263,7 +285,7 @@
     }
 
     &__title {
-      margin: get-vw(10px, $break-point-large-screen) 0 0 0;
+      margin: get-vw(24px, $break-point-large-screen) 0 0 0;
     }
 
     &__arrow-down {
@@ -300,6 +322,12 @@
   .hunt-slider {
     flex-direction: column;
 
+    &__main-title {
+      top: get-vw(100px, $break-point-tablet);
+      left: get-vw(22px, $break-point-tablet);
+      font-size: 20px;
+    }
+
     &__body {
       width: 85%;
     }
@@ -320,7 +348,7 @@
     }
 
     &__title {
-      margin: get-vw(10px, $break-point-tablet) 0 0 0;
+      margin: get-vw(24px, $break-point-tablet) 0 0 0;
     }
 
     &__arrow-down {
@@ -356,6 +384,12 @@
 @media (max-width: $break-point-mobile) {
   .hunt-slider {
     flex-direction: column;
+
+    &__main-title {
+      top: get-vw(100px, $break-point-mobile);
+      left: get-vw(22px, $break-point-mobile);
+      font-size: 20px;
+    }
 
     &__cell {
       flex-direction: column;
@@ -414,7 +448,7 @@
     }
 
     &__title {
-      margin: 10px 0 0 0;
+      margin: 24px 0 0 0;
     }
 
     &__arrow-down {

@@ -12,17 +12,15 @@
 
     <section class="preloader">
         <div class="preloader__cover"></div>
-        <div class="preloader__logo-container" id="preloader__logo-container">
+        <h2 class="preloader__logo-container" id="preloader__logo-container">
             <a href="index.php" class="preloader__logo-box">
                 <img src="./media/logo.svg" alt="Охотничья база Белое" class="preloader__logo" />
             </a>
-        </div>
+        </h2>
         <div class="preloader__line"></div>
     </section>
 
-    <?php
-include('header_index.php');
-?>
+    <?php include('header_index.php');?>
 
     <div class="numbers numbers--white opacity-block">
         <a href="tel:+73523993052" class="button button--phone-white">
@@ -46,14 +44,13 @@ include('header_index.php');
                 <img class="hunt-slider__img" src="./media/bg-ls-2.jpg" alt="slider-img-1">
             </div>
 
+
             <div class="hunt-slider__col">
+                <h1 class="hunt-slider__main-title opacity-block">Охотничья база “белое”</h1>
                 <div id="hunt-slider" class="hunt-slider__wrapper">
                     <div class="hunt-slider__cell">
                         <div class="hunt-slider__content">
                             <div class="hunt-slider__body">
-                                <h3 class="hunt-slider__subtitle opacity-block">
-                                    Охотничья база “белое”
-                                </h3>
                                 <h2 class="hunt-slider__title">
                                     <span class="title-block">
                                         ОХОТА
@@ -76,10 +73,10 @@ include('header_index.php');
                                     </p>
                                 </div>
                                 <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                    <div class="button__wrapper">
-                                        <div class="button__inner">Консультация<br><br>Консультация
-                                        </div>
-                                    </div>
+                                    <span class="button__wrapper">
+                                        <span class="button__inner">Консультация<br><br>Консультация
+                                        </span>
+                                    </span>
                                 </button>
                             </div>
                         </div>
@@ -88,9 +85,6 @@ include('header_index.php');
                     <div class="hunt-slider__cell">
                         <div class="hunt-slider__content">
                             <div class="hunt-slider__body">
-                                <h3 class="hunt-slider__subtitle opacity-block">
-                                    Охотничья база “белое”
-                                </h3>
                                 <h2 class="hunt-slider__title">
                                     <span class="title-block">
                                         ОХОТА
@@ -113,10 +107,10 @@ include('header_index.php');
                                     </p>
                                 </div>
                                 <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                    <div class="button__wrapper">
-                                        <div class="button__inner">Консультация<br><br>Консультация
-                                        </div>
-                                    </div>
+                                    <span class="button__wrapper">
+                                        <span class="button__inner">Консультация<br><br>Консультация
+                                        </span>
+                                    </span>
                                 </button>
                             </div>
                         </div>
@@ -125,9 +119,6 @@ include('header_index.php');
                     <div class="hunt-slider__cell">
                         <div class="hunt-slider__content">
                             <div class="hunt-slider__body">
-                                <h3 class="hunt-slider__subtitle opacity-block">
-                                    Охотничья база “белое”
-                                </h3>
                                 <h2 class="hunt-slider__title">
                                     <span class="title-block">
                                         ОХОТА
@@ -150,10 +141,10 @@ include('header_index.php');
                                     </p>
                                 </div>
                                 <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                    <div class="button__wrapper">
-                                        <div class="button__inner">Консультация<br><br>Консультация
-                                        </div>
-                                    </div>
+                                    <span class="button__wrapper">
+                                        <span class="button__inner">Консультация<br><br>Консультация
+                                        </span>
+                                    </span>
                                 </button>
                             </div>
                         </div>
@@ -162,9 +153,7 @@ include('header_index.php');
                     <div class="hunt-slider__cell">
                         <div class="hunt-slider__content">
                             <div class="hunt-slider__body">
-                                <h3 class="hunt-slider__subtitle opacity-block">
-                                    Охотничья база “белое”
-                                </h3>
+
                                 <h2 class="hunt-slider__title">
                                     <span class="title-block">
                                         ОХОТА
@@ -187,10 +176,10 @@ include('header_index.php');
                                     </p>
                                 </div>
                                 <button class="button button--white button--hunt-slider" data-show-popup="consult">
-                                    <div class="button__wrapper">
-                                        <div class="button__inner">Консультация<br><br>Консультация
-                                        </div>
-                                    </div>
+                                    <span class="button__wrapper">
+                                        <span class="button__inner">Консультация<br><br>Консультация
+                                        </span>
+                                    </span>
                                 </button>
                             </div>
                         </div>
@@ -871,16 +860,16 @@ include('header_index.php');
 
     </main>
 
-    <script src="./js/pre-loader.js" type="text/javascript"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/pre-loader.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=your_key&lang=ru_RU"></script>
     <script src="./js/datepicker.js"></script>
     <script src="./js/map.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/reviews.js"></script>
-    <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
-    <script src="./js/bg-lazyload.js" type="text/javascript"></script>
-    <script src="./js/main.js" type="text/javascript"></script>
-    <script src="./js/hunt-slider.js" type="text/javascript"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
+    <script src="./js/bg-lazyload.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/hunt-slider.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 
