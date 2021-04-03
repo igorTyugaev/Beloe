@@ -28,7 +28,7 @@
 
 <main>
 
-    <section class="contacts contacts_green">
+    <section class="contacts contacts--green contacts--full">
         <div class="contacts__inner">
             <h1 class="title-main">
                 <span class="title-block">Как до нас</span>

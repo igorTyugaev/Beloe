@@ -156,6 +156,24 @@
 
   &--opacity {
     opacity: 0.4;
+    cursor: default;
+
+    &:hover {
+      background: #{$green};
+      color: #{$white};
+
+      .button__wrapper {
+
+        &:hover {
+          background-color: inherit;
+          color: inherit;
+        }
+      }
+
+      .button__inner {
+        transform: none;
+      }
+    }
   }
 }
 

@@ -2,18 +2,24 @@
 
 @import "modules/b-contact";
 
-.contacts_green {
-  background: #{$green};
-  min-height: 100vh;
-
-  b,
-  p,
-  a,
-  h2 {
-    color: #{$white};
+.contacts {
+  &--full {
+    height: 100vh;
+    width: 100%;
   }
-}
 
-.contacts__inner {
-  @include container(100px);
+  &--green {
+    background: #{$green};
+
+    b,
+    p,
+    a,
+    h2 {
+      color: #{$white};
+    }
+  }
+
+  &__inner {
+    @include container(100px);
+  }
 }

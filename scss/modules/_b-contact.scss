@@ -1,11 +1,13 @@
 .contacts {
   display: flex;
   flex-direction: row;
-  min-height: 50vh;
+  overflow: hidden;
 
   &__inner {
     @include container();
-    width: 37.5vw;
+    width: 50%;
+    overflow: hidden;
+    height: 100%;
   }
 
   &__title {
@@ -35,7 +37,8 @@
 
   &__map {
     background: $white;
-    width: 37.5vw;
+    width: 50%;
+    overflow: hidden;
     height: inherit;
   }
 }

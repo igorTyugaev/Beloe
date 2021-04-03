@@ -35,7 +35,7 @@
 
             <li class="menu__link-container  "><a class="menu__link" href="contacts.php">Контакты</a>
             </li>
-            <li class="menu__lang  ">
+            <li class="menu__lang">
                 <img src="./media/RUS.svg" alt="RU" class="lang lang--active" />
                 <img src="./media/DEU.svg" alt="DEU" class="lang" />
             </li>
@@ -70,7 +70,7 @@
                         Записаться на охоту<br><br>Записаться на охоту
                     </div>
                 </div>
-            </button>
+        </button>
     </div>
 
     <div class="menu__cover"></div>
