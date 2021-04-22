@@ -18,8 +18,8 @@
   }
 
   &_menu {
-    //display: none;
-    //position: static;
+    display: none;
+    position: static;
     padding-left: 0;
     padding-right: 0;
     width: 100%;
@@ -43,6 +43,7 @@
     }
 
     &_menu {
+      display: none;
       position: static;
       padding-left: 0;
       padding-right: 0;
@@ -80,8 +81,8 @@
 
     &_menu {
       display: flex;
-      flex-direction: column;
       position: static;
+      flex-direction: column;
       padding-left: 0;
       padding-right: 0;
       width: 100%;
