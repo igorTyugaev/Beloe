@@ -248,12 +248,12 @@ main {
 
     &__address {
       font-size: 12px;
-      margin: get-vw(30px, $break-point-mobile) 0;
+      margin: get-vw(12px, $break-point-mobile) 0;
     }
 
     &__drive {
       font-size: 12px;
-      margin-bottom: get-vw(40px, $break-point-mobile);
+      margin-bottom: 0;
     }
 
     &--small {

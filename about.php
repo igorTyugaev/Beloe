@@ -139,7 +139,12 @@
     <script src="./js/flickity.pkgd.min.js"></script>
     <script src="./js/bg-lazyload.js"></script>
     <script src="./js/datepicker.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous">
+
+</script>
+<script src="./js/main.js"></script>
     <script src="./js/about.js"></script>
     <script src="./js/map.js"></script>
     <script src="./js/gallery.js"></script>

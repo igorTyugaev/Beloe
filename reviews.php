@@ -16,18 +16,20 @@
 include('header.php');
 ?>
 
-    <div class="numbers numbers--green opacity-block">
-        <a href="tel:+73523993052" class="button button--phone-green">
-            <div class="button__wrapper">
-                <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
+<div class="numbers numbers--green opacity-block">
+    <a href="tel:+73523993052" class="button button--phone-green">
+        <div class="button__wrapper">
+            <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52
             </div>
-        </a>
-        <a href="tel:+73523993052" class="button button--phone-green">
-            <div class="button__wrapper">
-                <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52</div>
+        </div>
+    </a>
+    <a href="tel:+73523993052" class="button button--phone-green">
+        <div class="button__wrapper">
+            <div class="button__inner">8 (3523) 99 — 30 — 52<br><br>8 (3523) 99 — 30 — 52
             </div>
-        </a>
-    </div>
+        </div>
+    </a>
+</div>
 
 <main class="main">
     <section class="reviews">
@@ -602,6 +604,11 @@ include('header.php');
 <script src="./js/datepicker.js"></script>
 <script src="./js/show-animation.js"></script>
 <script src="./js/reviews.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous">
+
+</script>
 <script src="./js/main.js"></script>
 <script src="./js/popup.js"></script>
 </body>
