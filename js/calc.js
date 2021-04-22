@@ -14,7 +14,7 @@
         const btnAddProduct = _huntItem.querySelectorAll('.button').item(0);
 
         btnAddProduct.addEventListener("click", (e) => {
-            const { currentTarget } = e;
+            const {currentTarget} = e;
             const btnInner = currentTarget.querySelector('.button__inner');
             btnInner.innerHTML = "Добавлено</br></br>Добавлено";
 
@@ -57,6 +57,13 @@
             totalPriceProduct -= productCart.get(idItem).price;
             _totalPriceCart.innerText = (+totalPriceProduct) * (+order.countPeople) * (+order.countDay);
             cartItemBtnClose.parentNode.remove();
+
+            const _huntItemClear = document.querySelector(`.hunt__item[id=${product.id}]`);
+            const btnClear = _huntItemClear.querySelectorAll('button')[0];
+            const btnClearInner = btnClear.querySelector('.button__inner');
+            btnClearInner.innerHTML = "добавить в калькулятор</br></br>добавить в калькулятор";
+
+            productCart.delete(product.id);
         });
 
         cartItemWrapper.append(cartItemTitle);

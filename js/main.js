@@ -144,6 +144,8 @@ function initForm(_form) {
                     countDay: order.countDay
                 };
 
+                console.log(orderOut);
+
                 fo.append("order", JSON.stringify(orderOut));
             }
 
