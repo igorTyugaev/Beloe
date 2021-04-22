@@ -924,9 +924,9 @@
         crossorigin="anonymous">
 
 </script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/hunt-slider.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

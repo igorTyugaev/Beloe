@@ -1,10 +1,4 @@
 (function () {
-    const productCart = new Map();
-    const order = {
-        productCart,
-        countPeople: 1,
-        countDay: 7
-    };
 
     let countPeople = 1,
         countDay = 7;

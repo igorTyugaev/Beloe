@@ -3,6 +3,13 @@ const _btnCloseMenu = document.getElementById("btnCloseMenu");
 const _numBlock = document.getElementById("numbers-main");
 const _body = document.getElementsByTagName('body');
 
+const productCart = new Map();
+const order = {
+    productCart,
+    countPeople: 1,
+    countDay: 7
+};
+
 function toggleMenu() {
     _menu.classList.toggle("menu_show");
     _btnCloseMenu.classList.toggle("button_close-active");
@@ -122,6 +129,23 @@ function initForm(_form) {
                 }
                 isValidityForm &= _isValidityInput;
             });
+
+            if (currentForm.getAttribute("name") === "order") {
+                const productCartObject = {};
+                order.productCart.forEach((value, key) => {
+                    const keys = key.split('.'),
+                        last = keys.pop();
+                    keys.reduce((r, a) => r[a] = r[a] || {}, productCartObject)[last] = value;
+                });
+
+                const orderOut = {
+                    productCart: JSON.stringify(productCartObject),
+                    countPeople: order.countPeople,
+                    countDay: order.countDay
+                };
+
+                fo.append("order", JSON.stringify(orderOut));
+            }
 
             if (!isValidityForm) return null;
 
